@@ -9,17 +9,21 @@ const state =
     ? "Active"
     : currency.active === false
       ? "Retired"
-      : "Status not published";
+      : "Event / legacy record";
+const fallbackDescription = {
+  primary: "The main currency used by the Cobbleverse player economy.",
+  voucher: "A server reward voucher with redemption options shown in game.",
+  event: "A record associated with a seasonal or limited server event.",
+  token: "A token used by a Cobbleverse system, activity, or shop.",
+}[currency.category];
 ---
 
 <article class="currency-card">
   <span class="currency-card__coin" aria-hidden="true">◇</span><div>
     <span class="eyebrow">{currency.category}</span><h3>{currency.name}</h3><p>
-      {
-        currency.description ||
-          "Obtaining and spending details will be added after staff verification."
-      }
+      {currency.description || fallbackDescription}
     </p><span class:list={["data-state", { unknown: currency.active === null }]}
-      >{state}</span>
+      >{state}</span
+    >
   </div>
 </article>

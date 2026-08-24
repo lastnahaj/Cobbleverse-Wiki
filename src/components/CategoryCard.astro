@@ -5,22 +5,16 @@ interface Props {
   title: string;
   description: string;
   href: string;
-  icon: string;
+  image: string;
   label?: string;
 }
-const { title, description, href, icon, label = "Open guide" } = Astro.props;
+const { title, description, href, image, label = "Open guide" } = Astro.props;
 ---
 
 <a class="category-card" href={withBase(href)}>
-  <span class="category-card__icon"
-    ><img
-      src={withBase(icon)}
-      width="512"
-      height="512"
-      alt=""
-      loading="lazy"
-    /></span
-  >
+  <span class="category-card__icon" aria-hidden="true">
+    <img src={withBase(image)} width="320" height="320" alt="" loading="lazy" />
+  </span>
   <span class="category-card__copy"
     ><strong>{title}</strong><span>{description}</span></span
   >

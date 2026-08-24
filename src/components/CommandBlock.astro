@@ -5,12 +5,14 @@ interface Props {
   description: string;
 }
 const { command, syntax, description } = Astro.props;
+const displayCommand = syntax ? `${command} ${syntax}` : command;
 ---
 
 <div class="command-block">
-  <code>{syntax || command}</code><p>{description}</p><button
+  <code>{displayCommand}</code><p>{description}</p><button
     type="button"
-    data-copy-command={syntax || command}>Copy</button>
+    data-copy-command={displayCommand}>Copy</button
+  >
 </div>
 
 <script>

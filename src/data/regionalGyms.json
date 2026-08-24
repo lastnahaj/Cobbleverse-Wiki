@@ -1,0 +1,474 @@
+[
+  {
+    "region": "Kanto",
+    "role": "Gym Leader",
+    "name": "Brock",
+    "type": "Rock",
+    "badge": "Boulder Badge",
+    "location": "Plains",
+    "item": "Onyx Stone"
+  },
+  {
+    "region": "Kanto",
+    "role": "Gym Leader",
+    "name": "Misty",
+    "type": "Water",
+    "badge": "Cascade Badge",
+    "location": "Lukewarm Ocean",
+    "item": "Cerulean Star"
+  },
+  {
+    "region": "Kanto",
+    "role": "Gym Leader",
+    "name": "Lt. Surge",
+    "type": "Electric",
+    "badge": "Thunder Badge",
+    "location": "Savanna Plateau",
+    "item": "Lieutenant Medal"
+  },
+  {
+    "region": "Kanto",
+    "role": "Gym Leader",
+    "name": "Erika",
+    "type": "Grass",
+    "badge": "Rainbow Badge",
+    "location": "Flower Forest",
+    "item": "Nature Fan"
+  },
+  {
+    "region": "Kanto",
+    "role": "Gym Leader",
+    "name": "Koga",
+    "type": "Poison",
+    "badge": "Soul Badge",
+    "location": "Swamp",
+    "item": "Ninja Poison"
+  },
+  {
+    "region": "Kanto",
+    "role": "Gym Leader",
+    "name": "Sabrina",
+    "type": "Psychic",
+    "badge": "Marsh Badge",
+    "location": "Dark Forest",
+    "item": "Hypnotic Whip"
+  },
+  {
+    "region": "Kanto",
+    "role": "Gym Leader",
+    "name": "Blaine",
+    "type": "Fire",
+    "badge": "Volcano Badge",
+    "location": "Crimson Forest",
+    "item": "Cinnabar Glasses"
+  },
+  {
+    "region": "Kanto",
+    "role": "Gym Leader",
+    "name": "Giovanni",
+    "type": "Ground",
+    "badge": "Earth Badge",
+    "location": "Deep Dark",
+    "item": "Boss Ring"
+  },
+  {
+    "region": "Kanto",
+    "role": "Elite Four",
+    "name": "Lorelei",
+    "type": "Ice",
+    "badge": null,
+    "location": "Elite Four Tower (The End)",
+    "item": "Never-Melt Ice"
+  },
+  {
+    "region": "Kanto",
+    "role": "Elite Four",
+    "name": "Bruno",
+    "type": "Fighting",
+    "badge": null,
+    "location": "Elite Four Tower (The End)",
+    "item": "Focus Band"
+  },
+  {
+    "region": "Kanto",
+    "role": "Elite Four",
+    "name": "Agatha",
+    "type": "Ghost",
+    "badge": null,
+    "location": "Elite Four Tower (The End)",
+    "item": "Cleanse Tag"
+  },
+  {
+    "region": "Kanto",
+    "role": "Elite Four",
+    "name": "Lance",
+    "type": "Dragon",
+    "badge": null,
+    "location": "Elite Four Tower (The End)",
+    "item": "Dragon Fang"
+  },
+  {
+    "region": "Kanto",
+    "role": "Champion",
+    "name": "Blue",
+    "type": "Multi-type",
+    "badge": null,
+    "location": "Elite Four Tower (top)",
+    "item": "Rival Sling",
+    "reward": "Ancient Origin Ball"
+  },
+  {
+    "region": "Johto",
+    "role": "Gym Leader",
+    "name": "Valerio",
+    "type": "Flying",
+    "badge": "Zephyr Badge",
+    "location": "Windswept Hills",
+    "item": "Raptor Bracer"
+  },
+  {
+    "region": "Johto",
+    "role": "Gym Leader",
+    "name": "Raffaello",
+    "type": "Bug",
+    "badge": "Hive Badge",
+    "location": "Sparse Jungle",
+    "item": "Magnifying Glass"
+  },
+  {
+    "region": "Johto",
+    "role": "Gym Leader",
+    "name": "Chiara",
+    "type": "Normal",
+    "badge": "Plain Badge",
+    "location": "Cherry Grove",
+    "item": "Sweet Milk"
+  },
+  {
+    "region": "Johto",
+    "role": "Gym Leader",
+    "name": "Angelo",
+    "type": "Ghost",
+    "badge": "Fog Badge",
+    "location": "Lush Cave",
+    "item": "Spirit Scarf"
+  },
+  {
+    "region": "Johto",
+    "role": "Gym Leader",
+    "name": "Furio",
+    "type": "Fighting",
+    "badge": "Storm Badge",
+    "location": "Desert",
+    "item": "Heavy Dumbbell"
+  },
+  {
+    "region": "Johto",
+    "role": "Gym Leader",
+    "name": "Jasmine",
+    "type": "Steel",
+    "badge": "Mineral Badge",
+    "location": "Taiga",
+    "item": "Secret Medicine"
+  },
+  {
+    "region": "Johto",
+    "role": "Gym Leader",
+    "name": "Alfredo",
+    "type": "Ice",
+    "badge": "Glacier Badge",
+    "location": "Ice Spikes",
+    "item": "Winter Staff"
+  },
+  {
+    "region": "Johto",
+    "role": "Gym Leader",
+    "name": "Sandra",
+    "type": "Dragon",
+    "badge": "Rising Badge",
+    "location": "Soul Sand Valley",
+    "item": "Pearl Choker"
+  },
+  {
+    "region": "Johto",
+    "role": "Elite Four",
+    "name": "Pino",
+    "type": "Psychic",
+    "badge": null,
+    "location": "Elite Four Tower (The End)",
+    "item": "Power Lens"
+  },
+  {
+    "region": "Johto",
+    "role": "Elite Four",
+    "name": "Koga",
+    "type": "Poison",
+    "badge": null,
+    "location": "Elite Four Tower (The End)",
+    "item": "Loaded Dice"
+  },
+  {
+    "region": "Johto",
+    "role": "Elite Four",
+    "name": "Bruno",
+    "type": "Fighting",
+    "badge": null,
+    "location": "Elite Four Tower (The End)",
+    "item": "Muscle Band"
+  },
+  {
+    "region": "Johto",
+    "role": "Elite Four",
+    "name": "Karen",
+    "type": "Dark",
+    "badge": null,
+    "location": "Elite Four Tower (The End)",
+    "item": "Razor Claw"
+  },
+  {
+    "region": "Johto",
+    "role": "Champion",
+    "name": "Lance",
+    "type": "Dragon",
+    "badge": null,
+    "location": "Elite Four Tower (The End)",
+    "item": "Master Cape",
+    "reward": "Shiny Gyarados"
+  },
+  {
+    "region": "Hoenn",
+    "role": "Gym Leader",
+    "name": "Petra",
+    "type": "Rock",
+    "badge": "Stone Badge",
+    "location": "Rocky Mountains",
+    "item": "Rock Tome"
+  },
+  {
+    "region": "Hoenn",
+    "role": "Gym Leader",
+    "name": "Rudi",
+    "type": "Fighting",
+    "badge": "Knuckle Badge",
+    "location": "Yosemite Cliffs",
+    "item": "Fighting Glove"
+  },
+  {
+    "region": "Hoenn",
+    "role": "Gym Leader",
+    "name": "Walter",
+    "type": "Electric",
+    "badge": "Dynamo Badge",
+    "location": "Arid Highlands",
+    "item": "Electric Connector"
+  },
+  {
+    "region": "Hoenn",
+    "role": "Gym Leader",
+    "name": "Fiammetta",
+    "type": "Fire",
+    "badge": "Heat Badge",
+    "location": "Forested Highlands",
+    "item": "Fire Lighter"
+  },
+  {
+    "region": "Hoenn",
+    "role": "Gym Leader",
+    "name": "Norman",
+    "type": "Normal",
+    "badge": "Balance Badge",
+    "location": "Brushland",
+    "item": "Normal Tablet"
+  },
+  {
+    "region": "Hoenn",
+    "role": "Gym Leader",
+    "name": "Alice",
+    "type": "Flying",
+    "badge": "Feather Badge",
+    "location": "Moonlight Grove",
+    "item": "Flying Feather"
+  },
+  {
+    "region": "Hoenn",
+    "role": "Gym Leader",
+    "name": "Tell & Pat",
+    "type": "Psychic",
+    "badge": "Mind Badge",
+    "location": "Amethyst Rainforest",
+    "item": "Psychic Medallion"
+  },
+  {
+    "region": "Hoenn",
+    "role": "Gym Leader",
+    "name": "Adriano",
+    "type": "Water",
+    "badge": "Rain Badge",
+    "location": "Cold Ocean",
+    "item": "Water Rod"
+  },
+  {
+    "region": "Hoenn",
+    "role": "Elite Four",
+    "name": "Fosco",
+    "type": "Dark",
+    "badge": null,
+    "location": "Hoenn League (Steppe)",
+    "item": "Dark Bass"
+  },
+  {
+    "region": "Hoenn",
+    "role": "Elite Four",
+    "name": "Ester",
+    "type": "Ghost",
+    "badge": null,
+    "location": "Hoenn League (Steppe)",
+    "item": "Ghost Bloom"
+  },
+  {
+    "region": "Hoenn",
+    "role": "Elite Four",
+    "name": "Frida",
+    "type": "Ice",
+    "badge": null,
+    "location": "Hoenn League (Steppe)",
+    "item": "Ice Necklace"
+  },
+  {
+    "region": "Hoenn",
+    "role": "Elite Four",
+    "name": "Drake",
+    "type": "Dragon",
+    "badge": null,
+    "location": "Hoenn League (Steppe)",
+    "item": "Dragon Cape"
+  },
+  {
+    "region": "Hoenn",
+    "role": "Champion",
+    "name": "Rocco",
+    "type": "Steel",
+    "badge": null,
+    "location": "Hoenn League (Steppe)",
+    "item": "Steel Hat",
+    "reward": "Ruby Dew and Sapphire Dew"
+  },
+  {
+    "region": "Sinnoh",
+    "role": "Gym Leader",
+    "name": "Pedro",
+    "type": "Rock",
+    "badge": "Coal Badge",
+    "location": "Volcanic Peaks",
+    "item": "Rock Casque"
+  },
+  {
+    "region": "Sinnoh",
+    "role": "Gym Leader",
+    "name": "Gardenia",
+    "type": "Grass",
+    "badge": "Forest Badge",
+    "location": "Blooming Valley",
+    "item": "Grass Aroma"
+  },
+  {
+    "region": "Sinnoh",
+    "role": "Gym Leader",
+    "name": "Marzia",
+    "type": "Fighting",
+    "badge": "Cobble Badge",
+    "location": "Lush Desert",
+    "item": "Fighting Bandage"
+  },
+  {
+    "region": "Sinnoh",
+    "role": "Gym Leader",
+    "name": "Omar",
+    "type": "Water",
+    "badge": "Fen Badge",
+    "location": "Beach",
+    "item": "Water Mask"
+  },
+  {
+    "region": "Sinnoh",
+    "role": "Gym Leader",
+    "name": "Fannie",
+    "type": "Ghost",
+    "badge": "Relic Badge",
+    "location": "Lavender Valley",
+    "item": "Ghost Pendant"
+  },
+  {
+    "region": "Sinnoh",
+    "role": "Gym Leader",
+    "name": "Ferruccio",
+    "type": "Steel",
+    "badge": "Mine Badge",
+    "location": "Volcanic Crater",
+    "item": "Steel Spade"
+  },
+  {
+    "region": "Sinnoh",
+    "role": "Gym Leader",
+    "name": "Bianca",
+    "type": "Ice",
+    "badge": "Icicle Badge",
+    "location": "Glacial Chasm",
+    "item": "Ice Ribbon"
+  },
+  {
+    "region": "Sinnoh",
+    "role": "Gym Leader",
+    "name": "Corrado",
+    "type": "Electric",
+    "badge": "Beacon Badge",
+    "location": "Shrublands",
+    "item": "Electric Fuse"
+  },
+  {
+    "region": "Sinnoh",
+    "role": "Elite Four",
+    "name": "Aaron",
+    "type": "Bug",
+    "badge": null,
+    "location": "Sinnoh League (Desert Oasis)",
+    "item": "Bug Net"
+  },
+  {
+    "region": "Sinnoh",
+    "role": "Elite Four",
+    "name": "Terrie",
+    "type": "Ground",
+    "badge": null,
+    "location": "Sinnoh League (Desert Oasis)",
+    "item": "Ground Shawl"
+  },
+  {
+    "region": "Sinnoh",
+    "role": "Elite Four",
+    "name": "Vulcano",
+    "type": "Fire",
+    "badge": null,
+    "location": "Sinnoh League (Desert Oasis)",
+    "item": "Fire Flint"
+  },
+  {
+    "region": "Sinnoh",
+    "role": "Elite Four",
+    "name": "Luciano",
+    "type": "Psychic",
+    "badge": null,
+    "location": "Sinnoh League (Desert Oasis)",
+    "item": "Psychic Volume"
+  },
+  {
+    "region": "Sinnoh",
+    "role": "Champion",
+    "name": "Camilla",
+    "type": "Multi-type",
+    "badge": null,
+    "location": "Sinnoh League",
+    "item": "Draconic Fin",
+    "reward": "Griseous Core"
+  }
+]

@@ -10,15 +10,15 @@ import { withBase } from "../lib/basePath";
   <div class="site-footer__inner">
     <div class="site-footer__brand">
       <img
-        src={withBase("/assets/logo-mark-monochrome.png")}
-        width="768"
-        height="672"
+        src={withBase("/assets/cobbleverse-crest.webp")}
+        width="1254"
+        height="1254"
         alt=""
         loading="lazy"
       />
       <div>
         <strong>Cobbleverse Wiki</strong><p>
-          The official field guide for the Cobbleverse community.
+          Player guides for the Infinite Gaming Servers Cobbleverse community.
         </p>
       </div>
     </div>
@@ -36,8 +36,9 @@ import { withBase } from "../lib/basePath";
   </div>
   <div class="site-footer__legal">
     <span
-      >Community documentation for {server.game}
-      {server.minecraftVersion} · {server.loader}</span
+      >{
+        `Community documentation for ${server.game} ${server.minecraftVersion} · ${server.loader}`
+      }</span
     >
     <span>Built for explorers, battlers, collectors, and builders.</span>
   </div>

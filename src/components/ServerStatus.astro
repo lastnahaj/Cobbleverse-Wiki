@@ -1,0 +1,87 @@
+---
+import { server } from "../data";
+
+interface Props {
+  compact?: boolean;
+}
+
+const { compact = false } = Astro.props;
+---
+
+<div
+  class:list={["live-status", { "live-status--compact": compact }]}
+  data-server-status
+  data-endpoint={server.statusApi}
+  data-state="loading"
+  aria-live="polite"
+>
+  <span class="live-status__dot" aria-hidden="true"></span>
+  <span class="live-status__copy">
+    <strong data-status-label>Checking server…</strong>
+    <small>
+      <span data-status-players>— players</span>
+      <span class="live-status__address"> · {server.address}</span>
+    </small>
+  </span>
+</div>
+
+<script>
+  const widgets = Array.from(
+    document.querySelectorAll<HTMLElement>("[data-server-status]"),
+  );
+
+  async function refreshServerStatus() {
+    const endpoint = widgets[0]?.dataset.endpoint;
+    if (!endpoint) return;
+
+    const controller = new AbortController();
+    const timeout = window.setTimeout(() => controller.abort(), 7000);
+
+    try {
+      const response = await fetch(endpoint, {
+        cache: "no-store",
+        signal: controller.signal,
+      });
+      if (!response.ok)
+        throw new Error(`Status request failed: ${response.status}`);
+
+      const data = await response.json();
+      const online = Boolean(data.online);
+      const current = Number(data.players?.online ?? 0);
+      const maximum = Number(data.players?.max ?? 0);
+
+      widgets.forEach((widget) => {
+        widget.dataset.state = online ? "online" : "offline";
+        const label = widget.querySelector<HTMLElement>("[data-status-label]");
+        const players = widget.querySelector<HTMLElement>(
+          "[data-status-players]",
+        );
+        if (label)
+          label.textContent = online ? "Server online" : "Server offline";
+        if (players) {
+          players.textContent = online
+            ? `${current.toLocaleString()} / ${maximum.toLocaleString()} players`
+            : "No players online";
+        }
+      });
+    } catch {
+      widgets.forEach((widget) => {
+        widget.dataset.state = "unavailable";
+        const label = widget.querySelector<HTMLElement>("[data-status-label]");
+        const players = widget.querySelector<HTMLElement>(
+          "[data-status-players]",
+        );
+        if (label) label.textContent = "Status unavailable";
+        if (players) players.textContent = "Try again shortly";
+      });
+    } finally {
+      window.clearTimeout(timeout);
+    }
+  }
+
+  refreshServerStatus();
+  window.setInterval(refreshServerStatus, 60_000);
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "visible") refreshServerStatus();
+  });
+</script>

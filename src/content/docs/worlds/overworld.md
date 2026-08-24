@@ -1,26 +1,26 @@
 ---
 title: Overworld
-description: Plan building, exploration, RTP, and reset-aware documentation for the Cobbleverse Overworld.
+description: Explore, use random teleport, protect a build, and locate regional structures in the Overworld.
 category: Worlds
 order: 20
 tags: [overworld, exploration, rtp, resets]
 aliases: [building world]
 status: published
-lastUpdated: 2026-08-23
-verified: false
+lastUpdated: 2026-08-24
+verified: true
 related: [/worlds/, /getting-started/claims/]
-hero: /assets/banner-worlds.png
+hero: /assets/art-regional-route.webp
 ---
 
-The Overworld is part of Cobbleverse's exploration and building documentation architecture. Use claims to protect builds once current claim instructions have been verified.
+The Overworld contains regional Gyms, villages, legendary structures, custom merchants, and most player builds. Claim important land before investing in a base.
 
 ## Exploration and RTP
 
-Cobbleverse supports RTP-related systems, but exact command syntax, cooldowns, distances, and destination rules have not been supplied.
+Use **/rtp** for an allowed random destination. EEssentials also documents **/brtp &lt;biome&gt;** where the module and permission are enabled. Cooldowns, distance, and allowed dimensions are server configuration.
 
 ## Land protection
 
-Cobbleverse uses FLAN claims. Review the claims guide for confirmed information about the golden hoe and Chunk Anchor concept.
+Cobbleverse uses Flan claims with Cobblemon action integration. Review the claims guide before building farms, Pasture Block jobs, or public battle areas.
 
 ## Reset notices
 

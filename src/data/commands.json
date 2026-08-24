@@ -1,1 +1,389 @@
-[]
+[
+  {
+    "id": "afk",
+    "command": "/afk",
+    "description": "Toggle your away status.",
+    "category": "Player",
+    "audience": "player",
+    "verified": true,
+    "lastVerified": "2026-08-24"
+  },
+  {
+    "id": "ignore",
+    "command": "/ignore",
+    "syntax": "<player>",
+    "description": "Ignore or unignore messages from a player.",
+    "category": "Chat",
+    "audience": "player",
+    "verified": true,
+    "lastVerified": "2026-08-24"
+  },
+  {
+    "id": "message",
+    "command": "/msg",
+    "syntax": "<player> <message>",
+    "aliases": ["/message", "/whisper", "/w", "/tell"],
+    "description": "Send a private message.",
+    "category": "Chat",
+    "audience": "player",
+    "verified": true,
+    "lastVerified": "2026-08-24"
+  },
+  {
+    "id": "reply",
+    "command": "/reply",
+    "syntax": "<message>",
+    "aliases": ["/r"],
+    "description": "Reply to the most recent private-message conversation.",
+    "category": "Chat",
+    "audience": "player",
+    "verified": true,
+    "lastVerified": "2026-08-24"
+  },
+  {
+    "id": "near",
+    "command": "/near",
+    "description": "List nearby players when permitted.",
+    "category": "Player",
+    "audience": "player",
+    "verified": true,
+    "lastVerified": "2026-08-24"
+  },
+  {
+    "id": "playtime",
+    "command": "/playtime",
+    "syntax": "[player]",
+    "description": "Show playtime for yourself or an allowed target.",
+    "category": "Player",
+    "audience": "player",
+    "verified": true,
+    "lastVerified": "2026-08-24"
+  },
+  {
+    "id": "seen",
+    "command": "/seen",
+    "syntax": "<player>",
+    "description": "Show when a player was last seen.",
+    "category": "Player",
+    "audience": "player",
+    "verified": true,
+    "lastVerified": "2026-08-24"
+  },
+  {
+    "id": "tpa",
+    "command": "/tpa",
+    "syntax": "<player>",
+    "description": "Request to teleport to another player.",
+    "category": "Teleport",
+    "audience": "player",
+    "verified": true,
+    "lastVerified": "2026-08-24"
+  },
+  {
+    "id": "tpahere",
+    "command": "/tpahere",
+    "syntax": "<player>",
+    "description": "Ask another player to teleport to you.",
+    "category": "Teleport",
+    "audience": "player",
+    "verified": true,
+    "lastVerified": "2026-08-24"
+  },
+  {
+    "id": "tpaccept",
+    "command": "/tpaccept",
+    "aliases": ["/tpyes"],
+    "description": "Accept a pending teleport request.",
+    "category": "Teleport",
+    "audience": "player",
+    "verified": true,
+    "lastVerified": "2026-08-24"
+  },
+  {
+    "id": "tpdeny",
+    "command": "/tpdeny",
+    "aliases": ["/tpno"],
+    "description": "Deny a pending teleport request.",
+    "category": "Teleport",
+    "audience": "player",
+    "verified": true,
+    "lastVerified": "2026-08-24"
+  },
+  {
+    "id": "back",
+    "command": "/back",
+    "description": "Return to the previous saved location when enabled.",
+    "category": "Teleport",
+    "audience": "player",
+    "verified": true,
+    "lastVerified": "2026-08-24"
+  },
+  {
+    "id": "home",
+    "command": "/home",
+    "syntax": "[name]",
+    "description": "Teleport to one of your homes.",
+    "category": "Homes",
+    "audience": "player",
+    "verified": true,
+    "lastVerified": "2026-08-24"
+  },
+  {
+    "id": "sethome",
+    "command": "/sethome",
+    "syntax": "[name]",
+    "description": "Save your current location as a home, subject to the server limit.",
+    "category": "Homes",
+    "audience": "player",
+    "verified": true,
+    "lastVerified": "2026-08-24"
+  },
+  {
+    "id": "delhome",
+    "command": "/delhome",
+    "syntax": "[name]",
+    "description": "Delete one of your saved homes.",
+    "category": "Homes",
+    "audience": "player",
+    "verified": true,
+    "lastVerified": "2026-08-24"
+  },
+  {
+    "id": "spawn",
+    "command": "/spawn",
+    "description": "Teleport to the server spawn when permitted.",
+    "category": "Teleport",
+    "audience": "player",
+    "verified": true,
+    "lastVerified": "2026-08-24"
+  },
+  {
+    "id": "warp",
+    "command": "/warp",
+    "syntax": "<name>",
+    "description": "Travel to a named public warp.",
+    "category": "Warps",
+    "audience": "player",
+    "verified": true,
+    "lastVerified": "2026-08-24"
+  },
+  {
+    "id": "warps",
+    "command": "/warps",
+    "description": "List available warps.",
+    "category": "Warps",
+    "audience": "player",
+    "verified": true,
+    "lastVerified": "2026-08-24"
+  },
+  {
+    "id": "rtp",
+    "command": "/randomteleport",
+    "syntax": "[dimension]",
+    "aliases": ["/rtp"],
+    "description": "Teleport to a random valid location in an allowed dimension.",
+    "category": "Teleport",
+    "audience": "player",
+    "verified": true,
+    "lastVerified": "2026-08-24"
+  },
+  {
+    "id": "brtp",
+    "command": "/biomertp",
+    "syntax": "<biome>",
+    "aliases": ["/brtp"],
+    "description": "Request a random location in a biome when the module and permission are enabled.",
+    "category": "Teleport",
+    "audience": "player",
+    "verified": true,
+    "lastVerified": "2026-08-24"
+  },
+  {
+    "id": "workbench",
+    "command": "/workbench",
+    "aliases": ["/craft"],
+    "description": "Open a virtual crafting table when permitted.",
+    "category": "Workstations",
+    "audience": "player",
+    "verified": true,
+    "lastVerified": "2026-08-24"
+  },
+  {
+    "id": "enderchest",
+    "command": "/enderchest",
+    "syntax": "[player]",
+    "aliases": ["/ec"],
+    "description": "Open your Ender Chest; targeting another player requires elevated permission.",
+    "category": "Workstations",
+    "audience": "player",
+    "verified": true,
+    "lastVerified": "2026-08-24"
+  },
+  {
+    "id": "anvil",
+    "command": "/anvil",
+    "description": "Open a virtual anvil when permitted.",
+    "category": "Workstations",
+    "audience": "player",
+    "verified": true,
+    "lastVerified": "2026-08-24"
+  },
+  {
+    "id": "grindstone",
+    "command": "/grindstone",
+    "description": "Open a virtual grindstone when permitted.",
+    "category": "Workstations",
+    "audience": "player",
+    "verified": true,
+    "lastVerified": "2026-08-24"
+  },
+  {
+    "id": "smithing",
+    "command": "/smithing",
+    "description": "Open a virtual smithing table when permitted.",
+    "category": "Workstations",
+    "audience": "player",
+    "verified": true,
+    "lastVerified": "2026-08-24"
+  },
+  {
+    "id": "stonecutter",
+    "command": "/stonecutter",
+    "description": "Open a virtual stonecutter when permitted.",
+    "category": "Workstations",
+    "audience": "player",
+    "verified": true,
+    "lastVerified": "2026-08-24"
+  },
+  {
+    "id": "disposal",
+    "command": "/disposal",
+    "description": "Open a disposal inventory. Items placed inside are destroyed.",
+    "category": "Workstations",
+    "audience": "player",
+    "verified": true,
+    "lastVerified": "2026-08-24"
+  },
+  {
+    "id": "pc",
+    "command": "/pc",
+    "description": "Open the Pokémon PC remotely.",
+    "category": "Pokémon",
+    "audience": "player",
+    "verified": true,
+    "lastVerified": "2026-08-24"
+  },
+  {
+    "id": "pokesee",
+    "command": "/pokesee",
+    "description": "Inspect one of your Pokémon through the Cobblemon Extras interface.",
+    "category": "Pokémon",
+    "audience": "player",
+    "verified": true,
+    "lastVerified": "2026-08-24"
+  },
+  {
+    "id": "pokeivs",
+    "command": "/pokeivs",
+    "description": "View a Pokémon's IV information.",
+    "category": "Pokémon",
+    "audience": "player",
+    "verified": true,
+    "lastVerified": "2026-08-24"
+  },
+  {
+    "id": "pokeshout",
+    "command": "/pokeshout",
+    "syntax": "<slot>",
+    "description": "Share one party Pokémon in chat.",
+    "category": "Sharing",
+    "audience": "player",
+    "verified": true,
+    "lastVerified": "2026-08-24"
+  },
+  {
+    "id": "pokeshoutall",
+    "command": "/pokeshoutall",
+    "description": "Share your full Pokémon party in chat.",
+    "category": "Sharing",
+    "audience": "player",
+    "verified": true,
+    "lastVerified": "2026-08-24"
+  },
+  {
+    "id": "itemshout",
+    "command": "/itemshout",
+    "description": "Share the item in your hand in chat.",
+    "category": "Sharing",
+    "audience": "player",
+    "verified": true,
+    "lastVerified": "2026-08-24"
+  },
+  {
+    "id": "poketrade",
+    "command": "/poketrade",
+    "syntax": "<player>",
+    "description": "Request a Pokémon trade with another player.",
+    "category": "Pokémon",
+    "audience": "player",
+    "verified": true,
+    "lastVerified": "2026-08-24"
+  },
+  {
+    "id": "battle",
+    "command": "/battle",
+    "syntax": "<player>",
+    "aliases": ["/pokebattle"],
+    "description": "Request a Pokémon battle with another player.",
+    "category": "Battles",
+    "audience": "player",
+    "verified": true,
+    "lastVerified": "2026-08-24"
+  },
+  {
+    "id": "battlespectate",
+    "command": "/battlespectate",
+    "description": "Open the battle-spectating flow when available.",
+    "category": "Battles",
+    "audience": "player",
+    "verified": true,
+    "lastVerified": "2026-08-24"
+  },
+  {
+    "id": "showcase",
+    "command": "/showcase",
+    "syntax": "[on|off]",
+    "description": "Control or open your Cobblemon Extras showcase.",
+    "category": "Pokémon",
+    "audience": "player",
+    "verified": true,
+    "lastVerified": "2026-08-24"
+  },
+  {
+    "id": "daily",
+    "command": "/daily",
+    "description": "Open the daily reward calendar.",
+    "category": "Rewards",
+    "audience": "player",
+    "verified": true,
+    "lastVerified": "2026-08-24"
+  },
+  {
+    "id": "rewards-open",
+    "command": "/rewards open",
+    "description": "Open the configured reward interface.",
+    "category": "Rewards",
+    "audience": "player",
+    "verified": true,
+    "lastVerified": "2026-08-24"
+  },
+  {
+    "id": "colosseum",
+    "command": "/colosseum",
+    "description": "Open the Colosseum facility interface.",
+    "category": "Battles",
+    "audience": "player",
+    "verified": true,
+    "lastVerified": "2026-08-24"
+  }
+]

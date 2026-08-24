@@ -3,7 +3,8 @@ import NoticeBanner from "../../components/NoticeBanner.astro";
 import PageShell from "../../layouts/PageShell.astro";
 
 const headings = [
-  { depth: 2, slug: "wiki-v1", text: "Wiki v1" },
+  { depth: 2, slug: "wiki-update", text: "Wiki update" },
+  { depth: 2, slug: "pack-releases", text: "Base pack releases" },
   { depth: 2, slug: "notice-policy", text: "Notice policy" },
 ];
 ---
@@ -21,28 +22,49 @@ const headings = [
 >
   <NoticeBanner label="Wiki release" tone="success"
     ><p>
-      <time datetime="2026-08-23">August 23, 2026</time> · Production field guide
-      v1
+      <time datetime="2026-08-24">August 24, 2026</time> · Lumy Hub integration
     </p></NoticeBanner
   >
-  <h2 id="wiki-v1">Wiki v1</h2>
+  <h2 id="wiki-update">Wiki update</h2>
   <ul>
     <li>
-      Added the full major-section route structure and content collection.
+      Added live aggregate player counts for cv.infinitegamingservers.com.
     </li>
     <li>
-      Added local keyboard search for published pages and structured references.
+      Added regional Gym, Elite Four, Champion, signature-item, and location
+      tables.
     </li>
     <li>
-      Integrated the supplied Cobbleverse homepage, banner, logo, icon, favicon,
-      and social-preview artwork.
+      Added structures, legendary routes, special forms, quest items, spawns,
+      riding, LumyMon, installation, settings, money, and troubleshooting
+      guides.
     </li>
     <li>
-      Added data-driven region, rank, Gym, currency, feature, and command
-      models.
+      Added EEssentials, Cobblemon Extras, Daily Rewards, and Colosseum player
+      commands.
     </li>
-    <li>Kept missing server facts in neutral unpublished states.</li>
+    <li>
+      Added CobbleWorkers, Flan integration, SkiesGUIs, Matcha systems, and
+      Universal Daily Rewards references.
+    </li>
+    <li>
+      Replaced blurry and cropped artwork with full-resolution section scenes
+      and supplied Cobbleverse marks.
+    </li>
   </ul>
+  <h2 id="pack-releases">Base pack releases</h2>
+  <p>
+    Lumy Hub currently lists 1.7.42 (July 21, 2026), 1.7.41 (July 15, 2026),
+    1.7.31 (April 4, 2026), LumyMon updates, the Pokémon 30th Anniversary 1.7.30
+    release, and the earlier 1.7.3, 1.7.2, 1.7.1, 1.7, and 1.7.0c entries.
+  </p>
+  <p>
+    Version 1.7.42 focused on recipes, model and riding fixes, spawn and battle
+    UI adjustments, stability, and dependency updates. See the <a
+      href="https://www.lumyverse.com/wiki/changelog/">Lumy Hub changelog</a
+    > for platform-specific release notes. The hosted server's announced client version
+    takes priority over the public pack's newest listing.
+  </p>
   <h2 id="notice-policy">Notice policy</h2>
   <p>
     Temporary maintenance, event, and world-reset announcements should be dated

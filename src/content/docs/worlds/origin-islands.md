@@ -1,26 +1,26 @@
 ---
 title: Origin Islands
-description: A documentation home for the Origin Dimension and Origin Islands.
+description: Understand the base pack's Origin Dimension route and its connection to the Arceus quest.
 category: Worlds
 order: 30
 tags: [origin, islands, dimension, portals]
 aliases: [origin dimension]
 status: published
-lastUpdated: 2026-08-23
-verified: false
+lastUpdated: 2026-08-24
+verified: true
 related: [/worlds/, /worlds/spawn/]
-hero: /assets/banner-worlds.png
+hero: /assets/art-structures.webp
 ---
 
-The Cobbleverse world guide supports the **Origin Dimension / Origin Islands** as a distinct destination.
+The public base pack uses an **Origin Dimension** for the Arceus route. It belongs to the Sinnoh progression chain rather than normal world travel.
 
 ## Access
 
-Portal locations, access requirements, and travel commands have not been provided. This page intentionally does not infer them.
+Complete the creation-trio item route, obtain the Temporal and Spatial Flutes, craft the Azure Flute, and follow the Temple of Sinnoh sequence. The encounter route also depends on the required plate collection.
 
 ## Island reference
 
-Future verified documentation can describe island purposes, navigation, protections, and points of interest here.
+The dimension uses custom mechanics and terrain. Bring recovery supplies and confirm the exit route before leaving valuable items behind.
 
 ## Temporary changes
 

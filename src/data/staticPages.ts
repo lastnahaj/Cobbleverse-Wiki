@@ -1,4 +1,4 @@
-import { features, gyms } from "./index";
+import { features } from "./index";
 
 export interface StaticSearchEntry {
   title: string;
@@ -14,7 +14,8 @@ export interface StaticSearchEntry {
 const pages: StaticSearchEntry[] = [
   {
     title: "Cobbleverse Wiki",
-    description: "Official field guide for the Cobbleverse server.",
+    description:
+      "Player field guide for the Infinite Gaming Servers Cobbleverse server.",
     category: "Home",
     headings: [
       "Explore the field guide",
@@ -23,7 +24,7 @@ const pages: StaticSearchEntry[] = [
       "Server systems",
     ],
     excerpt:
-      "Progression, Gyms, worlds, economy systems, features, commands, and server references.",
+      "Installation, regional leagues, structures, special encounters, server systems, commands, and live player status.",
     tags: ["home", "wiki", "cobbleverse"],
     aliases: ["field guide"],
     path: "/",
@@ -32,9 +33,9 @@ const pages: StaticSearchEntry[] = [
     title: "Getting Started",
     description: "Prepare for your first Cobbleverse journey.",
     category: "Getting Started",
-    headings: ["Before you join", "Your first route", "Unpublished details"],
+    headings: ["Before you join", "Your first route", "Need help?"],
     excerpt:
-      "Minecraft 1.21.1, Fabric, Spawn, Kanto progression, claims, and economy basics.",
+      "Minecraft 1.21.1, Fabric, server address, installation, Kanto progression, claims, and commands.",
     tags: ["new player", "setup", "spawn"],
     aliases: ["start here", "onboarding"],
     path: "/getting-started/",
@@ -75,11 +76,11 @@ const pages: StaticSearchEntry[] = [
   {
     title: "Gyms",
     description:
-      "Type-based Gym directory and verification-ready battle records.",
+      "Regional Gym Leaders, signature items, locations, Elite Four, and Champions.",
     category: "Gyms",
-    headings: ["Type directory", "Published Gym fields", "Battle preparation"],
+    headings: ["Finding Gyms", "Kanto", "Johto", "Hoenn", "Sinnoh"],
     excerpt:
-      "All standard Pokémon types with neutral unpublished leader, badge, reward, and schedule fields.",
+      "Published Kanto through Sinnoh leader tables with Gym locations, badges, signature items, league members, and champion rewards.",
     tags: ["gym", "types", "battle"],
     aliases: ["gym leaders"],
     path: "/gyms/",
@@ -140,22 +141,23 @@ const pages: StaticSearchEntry[] = [
   },
   {
     title: "Features",
-    description: "Cobbleverse server systems with explicit publication states.",
+    description:
+      "Active Cobbleverse quests, markets, automation, claims, rewards, menus, and battle systems.",
     category: "Features",
-    headings: ["System directory", "Status model", "Client options"],
+    headings: ["System directory", "Status labels", "Client options"],
     excerpt:
-      "Active, planned, optional-client, deprecated, and unknown feature records.",
+      "Journey, Wonder, Bazaar, Smart Trainers, Bloom, Colosseum, CobbleWorkers, Daily Rewards, Flan, SkiesGUIs, and more.",
     tags: ["systems", "mods", "status"],
     aliases: ["server features"],
     path: "/features/",
   },
   {
     title: "Commands",
-    description: "Filterable, verified-only command reference.",
+    description: "Filterable player command reference.",
     category: "Commands",
     headings: ["Command reference", "Publication rules"],
     excerpt:
-      "Command syntax, aliases, audience, examples, notes, and verification metadata.",
+      "EEssentials, Cobblemon Extras, Daily Rewards, and Colosseum command syntax and aliases.",
     tags: ["commands", "syntax"],
     aliases: ["command list"],
     path: "/commands/",
@@ -186,23 +188,14 @@ const pages: StaticSearchEntry[] = [
 
 export const staticSearchEntries: StaticSearchEntry[] = [
   ...pages,
-  ...gyms.map((gym) => ({
-    title: `${gym.type} Gym`,
-    description: `Cobbleverse ${gym.type}-type Gym record and publication status.`,
-    category: "Gyms",
-    headings: ["Gym record", "Challenge details"],
-    excerpt:
-      "Leader, badge, reward, status, team, schedule, and challenge fields remain verification-gated.",
-    tags: ["gym", gym.type.toLowerCase(), "battle"],
-    aliases: [`${gym.type} type`],
-    path: `/gyms/${gym.id}/`,
-  })),
   ...features.map((feature) => ({
     title: feature.name,
-    description: `${feature.name} system record, publication status, and documentation structure.`,
+    description: feature.description ?? `${feature.name} on Cobbleverse.`,
     category: "Features",
-    headings: ["System record", "Verification boundary"],
-    excerpt: `${feature.name} is categorized as ${feature.category} with status ${feature.status}.`,
+    headings: ["How it works", "Server settings", "Source documentation"],
+    excerpt:
+      feature.description ??
+      `${feature.name} is categorized as ${feature.category}.`,
     tags: [feature.category, feature.status],
     aliases: [],
     path: `/features/${feature.id}/`,

@@ -1,20 +1,20 @@
 ---
 import GuideSteps from "../../components/GuideSteps.astro";
 import InfoCallout from "../../components/InfoCallout.astro";
-import WarningCallout from "../../components/WarningCallout.astro";
 import { server } from "../../data";
 import { withBase } from "../../lib/basePath";
 import PageShell from "../../layouts/PageShell.astro";
 
 const steps = [
   {
-    title: "Prepare Minecraft",
-    description: `Cobbleverse runs on Minecraft ${server.minecraftVersion} with ${server.loader}. Use official community guidance for the current client package.`,
+    title: "Install the pack",
+    description: `Install Minecraft ${server.minecraftVersion} with ${server.loader}, allocate at least 4 GB, and add the server address.`,
+    href: withBase("/getting-started/install/"),
   },
   {
     title: "Review the resource pack",
     description:
-      "Custom visuals support server systems. Pack delivery details remain verification-gated.",
+      "Keep the bundled model and texture packs enabled so custom Pokémon and server visuals load.",
     href: withBase("/getting-started/resource-pack/"),
   },
   {
@@ -30,10 +30,16 @@ const steps = [
     href: withBase("/progression/regions/"),
   },
   {
-    title: "Protect a build",
+    title: "Claim your home",
     description:
-      "Learn the confirmed FLAN claim tool and Chunk Anchor concept.",
+      "Use Flan land protection and review the Pokémon actions controlled inside claims.",
     href: withBase("/getting-started/claims/"),
+  },
+  {
+    title: "Learn useful commands",
+    description:
+      "Set a home, request teleports, use chat sharing, and open daily rewards.",
+    href: withBase("/commands/"),
   },
   {
     title: "Learn the economy",
@@ -45,15 +51,15 @@ const steps = [
 const headings = [
   { depth: 2, slug: "before-you-join", text: "Before you join" },
   { depth: 2, slug: "first-route", text: "Your first route" },
-  { depth: 2, slug: "unpublished-details", text: "Unpublished details" },
+  { depth: 2, slug: "need-help", text: "Need help?" },
 ];
 ---
 
 <PageShell
   title="Getting Started"
-  description="Prepare for your first Cobbleverse journey with confirmed platform details and a verification-first route."
+  description="Install the Cobbleverse client, connect to the server, protect a build, and begin the Kanto route."
   category="Getting Started"
-  hero="/assets/banner-getting-started.png"
+  hero="/assets/art-structures.webp"
   {headings}
   related={[
     {
@@ -72,7 +78,7 @@ const headings = [
   <p>
     Cobbleverse is a {server.focus} for {server.game}. The confirmed platform is <strong
       >{server.loader} {server.minecraftVersion}</strong
-    >.
+    >. Connect at <code>{server.address}</code>.
   </p>
   <InfoCallout title="Use official sources"
     ><p>
@@ -83,16 +89,14 @@ const headings = [
   >
   <h2 id="first-route">Your first route</h2>
   <GuideSteps {steps} />
-  <h2 id="unpublished-details">Unpublished details</h2>
+  <h2 id="need-help">Need help?</h2>
   <p>
-    The guide is ready to document first-login actions, starter selection, RTP
-    behavior, common commands, and troubleshooting. Those operational steps
-    remain unpublished until server staff supplies an authoritative reference.
+    Missing models, empty maps, launcher cache problems, and progression caps
+    have a dedicated troubleshooting checklist.
   </p>
-  <WarningCallout
-    ><p>
-      No server address, command syntax, claim limit, or setup download is
-      inferred here.
-    </p></WarningCallout
+  <a
+    class="button button--ghost"
+    href={withBase("/getting-started/troubleshooting/")}
+    >Open troubleshooting →</a
   >
 </PageShell>

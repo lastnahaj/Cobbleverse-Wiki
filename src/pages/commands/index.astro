@@ -12,9 +12,11 @@ const headings = [
 
 <PageShell
   title="Commands"
-  description="A filterable Cobbleverse command reference that publishes only staff-verified records."
+  description="Player-facing Cobbleverse commands from EEssentials, Cobblemon Extras, Daily Rewards, and Colosseum."
   category="Commands"
   {headings}
+  verified
+  lastUpdated="2026-08-24"
   related={[
     { href: "/getting-started/", title: "Getting Started" },
     { href: "/rules/", title: "Rules" },
@@ -24,13 +26,23 @@ const headings = [
   <CommandReferenceTable {commands} />
   <h2 id="publication-rules">Publication rules</h2>
   <p>
-    Each command record supports syntax, aliases, category, audience, examples,
-    notes, a related page, verification state, and last-verified date.
+    This page lists player-oriented syntax documented by the installed mods.
+    EEssentials modules and individual permission nodes can still be disabled or
+    restricted by the server.
   </p>
-  <InfoCallout title="Verified records only"
+  <InfoCallout title="Access can vary"
     ><p>
-      No commands are currently verified for publication. The public table
-      therefore remains empty instead of fabricating common server commands.
+      A command appearing here means its syntax is sourced, not that every rank
+      can use it. Staff-only deletion, odds, inventory, and configuration
+      commands are intentionally omitted.
     </p></InfoCallout
   >
+  <p>
+    Sources: <a href="https://github.com/FLalejandro/EEssentials/wiki/Commands"
+      >EEssentials commands</a
+    >, <a href="https://modrinth.com/mod/cobblemonextras">Cobblemon Extras</a>,
+    and <a href="https://modrinth.com/mod/universal-daily-rewards"
+      >Universal Daily Rewards</a
+    >.
+  </p>
 </PageShell>

@@ -1,26 +1,26 @@
 ---
 title: Spawn
-description: Use the Cobbleverse spawn as the starting point for navigation and orientation.
+description: Use Cobbleverse spawn as the starting point for server services, routes, and support.
 category: Worlds
 order: 10
 tags: [spawn, world, navigation, portals]
 aliases: [hub]
 status: published
-lastUpdated: 2026-08-23
+lastUpdated: 2026-08-24
 verified: false
 related: [/worlds/, /getting-started/]
-hero: /assets/banner-worlds.png
+hero: /assets/art-structures.webp
 ---
 
-Spawn is the orientation point for a new Cobbleverse journey and the natural place for the wiki to document portals, services, and route connections.
+Spawn is the return point for the hosted server and the place to look for current menus, NPCs, portals, and announcements.
 
 ## Orientation
 
-An authoritative landmark directory has not yet been supplied. This page is ready to map spawn services without guessing locations.
+Use **/spawn** when your rank has access. Server menus powered by SkiesGUIs can also open from NPCs, items, or configured aliases.
 
 ## Portals and routes
 
-Portal destinations, activation requirements, and exact travel behavior remain unpublished until verified.
+Use **/warps** to review named destinations and **/warp &lt;name&gt;** to travel. Homes, teleport requests, and random teleport are listed in the Commands guide.
 
 ## Keeping this guide current
 

@@ -37,7 +37,7 @@ const categories = [
         {publicCommands.map((command) => (
           <article
             data-command-row
-            data-search={`${command.command} ${command.description} ${command.category}`.toLowerCase()}
+            data-search={`${command.command} ${command.syntax ?? ""} ${command.aliases?.join(" ") ?? ""} ${command.description} ${command.category}`.toLowerCase()}
             data-category={command.category}
           >
             <CommandBlock
@@ -45,6 +45,11 @@ const categories = [
               syntax={command.syntax}
               description={command.description}
             />
+            {command.aliases?.length && (
+              <p class="command-aliases">
+                <strong>Aliases:</strong> {command.aliases.join(", ")}
+              </p>
+            )}
             <div class="command-meta">
               <span>{command.category}</span>
               <span>{command.audience}</span>
@@ -54,15 +59,16 @@ const categories = [
             </div>
           </article>
         ))}
+        <div class="reference-empty" data-command-empty hidden>
+          <strong>No commands match these filters.</strong>
+          <p>Clear the search or choose another category.</p>
+        </div>
       </div>
     ) : (
       <div class="reference-empty">
         <>
-          <strong>No verified commands are published yet.</strong>
-          <p>
-            The reference is ready for staff-verified command records.
-            Unverified placeholders are intentionally hidden.
-          </p>
+          <strong>No commands match these filters.</strong>
+          <p>Clear the search or choose another category.</p>
         </>
       </div>
     )
@@ -80,7 +86,9 @@ const categories = [
     "[data-command-category]",
   );
   const rows = reference?.querySelectorAll<HTMLElement>("[data-command-row]");
+  const empty = reference?.querySelector<HTMLElement>("[data-command-empty]");
   function filterCommands() {
+    let visibleCount = 0;
     rows?.forEach((row) => {
       const matchesQuery =
         !query?.value ||
@@ -88,7 +96,9 @@ const categories = [
       const matchesCategory =
         !category?.value || row.dataset.category === category.value;
       row.hidden = !(matchesQuery && matchesCategory);
+      if (!row.hidden) visibleCount += 1;
     });
+    if (empty) empty.hidden = visibleCount > 0;
   }
   query?.addEventListener("input", filterCommands);
   category?.addEventListener("change", filterCommands);

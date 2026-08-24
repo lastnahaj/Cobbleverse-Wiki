@@ -1,68 +1,146 @@
 ---
-import GymTypeBadge from "../../components/GymTypeBadge.astro";
-import WarningCallout from "../../components/WarningCallout.astro";
-import { gyms } from "../../data";
-import { withBase } from "../../lib/basePath";
+import InfoCallout from "../../components/InfoCallout.astro";
+import { regionalGyms } from "../../data";
 import PageShell from "../../layouts/PageShell.astro";
 
+const regions = ["Kanto", "Johto", "Hoenn", "Sinnoh"] as const;
 const headings = [
-  { depth: 2, slug: "type-directory", text: "Type directory" },
-  { depth: 2, slug: "published-fields", text: "Published Gym fields" },
-  { depth: 2, slug: "battle-preparation", text: "Battle preparation" },
+  { depth: 2, slug: "finding-gyms", text: "Finding Gyms" },
+  ...regions.map((region) => ({
+    depth: 2,
+    slug: region.toLowerCase(),
+    text: region,
+  })),
+  { depth: 2, slug: "unova", text: "Unova" },
 ];
 ---
 
 <PageShell
-  title="Gyms"
-  description="Browse the type-based Cobbleverse Gym directory and its verification-ready battle records."
+  title="Gyms and Regional Leagues"
+  description="Find the published Kanto, Johto, Hoenn, and Sinnoh Gym Leaders, signature items, locations, Elite Four, and Champions."
   category="Gyms"
-  hero="/assets/banner-gyms.png"
+  hero="/assets/art-gym-arena.webp"
   {headings}
+  verified
+  lastUpdated="2026-08-24"
   related={[
-    {
-      href: "/battle-tower/",
-      title: "Battle Tower",
-      description: "Explore Smart Trainer tier architecture.",
-    },
-    { href: "/progression/", title: "Progression" },
+    { href: "/progression/regions/", title: "Region Progression" },
+    { href: "/worlds/structures/", title: "Structures and Exploration" },
+    { href: "/battle-tower/", title: "Battle Tower" },
   ]}
 >
   <p>
-    Gym Leaders are organized by Pokémon type. The directory supports all
-    eighteen standard type categories while keeping unpublished leaders, badges,
-    rewards, teams, schedules, and rules explicitly empty.
+    The public base pack advances through regional series. Each Gym Leader has a
+    signature item used in the regional Cartography Table or Trainer Spawner.
+    Several names use the pack's localized versions.
   </p>
-  <h2 id="type-directory">Type directory</h2>
-  <div class="gym-grid">
-    {
-      gyms.map((gym) => (
-        <a href={withBase(`/gyms/${gym.id}/`)}>
-          <>
-            <GymTypeBadge type={gym.type} status={gym.status} />
-            <span>Open type record →</span>
-          </>
-        </a>
-      ))
-    }
-  </div>
-  <h2 id="published-fields">Published Gym fields</h2>
-  <div class="field-model">
-    <div><strong>Leader</strong><span>Not published yet</span></div><div>
-      <strong>Badge</strong><span>Not published yet</span>
-    </div><div><strong>Reward</strong><span>Not published yet</span></div><div>
-      <strong>Schedule</strong><span>Not published yet</span>
-    </div>
-  </div>
-  <WarningCallout title="No invented Gym data"
-    ><p>
-      Null fields remain null. This wiki will not infer a leader, team, badge,
-      reward, or challenge format from Pokémon type.
-    </p></WarningCallout
-  >
-  <h2 id="battle-preparation">Battle preparation</h2>
+
+  <h2 id="finding-gyms">Finding Gyms</h2>
+  <ol>
+    <li>Craft the Cartography Table for the active region.</li>
+    <li>Place it beside an unemployed villager to create a Map Guide.</li>
+    <li>
+      Trade for a map or combine an empty map with the target Leader's signature
+      item.
+    </li>
+    <li>
+      Use a Battle Seeker when the nearest mapped structure has already been
+      explored.
+    </li>
+  </ol>
+  <InfoCallout title="Regional unlocks">
+    <p>
+      Johto follows Champion Blue, Hoenn follows Champion Lance, and Sinnoh
+      follows Champion Rocco. The public pack asks world or server owners to
+      restart once after each champion so later-region structures generate in
+      new chunks.
+    </p>
+  </InfoCallout>
+
+  {
+    regions.map((region) => {
+      const leaders = regionalGyms.filter(
+        (entry) => entry.region === region && entry.role === "Gym Leader",
+      );
+      const league = regionalGyms.filter(
+        (entry) => entry.region === region && entry.role !== "Gym Leader",
+      );
+      return (
+        <section class="regional-gym-section">
+          <h2 id={region.toLowerCase()}>{region}</h2>
+          <div class="table-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th>Leader</th>
+                  <th>Type</th>
+                  <th>Badge</th>
+                  <th>Location</th>
+                  <th>Signature item</th>
+                </tr>
+              </thead>
+              <tbody>
+                {leaders.map((entry) => (
+                  <tr>
+                    <td>
+                      <strong>{entry.name}</strong>
+                    </td>
+                    <td>{entry.type}</td>
+                    <td>{entry.badge}</td>
+                    <td>{entry.location}</td>
+                    <td>{entry.item}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <h3>{region} League</h3>
+          <div class="table-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th>Role</th>
+                  <th>Trainer</th>
+                  <th>Type</th>
+                  <th>Location</th>
+                  <th>Signature item</th>
+                  <th>Unique reward</th>
+                </tr>
+              </thead>
+              <tbody>
+                {league.map((entry) => (
+                  <tr>
+                    <td>{entry.role}</td>
+                    <td>
+                      <strong>{entry.name}</strong>
+                    </td>
+                    <td>{entry.type}</td>
+                    <td>{entry.location}</td>
+                    <td>{entry.item}</td>
+                    <td>{entry.reward ?? "—"}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      );
+    })
+  }
+
+  <h2 id="unova">Unova</h2>
   <p>
-    Preparation advice belongs here after the Cobbleverse challenge rules and
-    team restrictions are verified. Until then, the directory provides structure
-    without presenting generic competitive advice as server policy.
+    Lumy Hub currently marks its Unova Gym page as <strong
+      >work in progress</strong
+    >. This guide will add the region when names, locations, signature items,
+    and progression rules are published.
+  </p>
+
+  <p>
+    Sources: <a href="https://www.lumyverse.com/cobbleverse/how-to-find-gyms/"
+      >finding Gyms</a
+    >, <a href="https://www.lumyverse.com/cobbleverse/signature-items/"
+      >signature items</a
+    >, and the regional Lumy Hub leader tables.
   </p>
 </PageShell>

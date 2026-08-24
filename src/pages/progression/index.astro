@@ -18,9 +18,9 @@ const headings = [
 
 <PageShell
   title="Progression"
-  description="Follow the Cobbleverse route from Kanto through Sinnoh and track systems that shape the journey."
+  description="Follow the base-pack trainer series from Kanto through Sinnoh, then explore quests, special encounters, and battle systems."
   category="Progression"
-  hero="/assets/banner-progression.png"
+  hero="/assets/art-regional-route.webp"
   {headings}
   verified
   related={[
@@ -32,14 +32,14 @@ const headings = [
   <p>
     The current progression order is <strong
       >Kanto → Johto → Hoenn → Sinnoh</strong
-    >. Access to the next region is tied to completion of the previous region’s
-    Pokédex progression requirement.
+    >. Later structures unlock after the previous region's Champion and a
+    one-time world or server restart.
   </p>
   <RegionProgression {regions} />
-  <InfoCallout title="Data-driven route"
+  <InfoCallout title="Server scope"
     ><p>
-      Region order and unlock copy come from one structured source, allowing
-      future regions to be added without rewriting multiple pages.
+      This is the public base-pack route documented by Lumy Hub. Infinite Gaming
+      Servers may automate the restart or apply its own progression state.
     </p></InfoCallout
   >
   <h2 id="progression-systems">Progression systems</h2>
@@ -58,9 +58,13 @@ const headings = [
   <h2 id="milestones">Milestones and ranks</h2>
   <p>
     The playtime rank track is documented independently from staff and Gym
-    Leader tracks. See all fifteen current thresholds in the rank timeline.
+    Leader tracks. Special encounters also have regional quest requirements.
   </p>
   <a class="button button--ghost" href={withBase("/progression/ranks/")}
     >Open playtime ranks →</a
+  >
+  <a
+    class="button button--ghost"
+    href={withBase("/progression/legendary-mythical/")}>Legendary routes →</a
   >
 </PageShell>

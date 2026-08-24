@@ -2,6 +2,7 @@
 import CategoryCard from "../components/CategoryCard.astro";
 import FeatureStatusBadge from "../components/FeatureStatusBadge.astro";
 import RegionProgression from "../components/RegionProgression.astro";
+import ServerStatus from "../components/ServerStatus.astro";
 import { features, regions, server } from "../data";
 import { withBase } from "../lib/basePath";
 import BaseLayout from "../layouts/BaseLayout.astro";
@@ -12,45 +13,45 @@ const categories = [
     description:
       "Prepare your client, orient at spawn, and protect your first build.",
     href: "/getting-started/",
-    icon: "/assets/icons/getting-started.png",
+    image: "/assets/icon-getting-started.webp",
   },
   {
     title: "Progression",
     description: "Follow the regional Pokédex route from Kanto through Sinnoh.",
     href: "/progression/",
-    icon: "/assets/icons/progression.png",
+    image: "/assets/icon-progression.webp",
   },
   {
     title: "Gyms",
     description:
-      "Explore the type-based Gym directory and battle documentation.",
+      "Find regional leaders, signature items, leagues, and Champions.",
     href: "/gyms/",
-    icon: "/assets/icons/gyms.png",
+    image: "/assets/icon-gyms.webp",
   },
   {
     title: "Worlds",
     description:
-      "Navigate Spawn, the Overworld, Origin Islands, and future regions.",
+      "Find structures, spawns, mounts, maps, portals, and destinations.",
     href: "/worlds/",
-    icon: "/assets/icons/worlds.png",
+    image: "/assets/icon-worlds.webp",
   },
   {
     title: "Economy",
     description:
-      "Learn Cobbledollars, Bazaar, vouchers, tokens, and trading systems.",
+      "Earn currency, shop with merchants, and use Bazaar and auctions.",
     href: "/economy/",
-    icon: "/assets/icons/economy.png",
+    image: "/assets/icon-economy.webp",
   },
   {
     title: "Features",
     description:
-      "Track active, planned, and optional Cobbleverse server systems.",
+      "Use quests, rewards, automation, claims, lures, and battle systems.",
     href: "/features/",
-    icon: "/assets/icons/features.png",
+    image: "/assets/icon-features.webp",
   },
 ];
 const featuredSystems = features.filter((feature) =>
-  ["journey", "smart-trainers", "neoplushies", "simple-voice-chat"].includes(
+  ["journey", "cobbleworkers", "daily-rewards", "smart-trainers"].includes(
     feature.id,
   ),
 );
@@ -58,25 +59,34 @@ const featuredSystems = features.filter((feature) =>
 
 <BaseLayout
   title="Cobbleverse Wiki"
-  description="The official field guide for the Cobbleverse Cobblemon server by Infinite Gaming Servers."
+  description="A player field guide for the Cobbleverse Cobblemon server by Infinite Gaming Servers."
 >
   <div class="home-wrap">
     <section class="home-hero" aria-labelledby="home-title">
       <img
-        src={withBase("/assets/hero-cobbleverse.png")}
-        width="1920"
-        height="878"
-        alt="Cobbleverse wilderness with a trainer, mountain routes, and a glowing portal"
+        class="home-hero__scene"
+        src={withBase("/assets/art-structures.webp")}
+        width="1672"
+        height="941"
+        alt="Voxel landscape with regional towers, temples, and glowing portals"
         fetchpriority="high"
+      />
+      <div class="home-hero__veil" aria-hidden="true"></div>
+      <img
+        class="home-hero__logo"
+        src={withBase("/assets/cobbleverse-wordmark.webp")}
+        width="1672"
+        height="941"
+        alt=""
       />
     </section>
     <section class="hero-dock">
       <div>
-        <span class="eyebrow">Official Cobbleverse field guide</span>
-        <h1 id="home-title">Plan the journey. Master the region.</h1>
+        <span class="eyebrow">Infinite Gaming Servers</span>
+        <h1 id="home-title">Your Cobbleverse field guide</h1>
         <p>
-          A verified-first guide to progression, Gyms, worlds, economy systems,
-          features, and server reference material.
+          Install the pack, follow the regional leagues, find special
+          encounters, and learn the server's commands and systems.
         </p>
       </div>
       <div class="hero-dock__actions">
@@ -94,14 +104,11 @@ const featuredSystems = features.filter((feature) =>
       <div><span>Server</span><strong>{server.name}</strong></div>
       <div>
         <span>Platform</span><strong
-          >{server.loader} {server.minecraftVersion}</strong>
+          >{server.loader} {server.minecraftVersion}</strong
+        >
       </div>
-      <div><span>Focus</span><strong>Custom Cobblemon progression</strong></div>
-      <div class="server-ribbon__status">
-        <i aria-hidden="true"></i><span>Reference status</span><strong
-          >Wiki online</strong
-        ><small>Live player status is not connected</small>
-      </div>
+      <div><span>Address</span><strong>{server.address}</strong></div>
+      <ServerStatus />
     </section>
 
     <section
@@ -122,36 +129,43 @@ const featuredSystems = features.filter((feature) =>
       </div>
       <div class="reference-strip">
         <a href={withBase("/commands/")}
-          ><img
-            src={withBase("/assets/icons/commands.png")}
-            alt=""
-            width="512"
-            height="512"
-            loading="lazy"
-          /><span
-            ><strong>Commands</strong><small>Verified reference</small></span
+          ><span class="reference-mark" aria-hidden="true"
+            ><img
+              src={withBase("/assets/icon-commands.webp")}
+              width="320"
+              height="320"
+              alt=""
+              loading="lazy"
+            /></span
+          ><span
+            ><strong>Commands</strong><small>Player command reference</small
+            ></span
           ><i>→</i></a
         >
         <a href={withBase("/rules/")}
-          ><img
-            src={withBase("/assets/icons/rules.png")}
-            alt=""
-            width="512"
-            height="512"
-            loading="lazy"
-          /><span
+          ><span class="reference-mark" aria-hidden="true"
+            ><img
+              src={withBase("/assets/icon-rules.webp")}
+              width="320"
+              height="320"
+              alt=""
+              loading="lazy"
+            /></span
+          ><span
             ><strong>Rules</strong><small>Authoritative policy area</small
             ></span
           ><i>→</i></a
         >
         <a href={withBase("/changelog/")}
-          ><img
-            src={withBase("/assets/icons/changelog.png")}
-            alt=""
-            width="512"
-            height="512"
-            loading="lazy"
-          /><span
+          ><span class="reference-mark" aria-hidden="true"
+            ><img
+              src={withBase("/assets/icon-changelog.webp")}
+              width="320"
+              height="320"
+              alt=""
+              loading="lazy"
+            /></span
+          ><span
             ><strong>Changelog</strong><small
               >Wiki updates and dated notices</small
             ></span
@@ -166,20 +180,19 @@ const featuredSystems = features.filter((feature) =>
     >
       <div class="progression-feature__art">
         <img
-          src={withBase("/assets/banner-progression.png")}
-          width="1600"
-          height="398"
+          src={withBase("/assets/art-regional-route.webp")}
+          width="1672"
+          height="941"
           alt="Progression route through a mountainous Cobbleverse region"
           loading="lazy"
         />
       </div>
       <div class="progression-feature__copy">
         <span class="eyebrow">Regional progression</span>
-        <h2 id="progression-heading">Four regions. One evolving route.</h2>
+        <h2 id="progression-heading">Four leagues. One connected route.</h2>
         <p>
-          Regional access advances through the prior region’s Pokédex
-          progression requirement. The route is data-driven so the guide can
-          grow when new regions arrive.
+          Defeat each region's Gym Leaders, Elite Four, and Champion to open the
+          next series and its structures.
         </p>
         <RegionProgression {regions} compact />
         <a class="text-link" href={withBase("/progression/regions/")}
@@ -194,11 +207,10 @@ const featuredSystems = features.filter((feature) =>
     >
       <div class="battle-feature__copy">
         <span class="eyebrow">Battle systems</span>
-        <h2 id="battle-heading">Type prestige meets Tower strategy</h2>
+        <h2 id="battle-heading">Regional leagues meet smarter battles</h2>
         <p>
-          The Gym directory supports every standard Pokémon type without
-          inventing leaders, teams, badges, or rewards. The Battle Tower
-          architecture is ready for 13 escalating Smart Trainer tiers.
+          Browse every published leader and signature item, then prepare for
+          Smart Trainers, Colosseum facilities, and the Battle Tower.
         </p>
         <div class="battle-tags">
           <span>Sweeper</span><span>Stall</span><span>Weather</span><span
@@ -209,14 +221,15 @@ const featuredSystems = features.filter((feature) =>
           <a class="button button--primary" href={withBase("/gyms/")}
             >Explore Gyms</a
           ><a class="button button--ghost" href={withBase("/battle-tower/")}
-            >Battle Tower</a>
+            >Battle Tower</a
+          >
         </div>
       </div>
       <div class="battle-feature__art">
         <img
-          src={withBase("/assets/banner-gyms.png")}
-          width="1600"
-          height="398"
+          src={withBase("/assets/art-gym-arena.webp")}
+          width="1672"
+          height="941"
           alt="Cobbleverse Gym arena under dramatic evening light"
           loading="lazy"
         />
@@ -229,18 +242,18 @@ const featuredSystems = features.filter((feature) =>
     >
       <div class="systems-feature__lead">
         <img
-          src={withBase("/assets/banner-features.png")}
-          width="1600"
-          height="398"
+          src={withBase("/assets/art-server-systems.webp")}
+          width="1672"
+          height="941"
           alt="Cobbleverse technology and feature control room"
           loading="lazy"
         />
         <div>
           <span class="eyebrow">Server systems</span><h2 id="systems-heading">
-            A guide that distinguishes active from unknown
+            Server systems, explained in one place
           </h2><p>
-            Feature status comes from structured server data. “Unknown” is never
-            presented as active.
+            Learn quests, markets, lures, daily rewards, automation, menus,
+            claims, and Pokémon utility commands.
           </p>
         </div>
       </div>
@@ -266,20 +279,20 @@ const featuredSystems = features.filter((feature) =>
     <section class="home-section home-update-links">
       <div class="updates-panel">
         <span class="eyebrow">Latest wiki changes</span>
-        <h2>Field guide v1</h2>
+        <h2>Field guide update</h2>
         <div class="update-entry">
-          <time datetime="2026-08-23">Aug 23</time><div>
-            <strong>Production wiki launched</strong><p>
-              Core guides, structured references, local search, and the
-              Cobbleverse visual system are now in place.
+          <time datetime="2026-08-24">Aug 24</time><div>
+            <strong>Lumy Hub guides integrated</strong><p>
+              Regional Gyms, structures, special encounters, forms, settings,
+              installation, and troubleshooting are now organized for players.
             </p>
           </div>
         </div>
         <div class="update-entry">
-          <time datetime="2026-08-23">Aug 23</time><div>
-            <strong>Fact-gated reference states</strong><p>
-              Commands, Gym details, claim limits, and rules stay unpublished
-              until server staff verify them.
+          <time datetime="2026-08-24">Aug 24</time><div>
+            <strong>Live server status connected</strong><p>
+              The homepage and header now show aggregate online player counts
+              for the Cobbleverse server.
             </p>
           </div>
         </div>

@@ -3,28 +3,28 @@
     "id": "kanto",
     "name": "Kanto",
     "order": 1,
-    "unlockRequirement": null,
+    "unlockRequirement": "Starting series in the public base pack.",
     "status": "active"
   },
   {
     "id": "johto",
     "name": "Johto",
     "order": 2,
-    "unlockRequirement": "Complete the prior region Pok\u00e9dex progression requirement.",
+    "unlockRequirement": "Defeat Kanto Champion Blue, then restart the world or server before exploring new chunks.",
     "status": "active"
   },
   {
     "id": "hoenn",
     "name": "Hoenn",
     "order": 3,
-    "unlockRequirement": "Complete the prior region Pok\u00e9dex progression requirement.",
+    "unlockRequirement": "Defeat Johto Champion Lance, read the book he gives you, then restart the world or server.",
     "status": "active"
   },
   {
     "id": "sinnoh",
     "name": "Sinnoh",
     "order": 4,
-    "unlockRequirement": "Complete the prior region Pok\u00e9dex progression requirement.",
+    "unlockRequirement": "Defeat Hoenn Champion Rocco, then restart the world or server before exploring new chunks.",
     "status": "active"
   }
 ]

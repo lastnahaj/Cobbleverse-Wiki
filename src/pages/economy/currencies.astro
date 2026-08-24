@@ -5,16 +5,20 @@ import { currencies } from "../../data";
 import PageShell from "../../layouts/PageShell.astro";
 
 const headings = [
-  { depth: 2, slug: "currency-directory", text: "Currency directory" },
-  { depth: 2, slug: "status-meaning", text: "Status meaning" },
+  { depth: 2, slug: "current-currencies", text: "Current currencies" },
+  { depth: 2, slug: "event-records", text: "Event and legacy records" },
 ];
+const currentCurrencies = currencies.filter(
+  (currency) => currency.active === true,
+);
+const eventRecords = currencies.filter((currency) => currency.active === null);
 ---
 
 <PageShell
   title="Currencies"
-  description="Active and status-pending Cobbleverse currencies, vouchers, tokens, passes, and event records."
+  description="Cobbleverse currencies, vouchers, tokens, passes, and event records."
   category="Economy"
-  hero="/assets/banner-economy.png"
+  hero="/assets/art-server-systems.webp"
   {headings}
   verified
   related={[
@@ -22,20 +26,22 @@ const headings = [
     { href: "/economy/bazaar/", title: "Bazaar" },
   ]}
 >
-  <h2 id="currency-directory">Currency directory</h2>
+  <h2 id="current-currencies">Current currencies</h2>
   <div class="currency-grid currency-grid--all">
-    {currencies.map((currency) => <CurrencyCard {currency} />)}
+    {currentCurrencies.map((currency) => <CurrencyCard {currency} />)}
   </div>
-  <h2 id="status-meaning">Status meaning</h2>
+  <h2 id="event-records">Event and legacy records</h2>
   <p>
-    <strong>Active</strong> means the supplied structured data explicitly marks a
-    record active. <strong>Status not published</strong> is a neutral state and does
-    not mean the currency is currently available.
+    These entries are preserved for event and historical reference. Their
+    presence here does not mean they are currently obtainable.
   </p>
+  <div class="currency-grid currency-grid--all">
+    {eventRecords.map((currency) => <CurrencyCard {currency} />)}
+  </div>
   <WarningCallout
     ><p>
-      Acquisition methods, prices, exchange rates, and reward values are not
-      supplied and remain absent.
+      Prices, exchange rates, and redemption options can change with server
+      shops and events. Use the current in-game menu as the final authority.
     </p></WarningCallout
   >
 </PageShell>

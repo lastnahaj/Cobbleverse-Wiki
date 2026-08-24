@@ -1,31 +1,32 @@
 ---
 title: Resource Pack
-description: Prepare for Cobbleverse's custom visuals without relying on unverified setup steps.
+description: Keep Cobbleverse models and textures loaded, then recover missing or glitched Pokémon visuals.
 category: Getting Started
 order: 30
 tags: [resource-pack, client, visuals, setup]
 aliases: [server pack, textures]
 status: published
-lastUpdated: 2026-08-23
-verified: false
+lastUpdated: 2026-08-24
+verified: true
 related: [/getting-started/, /features/]
-hero: /assets/banner-getting-started.png
+hero: /assets/art-server-systems.webp
 ---
 
-Cobbleverse supports custom resource-pack visuals used by server systems and collectibles. The exact delivery and troubleshooting procedure is still awaiting authoritative staff documentation.
+Cobbleverse bundles custom datapacks and resource packs for additional Pokémon models, animations, forms, structures, and collectibles. Keep the pack's required resources together and test an unmodified profile before adding third-party textures.
 
 ## What to expect
 
-Custom visuals may be relevant to server features such as NeoPlushies. Keep resource packs enabled when official onboarding guidance asks for them.
+Additional Pokémon content often needs matching files in both datapack and resource-pack locations. The pack handles that integration automatically.
 
 ## Client preparation
 
-Cobbleverse runs on **Minecraft 1.21.1** with the **Fabric** loader. A verified client mod list and pack-install sequence have not yet been supplied, so this page avoids prescribing files or downloads.
+Cobbleverse runs on **Minecraft 1.21.1** with **Fabric**. Install the complete profile through the supported launcher instead of copying individual model packs from mirrors.
 
 ## If visuals are missing
 
-- Do not install packs from unofficial mirrors.
-- Check the official Discord for the current pack instructions.
-- Record any error shown by Minecraft before requesting help.
+- Open **Options → Resource Packs**.
+- Hold **T** for about five seconds, then choose **Done** to reload resources.
+- Disable extra texture packs and repeat the test.
+- If the issue remains, share the latest log through the support channel.
 
-> Download URLs, pack versions, and load-order details will be added only after staff verification.
+The canonical third-party attribution list is maintained on the [Lumy Hub credits page](https://www.lumyverse.com/cobbleverse/credits/).

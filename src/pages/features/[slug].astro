@@ -1,7 +1,6 @@
 ---
 import FeatureStatusBadge from "../../components/FeatureStatusBadge.astro";
 import InfoCallout from "../../components/InfoCallout.astro";
-import WarningCallout from "../../components/WarningCallout.astro";
 import { features, type Feature } from "../../data";
 import PageShell from "../../layouts/PageShell.astro";
 
@@ -12,102 +11,211 @@ export function getStaticPaths() {
   }));
 }
 
+interface FeatureGuide {
+  bullets: string[];
+  commands?: string[];
+  note: string;
+}
+
+const guides: Record<string, FeatureGuide> = {
+  journey: {
+    bullets: [
+      "Tracks story tasks, zones, timelines, flags, buffs, parties, and global objectives.",
+      "Can present bounty boards, map markers, cutscenes, NPC paths, and a quest backpack.",
+      "Quest names, objectives, rewards, and availability are created by the server.",
+    ],
+    note: "Use the live quest interface for the current Cobbleverse story. Upstream examples are not a list of this server's quests.",
+  },
+  wonder: {
+    bullets: [
+      "Submit an eligible party or PC Pokémon to a configured Wonder Trade channel.",
+      "The queue matches another player or a server-supplied pool, then reveals a result for collection.",
+      "Channels can apply their own eligibility rules, cooldowns, capacity, and announcements.",
+    ],
+    note: "Channel names, aliases, cooldowns, and pool contents are server settings.",
+  },
+  bazaar: {
+    bullets: [
+      "The Pokémon market supports fixed-price listings and later collection.",
+      "The item Auction House supports bids, bid history, anti-snipe extensions, channels, and a collection box.",
+      "Market statistics and cross-server features are available to administrators when configured.",
+    ],
+    note: "Review the live menu before listing. Fees, limits, durations, and channels are server settings.",
+  },
+  "smart-trainers": {
+    bullets: [
+      "Trainer profiles can score moves, switches, and item use at configurable skill levels from 0 through 5.",
+      "Personalities, action priorities, prediction, battle bags, and optional gimmicks shape each encounter.",
+      "Upstream presets range from deliberately random behavior to champion-level decision-making.",
+    ],
+    note: "A trainer's assigned profile and difficulty are encounter configuration, not a promise tied to its display name.",
+  },
+  bloom: {
+    bullets: [
+      "Lures may be placed in the world or activated as personal effects.",
+      "A lure can target types, species, forms, or rarity bands and modify spawn, shiny, or hidden-ability chances.",
+      "Holograms, particles, sounds, radius, duration, and stacking are configurable.",
+    ],
+    note: "Use the item's tooltip for Cobbleverse values; upstream examples do not define this server's lure rates.",
+  },
+  colosseum: {
+    bullets: [
+      "Facilities can include Tower, Factory, and Arcade runs.",
+      "Stages may be battles, puzzles, or bosses and can use singles, doubles, or triples rules.",
+      "Party validation, streaks, checkpoints, and rewards are controlled per facility.",
+    ],
+    commands: ["/colosseum"],
+    note: "The live menu is the authority for available facilities, team rules, checkpoints, and rewards.",
+  },
+  eessentials: {
+    bullets: [
+      "Provides messaging, homes, spawn, warps, teleport requests, random teleport, playtime, and utility workstations.",
+      "The mod is modular, so commands can be disabled independently.",
+      "Player, staff, and administrative permissions are assigned separately.",
+    ],
+    commands: [
+      "/home [name]",
+      "/sethome [name]",
+      "/tpa <player>",
+      "/rtp",
+      "/msg <player> <message>",
+    ],
+    note: "The Commands page lists player-facing syntax. A documented upstream command can still be restricted by server permissions.",
+  },
+  cobbleworkers: {
+    bullets: [
+      "Assign a Pokémon to a Pasture Block and choose a compatible job for the surrounding area.",
+      "Harvesting jobs cover amethyst, apricorns, berries, crops, mints, Nether wart, and tumblestone.",
+      "Utility jobs include crop irrigation, fire extinguishing, healing, rain dancing, ground-item gathering, and brewing fuel.",
+      "Resource jobs include fishing, dive loot, pickup loot, honey, lava, water, snow, generic fuel, and fletching.",
+    ],
+    note: "The full upstream set contains 23 jobs. Pokémon requirements, areas, outputs, and timing should be checked in the Pasture interface and server configuration.",
+  },
+  "cobblemon-extras": {
+    bullets: [
+      "Adds remote PC, Pokémon inspection, IV viewing, chat sharing, trades, battles, spectating, and showcases.",
+      "Cobbleverse explicitly supports Pokémon and item sharing through chat.",
+      "Administrative deletion, odds, token, and item commands are intentionally omitted from the player guide.",
+    ],
+    commands: [
+      "/pc",
+      "/pokeshout <slot>",
+      "/pokeshoutall",
+      "/itemshout",
+      "/pokeivs",
+      "/poketrade <player>",
+    ],
+    note: "Each command has its own permission node, so access can vary by role.",
+  },
+  "cobblemon-flan": {
+    bullets: [
+      "Connects Flan claims to Pokémon spawning, catching, battling, sending out, riding, and Display Case interaction.",
+      "Claim owners may receive bypasses or per-action controls depending on server configuration.",
+      "Global protections can be different from per-claim protections.",
+    ],
+    note: "Upstream defaults are not treated as Cobbleverse claim policy. Check the claim interface and server rules for live behavior.",
+  },
+  skiesguis: {
+    bullets: [
+      "Builds server menus from vanilla inventory screens, so players do not need a separate GUI client mod.",
+      "Menus can use aliases, clickable items, requirements, economy checks, placeholders, and chained actions.",
+      "The upstream /gui management commands are administrative; player entry points are server-defined aliases or interactions.",
+    ],
+    note: "Menu names and aliases are created by Cobbleverse and should be learned from in-game prompts.",
+  },
+  "daily-rewards": {
+    bullets: [
+      "Supports a looping daily calendar with up to 28 days per page.",
+      "Daily streak and playtime reward screens can have separate cooldowns and contents.",
+      "Rewards can also be opened from a configured NPC.",
+    ],
+    commands: ["/daily", "/rewards open"],
+    note: "Reward contents, streak behavior, and reset timing are server configuration.",
+  },
+};
+
 const { feature } = Astro.props as { feature: Feature };
-const isNeoPlushies = feature.id === "neoplushies";
-const isSmartTrainers = feature.id === "smart-trainers";
+const guide = guides[feature.id];
+const description = feature.description ?? feature.name + " on Cobbleverse.";
 const headings = [
-  { depth: 2, slug: "system-record", text: "System record" },
-  ...(isNeoPlushies
-    ? [
-        {
-          depth: 2,
-          slug: "collection-architecture",
-          text: "Collection architecture",
-        },
-      ]
+  { depth: 2, slug: "how-it-works", text: "How it works" },
+  ...(guide?.commands
+    ? [{ depth: 2, slug: "player-commands", text: "Player commands" }]
     : []),
-  ...(isSmartTrainers
-    ? [
-        {
-          depth: 2,
-          slug: "battle-tower-integration",
-          text: "Battle Tower integration",
-        },
-      ]
+  { depth: 2, slug: "server-settings", text: "Server settings" },
+  ...(feature.externalUrl
+    ? [{ depth: 2, slug: "source", text: "Source documentation" }]
     : []),
-  { depth: 2, slug: "verification-boundary", text: "Verification boundary" },
 ];
 ---
 
 <PageShell
   title={feature.name}
-  description={`${feature.name} system record, publication status, and future documentation structure.`}
+  {description}
   category="Features"
-  hero="/assets/banner-features.png"
+  hero="/assets/art-server-systems.webp"
   {headings}
   verified={feature.status !== "unknown"}
+  lastUpdated="2026-08-24"
   related={[
     { href: "/features/", title: "All Features" },
-    ...(isSmartTrainers
+    ...(feature.id === "smart-trainers"
       ? [{ href: "/battle-tower/", title: "Battle Tower" }]
+      : []),
+    ...(feature.id === "eessentials" || feature.id === "cobblemon-extras"
+      ? [{ href: "/commands/", title: "Commands" }]
       : []),
   ]}
 >
   <FeatureStatusBadge status={feature.status} />
-  <h2 id="system-record">System record</h2>
-  <dl class="record-list">
-    <div><dt>Name</dt><dd>{feature.name}</dd></div><div>
-      <dt>Category</dt><dd>{feature.category}</dd>
-    </div><div><dt>Status</dt><dd>{feature.status}</dd></div>
-  </dl>
+  <h2 id="how-it-works">How it works</h2>
+  <p>{feature.description}</p>
   {
-    isNeoPlushies && (
-      <>
-        <>
-          <h2 id="collection-architecture">Collection architecture</h2>
-          <p>
-            The NeoPlushies guide is prepared to document the Gacha system,
-            Plushie Keys, Reward Vouchers, collection codex, custom
-            resource-pack visuals, and individual collectible entries.
-          </p>
-          <InfoCallout title="Collection-ready model">
-            <p>
-              Actual odds, costs, rewards, and collectible records remain empty
-              until supplied.
-            </p>
-          </InfoCallout>
-        </>
-      </>
-    )
-  }
-  {
-    isSmartTrainers && (
-      <>
-        <>
-          <h2 id="battle-tower-integration">Battle Tower integration</h2>
-          <p>
-            Smart Trainers is the active system record associated with the
-            thirteen-tier Battle Tower documentation architecture.
-          </p>
-        </>
-      </>
-    )
-  }
-  <h2 id="verification-boundary">Verification boundary</h2>
-  {
-    feature.status === "unknown" ? (
-      <WarningCallout>
-        <p>
-          Only the system name and documentation category are known. Unknown
-          does not mean active.
-        </p>
-      </WarningCallout>
+    guide ? (
+      <ul>
+        {guide.bullets.map((bullet) => (
+          <li>{bullet}</li>
+        ))}
+      </ul>
     ) : (
       <p>
-        The status above comes from the structured Cobbleverse data. Commands,
-        configuration values, rewards, and operational details are not inferred
-        from the feature name.
+        This optional client feature can be used without changing server
+        gameplay.
       </p>
+    )
+  }
+  {
+    guide?.commands && (
+      <>
+        <h2 id="player-commands">Player commands</h2>
+        <div class="command-chip-list">
+          {guide.commands.map((command) => (
+            <code>{command}</code>
+          ))}
+        </div>
+      </>
+    )
+  }
+  <h2 id="server-settings">Server settings</h2>
+  <InfoCallout title="Configuration matters">
+    <p>
+      {
+        guide?.note ??
+          "Install and configure this optional client feature to your own preference."
+      }
+    </p>
+  </InfoCallout>
+  {
+    feature.externalUrl && (
+      <>
+        <h2 id="source">Source documentation</h2>
+        <p>
+          See the{" "}
+          <a href={feature.externalUrl}>upstream project documentation</a> for
+          the complete capability reference. Cobbleverse may expose only part of
+          it.
+        </p>
+      </>
     )
   }
 </PageShell>

@@ -2,6 +2,7 @@
 import { navigation } from "../data";
 import { withBase, withoutBase } from "../lib/basePath";
 import MobileNav from "./MobileNav.astro";
+import ServerStatus from "./ServerStatus.astro";
 
 const currentPath = withoutBase(Astro.url.pathname);
 ---
@@ -20,9 +21,9 @@ const currentPath = withoutBase(Astro.url.pathname);
     </button>
     <a class="brand" href={withBase("/")} aria-label="Cobbleverse Wiki home">
       <img
-        src={withBase("/assets/logo-mark.png")}
-        width="768"
-        height="672"
+        src={withBase("/assets/cobbleverse-crest.webp")}
+        width="1254"
+        height="1254"
         alt=""
       />
       <span><strong>Cobbleverse</strong><small>Trainer field guide</small></span
@@ -56,6 +57,7 @@ const currentPath = withoutBase(Astro.url.pathname);
         </li>
       </ul>
     </nav>
+    <ServerStatus compact />
     <button
       class="search-button"
       type="button"
