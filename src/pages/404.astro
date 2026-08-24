@@ -1,0 +1,25 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { withBase } from "../lib/basePath";
+---
+
+<BaseLayout
+  title="Route Not Found"
+  description="This Cobbleverse Wiki route could not be found."
+  noindex
+>
+  <section class="not-found">
+    <span class="not-found__code">404</span>
+    <div>
+      <span class="eyebrow">Uncharted route</span><h1>
+        This path is not on the map.
+      </h1><p>
+        The guide may have moved, or the destination has not been published yet.
+      </p><div class="button-row">
+        <a class="button button--primary" href={withBase("/")}>Return home</a
+        ><button class="button button--ghost" type="button" data-search-open
+          >Search the wiki</button>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,310 @@
+---
+import CategoryCard from "../components/CategoryCard.astro";
+import FeatureStatusBadge from "../components/FeatureStatusBadge.astro";
+import RegionProgression from "../components/RegionProgression.astro";
+import { features, regions, server } from "../data";
+import { withBase } from "../lib/basePath";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const categories = [
+  {
+    title: "Getting Started",
+    description:
+      "Prepare your client, orient at spawn, and protect your first build.",
+    href: "/getting-started/",
+    icon: "/assets/icons/getting-started.png",
+  },
+  {
+    title: "Progression",
+    description: "Follow the regional Pokédex route from Kanto through Sinnoh.",
+    href: "/progression/",
+    icon: "/assets/icons/progression.png",
+  },
+  {
+    title: "Gyms",
+    description:
+      "Explore the type-based Gym directory and battle documentation.",
+    href: "/gyms/",
+    icon: "/assets/icons/gyms.png",
+  },
+  {
+    title: "Worlds",
+    description:
+      "Navigate Spawn, the Overworld, Origin Islands, and future regions.",
+    href: "/worlds/",
+    icon: "/assets/icons/worlds.png",
+  },
+  {
+    title: "Economy",
+    description:
+      "Learn Cobbledollars, Bazaar, vouchers, tokens, and trading systems.",
+    href: "/economy/",
+    icon: "/assets/icons/economy.png",
+  },
+  {
+    title: "Features",
+    description:
+      "Track active, planned, and optional Cobbleverse server systems.",
+    href: "/features/",
+    icon: "/assets/icons/features.png",
+  },
+];
+const featuredSystems = features.filter((feature) =>
+  ["journey", "smart-trainers", "neoplushies", "simple-voice-chat"].includes(
+    feature.id,
+  ),
+);
+---
+
+<BaseLayout
+  title="Cobbleverse Wiki"
+  description="The official field guide for the Cobbleverse Cobblemon server by Infinite Gaming Servers."
+>
+  <div class="home-wrap">
+    <section class="home-hero" aria-labelledby="home-title">
+      <img
+        src={withBase("/assets/hero-cobbleverse.png")}
+        width="1920"
+        height="878"
+        alt="Cobbleverse wilderness with a trainer, mountain routes, and a glowing portal"
+        fetchpriority="high"
+      />
+    </section>
+    <section class="hero-dock">
+      <div>
+        <span class="eyebrow">Official Cobbleverse field guide</span>
+        <h1 id="home-title">Plan the journey. Master the region.</h1>
+        <p>
+          A verified-first guide to progression, Gyms, worlds, economy systems,
+          features, and server reference material.
+        </p>
+      </div>
+      <div class="hero-dock__actions">
+        <a class="button button--primary" href={withBase("/getting-started/")}
+          >Start here <span>→</span></a
+        >
+        <button class="button button--search" type="button" data-search-open
+          ><span aria-hidden="true">⌕</span> Search the wiki <kbd>/</kbd
+          ></button
+        >
+      </div>
+    </section>
+
+    <section class="server-ribbon" aria-label="Server overview">
+      <div><span>Server</span><strong>{server.name}</strong></div>
+      <div>
+        <span>Platform</span><strong
+          >{server.loader} {server.minecraftVersion}</strong>
+      </div>
+      <div><span>Focus</span><strong>Custom Cobblemon progression</strong></div>
+      <div class="server-ribbon__status">
+        <i aria-hidden="true"></i><span>Reference status</span><strong
+          >Wiki online</strong
+        ><small>Live player status is not connected</small>
+      </div>
+    </section>
+
+    <section
+      class="home-section home-sections"
+      aria-labelledby="explore-heading"
+    >
+      <header class="section-heading">
+        <div>
+          <span class="eyebrow">Route index</span><h2 id="explore-heading">
+            Explore the field guide
+          </h2>
+        </div><p>
+          Begin with a major system, or use global search from any page.
+        </p>
+      </header>
+      <div class="category-grid">
+        {categories.map((category) => <CategoryCard {...category} />)}
+      </div>
+      <div class="reference-strip">
+        <a href={withBase("/commands/")}
+          ><img
+            src={withBase("/assets/icons/commands.png")}
+            alt=""
+            width="512"
+            height="512"
+            loading="lazy"
+          /><span
+            ><strong>Commands</strong><small>Verified reference</small></span
+          ><i>→</i></a
+        >
+        <a href={withBase("/rules/")}
+          ><img
+            src={withBase("/assets/icons/rules.png")}
+            alt=""
+            width="512"
+            height="512"
+            loading="lazy"
+          /><span
+            ><strong>Rules</strong><small>Authoritative policy area</small
+            ></span
+          ><i>→</i></a
+        >
+        <a href={withBase("/changelog/")}
+          ><img
+            src={withBase("/assets/icons/changelog.png")}
+            alt=""
+            width="512"
+            height="512"
+            loading="lazy"
+          /><span
+            ><strong>Changelog</strong><small
+              >Wiki updates and dated notices</small
+            ></span
+          ><i>→</i></a
+        >
+      </div>
+    </section>
+
+    <section
+      class="home-section progression-feature"
+      aria-labelledby="progression-heading"
+    >
+      <div class="progression-feature__art">
+        <img
+          src={withBase("/assets/banner-progression.png")}
+          width="1600"
+          height="398"
+          alt="Progression route through a mountainous Cobbleverse region"
+          loading="lazy"
+        />
+      </div>
+      <div class="progression-feature__copy">
+        <span class="eyebrow">Regional progression</span>
+        <h2 id="progression-heading">Four regions. One evolving route.</h2>
+        <p>
+          Regional access advances through the prior region’s Pokédex
+          progression requirement. The route is data-driven so the guide can
+          grow when new regions arrive.
+        </p>
+        <RegionProgression {regions} compact />
+        <a class="text-link" href={withBase("/progression/regions/")}
+          >View the full regional route →</a
+        >
+      </div>
+    </section>
+
+    <section
+      class="home-section battle-feature"
+      aria-labelledby="battle-heading"
+    >
+      <div class="battle-feature__copy">
+        <span class="eyebrow">Battle systems</span>
+        <h2 id="battle-heading">Type prestige meets Tower strategy</h2>
+        <p>
+          The Gym directory supports every standard Pokémon type without
+          inventing leaders, teams, badges, or rewards. The Battle Tower
+          architecture is ready for 13 escalating Smart Trainer tiers.
+        </p>
+        <div class="battle-tags">
+          <span>Sweeper</span><span>Stall</span><span>Weather</span><span
+            >Trick Room</span
+          ><span>Tower Masters</span>
+        </div>
+        <div class="button-row">
+          <a class="button button--primary" href={withBase("/gyms/")}
+            >Explore Gyms</a
+          ><a class="button button--ghost" href={withBase("/battle-tower/")}
+            >Battle Tower</a>
+        </div>
+      </div>
+      <div class="battle-feature__art">
+        <img
+          src={withBase("/assets/banner-gyms.png")}
+          width="1600"
+          height="398"
+          alt="Cobbleverse Gym arena under dramatic evening light"
+          loading="lazy"
+        />
+      </div>
+    </section>
+
+    <section
+      class="home-section systems-feature"
+      aria-labelledby="systems-heading"
+    >
+      <div class="systems-feature__lead">
+        <img
+          src={withBase("/assets/banner-features.png")}
+          width="1600"
+          height="398"
+          alt="Cobbleverse technology and feature control room"
+          loading="lazy"
+        />
+        <div>
+          <span class="eyebrow">Server systems</span><h2 id="systems-heading">
+            A guide that distinguishes active from unknown
+          </h2><p>
+            Feature status comes from structured server data. “Unknown” is never
+            presented as active.
+          </p>
+        </div>
+      </div>
+      <div class="system-list">
+        {
+          featuredSystems.map((feature) => (
+            <a href={withBase(`/features/${feature.id}/`)}>
+              <>
+                <span>
+                  <>
+                    <strong>{feature.name}</strong>
+                    <small>{feature.category}</small>
+                  </>
+                </span>
+                <FeatureStatusBadge status={feature.status} />
+              </>
+            </a>
+          ))
+        }
+      </div>
+    </section>
+
+    <section class="home-section home-update-links">
+      <div class="updates-panel">
+        <span class="eyebrow">Latest wiki changes</span>
+        <h2>Field guide v1</h2>
+        <div class="update-entry">
+          <time datetime="2026-08-23">Aug 23</time><div>
+            <strong>Production wiki launched</strong><p>
+              Core guides, structured references, local search, and the
+              Cobbleverse visual system are now in place.
+            </p>
+          </div>
+        </div>
+        <div class="update-entry">
+          <time datetime="2026-08-23">Aug 23</time><div>
+            <strong>Fact-gated reference states</strong><p>
+              Commands, Gym details, claim limits, and rules stay unpublished
+              until server staff verify them.
+            </p>
+          </div>
+        </div>
+        <a class="text-link" href={withBase("/changelog/")}
+          >Read the changelog →</a
+        >
+      </div>
+      <div class="community-panel">
+        <span class="eyebrow">Continue the adventure</span>
+        <h2>Official server links</h2>
+        <p>
+          Use official community channels for current server access, support,
+          and announcements.
+        </p>
+        <a href={server.discord}
+          ><strong>Infinite Gaming Servers Discord</strong><span
+            >Community support and announcements ↗</span
+          ></a
+        >
+        <a href={server.website}
+          ><strong>Infinite Gaming Servers</strong><span
+            >Official network website ↗</span
+          ></a
+        >
+      </div>
+    </section>
+  </div>
+</BaseLayout>

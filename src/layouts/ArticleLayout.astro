@@ -1,0 +1,83 @@
+---
+import { getCollection, type CollectionEntry } from "astro:content";
+import { contentPath } from "../lib/basePath";
+import PageShell from "./PageShell.astro";
+
+interface Heading {
+  depth: number;
+  slug: string;
+  text: string;
+}
+interface Props {
+  entry: CollectionEntry<"docs">;
+  Content: any;
+  headings: Heading[];
+}
+
+const { entry, Content, headings } = Astro.props;
+const published = (
+  await getCollection("docs", ({ data }) => data.status === "published")
+).sort(
+  (a, b) =>
+    a.data.category.localeCompare(b.data.category) ||
+    a.data.order - b.data.order,
+);
+const currentIndex = published.findIndex((item) => item.id === entry.id);
+const previous = currentIndex > 0 ? published[currentIndex - 1] : undefined;
+const next =
+  currentIndex >= 0 && currentIndex < published.length - 1
+    ? published[currentIndex + 1]
+    : undefined;
+const related = entry.data.related
+  .map((path) => {
+    const normalized = path.replace(/^\/+|\/+$/g, "");
+    const match = published.find(
+      (item) => item.id.replace(/\/index$/, "") === normalized,
+    );
+    return match
+      ? {
+          href: `/${normalized}/`,
+          title: match.data.title,
+          description: match.data.description,
+        }
+      : undefined;
+  })
+  .filter((item): item is NonNullable<typeof item> => Boolean(item));
+---
+
+<PageShell
+  title={entry.data.title}
+  description={entry.data.description}
+  category={entry.data.category}
+  hero={entry.data.hero}
+  {headings}
+  verified={entry.data.verified}
+  lastUpdated={entry.data.lastUpdated}
+  {related}
+>
+  <Content />
+  <nav class="article-pagination" slot="after" aria-label="Article pagination">
+    {
+      previous ? (
+        <a class="previous" href={contentPath(previous.id)}>
+          <>
+            <span>Previous</span>
+            <strong>{previous.data.title}</strong>
+          </>
+        </a>
+      ) : (
+        <span />
+      )
+    }
+    {
+      next && (
+        <a class="next" href={contentPath(next.id)}>
+          <>
+            <span>Next</span>
+            <strong>{next.data.title}</strong>
+          </>
+        </a>
+      )
+    }
+  </nav>
+</PageShell>

@@ -1,0 +1,41 @@
+---
+import CurrencyCard from "../../components/CurrencyCard.astro";
+import WarningCallout from "../../components/WarningCallout.astro";
+import { currencies } from "../../data";
+import PageShell from "../../layouts/PageShell.astro";
+
+const headings = [
+  { depth: 2, slug: "currency-directory", text: "Currency directory" },
+  { depth: 2, slug: "status-meaning", text: "Status meaning" },
+];
+---
+
+<PageShell
+  title="Currencies"
+  description="Active and status-pending Cobbleverse currencies, vouchers, tokens, passes, and event records."
+  category="Economy"
+  hero="/assets/banner-economy.png"
+  {headings}
+  verified
+  related={[
+    { href: "/economy/", title: "Economy Overview" },
+    { href: "/economy/bazaar/", title: "Bazaar" },
+  ]}
+>
+  <h2 id="currency-directory">Currency directory</h2>
+  <div class="currency-grid currency-grid--all">
+    {currencies.map((currency) => <CurrencyCard {currency} />)}
+  </div>
+  <h2 id="status-meaning">Status meaning</h2>
+  <p>
+    <strong>Active</strong> means the supplied structured data explicitly marks a
+    record active. <strong>Status not published</strong> is a neutral state and does
+    not mean the currency is currently available.
+  </p>
+  <WarningCallout
+    ><p>
+      Acquisition methods, prices, exchange rates, and reward values are not
+      supplied and remain absent.
+    </p></WarningCallout
+  >
+</PageShell>

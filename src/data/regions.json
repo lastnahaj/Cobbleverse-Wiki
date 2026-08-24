@@ -1,0 +1,30 @@
+[
+  {
+    "id": "kanto",
+    "name": "Kanto",
+    "order": 1,
+    "unlockRequirement": null,
+    "status": "active"
+  },
+  {
+    "id": "johto",
+    "name": "Johto",
+    "order": 2,
+    "unlockRequirement": "Complete the prior region Pok\u00e9dex progression requirement.",
+    "status": "active"
+  },
+  {
+    "id": "hoenn",
+    "name": "Hoenn",
+    "order": 3,
+    "unlockRequirement": "Complete the prior region Pok\u00e9dex progression requirement.",
+    "status": "active"
+  },
+  {
+    "id": "sinnoh",
+    "name": "Sinnoh",
+    "order": 4,
+    "unlockRequirement": "Complete the prior region Pok\u00e9dex progression requirement.",
+    "status": "active"
+  }
+]

@@ -1,0 +1,30 @@
+---
+import { withBase } from "../lib/basePath";
+
+interface Props {
+  title: string;
+  description: string;
+  href: string;
+  icon: string;
+  label?: string;
+}
+const { title, description, href, icon, label = "Open guide" } = Astro.props;
+---
+
+<a class="category-card" href={withBase(href)}>
+  <span class="category-card__icon"
+    ><img
+      src={withBase(icon)}
+      width="512"
+      height="512"
+      alt=""
+      loading="lazy"
+    /></span
+  >
+  <span class="category-card__copy"
+    ><strong>{title}</strong><span>{description}</span></span
+  >
+  <span class="category-card__action"
+    >{label} <span aria-hidden="true">→</span></span
+  >
+</a>

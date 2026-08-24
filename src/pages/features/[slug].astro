@@ -1,0 +1,113 @@
+---
+import FeatureStatusBadge from "../../components/FeatureStatusBadge.astro";
+import InfoCallout from "../../components/InfoCallout.astro";
+import WarningCallout from "../../components/WarningCallout.astro";
+import { features, type Feature } from "../../data";
+import PageShell from "../../layouts/PageShell.astro";
+
+export function getStaticPaths() {
+  return features.map((feature) => ({
+    params: { slug: feature.id },
+    props: { feature },
+  }));
+}
+
+const { feature } = Astro.props as { feature: Feature };
+const isNeoPlushies = feature.id === "neoplushies";
+const isSmartTrainers = feature.id === "smart-trainers";
+const headings = [
+  { depth: 2, slug: "system-record", text: "System record" },
+  ...(isNeoPlushies
+    ? [
+        {
+          depth: 2,
+          slug: "collection-architecture",
+          text: "Collection architecture",
+        },
+      ]
+    : []),
+  ...(isSmartTrainers
+    ? [
+        {
+          depth: 2,
+          slug: "battle-tower-integration",
+          text: "Battle Tower integration",
+        },
+      ]
+    : []),
+  { depth: 2, slug: "verification-boundary", text: "Verification boundary" },
+];
+---
+
+<PageShell
+  title={feature.name}
+  description={`${feature.name} system record, publication status, and future documentation structure.`}
+  category="Features"
+  hero="/assets/banner-features.png"
+  {headings}
+  verified={feature.status !== "unknown"}
+  related={[
+    { href: "/features/", title: "All Features" },
+    ...(isSmartTrainers
+      ? [{ href: "/battle-tower/", title: "Battle Tower" }]
+      : []),
+  ]}
+>
+  <FeatureStatusBadge status={feature.status} />
+  <h2 id="system-record">System record</h2>
+  <dl class="record-list">
+    <div><dt>Name</dt><dd>{feature.name}</dd></div><div>
+      <dt>Category</dt><dd>{feature.category}</dd>
+    </div><div><dt>Status</dt><dd>{feature.status}</dd></div>
+  </dl>
+  {
+    isNeoPlushies && (
+      <>
+        <>
+          <h2 id="collection-architecture">Collection architecture</h2>
+          <p>
+            The NeoPlushies guide is prepared to document the Gacha system,
+            Plushie Keys, Reward Vouchers, collection codex, custom
+            resource-pack visuals, and individual collectible entries.
+          </p>
+          <InfoCallout title="Collection-ready model">
+            <p>
+              Actual odds, costs, rewards, and collectible records remain empty
+              until supplied.
+            </p>
+          </InfoCallout>
+        </>
+      </>
+    )
+  }
+  {
+    isSmartTrainers && (
+      <>
+        <>
+          <h2 id="battle-tower-integration">Battle Tower integration</h2>
+          <p>
+            Smart Trainers is the active system record associated with the
+            thirteen-tier Battle Tower documentation architecture.
+          </p>
+        </>
+      </>
+    )
+  }
+  <h2 id="verification-boundary">Verification boundary</h2>
+  {
+    feature.status === "unknown" ? (
+      <WarningCallout>
+        <p>
+          Only the system name and documentation category are known. Unknown
+          does not mean active.
+        </p>
+      </WarningCallout>
+    ) : (
+      <p>
+        The status above comes from the structured Cobbleverse data. Commands,
+        configuration values, rewards, and operational details are not inferred
+        from the feature name.
+      </p>
+    )
+  }
+</PageShell>

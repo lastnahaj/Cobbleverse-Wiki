@@ -1,0 +1,95 @@
+---
+import type { Command } from "../data";
+import CommandBlock from "./CommandBlock.astro";
+
+interface Props {
+  commands: Command[];
+}
+const { commands } = Astro.props;
+const publicCommands = commands.filter((command) => command.verified);
+const categories = [
+  ...new Set(publicCommands.map((command) => command.category)),
+];
+---
+
+<section class="command-reference" data-command-reference>
+  <div class="reference-filters">
+    <label
+      >Filter commands<input
+        type="search"
+        placeholder="Command or description"
+        data-command-query
+      /></label
+    >
+    <label
+      >Category<select data-command-category
+        ><option value="">All categories</option>{
+          categories.map((category) => (
+            <option value={category}>{category}</option>
+          ))
+        }</select
+      ></label
+    >
+  </div>
+  {
+    publicCommands.length ? (
+      <div class="command-list">
+        {publicCommands.map((command) => (
+          <article
+            data-command-row
+            data-search={`${command.command} ${command.description} ${command.category}`.toLowerCase()}
+            data-category={command.category}
+          >
+            <CommandBlock
+              command={command.command}
+              syntax={command.syntax}
+              description={command.description}
+            />
+            <div class="command-meta">
+              <span>{command.category}</span>
+              <span>{command.audience}</span>
+              {command.lastVerified && (
+                <span>Verified {command.lastVerified}</span>
+              )}
+            </div>
+          </article>
+        ))}
+      </div>
+    ) : (
+      <div class="reference-empty">
+        <>
+          <strong>No verified commands are published yet.</strong>
+          <p>
+            The reference is ready for staff-verified command records.
+            Unverified placeholders are intentionally hidden.
+          </p>
+        </>
+      </div>
+    )
+  }
+</section>
+
+<script>
+  const reference = document.querySelector<HTMLElement>(
+    "[data-command-reference]",
+  );
+  const query = reference?.querySelector<HTMLInputElement>(
+    "[data-command-query]",
+  );
+  const category = reference?.querySelector<HTMLSelectElement>(
+    "[data-command-category]",
+  );
+  const rows = reference?.querySelectorAll<HTMLElement>("[data-command-row]");
+  function filterCommands() {
+    rows?.forEach((row) => {
+      const matchesQuery =
+        !query?.value ||
+        row.dataset.search?.includes(query.value.toLowerCase());
+      const matchesCategory =
+        !category?.value || row.dataset.category === category.value;
+      row.hidden = !(matchesQuery && matchesCategory);
+    });
+  }
+  query?.addEventListener("input", filterCommands);
+  category?.addEventListener("change", filterCommands);
+</script>

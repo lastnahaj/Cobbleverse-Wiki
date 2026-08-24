@@ -1,0 +1,92 @@
+[
+  {
+    "id": "scout",
+    "name": "Scout",
+    "track": "playtime",
+    "hours": 6
+  },
+  {
+    "id": "bug_catcher",
+    "name": "Bug Catcher",
+    "track": "playtime",
+    "hours": 24
+  },
+  {
+    "id": "camper",
+    "name": "Camper",
+    "track": "playtime",
+    "hours": 72
+  },
+  {
+    "id": "hiker",
+    "name": "Hiker",
+    "track": "playtime",
+    "hours": 168
+  },
+  {
+    "id": "breeder",
+    "name": "Breeder",
+    "track": "playtime",
+    "hours": 336
+  },
+  {
+    "id": "collector",
+    "name": "Collector",
+    "track": "playtime",
+    "hours": 1536
+  },
+  {
+    "id": "maniac",
+    "name": "Maniac",
+    "track": "playtime",
+    "hours": 1872
+  },
+  {
+    "id": "ranger",
+    "name": "Ranger",
+    "track": "playtime",
+    "hours": 2160
+  },
+  {
+    "id": "ace",
+    "name": "Ace",
+    "track": "playtime",
+    "hours": 2448
+  },
+  {
+    "id": "veteran",
+    "name": "Veteran",
+    "track": "playtime",
+    "hours": 2784
+  },
+  {
+    "id": "dragon_tamer",
+    "name": "Dragon Tamer",
+    "track": "playtime",
+    "hours": 3072
+  },
+  {
+    "id": "elite_four",
+    "name": "Elite Four",
+    "track": "playtime",
+    "hours": 3408
+  },
+  {
+    "id": "champion",
+    "name": "Champion",
+    "track": "playtime",
+    "hours": 3744
+  },
+  {
+    "id": "master",
+    "name": "Master",
+    "track": "playtime",
+    "hours": 4320
+  },
+  {
+    "id": "legendary",
+    "name": "Legendary",
+    "track": "playtime",
+    "hours": 8760
+  }
+]

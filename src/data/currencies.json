@@ -1,0 +1,56 @@
+[
+  {
+    "id": "cobbledollars",
+    "name": "Cobbledollars",
+    "category": "primary",
+    "active": true
+  },
+  {
+    "id": "reward-voucher",
+    "name": "Reward Voucher",
+    "category": "voucher",
+    "active": true
+  },
+  {
+    "id": "poke-coin",
+    "name": "Poke Coin",
+    "category": "token",
+    "active": true
+  },
+  {
+    "id": "raid-pass",
+    "name": "Raid Pass",
+    "category": "token",
+    "active": true
+  },
+  {
+    "id": "radiant-voucher",
+    "name": "Radiant Voucher",
+    "category": "voucher",
+    "active": true
+  },
+  {
+    "id": "summer-raid-soul",
+    "name": "Summer Raid Soul",
+    "category": "event",
+    "active": null
+  },
+  {
+    "id": "dime",
+    "name": "Dime",
+    "category": "token",
+    "active": null
+  },
+  {
+    "id": "nickel",
+    "name": "Nickel",
+    "category": "token",
+    "active": null
+  },
+  {
+    "id": "summer-token",
+    "name": "Summer Token",
+    "category": "event",
+    "active": null
+  }
+]

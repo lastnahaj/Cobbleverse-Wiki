@@ -1,0 +1,15 @@
+{
+  "name": "Cobbleverse",
+  "community": "Infinite Gaming Servers",
+  "game": "Minecraft",
+  "loader": "Fabric",
+  "minecraftVersion": "1.21.1",
+  "focus": "Cobblemon-focused custom progression server",
+  "website": "https://www.infinitegamingservers.com",
+  "discord": "https://discord.gg/infinitegamingservers",
+  "nonP2W": true,
+  "notes": [
+    "Do not publish host IPs or internal infrastructure details.",
+    "Structured facts should be verified before being marked verified."
+  ]
+}

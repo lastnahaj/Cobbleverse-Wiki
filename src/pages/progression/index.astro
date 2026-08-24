@@ -1,0 +1,66 @@
+---
+import FeatureStatusBadge from "../../components/FeatureStatusBadge.astro";
+import InfoCallout from "../../components/InfoCallout.astro";
+import RegionProgression from "../../components/RegionProgression.astro";
+import { features, regions } from "../../data";
+import { withBase } from "../../lib/basePath";
+import PageShell from "../../layouts/PageShell.astro";
+
+const progressionFeatures = features.filter(
+  (feature) => feature.category === "progression",
+);
+const headings = [
+  { depth: 2, slug: "regional-route", text: "Regional route" },
+  { depth: 2, slug: "progression-systems", text: "Progression systems" },
+  { depth: 2, slug: "milestones", text: "Milestones and ranks" },
+];
+---
+
+<PageShell
+  title="Progression"
+  description="Follow the Cobbleverse route from Kanto through Sinnoh and track systems that shape the journey."
+  category="Progression"
+  hero="/assets/banner-progression.png"
+  {headings}
+  verified
+  related={[
+    { href: "/progression/regions/", title: "Region Progression" },
+    { href: "/progression/ranks/", title: "Playtime Ranks" },
+  ]}
+>
+  <h2 id="regional-route">Regional route</h2>
+  <p>
+    The current progression order is <strong
+      >Kanto → Johto → Hoenn → Sinnoh</strong
+    >. Access to the next region is tied to completion of the previous region’s
+    Pokédex progression requirement.
+  </p>
+  <RegionProgression {regions} />
+  <InfoCallout title="Data-driven route"
+    ><p>
+      Region order and unlock copy come from one structured source, allowing
+      future regions to be added without rewriting multiple pages.
+    </p></InfoCallout
+  >
+  <h2 id="progression-systems">Progression systems</h2>
+  <div class="feature-mini-grid">
+    {
+      progressionFeatures.map((feature) => (
+        <a href={withBase(`/features/${feature.id}/`)}>
+          <>
+            <strong>{feature.name}</strong>
+            <FeatureStatusBadge status={feature.status} />
+          </>
+        </a>
+      ))
+    }
+  </div>
+  <h2 id="milestones">Milestones and ranks</h2>
+  <p>
+    The playtime rank track is documented independently from staff and Gym
+    Leader tracks. See all fifteen current thresholds in the rank timeline.
+  </p>
+  <a class="button button--ghost" href={withBase("/progression/ranks/")}
+    >Open playtime ranks →</a
+  >
+</PageShell>

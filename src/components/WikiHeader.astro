@@ -1,0 +1,73 @@
+---
+import { navigation } from "../data";
+import { withBase, withoutBase } from "../lib/basePath";
+import MobileNav from "./MobileNav.astro";
+
+const currentPath = withoutBase(Astro.url.pathname);
+---
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <button
+      class="nav-toggle"
+      type="button"
+      data-mobile-nav-toggle
+      aria-label="Open navigation"
+      aria-expanded="false"
+      aria-controls="mobile-nav"
+    >
+      <span></span><span></span><span></span>
+    </button>
+    <a class="brand" href={withBase("/")} aria-label="Cobbleverse Wiki home">
+      <img
+        src={withBase("/assets/logo-mark.png")}
+        width="768"
+        height="672"
+        alt=""
+      />
+      <span><strong>Cobbleverse</strong><small>Trainer field guide</small></span
+      >
+    </a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <ul>
+        {
+          navigation.slice(1, 7).map((item) => (
+            <li>
+              <a
+                class:list={{ active: currentPath.startsWith(item.href) }}
+                href={withBase(item.href)}
+              >
+                {item.label}
+              </a>
+            </li>
+          ))
+        }
+        <li class="nav-more">
+          <details>
+            <summary>Reference</summary>
+            <div class="nav-more__menu">
+              {
+                navigation
+                  .slice(7)
+                  .map((item) => <a href={withBase(item.href)}>{item.label}</a>)
+              }
+            </div>
+          </details>
+        </li>
+      </ul>
+    </nav>
+    <button
+      class="search-button"
+      type="button"
+      data-search-open
+      aria-label="Search wiki"
+    >
+      <svg aria-hidden="true" viewBox="0 0 24 24"
+        ><path d="m21 21-4.5-4.5m2.5-5A7.5 7.5 0 1 1 4 11.5a7.5 7.5 0 0 1 15 0Z"
+        ></path></svg
+      >
+      <span>Search</span><kbd>/</kbd>
+    </button>
+  </div>
+</header>
+<MobileNav />

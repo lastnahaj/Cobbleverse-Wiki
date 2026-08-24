@@ -1,0 +1,64 @@
+---
+import GymTypeBadge from "../../components/GymTypeBadge.astro";
+import WarningCallout from "../../components/WarningCallout.astro";
+import { gyms, type Gym } from "../../data";
+import PageShell from "../../layouts/PageShell.astro";
+
+export function getStaticPaths() {
+  return gyms.map((gym) => ({ params: { type: gym.id }, props: { gym } }));
+}
+
+const { gym } = Astro.props as { gym: Gym };
+const fields = [
+  ["Gym Leader", gym.leaderName],
+  ["Badge", gym.badgeName],
+  ["Reward", gym.reward],
+];
+const headings = [
+  { depth: 2, slug: "gym-record", text: "Gym record" },
+  { depth: 2, slug: "challenge-details", text: "Challenge details" },
+];
+---
+
+<PageShell
+  title={`${gym.type} Gym`}
+  description={`Cobbleverse ${gym.type}-type Gym record and publication status.`}
+  category="Gyms"
+  hero="/assets/banner-gyms.png"
+  {headings}
+  related={[
+    { href: "/gyms/", title: "All Gym Types" },
+    { href: "/battle-tower/", title: "Battle Tower" },
+  ]}
+>
+  <GymTypeBadge type={gym.type} status={gym.status} />
+  <h2 id="gym-record">Gym record</h2>
+  <dl class="record-list">
+    {
+      fields.map(([label, value]) => (
+        <div>
+          <>
+            <dt>{label}</dt>
+            <dd>{value || <span>Not published yet</span>}</dd>
+          </>
+        </div>
+      ))
+    }
+    <div>
+      <dt>Status</dt><dd>
+        {gym.status === "unknown" ? "Status not yet verified" : gym.status}
+      </dd>
+    </div>
+  </dl>
+  <h2 id="challenge-details">Challenge details</h2>
+  <p>
+    Team composition, schedules, exact rules, and preparation requirements have
+    not been supplied for this Gym.
+  </p>
+  <WarningCallout
+    ><p>
+      The empty record is intentional. It prevents placeholder content from
+      being mistaken for live server information.
+    </p></WarningCallout
+  >
+</PageShell>

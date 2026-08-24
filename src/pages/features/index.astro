@@ -1,0 +1,64 @@
+---
+import FeatureStatusBadge from "../../components/FeatureStatusBadge.astro";
+import InfoCallout from "../../components/InfoCallout.astro";
+import { features } from "../../data";
+import { withBase } from "../../lib/basePath";
+import PageShell from "../../layouts/PageShell.astro";
+
+const headings = [
+  { depth: 2, slug: "system-directory", text: "System directory" },
+  { depth: 2, slug: "status-model", text: "Status model" },
+  { depth: 2, slug: "client-options", text: "Client options" },
+];
+---
+
+<PageShell
+  title="Features"
+  description="Browse Cobbleverse server systems with explicit active, planned, optional-client, deprecated, and unknown states."
+  category="Features"
+  hero="/assets/banner-features.png"
+  {headings}
+  verified
+  related={[
+    { href: "/features/neoplushies/", title: "NeoPlushies" },
+    { href: "/battle-tower/", title: "Battle Tower" },
+  ]}
+>
+  <h2 id="system-directory">System directory</h2>
+  <div class="feature-directory">
+    {
+      features.map((feature) => (
+        <a href={withBase(`/features/${feature.id}/`)}>
+          <>
+            <span>
+              <>
+                <strong>{feature.name}</strong>
+                <small>{feature.category}</small>
+              </>
+            </span>
+            <FeatureStatusBadge status={feature.status} />
+            <i>→</i>
+          </>
+        </a>
+      ))
+    }
+  </div>
+  <h2 id="status-model">Status model</h2>
+  <p>
+    Each feature record uses one of five states: active, planned,
+    optional-client, deprecated, or unknown. An unknown record stays neutral and
+    is never treated as evidence that a system is active.
+  </p>
+  <InfoCallout title="Fact-backed status"
+    ><p>
+      Nine system statuses were supplied directly. Additional named systems are
+      represented as <strong>unknown</strong> until a status is verified.
+    </p></InfoCallout
+  >
+  <h2 id="client-options">Client options</h2>
+  <p>
+    Simple Voice Chat and Distant Horizons are explicitly marked
+    optional-client. Installation files and configuration steps have not been
+    supplied.
+  </p>
+</PageShell>

@@ -1,0 +1,76 @@
+---
+import CurrencyCard from "../../components/CurrencyCard.astro";
+import InfoCallout from "../../components/InfoCallout.astro";
+import { currencies, features, server } from "../../data";
+import { withBase } from "../../lib/basePath";
+import PageShell from "../../layouts/PageShell.astro";
+
+const primary = currencies
+  .filter((currency) => currency.active === true)
+  .slice(0, 3);
+const bazaar = features.find((feature) => feature.id === "bazaar");
+const headings = [
+  { depth: 2, slug: "economy-map", text: "Economy map" },
+  { depth: 2, slug: "currencies", text: "Currencies" },
+  { depth: 2, slug: "non-p2w-policy", text: "Non-P2W policy" },
+];
+---
+
+<PageShell
+  title="Economy"
+  description="A structured guide to Cobbledollars, Bazaar, trading, vouchers, passes, and seasonal currencies."
+  category="Economy"
+  hero="/assets/banner-economy.png"
+  {headings}
+  related={[
+    { href: "/economy/bazaar/", title: "Bazaar" },
+    { href: "/economy/currencies/", title: "Currency Directory" },
+  ]}
+>
+  <h2 id="economy-map">Economy map</h2>
+  <div class="economy-map">
+    <div>
+      <span>01</span><strong>Earn</strong><p>
+        Verified sources and rates will be documented per currency.
+      </p>
+    </div><div>
+      <span>02</span><strong>Trade</strong><p>
+        Bazaar and player-facing market guidance belongs in dedicated
+        references.
+      </p>
+    </div><div>
+      <span>03</span><strong>Spend</strong><p>
+        Prices and reward tables remain empty until staff verification.
+      </p>
+    </div>
+  </div>
+  {
+    bazaar && (
+      <p>
+        <a class="button button--ghost" href={withBase("/economy/bazaar/")}>
+          Bazaar reference · {bazaar.status}
+        </a>
+      </p>
+    )
+  }
+  <h2 id="currencies">Currencies</h2>
+  <div class="currency-grid">
+    {primary.map((currency) => <CurrencyCard {currency} />)}
+  </div>
+  <p>
+    <a class="text-link" href={withBase("/economy/currencies/")}
+      >View all active and unknown-status currency records →</a>
+  </p>
+  <h2 id="non-p2w-policy">Non-P2W policy</h2>
+  <p>
+    {server.name} is intended to remain non-P2W. Donor ranks are not described as
+    granting exclusive Pokémon, combat kits, progression shortcuts, command advantages,
+    or paid combat power.
+  </p>
+  <InfoCallout title="Prices stay fact-gated"
+    ><p>
+      No shop price, reward amount, recipe, or earning rate appears without a
+      supplied authoritative source.
+    </p></InfoCallout
+  >
+</PageShell>

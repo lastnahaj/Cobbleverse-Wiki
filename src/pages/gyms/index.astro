@@ -1,0 +1,68 @@
+---
+import GymTypeBadge from "../../components/GymTypeBadge.astro";
+import WarningCallout from "../../components/WarningCallout.astro";
+import { gyms } from "../../data";
+import { withBase } from "../../lib/basePath";
+import PageShell from "../../layouts/PageShell.astro";
+
+const headings = [
+  { depth: 2, slug: "type-directory", text: "Type directory" },
+  { depth: 2, slug: "published-fields", text: "Published Gym fields" },
+  { depth: 2, slug: "battle-preparation", text: "Battle preparation" },
+];
+---
+
+<PageShell
+  title="Gyms"
+  description="Browse the type-based Cobbleverse Gym directory and its verification-ready battle records."
+  category="Gyms"
+  hero="/assets/banner-gyms.png"
+  {headings}
+  related={[
+    {
+      href: "/battle-tower/",
+      title: "Battle Tower",
+      description: "Explore Smart Trainer tier architecture.",
+    },
+    { href: "/progression/", title: "Progression" },
+  ]}
+>
+  <p>
+    Gym Leaders are organized by Pokémon type. The directory supports all
+    eighteen standard type categories while keeping unpublished leaders, badges,
+    rewards, teams, schedules, and rules explicitly empty.
+  </p>
+  <h2 id="type-directory">Type directory</h2>
+  <div class="gym-grid">
+    {
+      gyms.map((gym) => (
+        <a href={withBase(`/gyms/${gym.id}/`)}>
+          <>
+            <GymTypeBadge type={gym.type} status={gym.status} />
+            <span>Open type record →</span>
+          </>
+        </a>
+      ))
+    }
+  </div>
+  <h2 id="published-fields">Published Gym fields</h2>
+  <div class="field-model">
+    <div><strong>Leader</strong><span>Not published yet</span></div><div>
+      <strong>Badge</strong><span>Not published yet</span>
+    </div><div><strong>Reward</strong><span>Not published yet</span></div><div>
+      <strong>Schedule</strong><span>Not published yet</span>
+    </div>
+  </div>
+  <WarningCallout title="No invented Gym data"
+    ><p>
+      Null fields remain null. This wiki will not infer a leader, team, badge,
+      reward, or challenge format from Pokémon type.
+    </p></WarningCallout
+  >
+  <h2 id="battle-preparation">Battle preparation</h2>
+  <p>
+    Preparation advice belongs here after the Cobbleverse challenge rules and
+    team restrictions are verified. Until then, the directory provides structure
+    without presenting generic competitive advice as server policy.
+  </p>
+</PageShell>

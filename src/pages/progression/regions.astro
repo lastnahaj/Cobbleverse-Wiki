@@ -1,0 +1,66 @@
+---
+import InfoCallout from "../../components/InfoCallout.astro";
+import RegionProgression from "../../components/RegionProgression.astro";
+import { regions } from "../../data";
+import PageShell from "../../layouts/PageShell.astro";
+
+const headings = [
+  { depth: 2, slug: "route-order", text: "Route order" },
+  { depth: 2, slug: "unlock-model", text: "Unlock model" },
+  { depth: 2, slug: "region-reference", text: "Region reference" },
+];
+---
+
+<PageShell
+  title="Region Progression"
+  description="The structured Cobbleverse route from Kanto through Sinnoh."
+  category="Progression"
+  hero="/assets/banner-progression.png"
+  {headings}
+  verified
+  related={[
+    { href: "/progression/", title: "Progression Overview" },
+    { href: "/progression/ranks/", title: "Playtime Ranks" },
+  ]}
+>
+  <h2 id="route-order">Route order</h2>
+  <RegionProgression {regions} />
+  <h2 id="unlock-model">Unlock model</h2>
+  <p>
+    The next region unlocks through completion of the prior region’s Pokédex
+    progression requirement. Exact percentages or species counts have not been
+    supplied, so no threshold is published.
+  </p>
+  <InfoCallout
+    ><p>
+      Kanto is the first region. Every later region reads its requirement from
+      structured region data.
+    </p></InfoCallout
+  >
+  <h2 id="region-reference">Region reference</h2>
+  <div class="table-scroll">
+    <table>
+      <thead
+        ><tr
+          ><th>Order</th><th>Region</th><th>Status</th><th
+            >Unlock requirement</th
+          ></tr
+        ></thead
+      ><tbody
+        >{
+          regions.map((region) => (
+            <tr>
+              <>
+                <td>{region.order}</td>
+                <td>
+                  <strong>{region.name}</strong>
+                </td>
+                <td>{region.status}</td>
+                <td>{region.unlockRequirement || "Starting region"}</td>
+              </>
+            </tr>
+          ))
+        }</tbody>
+    </table>
+  </div>
+</PageShell>

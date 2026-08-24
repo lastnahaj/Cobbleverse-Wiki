@@ -1,0 +1,11 @@
+---
+interface Props {
+  label?: string;
+  tone?: "info" | "warning" | "success";
+}
+const { label = "Notice", tone = "info" } = Astro.props;
+---
+
+<aside class:list={["notice-banner", `notice-banner--${tone}`]}>
+  <span>{label}</span><div><slot /></div>
+</aside>

@@ -1,0 +1,28 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { withBase } from "../../lib/basePath";
+---
+
+<BaseLayout
+  title="Search"
+  description="Search published Cobbleverse Wiki guides and structured references."
+>
+  <section class="search-page">
+    <img
+      src={withBase("/assets/logo-horizontal.png")}
+      width="1400"
+      height="766"
+      alt=""
+    />
+    <span class="eyebrow">Local field index</span>
+    <h1>Find your next answer</h1>
+    <p>
+      Search titles, descriptions, headings, excerpts, tags, aliases,
+      categories, Gym types, and server-system records. The index stays entirely
+      in your browser.
+    </p>
+    <button class="button button--primary" type="button" data-search-open
+      >Open wiki search <kbd>/</kbd></button
+    >
+  </section>
+</BaseLayout>

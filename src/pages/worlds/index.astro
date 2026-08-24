@@ -1,0 +1,83 @@
+---
+import InfoCallout from "../../components/InfoCallout.astro";
+import NoticeBanner from "../../components/NoticeBanner.astro";
+import { withBase } from "../../lib/basePath";
+import PageShell from "../../layouts/PageShell.astro";
+
+const destinations = [
+  {
+    title: "Spawn",
+    description: "Orientation, services, portals, and the new-player route.",
+    href: "/worlds/spawn/",
+    symbol: "◎",
+  },
+  {
+    title: "Overworld",
+    description: "Exploration, RTP, building, claims, and dated reset notices.",
+    href: "/worlds/overworld/",
+    symbol: "◇",
+  },
+  {
+    title: "Origin Islands",
+    description: "A reference home for the Origin Dimension and its islands.",
+    href: "/worlds/origin-islands/",
+    symbol: "△",
+  },
+];
+const headings = [
+  { depth: 2, slug: "destination-directory", text: "Destination directory" },
+  { depth: 2, slug: "travel-systems", text: "Travel systems" },
+  { depth: 2, slug: "reset-aware-notices", text: "Reset-aware notices" },
+];
+---
+
+<PageShell
+  title="Worlds"
+  description="Navigate Cobbleverse destinations, travel systems, and reset-aware world documentation."
+  category="Worlds"
+  hero="/assets/banner-worlds.png"
+  {headings}
+  related={[
+    { href: "/getting-started/", title: "Getting Started" },
+    { href: "/progression/regions/", title: "Region Progression" },
+  ]}
+>
+  <h2 id="destination-directory">Destination directory</h2>
+  <div class="destination-grid">
+    {
+      destinations.map((destination) => (
+        <a href={withBase(destination.href)}>
+          <>
+            <span>{destination.symbol}</span>
+            <div>
+              <>
+                <strong>{destination.title}</strong>
+                <p>{destination.description}</p>
+              </>
+            </div>
+            <i>→</i>
+          </>
+        </a>
+      ))
+    }
+  </div>
+  <h2 id="travel-systems">Travel systems</h2>
+  <p>
+    The world architecture supports RTP, portals, waypoints or waystones, and
+    future regional worlds. Exact commands, costs, cooldowns, and access
+    conditions stay unpublished until verified.
+  </p>
+  <InfoCallout title="Permanent guide, current notices"
+    ><p>
+      Stable destination behavior belongs in world guides. Temporary access
+      changes belong in dated changelog notices.
+    </p></InfoCallout
+  >
+  <h2 id="reset-aware-notices">Reset-aware notices</h2>
+  <NoticeBanner label="Notice model"
+    ><p>
+      World-reset announcements should always carry a date and affected
+      destination. No undated reset warning is currently active on this page.
+    </p></NoticeBanner
+  >
+</PageShell>

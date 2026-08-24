@@ -1,0 +1,47 @@
+---
+import { navigation } from "../data";
+import { withBase, withoutBase } from "../lib/basePath";
+
+const currentPath = withoutBase(Astro.url.pathname);
+const sectionLinks = [
+  { label: "Claims", href: "/getting-started/claims/" },
+  { label: "Resource pack", href: "/getting-started/resource-pack/" },
+  { label: "Region route", href: "/progression/regions/" },
+  { label: "Playtime ranks", href: "/progression/ranks/" },
+  { label: "Battle Tower", href: "/battle-tower/" },
+  { label: "Currencies", href: "/economy/currencies/" },
+];
+---
+
+<aside class="wiki-sidebar" aria-label="Wiki sections">
+  <span class="wiki-sidebar__label">Wiki sections</span>
+  <nav>
+    <ul>
+      {
+        navigation.slice(1).map((item) => (
+          <li>
+            <a
+              class:list={{ active: currentPath.startsWith(item.href) }}
+              href={withBase(item.href)}
+            >
+              {item.label}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+  <div class="wiki-sidebar__subnav">
+    <span>Quick reference</span>
+    {
+      sectionLinks.map((item) => (
+        <a
+          class:list={{ active: currentPath === item.href }}
+          href={withBase(item.href)}
+        >
+          {item.label}
+        </a>
+      ))
+    }
+  </div>
+</aside>

@@ -1,0 +1,98 @@
+---
+import GuideSteps from "../../components/GuideSteps.astro";
+import InfoCallout from "../../components/InfoCallout.astro";
+import WarningCallout from "../../components/WarningCallout.astro";
+import { server } from "../../data";
+import { withBase } from "../../lib/basePath";
+import PageShell from "../../layouts/PageShell.astro";
+
+const steps = [
+  {
+    title: "Prepare Minecraft",
+    description: `Cobbleverse runs on Minecraft ${server.minecraftVersion} with ${server.loader}. Use official community guidance for the current client package.`,
+  },
+  {
+    title: "Review the resource pack",
+    description:
+      "Custom visuals support server systems. Pack delivery details remain verification-gated.",
+    href: withBase("/getting-started/resource-pack/"),
+  },
+  {
+    title: "Orient at Spawn",
+    description:
+      "Use Spawn as your starting point for portals, services, and route navigation.",
+    href: withBase("/worlds/spawn/"),
+  },
+  {
+    title: "Begin in Kanto",
+    description:
+      "Kanto is the first stop in the structured regional progression route.",
+    href: withBase("/progression/regions/"),
+  },
+  {
+    title: "Protect a build",
+    description:
+      "Learn the confirmed FLAN claim tool and Chunk Anchor concept.",
+    href: withBase("/getting-started/claims/"),
+  },
+  {
+    title: "Learn the economy",
+    description:
+      "Start with Cobbledollars, Bazaar, and the verified currency directory.",
+    href: withBase("/economy/"),
+  },
+];
+const headings = [
+  { depth: 2, slug: "before-you-join", text: "Before you join" },
+  { depth: 2, slug: "first-route", text: "Your first route" },
+  { depth: 2, slug: "unpublished-details", text: "Unpublished details" },
+];
+---
+
+<PageShell
+  title="Getting Started"
+  description="Prepare for your first Cobbleverse journey with confirmed platform details and a verification-first route."
+  category="Getting Started"
+  hero="/assets/banner-getting-started.png"
+  {headings}
+  related={[
+    {
+      href: "/progression/",
+      title: "Progression",
+      description: "See how regional advancement works.",
+    },
+    {
+      href: "/worlds/",
+      title: "Worlds",
+      description: "Explore the world directory.",
+    },
+  ]}
+>
+  <h2 id="before-you-join">Before you join</h2>
+  <p>
+    Cobbleverse is a {server.focus} for {server.game}. The confirmed platform is <strong
+      >{server.loader} {server.minecraftVersion}</strong
+    >.
+  </p>
+  <InfoCallout title="Use official sources"
+    ><p>
+      Current access instructions, downloads, and support belong on the <a
+        href={server.discord}>Infinite Gaming Servers Discord</a
+      > and <a href={server.website}>official website</a>.
+    </p></InfoCallout
+  >
+  <h2 id="first-route">Your first route</h2>
+  <GuideSteps {steps} />
+  <h2 id="unpublished-details">Unpublished details</h2>
+  <p>
+    The guide is ready to document first-login actions, starter selection, RTP
+    behavior, common commands, and troubleshooting. Those operational steps
+    remain unpublished until server staff supplies an authoritative reference.
+  </p>
+  <WarningCallout
+    ><p>
+      No server address, command syntax, claim limit, or setup download is
+      inferred here.
+    </p></WarningCallout
+  >
+</PageShell>

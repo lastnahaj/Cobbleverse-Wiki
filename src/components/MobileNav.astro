@@ -1,0 +1,61 @@
+---
+import { navigation, server } from "../data";
+import { withBase } from "../lib/basePath";
+---
+
+<div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+  <div class="mobile-nav__backdrop" data-mobile-nav-close></div>
+  <aside class="mobile-nav__panel" aria-label="Mobile wiki navigation">
+    <div class="mobile-nav__heading">
+      <span>Field guide</span>
+      <button
+        class="icon-button"
+        type="button"
+        data-mobile-nav-close
+        aria-label="Close navigation">×</button
+      >
+    </div>
+    <nav>
+      <ul>
+        {
+          navigation.map((item) => (
+            <li>
+              <a href={withBase(item.href)}>{item.label}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+    <div class="mobile-nav__links">
+      <a href={server.discord}>Join Discord ↗</a>
+      <a href={server.website}>Server website ↗</a>
+    </div>
+  </aside>
+</div>
+
+<script>
+  const mobileNav = document.querySelector<HTMLElement>("#mobile-nav");
+  const toggle = document.querySelector<HTMLElement>(
+    "[data-mobile-nav-toggle]",
+  );
+  const closeButtons = document.querySelectorAll<HTMLElement>(
+    "[data-mobile-nav-close]",
+  );
+
+  function setMobileNav(open: boolean) {
+    if (!mobileNav || !toggle) return;
+    mobileNav.classList.toggle("is-open", open);
+    mobileNav.setAttribute("aria-hidden", String(!open));
+    toggle.setAttribute("aria-expanded", String(open));
+    document.body.classList.toggle("nav-open", open);
+  }
+
+  toggle?.addEventListener("click", () => setMobileNav(true));
+  closeButtons.forEach((button) =>
+    button.addEventListener("click", () => setMobileNav(false)),
+  );
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && mobileNav?.classList.contains("is-open"))
+      setMobileNav(false);
+  });
+</script>

@@ -1,0 +1,234 @@
+[
+  {
+    "path": "assets/apple-touch-icon.png",
+    "status": "ok",
+    "format": "PNG",
+    "width": 180,
+    "height": 180,
+    "mode": "RGB"
+  },
+  {
+    "path": "assets/banner-economy.png",
+    "status": "ok",
+    "format": "PNG",
+    "width": 1600,
+    "height": 398,
+    "mode": "RGB"
+  },
+  {
+    "path": "assets/banner-features.png",
+    "status": "ok",
+    "format": "PNG",
+    "width": 1600,
+    "height": 398,
+    "mode": "RGB"
+  },
+  {
+    "path": "assets/banner-getting-started.png",
+    "status": "ok",
+    "format": "PNG",
+    "width": 1600,
+    "height": 398,
+    "mode": "RGB"
+  },
+  {
+    "path": "assets/banner-gyms.png",
+    "status": "ok",
+    "format": "PNG",
+    "width": 1600,
+    "height": 398,
+    "mode": "RGB"
+  },
+  {
+    "path": "assets/banner-progression.png",
+    "status": "ok",
+    "format": "PNG",
+    "width": 1600,
+    "height": 398,
+    "mode": "RGB"
+  },
+  {
+    "path": "assets/banner-worlds.png",
+    "status": "ok",
+    "format": "PNG",
+    "width": 1600,
+    "height": 398,
+    "mode": "RGB"
+  },
+  {
+    "path": "assets/favicon-16x16.png",
+    "status": "ok",
+    "format": "PNG",
+    "width": 16,
+    "height": 16,
+    "mode": "RGB"
+  },
+  {
+    "path": "assets/favicon-192x192.png",
+    "status": "ok",
+    "format": "PNG",
+    "width": 192,
+    "height": 192,
+    "mode": "RGB"
+  },
+  {
+    "path": "assets/favicon-32x32.png",
+    "status": "ok",
+    "format": "PNG",
+    "width": 32,
+    "height": 32,
+    "mode": "RGB"
+  },
+  {
+    "path": "assets/favicon-48x48.png",
+    "status": "ok",
+    "format": "PNG",
+    "width": 48,
+    "height": 48,
+    "mode": "RGB"
+  },
+  {
+    "path": "assets/favicon-512x512.png",
+    "status": "ok",
+    "format": "PNG",
+    "width": 512,
+    "height": 512,
+    "mode": "RGB"
+  },
+  {
+    "path": "assets/favicon.png",
+    "status": "ok",
+    "format": "PNG",
+    "width": 64,
+    "height": 64,
+    "mode": "RGB"
+  },
+  {
+    "path": "assets/hero-cobbleverse.png",
+    "status": "ok",
+    "format": "PNG",
+    "width": 1920,
+    "height": 878,
+    "mode": "RGB"
+  },
+  {
+    "path": "assets/icons/changelog.png",
+    "status": "ok",
+    "format": "PNG",
+    "width": 512,
+    "height": 512,
+    "mode": "RGB"
+  },
+  {
+    "path": "assets/icons/commands.png",
+    "status": "ok",
+    "format": "PNG",
+    "width": 512,
+    "height": 512,
+    "mode": "RGB"
+  },
+  {
+    "path": "assets/icons/economy.png",
+    "status": "ok",
+    "format": "PNG",
+    "width": 512,
+    "height": 512,
+    "mode": "RGB"
+  },
+  {
+    "path": "assets/icons/features.png",
+    "status": "ok",
+    "format": "PNG",
+    "width": 512,
+    "height": 512,
+    "mode": "RGB"
+  },
+  {
+    "path": "assets/icons/getting-started.png",
+    "status": "ok",
+    "format": "PNG",
+    "width": 512,
+    "height": 512,
+    "mode": "RGB"
+  },
+  {
+    "path": "assets/icons/gyms.png",
+    "status": "ok",
+    "format": "PNG",
+    "width": 512,
+    "height": 512,
+    "mode": "RGB"
+  },
+  {
+    "path": "assets/icons/progression.png",
+    "status": "ok",
+    "format": "PNG",
+    "width": 512,
+    "height": 512,
+    "mode": "RGB"
+  },
+  {
+    "path": "assets/icons/rules.png",
+    "status": "ok",
+    "format": "PNG",
+    "width": 512,
+    "height": 512,
+    "mode": "RGB"
+  },
+  {
+    "path": "assets/icons/worlds.png",
+    "status": "ok",
+    "format": "PNG",
+    "width": 512,
+    "height": 512,
+    "mode": "RGB"
+  },
+  {
+    "path": "assets/logo-horizontal.png",
+    "status": "ok",
+    "format": "PNG",
+    "width": 1400,
+    "height": 766,
+    "mode": "RGB"
+  },
+  {
+    "path": "assets/logo-mark-monochrome.png",
+    "status": "ok",
+    "format": "PNG",
+    "width": 768,
+    "height": 672,
+    "mode": "RGB"
+  },
+  {
+    "path": "assets/logo-mark.png",
+    "status": "ok",
+    "format": "PNG",
+    "width": 768,
+    "height": 672,
+    "mode": "RGB"
+  },
+  {
+    "path": "assets/og-default.png",
+    "status": "ok",
+    "format": "PNG",
+    "width": 1200,
+    "height": 630,
+    "mode": "RGB"
+  },
+  {
+    "path": "assets/previews/asset-contact-sheet.png",
+    "status": "ok",
+    "format": "PNG",
+    "width": 1440,
+    "height": 1700,
+    "mode": "RGB"
+  },
+  {
+    "path": "assets/source/cobbleverse-production-art-board.png",
+    "status": "ok",
+    "format": "PNG",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB"
+  }
+]

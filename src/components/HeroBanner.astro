@@ -1,0 +1,21 @@
+---
+import { withBase } from "../lib/basePath";
+
+interface Props {
+  src: string;
+  alt: string;
+  eager?: boolean;
+}
+const { src, alt, eager = false } = Astro.props;
+---
+
+<figure class="hero-banner">
+  <img
+    src={withBase(src)}
+    width="1600"
+    height="398"
+    alt={alt}
+    loading={eager ? "eager" : "lazy"}
+    decoding="async"
+  />
+</figure>

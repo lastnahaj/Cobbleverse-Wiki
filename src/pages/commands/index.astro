@@ -1,0 +1,36 @@
+---
+import CommandReferenceTable from "../../components/CommandReferenceTable.astro";
+import InfoCallout from "../../components/InfoCallout.astro";
+import { commands } from "../../data";
+import PageShell from "../../layouts/PageShell.astro";
+
+const headings = [
+  { depth: 2, slug: "command-reference", text: "Command reference" },
+  { depth: 2, slug: "publication-rules", text: "Publication rules" },
+];
+---
+
+<PageShell
+  title="Commands"
+  description="A filterable Cobbleverse command reference that publishes only staff-verified records."
+  category="Commands"
+  {headings}
+  related={[
+    { href: "/getting-started/", title: "Getting Started" },
+    { href: "/rules/", title: "Rules" },
+  ]}
+>
+  <h2 id="command-reference">Command reference</h2>
+  <CommandReferenceTable {commands} />
+  <h2 id="publication-rules">Publication rules</h2>
+  <p>
+    Each command record supports syntax, aliases, category, audience, examples,
+    notes, a related page, verification state, and last-verified date.
+  </p>
+  <InfoCallout title="Verified records only"
+    ><p>
+      No commands are currently verified for publication. The public table
+      therefore remains empty instead of fabricating common server commands.
+    </p></InfoCallout
+  >
+</PageShell>

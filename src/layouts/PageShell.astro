@@ -1,0 +1,85 @@
+---
+import ArticleTOC from "../components/ArticleTOC.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import HeroBanner from "../components/HeroBanner.astro";
+import LastVerified from "../components/LastVerified.astro";
+import RelatedArticles from "../components/RelatedArticles.astro";
+import WikiSidebar from "../components/WikiSidebar.astro";
+import BaseLayout from "./BaseLayout.astro";
+
+interface Heading {
+  depth: number;
+  slug: string;
+  text: string;
+}
+interface RelatedLink {
+  href: string;
+  title: string;
+  description?: string;
+}
+interface Props {
+  title: string;
+  description: string;
+  category: string;
+  hero?: string;
+  headings?: Heading[];
+  verified?: boolean;
+  lastUpdated?: Date | string;
+  related?: RelatedLink[];
+  noindex?: boolean;
+}
+
+const {
+  title,
+  description,
+  category,
+  hero,
+  headings = [],
+  verified = false,
+  lastUpdated = "2026-08-23",
+  related = [],
+  noindex = false,
+} = Astro.props;
+
+const categoryPaths: Record<string, string> = {
+  "Getting Started": "/getting-started/",
+  Progression: "/progression/",
+  Gyms: "/gyms/",
+  Worlds: "/worlds/",
+  Economy: "/economy/",
+  Features: "/features/",
+  Commands: "/commands/",
+  Rules: "/rules/",
+  Changelog: "/changelog/",
+};
+const categoryPath = categoryPaths[category];
+const breadcrumbs = [
+  { label: "Home", href: "/" },
+  ...(title !== category && categoryPath
+    ? [{ label: category, href: categoryPath }]
+    : []),
+  { label: title },
+];
+---
+
+<BaseLayout {title} {description} image={hero} {noindex}>
+  <div class="page-wrap">
+    <Breadcrumbs items={breadcrumbs} />
+    {hero && <HeroBanner src={hero} alt={`${title} section artwork`} eager />}
+    <header class="page-intro">
+      <span class="eyebrow">{category} · Field guide</span>
+      <h1>{title}</h1>
+      <p>{description}</p>
+    </header>
+    <div class="article-grid">
+      <WikiSidebar />
+      <article class="article-content prose">
+        <slot />
+        <LastVerified date={lastUpdated} {verified} />
+        <RelatedArticles links={related} />
+        <slot name="after" />
+      </article>
+      <ArticleTOC headings={headings} />
+    </div>
+  </div>
+</BaseLayout>

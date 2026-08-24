@@ -1,0 +1,146 @@
+[
+  {
+    "id": "normal",
+    "type": "Normal",
+    "leaderName": null,
+    "badgeName": null,
+    "reward": null,
+    "status": "unknown"
+  },
+  {
+    "id": "fire",
+    "type": "Fire",
+    "leaderName": null,
+    "badgeName": null,
+    "reward": null,
+    "status": "unknown"
+  },
+  {
+    "id": "water",
+    "type": "Water",
+    "leaderName": null,
+    "badgeName": null,
+    "reward": null,
+    "status": "unknown"
+  },
+  {
+    "id": "electric",
+    "type": "Electric",
+    "leaderName": null,
+    "badgeName": null,
+    "reward": null,
+    "status": "unknown"
+  },
+  {
+    "id": "grass",
+    "type": "Grass",
+    "leaderName": null,
+    "badgeName": null,
+    "reward": null,
+    "status": "unknown"
+  },
+  {
+    "id": "ice",
+    "type": "Ice",
+    "leaderName": null,
+    "badgeName": null,
+    "reward": null,
+    "status": "unknown"
+  },
+  {
+    "id": "fighting",
+    "type": "Fighting",
+    "leaderName": null,
+    "badgeName": null,
+    "reward": null,
+    "status": "unknown"
+  },
+  {
+    "id": "poison",
+    "type": "Poison",
+    "leaderName": null,
+    "badgeName": null,
+    "reward": null,
+    "status": "unknown"
+  },
+  {
+    "id": "ground",
+    "type": "Ground",
+    "leaderName": null,
+    "badgeName": null,
+    "reward": null,
+    "status": "unknown"
+  },
+  {
+    "id": "flying",
+    "type": "Flying",
+    "leaderName": null,
+    "badgeName": null,
+    "reward": null,
+    "status": "unknown"
+  },
+  {
+    "id": "psychic",
+    "type": "Psychic",
+    "leaderName": null,
+    "badgeName": null,
+    "reward": null,
+    "status": "unknown"
+  },
+  {
+    "id": "bug",
+    "type": "Bug",
+    "leaderName": null,
+    "badgeName": null,
+    "reward": null,
+    "status": "unknown"
+  },
+  {
+    "id": "rock",
+    "type": "Rock",
+    "leaderName": null,
+    "badgeName": null,
+    "reward": null,
+    "status": "unknown"
+  },
+  {
+    "id": "ghost",
+    "type": "Ghost",
+    "leaderName": null,
+    "badgeName": null,
+    "reward": null,
+    "status": "unknown"
+  },
+  {
+    "id": "dragon",
+    "type": "Dragon",
+    "leaderName": null,
+    "badgeName": null,
+    "reward": null,
+    "status": "unknown"
+  },
+  {
+    "id": "dark",
+    "type": "Dark",
+    "leaderName": null,
+    "badgeName": null,
+    "reward": null,
+    "status": "unknown"
+  },
+  {
+    "id": "steel",
+    "type": "Steel",
+    "leaderName": null,
+    "badgeName": null,
+    "reward": null,
+    "status": "unknown"
+  },
+  {
+    "id": "fairy",
+    "type": "Fairy",
+    "leaderName": null,
+    "badgeName": null,
+    "reward": null,
+    "status": "unknown"
+  }
+]

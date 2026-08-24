@@ -1,0 +1,52 @@
+---
+import NoticeBanner from "../../components/NoticeBanner.astro";
+import PageShell from "../../layouts/PageShell.astro";
+
+const headings = [
+  { depth: 2, slug: "wiki-v1", text: "Wiki v1" },
+  { depth: 2, slug: "notice-policy", text: "Notice policy" },
+];
+---
+
+<PageShell
+  title="Changelog"
+  description="Permanent wiki changes and the publication home for dated Cobbleverse notices."
+  category="Changelog"
+  {headings}
+  verified
+  related={[
+    { href: "/", title: "Wiki Home" },
+    { href: "/rules/", title: "Rules" },
+  ]}
+>
+  <NoticeBanner label="Wiki release" tone="success"
+    ><p>
+      <time datetime="2026-08-23">August 23, 2026</time> · Production field guide
+      v1
+    </p></NoticeBanner
+  >
+  <h2 id="wiki-v1">Wiki v1</h2>
+  <ul>
+    <li>
+      Added the full major-section route structure and content collection.
+    </li>
+    <li>
+      Added local keyboard search for published pages and structured references.
+    </li>
+    <li>
+      Integrated the supplied Cobbleverse homepage, banner, logo, icon, favicon,
+      and social-preview artwork.
+    </li>
+    <li>
+      Added data-driven region, rank, Gym, currency, feature, and command
+      models.
+    </li>
+    <li>Kept missing server facts in neutral unpublished states.</li>
+  </ul>
+  <h2 id="notice-policy">Notice policy</h2>
+  <p>
+    Temporary maintenance, event, and world-reset announcements should be dated
+    and versioned here. They should not permanently rewrite general world or
+    progression guides.
+  </p>
+</PageShell>

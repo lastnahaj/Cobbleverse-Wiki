@@ -1,0 +1,25 @@
+---
+import type { Currency } from "../data";
+interface Props {
+  currency: Currency;
+}
+const { currency } = Astro.props;
+const state =
+  currency.active === true
+    ? "Active"
+    : currency.active === false
+      ? "Retired"
+      : "Status not published";
+---
+
+<article class="currency-card">
+  <span class="currency-card__coin" aria-hidden="true">◇</span><div>
+    <span class="eyebrow">{currency.category}</span><h3>{currency.name}</h3><p>
+      {
+        currency.description ||
+          "Obtaining and spending details will be added after staff verification."
+      }
+    </p><span class:list={["data-state", { unknown: currency.active === null }]}
+      >{state}</span>
+  </div>
+</article>

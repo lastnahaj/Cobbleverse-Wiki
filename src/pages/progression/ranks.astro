@@ -1,0 +1,43 @@
+---
+import InfoCallout from "../../components/InfoCallout.astro";
+import RankTimeline from "../../components/RankTimeline.astro";
+import { ranks } from "../../data";
+import PageShell from "../../layouts/PageShell.astro";
+
+const headings = [
+  { depth: 2, slug: "playtime-track", text: "Playtime track" },
+  { depth: 2, slug: "rank-tracks", text: "Separate rank tracks" },
+];
+---
+
+<PageShell
+  title="Playtime Ranks"
+  description="Track the current Cobbleverse playtime milestones from Scout to Legendary."
+  category="Progression"
+  hero="/assets/banner-progression.png"
+  {headings}
+  verified
+  related={[
+    { href: "/progression/", title: "Progression Overview" },
+    { href: "/progression/regions/", title: "Region Progression" },
+  ]}
+>
+  <h2 id="playtime-track">Playtime track</h2>
+  <p>
+    Each entry preserves a machine ID separately from its public display name.
+    Hours are cumulative milestones in the current playtime track.
+  </p>
+  <RankTimeline {ranks} />
+  <h2 id="rank-tracks">Separate rank tracks</h2>
+  <p>
+    The data model keeps <strong>playtime</strong>, <strong>staff</strong>, and <strong
+      >Gym Leader</strong
+    > ranks separate. Only the supplied playtime track is currently populated.
+  </p>
+  <InfoCallout title="Progression integrity"
+    ><p>
+      Rank rewards and permissions are not listed because they are not currently
+      verified for publication.
+    </p></InfoCallout
+  >
+</PageShell>

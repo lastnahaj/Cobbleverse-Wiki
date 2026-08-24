@@ -1,0 +1,31 @@
+---
+import { withBase } from "../lib/basePath";
+interface RelatedLink {
+  href: string;
+  title: string;
+  description?: string;
+}
+interface Props {
+  links?: RelatedLink[];
+}
+const { links = [] } = Astro.props;
+---
+
+{
+  links.length > 0 && (
+    <aside class="related-articles">
+      <>
+        <span class="eyebrow">Continue exploring</span>
+        <div>
+          {links.map((link) => (
+            <a href={withBase(link.href)}>
+              <strong>{link.title}</strong>
+              {link.description && <span>{link.description}</span>}
+              <i aria-hidden="true">→</i>
+            </a>
+          ))}
+        </div>
+      </>
+    </aside>
+  )
+}

@@ -1,0 +1,26 @@
+---
+interface Props {
+  command: string;
+  syntax?: string;
+  description: string;
+}
+const { command, syntax, description } = Astro.props;
+---
+
+<div class="command-block">
+  <code>{syntax || command}</code><p>{description}</p><button
+    type="button"
+    data-copy-command={syntax || command}>Copy</button>
+</div>
+
+<script>
+  document
+    .querySelectorAll<HTMLButtonElement>("[data-copy-command]")
+    .forEach((button) => {
+      button.addEventListener("click", async () => {
+        await navigator.clipboard.writeText(button.dataset.copyCommand ?? "");
+        button.textContent = "Copied";
+        window.setTimeout(() => (button.textContent = "Copy"), 1200);
+      });
+    });
+</script>

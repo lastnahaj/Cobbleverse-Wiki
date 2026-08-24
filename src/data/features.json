@@ -1,0 +1,164 @@
+[
+  {
+    "id": "journey",
+    "name": "Journey",
+    "category": "progression",
+    "status": "active"
+  },
+  {
+    "id": "wonder",
+    "name": "Wonder",
+    "category": "progression",
+    "status": "active"
+  },
+  {
+    "id": "bazaar",
+    "name": "Bazaar",
+    "category": "economy",
+    "status": "active"
+  },
+  {
+    "id": "smart-trainers",
+    "name": "Smart Trainers",
+    "category": "battles",
+    "status": "active"
+  },
+  {
+    "id": "frontier",
+    "name": "Frontier",
+    "category": "progression",
+    "status": "planned"
+  },
+  {
+    "id": "bloom",
+    "name": "Bloom",
+    "category": "cobblemon",
+    "status": "active"
+  },
+  {
+    "id": "neoplushies",
+    "name": "NeoPlushies",
+    "category": "collectibles",
+    "status": "active"
+  },
+  {
+    "id": "simple-voice-chat",
+    "name": "Simple Voice Chat",
+    "category": "client",
+    "status": "optional-client"
+  },
+  {
+    "id": "distant-horizons",
+    "name": "Distant Horizons",
+    "category": "client",
+    "status": "optional-client"
+  },
+  {
+    "id": "holodisplays",
+    "name": "HoloDisplays",
+    "category": "interface",
+    "status": "unknown"
+  },
+  {
+    "id": "blanketrtp",
+    "name": "BlanketRTP",
+    "category": "worlds",
+    "status": "unknown"
+  },
+  {
+    "id": "customareas-rtp",
+    "name": "CustomAreas RTP",
+    "category": "worlds",
+    "status": "unknown"
+  },
+  {
+    "id": "world-manager",
+    "name": "World Manager",
+    "category": "worlds",
+    "status": "unknown"
+  },
+  {
+    "id": "eessentials",
+    "name": "EEssentials",
+    "category": "infrastructure",
+    "status": "unknown"
+  },
+  {
+    "id": "luckperms",
+    "name": "LuckPerms",
+    "category": "infrastructure",
+    "status": "unknown"
+  },
+  {
+    "id": "tab",
+    "name": "TAB",
+    "category": "interface",
+    "status": "unknown"
+  },
+  {
+    "id": "styledchat",
+    "name": "StyledChat",
+    "category": "interface",
+    "status": "unknown"
+  },
+  {
+    "id": "cobbleworkers",
+    "name": "Cobbleworkers",
+    "category": "cobblemon",
+    "status": "unknown"
+  },
+  {
+    "id": "cobblemon-extras",
+    "name": "Cobblemon Extras",
+    "category": "cobblemon",
+    "status": "unknown"
+  },
+  {
+    "id": "cobblemon-marks-plus",
+    "name": "Cobblemon Marks+",
+    "category": "cobblemon",
+    "status": "unknown"
+  },
+  {
+    "id": "cobblemon-battle-music",
+    "name": "Cobblemon Battle Music",
+    "category": "client",
+    "status": "unknown"
+  },
+  {
+    "id": "cobblemon-boosters",
+    "name": "Cobblemon Boosters",
+    "category": "cobblemon",
+    "status": "unknown"
+  },
+  {
+    "id": "cobblelagclear",
+    "name": "CobbleLagClear",
+    "category": "performance",
+    "status": "unknown"
+  },
+  {
+    "id": "veinminer",
+    "name": "Veinminer",
+    "category": "quality-of-life",
+    "status": "unknown"
+  },
+  {
+    "id": "bettermending",
+    "name": "BetterMending",
+    "category": "quality-of-life",
+    "status": "unknown"
+  },
+  {
+    "id": "daily-rewards",
+    "name": "Daily Rewards",
+    "category": "rewards",
+    "status": "unknown"
+  },
+  {
+    "id": "resource-pack-systems",
+    "name": "Resource-pack systems",
+    "category": "client",
+    "status": "unknown"
+  }
+]

@@ -1,0 +1,83 @@
+---
+import InfoCallout from "../../components/InfoCallout.astro";
+import WarningCallout from "../../components/WarningCallout.astro";
+import PageShell from "../../layouts/PageShell.astro";
+
+const tiers = Array.from({ length: 13 }, (_, index) => index + 1);
+const archetypes = [
+  "Sweeper",
+  "Stall",
+  "Hyper Offense",
+  "Weather",
+  "Trick Room",
+  "Tower Masters",
+];
+const headings = [
+  {
+    depth: 2,
+    slug: "thirteen-tier-structure",
+    text: "Thirteen-tier structure",
+  },
+  { depth: 2, slug: "trainer-archetypes", text: "Trainer archetypes" },
+  { depth: 2, slug: "configuration-boundary", text: "Configuration boundary" },
+];
+---
+
+<PageShell
+  title="Battle Tower"
+  description="Documentation architecture for thirteen escalating Smart Trainer tiers and specialist archetypes."
+  category="Gyms"
+  hero="/assets/banner-gyms.png"
+  {headings}
+  related={[
+    { href: "/gyms/", title: "Gym Directory" },
+    { href: "/features/smart-trainers/", title: "Smart Trainers" },
+  ]}
+>
+  <p>
+    The Battle Tower is structured for <strong>13 NPC tiers</strong> with increasing
+    difficulty. The guide defines the reference model without fabricating a single
+    team or NPC configuration.
+  </p>
+  <h2 id="thirteen-tier-structure">Thirteen-tier structure</h2>
+  <div class="tower-tiers">
+    {
+      tiers.map((tier) => (
+        <div>
+          <>
+            <span>{String(tier).padStart(2, "0")}</span>
+            <strong>Tier {tier}</strong>
+            <small>Configuration pending</small>
+          </>
+        </div>
+      ))
+    }
+  </div>
+  <InfoCallout title="Escalating difficulty"
+    ><p>
+      Tier order is confirmed as an architectural requirement. Exact opponents,
+      rewards, entry conditions, and difficulty settings remain unpublished.
+    </p></InfoCallout
+  >
+  <h2 id="trainer-archetypes">Trainer archetypes</h2>
+  <div class="archetype-grid">
+    {
+      archetypes.map((archetype) => (
+        <div>
+          <>
+            <i aria-hidden="true" />
+            <strong>{archetype}</strong>
+            <span>Ready for a verified strategy record</span>
+          </>
+        </div>
+      ))
+    }
+  </div>
+  <h2 id="configuration-boundary">Configuration boundary</h2>
+  <WarningCallout
+    ><p>
+      No Pokémon teams, moves, items, NPC names, rewards, or exact challenge
+      rules are present because none were supplied.
+    </p></WarningCallout
+  >
+</PageShell>

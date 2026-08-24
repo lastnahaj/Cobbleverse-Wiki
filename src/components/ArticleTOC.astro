@@ -1,0 +1,31 @@
+---
+interface Heading {
+  depth: number;
+  slug: string;
+  text: string;
+}
+interface Props {
+  headings?: Heading[];
+}
+const { headings = [] } = Astro.props;
+const visibleHeadings = headings.filter(
+  (heading) => heading.depth === 2 || heading.depth === 3,
+);
+---
+
+<aside class="article-toc" aria-label="On this page">
+  <span class="article-toc__label">On this page</span>
+  {
+    visibleHeadings.length ? (
+      <ol>
+        {visibleHeadings.map((heading) => (
+          <li class:list={{ nested: heading.depth === 3 }}>
+            <a href={`#${heading.slug}`}>{heading.text}</a>
+          </li>
+        ))}
+      </ol>
+    ) : (
+      <p>This page is a compact reference.</p>
+    )
+  }
+</aside>

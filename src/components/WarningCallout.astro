@@ -1,0 +1,12 @@
+---
+interface Props {
+  title?: string;
+}
+const { title = "Needs verification" } = Astro.props;
+---
+
+<aside class="callout callout--warning">
+  <span class="callout__icon" aria-hidden="true">!</span><div>
+    <strong>{title}</strong><slot />
+  </div>
+</aside>

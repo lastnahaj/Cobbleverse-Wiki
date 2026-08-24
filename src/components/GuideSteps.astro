@@ -1,0 +1,27 @@
+---
+interface Step {
+  title: string;
+  description: string;
+  href?: string;
+}
+interface Props {
+  steps: Step[];
+}
+const { steps } = Astro.props;
+---
+
+<ol class="guide-steps">
+  {
+    steps.map((step, index) => (
+      <li>
+        <>
+          <span>{String(index + 1).padStart(2, "0")}</span>
+          <div>
+            <p>{step.description}</p>
+            {step.href && <a href={step.href}>Open guide →</a>}
+          </div>
+        </>
+      </li>
+    ))
+  }
+</ol>

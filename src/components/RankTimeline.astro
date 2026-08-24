@@ -1,0 +1,29 @@
+---
+import type { Rank } from "../data";
+interface Props {
+  ranks: Rank[];
+}
+const { ranks } = Astro.props;
+const playtimeRanks = ranks
+  .filter((rank) => rank.track === "playtime")
+  .sort((a, b) => (a.hours ?? 0) - (b.hours ?? 0));
+---
+
+<div class="rank-timeline">
+  {
+    playtimeRanks.map((rank, index) => (
+      <div class="rank-node">
+        <span class="rank-node__marker">
+          {String(index + 1).padStart(2, "0")}
+        </span>
+        <div>
+          <>
+            <strong>{rank.name}</strong>
+            <span>{rank.hours?.toLocaleString()} hours</span>
+            <code>{rank.id}</code>
+          </>
+        </div>
+      </div>
+    ))
+  }
+</div>

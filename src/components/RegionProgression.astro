@@ -1,0 +1,32 @@
+---
+import type { Region } from "../data";
+interface Props {
+  regions: Region[];
+  compact?: boolean;
+}
+const { regions, compact = false } = Astro.props;
+---
+
+<div class:list={["region-route", { "region-route--compact": compact }]}>
+  {
+    regions.map((region, index) => (
+      <div class="region-stop">
+        <span class="region-stop__order">0{region.order}</span>
+        <div class="region-stop__node">
+          <i />
+        </div>
+        <div class="region-stop__copy">
+          <>
+            <strong>{region.name}</strong>
+            <span>
+              {index === 0
+                ? "Your regional journey begins here."
+                : region.unlockRequirement}
+            </span>
+            <small>{region.status}</small>
+          </>
+        </div>
+      </div>
+    ))
+  }
+</div>

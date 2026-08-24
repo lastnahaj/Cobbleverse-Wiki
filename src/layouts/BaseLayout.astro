@@ -1,0 +1,55 @@
+---
+import PageMeta from "../components/PageMeta.astro";
+import SearchDialog from "../components/SearchDialog.astro";
+import WikiFooter from "../components/WikiFooter.astro";
+import WikiHeader from "../components/WikiHeader.astro";
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description: string;
+  image?: string;
+  noindex?: boolean;
+}
+
+const { title, description, image, noindex } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="theme-color" content="#0b171d" />
+    <meta name="generator" content={Astro.generator} />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href={`${import.meta.env.BASE_URL}assets/favicon-16x16.png`}
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href={`${import.meta.env.BASE_URL}assets/favicon-32x32.png`}
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href={`${import.meta.env.BASE_URL}assets/apple-touch-icon.png`}
+    />
+    <link
+      rel="manifest"
+      href={`${import.meta.env.BASE_URL}manifest.webmanifest`}
+    />
+    <PageMeta {title} {description} {image} {noindex} />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <WikiHeader />
+    <main id="main-content"><slot /></main>
+    <WikiFooter />
+    <SearchDialog />
+  </body>
+</html>
