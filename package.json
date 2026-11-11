@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build && node scripts/build-search.mjs",
-    "audit:site": "node scripts/audit-site.mjs",
+    "audit:site": "node --experimental-strip-types scripts/check-spawn-conditions.mjs && node scripts/audit-site.mjs",
     "preview": "astro preview",
     "check": "astro check",
     "import:guides": "node scripts/import-guide-data.mjs",

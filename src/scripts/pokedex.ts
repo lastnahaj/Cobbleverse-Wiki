@@ -1,3 +1,4 @@
+import { spawnConditionRows } from "../lib/spawnConditions";
 interface Stats {
   hp: number;
   attack: number;
@@ -135,6 +136,7 @@ function initialize(root: HTMLElement) {
     String(v ?? "")
       .replace(/^#?[^: ]+:/, "")
       .replace(/^is_/, "")
+      .replace(/([a-z0-9])([A-Z])/g, "$1 $2")
       .replaceAll("_", " ")
       .replaceAll("-", " ")
       .replace(/\b\w/g, (x) => x.toUpperCase());
@@ -287,10 +289,10 @@ function initialize(root: HTMLElement) {
   function dataList(data: Record<string, DataValue> | undefined) {
     if (!data || !Object.keys(data).length)
       return '<p class="dex-muted">No additional conditions listed.</p>';
-    return `<dl class="dex-conditions">${Object.entries(data)
+    return `<dl class="dex-conditions">${spawnConditionRows(data)
       .map(
-        ([k, v]) =>
-          `<div><dt>${esc(title(k))}</dt><dd>${esc(value(v))}</dd></div>`,
+        ([label, text]) =>
+          `<div><dt>${esc(label)}</dt><dd>${esc(text)}</dd></div>`,
       )
       .join("")}</dl>`;
   }
@@ -423,7 +425,7 @@ function initialize(root: HTMLElement) {
       )}</tbody></table></div><p class="dex-muted" data-move-empty hidden>No moves match this search.</p></section>`;
   }
   function spawnPanel(p: Pokemon) {
-    return `<section><h3>Where to find it</h3><p class="dex-muted">Base-species spawn rules from the pack snapshot. Biome tags describe eligible groups; server settings may differ.</p>${(p.spawns ?? []).map((s, i) => `<article class="dex-spawn"><header><strong>Spawn rule ${i + 1}</strong><span>${esc(title(s.bucket ?? "Not specified"))} · Lv. ${esc(s.level ?? "varies")}</span></header>${s.spawnablePositionType ? `<p>Position: ${esc(title(s.spawnablePositionType))}</p>` : ""}${dataList(s.condition)}${s.anticondition ? `<h4>Excluded conditions</h4>${dataList(s.anticondition)}` : ""}</article>`).join("") || "<p>No natural spawn rule is listed. This does not rule out a structure, evolution, or special encounter route.</p>"}</section><section><h3>Drops</h3>${p.drops?.entries?.length ? `<div class="dex-drop-list">${p.drops.entries.map((d) => `<div><strong>${esc(title(d.item ?? d.tag ?? "Drop"))}</strong><span>${d.quantityRange !== undefined ? esc(d.quantityRange) : "Quantity not listed"}${d.percentage !== undefined ? ` · ${d.percentage}%` : ""}</span></div>`).join("")}</div>` : "<p>No drop data is listed.</p>"}</section>`;
+    return `<section><h3>Where to find it</h3><p class="dex-muted">Each encounter has its own requirements. Biome groups can contain several biomes; all listed types of requirement must be met. Excluded environments are shown separately.</p>${(p.spawns ?? []).map((s, i) => `<article class="dex-spawn"><header><strong>Spawn rule ${i + 1}</strong><span>${esc(title(s.bucket ?? "Not specified"))} · Lv. ${esc(s.level ?? "varies")}</span></header>${s.spawnablePositionType ? `<p>Encounter: ${esc(({ grounded: "On land", submerged: "Underwater", fishing: "Fishing", surface: "On the water surface" } as Record<string, string>)[s.spawnablePositionType] ?? title(s.spawnablePositionType))}</p>` : ""}${dataList(s.condition)}${s.anticondition ? `<h4>Excluded environments</h4><p class="dex-muted">The conditions below describe where this spawn rule does not apply.</p>${dataList(s.anticondition)}` : ""}</article>`).join("") || "<p>No natural spawn rule is listed. This does not rule out a structure, evolution, or special encounter route.</p>"}</section><section><h3>Drops</h3>${p.drops?.entries?.length ? `<div class="dex-drop-list">${p.drops.entries.map((d) => `<div><strong>${esc(title(d.item ?? d.tag ?? "Drop"))}</strong><span>${d.quantityRange !== undefined ? esc(d.quantityRange) : "Quantity not listed"}${d.percentage !== undefined ? ` · ${d.percentage}%` : ""}</span></div>`).join("")}</div>` : "<p>No drop data is listed.</p>"}</section>`;
   }
 
   function renderEntry() {
