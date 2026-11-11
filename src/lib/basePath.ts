@@ -5,6 +5,8 @@ const base = import.meta.env.BASE_URL.endsWith("/")
 export function withBase(path: string): string {
   if (/^(?:[a-z]+:|#)/i.test(path)) return path;
   const normalized = path.replace(/^\/+/, "");
+  // Avoid permanent redirects retained by browsers after the hosting migration.
+  if (normalized === "getting-started/") return `${base}${normalized}?v=2`;
   return normalized ? `${base}${normalized}` : base;
 }
 

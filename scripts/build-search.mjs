@@ -108,7 +108,10 @@ for (const [file, route, category] of sources) {
 await writeFile(
   join(root, "search-index.json"),
   JSON.stringify(
-    index.map((entry) => ({ ...entry, url: `/Cobbleverse-Wiki${entry.url}` })),
+    index.map((entry) => ({
+      ...entry,
+      url: `/Cobbleverse-Wiki${entry.url.replace(/^\/getting-started\/(?=#|$)/, "/getting-started/?v=2")}`,
+    })),
   ),
 );
 console.log(
