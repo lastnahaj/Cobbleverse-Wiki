@@ -11,12 +11,20 @@ const schema = z.array(
 );
 export const updates = schema.parse([
   {
+    id: "illustrated-design",
+    date: "2026-11-10",
+    kind: "wiki",
+    title: "An illustrated guide to the adventure",
+    description:
+      "A village hero, illustrated guide navigation, distinct regional scenery, and navy-and-gold article styling.",
+  },
+  {
     id: "atlas-release",
     date: "2026-11-10",
     kind: "wiki",
     title: "A clearer home for Cobbleverse guides",
     description:
-      "Grouped player navigation, a rebuilt homepage, compact references, generated search, and custom-domain preparation.",
+      "Grouped player navigation, a rebuilt homepage, compact references, generated search, and stronger deployment checks.",
   },
   {
     id: "reference-expansion",

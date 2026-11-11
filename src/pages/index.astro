@@ -1,209 +1,350 @@
 ---
 import { getCollection } from "astro:content";
-import { navigation, regions, server } from "../data";
-import { withBase, contentPath } from "../lib/basePath";
+import { regions, server } from "../data";
+import { contentPath, withBase } from "../lib/basePath";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import ServerStatus from "../components/ServerStatus.astro";
+
+const guides = [
+  {
+    title: "Getting Started",
+    text: "Join the server, set up your game, and begin your Cobbleverse journey.",
+    href: "/getting-started/",
+    icon: "getting-started",
+    art: "kanto",
+    label: "Your first steps",
+  },
+  {
+    title: "Pokémon & Training",
+    text: "Find Pokémon, build your team, and prepare for the next battle.",
+    href: "/training/",
+    icon: "progression",
+    art: "hoenn",
+    label: "Build your team",
+  },
+  {
+    title: "Regional Progression",
+    text: "Follow each region’s trainer route, badges, and legendary encounters.",
+    href: "/progression/",
+    icon: "worlds",
+    art: "johto",
+    label: "Choose your route",
+  },
+  {
+    title: "Gyms & Battles",
+    text: "Find Gym Leaders, take on the leagues, and explore battle facilities.",
+    href: "/gyms/",
+    icon: "gyms",
+    art: "sinnoh",
+    label: "Rise to the challenge",
+  },
+  {
+    title: "Economy & Trading",
+    text: "Compare merchants, trade Pokémon, and learn the player market.",
+    href: "/economy/",
+    icon: "economy",
+    art: "kanto",
+    label: "Trade & discover",
+  },
+  {
+    title: "Server Systems",
+    text: "Learn claims, rewards, quests, travel, and Pokémon workers.",
+    href: "/features/",
+    icon: "features",
+    art: "hoenn",
+    label: "Life on the server",
+  },
+];
 const recent = (
   await getCollection("docs", ({ data }) => data.status === "published")
 )
   .sort((a, b) => b.data.lastUpdated.getTime() - a.data.lastUpdated.getTime())
-  .slice(0, 4);
-const descriptions: Record<string, string> = {
-  "Getting Started":
-    "Install the pack, join the server, and prepare for your first session.",
-  "Pokémon & Training":
-    "Catch teammates, plan coverage, and learn how your Pokémon can help.",
-  Progression:
-    "Follow Kanto through Sinnoh, track your next checkpoint, and compare rank systems.",
-  "Gyms & Battles":
-    "Find regional leaders, prepare for leagues, and explore battle facilities.",
-  "World & Travel":
-    "Locate structures, plan expeditions, and find your way home.",
-  "Economy & Trading":
-    "Earn Cobbledollars, compare merchants, list Pokémon, and use auctions.",
-  "Server Systems": "Learn quests, rewards, workers, claims, and server menus.",
-  Collectibles:
-    "Explore NeoPlushies and the collection systems documented for the server.",
+  .slice(0, 3);
+const regionDescriptions: Record<string, string> = {
+  kanto: "Your first badges. Your first league.",
+  johto: "Towers, shrines, and new rivals.",
+  hoenn: "Island routes and ancient legends.",
+  sinnoh: "Mountain paths and the final league.",
 };
-const intents = navigation.filter((item) => descriptions[item.label]);
+const basics = [
+  {
+    title: "Join the server",
+    copy: "Install the matching pack and connect to Cobbleverse.",
+    href: "/getting-started/install/",
+  },
+  {
+    title: "Choose your starter",
+    copy: "Check your supplies, learn storage, and catch a teammate.",
+    href: "/getting-started/first-session/",
+  },
+  {
+    title: "Make yourself at home",
+    copy: "Explore from Spawn and protect your first build.",
+    href: "/getting-started/claims/",
+  },
+  {
+    title: "Prepare for Kanto",
+    copy: "Check the Trainer Card and plan your first Gym team.",
+    href: "/team-building/",
+  },
+];
 ---
 
 <BaseLayout
   title="Cobbleverse Wiki"
-  description="Official Infinite Gaming Servers field guide. Join Cobbleverse, follow the regional leagues, find Pokémon, and learn server systems."
+  description="Your Infinite Gaming Servers guide to Cobbleverse. Start playing, discover Pokémon, follow the regional leagues, and find your place on the server."
 >
-  <div class="atlas-home">
-    <section class="atlas-hero">
-      <div>
-        <span class="eyebrow">Infinite Gaming Servers</span><h1>
-          Cobbleverse Wiki
-        </h1><p class="atlas-subtitle">Your guide to the journey ahead.</p><p>
-          Find your next Gym, build your team, and make yourself at home.
-        </p><div class="button-row">
-          <a class="button button--primary" href={withBase("/getting-started/")}
-            >Start playing <span>→</span></a
-          ><button class="button button--ghost" data-search-open
-            >Search the wiki <kbd>/</kbd></button
-          >
-        </div><div class="atlas-platform">
-          Minecraft {server.minecraftVersion}<span>·</span>{server.loader}<span
-            >·</span
-          >Official server field guide
-        </div>
-      </div><img
-        src={withBase("/assets/brand/cobbleverse-crest.webp")}
-        alt="Cobbleverse Wiki crest"
-        width="1254"
-        height="1254"
+  <div class="adventure-home">
+    <section class="adventure-hero" aria-labelledby="home-title">
+      <img
+        class="adventure-hero__scene"
+        src={withBase("/assets/heroes/cobbleverse-village.webp")}
+        width="1672"
+        height="941"
+        alt=""
         fetchpriority="high"
       />
-    </section>
-    <section class="atlas-section">
-      <div class="atlas-section-heading">
-        <h2>Find your next move</h2><a href={withBase("/guide-index/")}
-          >Guide index →</a
+      <div class="adventure-hero__shade"></div>
+      <div class="adventure-hero__copy">
+        <span class="eyebrow">Infinite Gaming Servers · Player wiki</span><h1
+          id="home-title"
         >
-      </div><div class="intent-grid">
+          Your Cobbleverse<br />adventure starts <em>here.</em>
+        </h1><p>
+          Guides, Pokémon, regional leagues,<br class="desktop-break" /> and life
+          on the server.
+        </p><div class="button-row">
+          <a class="button button--primary" href={withBase("/getting-started/")}
+            ><span aria-hidden="true">◉</span> Start Playing</a
+          ><a class="button button--ghost" href="#explore"
+            ><span aria-hidden="true">▤</span> Explore the Wiki</a
+          >
+        </div>
+      </div>
+    </section>
+    <div class="adventure-ribbon" aria-label="Server details">
+      <span
+        ><i aria-hidden="true">◆</i> Minecraft {server.minecraftVersion} · {
+          server.loader
+        }</span
+      ><a href="#realm"><i aria-hidden="true">↗</i> {server.address}</a><a
+        href="#realm"
+        ><span class="ribbon-status-dot" aria-hidden="true"></span> Live realm status
+        ↓</a
+      >
+    </div>
+    <section class="adventure-section" id="explore">
+      <div class="adventure-title adventure-title--center">
+        <span></span><h2>What brings you here?</h2><span></span>
+      </div><div class="adventure-guide-grid">
         {
-          intents.map((item, i) => (
-            <a href={withBase(item.href)}>
+          guides.map((guide) => (
+            <a class="adventure-guide" href={withBase(guide.href)}>
               <>
-                <span class="intent-number">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <div>
+                <img
+                  class="adventure-guide__backdrop"
+                  src={withBase(`/assets/regions/${guide.art}.webp`)}
+                  width="1672"
+                  height="941"
+                  alt=""
+                  loading="lazy"
+                />
+                <div class="adventure-guide__copy">
                   <>
-                    <h3>{item.label}</h3>
-                    <p>{descriptions[item.label]}</p>
+                    <span class="adventure-kicker">{guide.label}</span>
+                    <h3>{guide.title}</h3>
+                    <p>{guide.text}</p>
+                    <span class="adventure-guide__arrow" aria-hidden="true">
+                      Explore →
+                    </span>
                   </>
                 </div>
-                <span aria-hidden="true">↗</span>
+                <img
+                  class="adventure-guide__icon"
+                  src={withBase(`/assets/icons/guide-${guide.icon}.webp`)}
+                  width="320"
+                  height="320"
+                  alt=""
+                  loading="lazy"
+                />
               </>
             </a>
           ))
         }
-      </div>
+      </div><nav class="adventure-shortcuts" aria-label="More references">
+        <a href={withBase("/pokemon/")}>Pokédex ↗</a><a
+          href={withBase("/items/")}>Items & recipes ↗</a
+        ><a href={withBase("/worlds/")}>World & travel ↗</a><a
+          href={withBase("/collectibles/")}>Collectibles ↗</a
+        ><a href={withBase("/commands/")}>Commands ↗</a>
+      </nav>
     </section>
-    <section class="atlas-section first-hour">
-      <div class="atlas-section-heading">
-        <div>
-          <span class="eyebrow">A suggested starting route</span><h2>
-            Your first hour
-          </h2>
-        </div><a href={withBase("/getting-started/first-session/")}
-          >Read the starter guide →</a
+    <section class="adventure-section journey-section">
+      <div class="adventure-title">
+        <h2>The regional journey</h2><p>
+          One adventure. Four leagues to explore.
+        </p><a href={withBase("/progression/regions/")}
+          >View progression guide →</a
         >
-      </div><div class="hour-grid">
-        <article>
-          <span>01 · 0–10 minutes</span><h3>Begin</h3><p>
-            Choose your starter, check your supplies, and learn the controls.
-          </p><a href={withBase("/getting-started/first-session/")}
-            >First login →</a
-          >
-        </article><article>
-          <span>02 · 10–30 minutes</span><h3>Set out</h3><p>
-            Explore from Spawn, use available travel commands, and protect a
-            home.
-          </p><a href={withBase("/getting-started/claims/")}
-            >Claims and your first base →</a
-          >
-        </article><article>
-          <span>03 · 30–60 minutes</span><h3>Become a trainer</h3><p>
-            Check the Trainer Card, build a balanced party, and prepare for
-            Kanto.
-          </p><a href={withBase("/team-building/")}>Prepare your team →</a>
-        </article>
-      </div>
-    </section>
-    <section class="atlas-section">
-      <div class="atlas-section-heading">
-        <h2>The regional journey</h2><a href={withBase("/progression/regions/")}
-          >Progression guide →</a
-        >
-      </div><div class="atlas-regions">
+      </div><div class="adventure-regions">
         {
           regions.map((region) => (
-            <article>
+            <a class="adventure-region" href={withBase(`/gyms/#${region.id}`)}>
               <>
-                <span>
-                  {String(region.order).padStart(2, "0")} · {region.status}
-                </span>
-                <h3>{region.name}</h3>
-                <p>{region.unlockRequirement}</p>
-                <a href={withBase(`/gyms/#${region.id}`)}>Gyms & league →</a>
+                <div class="adventure-region__image">
+                  <>
+                    <img
+                      src={withBase(`/assets/regions/${region.id}.webp`)}
+                      width="1672"
+                      height="941"
+                      alt=""
+                      loading="lazy"
+                    />
+                    <span>{String(region.order).padStart(2, "0")}</span>
+                  </>
+                </div>
+                <div class="adventure-region__copy">
+                  <>
+                    <h3>{region.name}</h3>
+                    <p>{regionDescriptions[region.id]}</p>
+                    <span>
+                      Gyms & league <i aria-hidden="true">→</i>
+                    </span>
+                  </>
+                </div>
               </>
-            </article>
-          ))
-        }
-      </div><p class="quiet-note">
-        Follow the active Trainer Card for your current checkpoint and level
-        cap. Server unlock requirements and future regions are published when
-        confirmed.
-      </p>
-    </section>
-    <section class="atlas-section beyond">
-      <div>
-        <span class="eyebrow">Beyond the leagues</span><h2>
-          More ways to play
-        </h2><p>
-          Explore battle facilities, quests, automation, trading, and
-          collections.
-        </p>
-      </div><div class="beyond-links">
-        {
-          [
-            ["Battle Tower", "/battle-tower/"],
-            ["Smart Trainers", "/features/smart-trainers/"],
-            ["Colosseum", "/features/colosseum/"],
-            ["NeoPlushies", "/features/neoplushies/"],
-            ["Bazaar", "/economy/bazaar/"],
-            ["Journey", "/features/journey/"],
-          ].map(([title, href]) => (
-            <a href={withBase(href)}>
-              {title}
-              <span>→</span>
             </a>
           ))
         }
+      </div><p class="adventure-footnote">
+        Regional illustrations · Follow your in-game Trainer Card for the active
+        checkpoint and level cap.
+      </p>
+    </section>
+    <div class="adventure-two-column">
+      <section class="adventure-section first-steps">
+        <div class="adventure-title">
+          <h2>Your first hour</h2><span></span>
+        </div><p class="adventure-intro">
+          A few good first steps make the whole journey easier.
+        </p><ol>
+          {
+            basics.map((step, index) => (
+              <li>
+                <>
+                  <span>{index + 1}</span>
+                  <a href={withBase(step.href)}>
+                    <>
+                      <strong>{step.title}</strong>
+                      <p>{step.copy}</p>
+                    </>
+                  </a>
+                  <i aria-hidden="true">↗</i>
+                </>
+              </li>
+            ))
+          }
+        </ol>
+      </section><section class="adventure-section useful-guides">
+        <div class="adventure-title">
+          <h2>Keep these close</h2><span></span>
+        </div><p class="adventure-intro">
+          Quick answers for the things you do every session.
+        </p><div>
+          {
+            [
+              [
+                "Find a command",
+                "Homes, teleports, sharing, and rewards.",
+                "/commands/",
+              ],
+              [
+                "Find an item",
+                "Materials, plates, mints, and fossils.",
+                "/items/",
+              ],
+              [
+                "Compare shops",
+                "Merchants, offers, and reference prices.",
+                "/battle/shops/",
+              ],
+              [
+                "Get unstuck",
+                "Models, maps, level caps, and support.",
+                "/getting-started/troubleshooting/",
+              ],
+            ].map(([title, description, href]) => (
+              <a href={withBase(href)}>
+                <>
+                  <strong>{title}</strong>
+                  <span>{description}</span>
+                  <i aria-hidden="true">→</i>
+                </>
+              </a>
+            ))
+          }
+        </div>
+      </section>
+    </div>
+    <section class="adventure-section adventure-beyond">
+      <img
+        src={withBase("/assets/sections/art-gym-arena.webp")}
+        width="1672"
+        height="941"
+        alt=""
+        loading="lazy"
+      /><div>
+        <span class="eyebrow">Beyond the badges</span><h2>
+          There’s more to the journey.
+        </h2><p>
+          Try a battle facility, follow a quest, start a collection, or build
+          something with friends.
+        </p><nav aria-label="Beyond the leagues">
+          {
+            [
+              ["Battle Tower", "/battle-tower/"],
+              ["Colosseum", "/features/colosseum/"],
+              ["Journey", "/features/journey/"],
+              ["NeoPlushies", "/features/neoplushies/"],
+            ].map(([title, href]) => <a href={withBase(href)}>{title} ↗</a>)
+          }
+        </nav>
       </div>
     </section>
-    <section class="atlas-section realm">
+    <section class="adventure-section adventure-realm" id="realm">
       <div>
-        <span class="eyebrow">Current realm status</span><h2>
-          Play together.
-        </h2><p>{server.address}</p>
+        <span class="eyebrow">A shared world</span><h2>
+          Your adventure has company.
+        </h2><p>{server.address}</p><a href={server.discord}
+          >Join the community on Discord ↗</a
+        >
       </div><ServerStatus />
     </section>
-    <section class="atlas-section">
-      <div class="atlas-section-heading">
-        <h2>Recently updated guides</h2><a href={withBase("/changelog/")}
-          >All updates →</a
+    <section class="adventure-section adventure-recent">
+      <div class="adventure-title">
+        <h2>Fresh from the wiki</h2><span></span><a
+          href={withBase("/changelog/")}>All updates →</a
         >
-      </div><div class="recent-list">
+      </div><div>
         {
           recent.map((entry) => (
             <a href={contentPath(entry.id)}>
               <>
-                <div>
-                  <>
-                    <strong>{entry.data.title}</strong>
-                    <span>{entry.data.description}</span>
-                  </>
-                </div>
                 <time datetime={entry.data.lastUpdated.toISOString()}>
                   {entry.data.lastUpdated.toLocaleDateString("en-US", {
                     month: "short",
                     day: "numeric",
-                    year: "numeric",
                     timeZone: "UTC",
                   })}
                 </time>
+                <h3>{entry.data.title}</h3>
+                <p>{entry.data.description}</p>
+                <span>Read guide →</span>
               </>
             </a>
           ))
         }
       </div>
     </section>
-  </div></BaseLayout
->
+  </div>
+</BaseLayout>

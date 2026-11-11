@@ -13,5 +13,20 @@
     "sections/art-server-systems.webp"
   ],
   "historicalRoot": "artwork/legacy",
+  "heroes": ["heroes/cobbleverse-village.webp"],
+  "regions": [
+    "regions/kanto.webp",
+    "regions/johto.webp",
+    "regions/hoenn.webp",
+    "regions/sinnoh.webp"
+  ],
+  "guideIcons": [
+    "icons/guide-getting-started.webp",
+    "icons/guide-progression.webp",
+    "icons/guide-worlds.webp",
+    "icons/guide-gyms.webp",
+    "icons/guide-economy.webp",
+    "icons/guide-features.webp"
+  ],
   "notes": "Historical source artwork and replaced icons are retained outside the published site. Dimensions are declared where images are rendered."
 }
