@@ -1,0 +1,156 @@
+{
+  "sources": [
+    "https://github.com/PokeAPI/sprites",
+    "https://play.pokemonshowdown.com/",
+    "https://github.com/smogon/sprites"
+  ],
+  "rights": "Pokémon artwork belongs to its respective owners. Battle sprites are provided by Pokémon Showdown and its sprite contributors.",
+  "entries": 1445,
+  "animated": 1364,
+  "missing": [
+    {
+      "species": 150,
+      "form": "Armored"
+    },
+    {
+      "species": 150,
+      "form": "Mega-AX"
+    },
+    {
+      "species": 150,
+      "form": "Mega-AY"
+    },
+    {
+      "species": 150,
+      "form": "Mega-SX"
+    },
+    {
+      "species": 150,
+      "form": "Mega-SY"
+    },
+    {
+      "species": 150,
+      "form": "Shadow"
+    },
+    {
+      "species": 249,
+      "form": "Shadow"
+    },
+    {
+      "species": 383,
+      "form": "Virus"
+    },
+    {
+      "species": 448,
+      "form": "Cafe-Costume"
+    },
+    {
+      "species": 448,
+      "form": "Captain-Costume"
+    },
+    {
+      "species": 448,
+      "form": "Chef-Costume"
+    },
+    {
+      "species": 448,
+      "form": "Concert-Costume"
+    },
+    {
+      "species": 448,
+      "form": "Costume_Party-Costume"
+    },
+    {
+      "species": 448,
+      "form": "Holiday-Costume"
+    },
+    {
+      "species": 448,
+      "form": "Martial_Arts-Costume"
+    },
+    {
+      "species": 448,
+      "form": "Mega-Cafe-Costume"
+    },
+    {
+      "species": 448,
+      "form": "Mega-Captain-Costume"
+    },
+    {
+      "species": 448,
+      "form": "Mega-Chef-Costume"
+    },
+    {
+      "species": 448,
+      "form": "Mega-Concert-Costume"
+    },
+    {
+      "species": 448,
+      "form": "Mega-Costume_Party-Costume"
+    },
+    {
+      "species": 448,
+      "form": "Mega-Holiday-Costume"
+    },
+    {
+      "species": 448,
+      "form": "Mega-Martial_Arts-Costume"
+    },
+    {
+      "species": 448,
+      "form": "Mega-Ruins-Costume"
+    },
+    {
+      "species": 448,
+      "form": "Mega-Space-Costume"
+    },
+    {
+      "species": 448,
+      "form": "Ruins-Costume"
+    },
+    {
+      "species": 448,
+      "form": "Space-Costume"
+    },
+    {
+      "species": 483,
+      "form": "Primal"
+    },
+    {
+      "species": 670,
+      "form": "Ange"
+    },
+    {
+      "species": 670,
+      "form": "MegaE"
+    },
+    {
+      "species": 676,
+      "form": "Cinnamon"
+    },
+    {
+      "species": 676,
+      "form": "Crusader"
+    },
+    {
+      "species": 676,
+      "form": "Lavender"
+    },
+    {
+      "species": 676,
+      "form": "Matcha"
+    },
+    {
+      "species": 676,
+      "form": "Mourner"
+    },
+    {
+      "species": 676,
+      "form": "Rocker"
+    },
+    {
+      "species": 718,
+      "form": "Core"
+    }
+  ]
+}

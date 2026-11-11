@@ -11,6 +11,7 @@
     "check": "astro check",
     "import:guides": "node scripts/import-guide-data.mjs",
     "import:pokemon-art": "node scripts/import-pokemon-art.mjs",
+    "import:pokemon-forms": "node scripts/import-pokemon-forms.mjs",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },

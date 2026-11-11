@@ -73,6 +73,11 @@ interface Ability {
   shortDescription?: string;
   description?: string;
 }
+interface Artwork {
+  static: string;
+  animated?: string;
+  sharedAppearance?: boolean;
+}
 const root = document.querySelector<HTMLElement>("[data-pokedex]");
 if (root) initialize(root);
 
@@ -98,6 +103,15 @@ function initialize(root: HTMLElement) {
     moves: Move[] = [],
     abilities: Ability[] = [];
   let referencePromise: Promise<void> | undefined;
+  let formArt: Record<string, Artwork> = {};
+  const motionPreference = window.matchMedia(
+    "(prefers-reduced-motion: reduce)",
+  );
+  let animate = !motionPreference.matches;
+  motionPreference.addEventListener("change", (event) => {
+    animate = !event.matches;
+    if (dialog.open) renderEntry();
+  });
   let focusBefore: HTMLElement | null = null;
   const statNames: Record<keyof Stats, string> = {
     hp: "HP",
@@ -383,6 +397,23 @@ function initialize(root: HTMLElement) {
     if (!selected) return;
     const p = selected;
     const form = p.forms?.[formIndex];
+    const visual =
+      formArt[
+        form
+          ? `${p.nationalPokedexNumber}:${form.name}`
+          : String(p.nationalPokedexNumber)
+      ] ??
+      (!form
+        ? { static: `assets/pokemon/${p.nationalPokedexNumber}.webp` }
+        : undefined);
+    const image = visual
+      ? `<img src="${base}${animate && visual.animated ? visual.animated : visual.static}" width="475" height="475" alt="${esc(p.name)}${form ? ` ${esc(form.name)}` : ""}${animate && visual.animated ? " animated sprite" : " artwork"}" />`
+      : `<div class="dex-art-unavailable" role="img" aria-label="Artwork unavailable for ${esc(p.name)} ${esc(form?.name)}"><span aria-hidden="true">?</span><small>Form artwork unavailable</small></div>`;
+    const artControls = visual?.animated
+      ? `<button type="button" class="dex-share" data-animation aria-pressed="${animate}">${animate ? "Pause animation" : "Play animation"}</button>`
+      : visual
+        ? '<p class="dex-muted">Static artwork · animation unavailable</p>'
+        : "";
     const record: Pokemon | Form = form
       ? {
           ...p,
@@ -399,7 +430,7 @@ function initialize(root: HTMLElement) {
     const poolIndex = pool.findIndex(
       (x) => x.nationalPokedexNumber === p.nationalPokedexNumber,
     );
-    entry.innerHTML = `<div class="dex-entry-toolbar"><span>${number(p)} · Generation ${generationNumber(p.nationalPokedexNumber)}</span><div><button type="button" data-previous aria-label="Previous Pokémon" ${poolIndex <= 0 ? "disabled" : ""}>←</button><button type="button" data-next aria-label="Next Pokémon" ${poolIndex >= pool.length - 1 ? "disabled" : ""}>→</button><button type="button" class="dex-close" data-close aria-label="Close Pokémon entry">✕</button></div></div><div class="dex-entry-layout"><aside class="dex-profile"><div class="dex-profile-art" data-primary="${esc(record.primaryType)}"><img src="${artwork(p)}" width="475" height="475" alt="${esc(p.name)} base-species artwork" /><span aria-hidden="true">${number(p)}</span></div><div class="dex-profile-copy"><h2>${esc(p.name)}</h2><div class="dex-profile-types">${chips(record)}</div>${p.forms?.length ? `<label>Form<select data-form><option value="-1" ${formIndex < 0 ? "selected" : ""}>Base form</option>${p.forms.map((f, i) => `<option value="${i}" ${formIndex === i ? "selected" : ""}>${esc(f.name)}</option>`).join("")}</select></label>` : ""}${form ? `<p class="dex-form-note">${esc(form.name)} data · Image shows the base species.${form.battleOnly ? " This form is battle-only in the snapshot." : ""}</p>` : ""}<p class="dex-muted">Cobbleverse 1.7.42 reference data.</p><button type="button" class="dex-share" data-share>Copy entry link</button></div></aside><div class="dex-entry-main"><div class="dex-tabs" role="tablist" aria-label="Pokémon details">${[
+    entry.innerHTML = `<div class="dex-entry-toolbar"><span>${number(p)} · Generation ${generationNumber(p.nationalPokedexNumber)}</span><div><button type="button" data-previous aria-label="Previous Pokémon" ${poolIndex <= 0 ? "disabled" : ""}>←</button><button type="button" data-next aria-label="Next Pokémon" ${poolIndex >= pool.length - 1 ? "disabled" : ""}>→</button><button type="button" class="dex-close" data-close aria-label="Close Pokémon entry">✕</button></div></div><div class="dex-entry-layout"><aside class="dex-profile"><div class="dex-profile-art" data-primary="${esc(record.primaryType)}">${image}<span aria-hidden="true">${number(p)}</span></div><div class="dex-profile-copy"><h2>${esc(p.name)}</h2><div class="dex-profile-types">${chips(record)}</div>${p.forms?.length ? `<label>Form<select data-form><option value="-1" ${formIndex < 0 ? "selected" : ""}>Base form</option>${p.forms.map((f, i) => `<option value="${i}" ${formIndex === i ? "selected" : ""}>${esc(f.name)}</option>`).join("")}</select></label>` : ""}${form ? `<p class="dex-form-note">${esc(form.name)}${visual?.sharedAppearance ? " · Shares the base appearance." : !visual ? " · No matching artwork is available for this custom form." : ""}${form.battleOnly ? " This form is battle-only in the snapshot." : ""}</p>` : ""}${artControls}<p class="dex-muted">Cobbleverse 1.7.42 reference data.</p><button type="button" class="dex-share" data-share>Copy entry link</button></div></aside><div class="dex-entry-main"><div class="dex-tabs" role="tablist" aria-label="Pokémon details">${[
       ["overview", "Overview"],
       ["evolution", "Evolution"],
       ["moves", "Moves"],
@@ -460,6 +491,11 @@ function initialize(root: HTMLElement) {
   });
   entry.addEventListener("click", (event) => {
     const element = event.target as Element;
+    if (element.closest("[data-animation]")) {
+      animate = !animate;
+      renderEntry();
+      entry.querySelector<HTMLButtonElement>("[data-animation]")?.focus();
+    }
     if (element.closest("[data-close]")) close();
     const tab = element.closest<HTMLElement>("[data-tab]");
     if (tab) {
@@ -547,12 +583,24 @@ function initialize(root: HTMLElement) {
       document.body.classList.remove("dex-is-open");
     }
   });
-  fetch(`${base}data/cobbleverse-guides/pokemon.json`)
-    .then((r) => {
+  Promise.all([
+    fetch(`${base}data/cobbleverse-guides/pokemon-art.json`)
+      .then((r) => {
+        if (!r.ok) throw Error("Artwork catalogue unavailable");
+        return r.json();
+      })
+      .then((data: Record<string, Artwork>) => {
+        formArt = data;
+      })
+      .catch(() => {
+        /* Base artwork remains available when the catalogue cannot load. */
+      }),
+    fetch(`${base}data/cobbleverse-guides/pokemon.json`).then((r) => {
       if (!r.ok) throw Error("Pokédex data unavailable");
       return r.json();
-    })
-    .then((data: Pokemon[]) => {
+    }),
+  ])
+    .then(([, data]: [void, Pokemon[]]) => {
       pokemon = data;
       renderGrid();
       const id = Number(initial.get("pokemon"));

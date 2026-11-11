@@ -46,4 +46,6 @@ Production assets are grouped into `public/assets/brand/` and `public/assets/sec
 
 Refresh external reference snapshots with `npm run import:guides`, review changes and provenance, then run the full checks. Installation reports and upstream capability descriptions do not establish live server values.
 
-Run `npm run import:pokemon-art` to restore missing species artwork from the PokéAPI sprite repository. Images are optimized to WebP at a maximum of 475 pixels; source attribution and missing-image results are recorded in `public/assets/pokemon/credits.json`. Alternate-form entries identify when the displayed image represents the base species.
+Run `npm run import:pokemon-art` to restore missing species artwork from the PokéAPI sprite repository. Images are optimized to WebP at a maximum of 475 pixels; source attribution and missing-image results are recorded in `public/assets/pokemon/credits.json`.
+
+Run `npm run import:pokemon-forms` to refresh the form artwork catalogue and locally hosted Pokémon Showdown animations. Entries switch images with the selected form, offer playback controls, and default to static artwork when reduced motion is enabled. Custom forms without matching artwork display an availability notice. Provenance and coverage are recorded in `public/assets/pokemon/forms/credits.json`.

@@ -13,6 +13,25 @@ async function files(dir) {
   ).flat();
 }
 const failures = [];
+const pokemonArt = JSON.parse(
+  await readFile(
+    join(root, "data/cobbleverse-guides/pokemon-art.json"),
+    "utf8",
+  ),
+);
+for (const [key, artwork] of Object.entries(pokemonArt)) {
+  for (const path of [artwork.static, artwork.animated].filter(Boolean)) {
+    if (!path.startsWith("assets/pokemon/") || path.includes("..")) {
+      failures.push(`Pokédex ${key}: invalid artwork path ${path}`);
+      continue;
+    }
+    try {
+      await access(join(root, path));
+    } catch {
+      failures.push(`Pokédex ${key}: missing artwork ${path}`);
+    }
+  }
+}
 let count = 0;
 for (const file of (await files(root)).filter((file) =>
   file.endsWith(".html"),

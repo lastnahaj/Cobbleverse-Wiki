@@ -433,6 +433,24 @@
   color: #ffffff0c;
   font-family: monospace;
 }
+.dex-art-unavailable {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 12px;
+  padding: 20px;
+  text-align: center;
+  color: #b5cbd8;
+}
+.dex-art-unavailable > span {
+  font:
+    700 6rem Georgia,
+    serif;
+  color: #8ea8ba;
+}
+.dex-art-unavailable small {
+  font-size: 0.8rem;
+}
 .dex-profile-copy h2 {
   font-family: Georgia, serif;
   color: #f6e6c3;

@@ -1,0 +1,5718 @@
+{
+  "1": {
+    "static": "assets/pokemon/1.webp",
+    "animated": "assets/pokemon/forms/1.gif"
+  },
+  "2": {
+    "static": "assets/pokemon/2.webp",
+    "animated": "assets/pokemon/forms/2.gif"
+  },
+  "3": {
+    "static": "assets/pokemon/3.webp",
+    "animated": "assets/pokemon/forms/3.gif"
+  },
+  "4": {
+    "static": "assets/pokemon/4.webp",
+    "animated": "assets/pokemon/forms/4.gif"
+  },
+  "5": {
+    "static": "assets/pokemon/5.webp",
+    "animated": "assets/pokemon/forms/5.gif"
+  },
+  "6": {
+    "static": "assets/pokemon/6.webp",
+    "animated": "assets/pokemon/forms/6.gif"
+  },
+  "7": {
+    "static": "assets/pokemon/7.webp",
+    "animated": "assets/pokemon/forms/7.gif"
+  },
+  "8": {
+    "static": "assets/pokemon/8.webp",
+    "animated": "assets/pokemon/forms/8.gif"
+  },
+  "9": {
+    "static": "assets/pokemon/9.webp",
+    "animated": "assets/pokemon/forms/9.gif"
+  },
+  "10": {
+    "static": "assets/pokemon/10.webp",
+    "animated": "assets/pokemon/forms/10.gif"
+  },
+  "11": {
+    "static": "assets/pokemon/11.webp",
+    "animated": "assets/pokemon/forms/11.gif"
+  },
+  "12": {
+    "static": "assets/pokemon/12.webp",
+    "animated": "assets/pokemon/forms/12.gif"
+  },
+  "13": {
+    "static": "assets/pokemon/13.webp",
+    "animated": "assets/pokemon/forms/13.gif"
+  },
+  "14": {
+    "static": "assets/pokemon/14.webp",
+    "animated": "assets/pokemon/forms/14.gif"
+  },
+  "15": {
+    "static": "assets/pokemon/15.webp",
+    "animated": "assets/pokemon/forms/15.gif"
+  },
+  "16": {
+    "static": "assets/pokemon/16.webp",
+    "animated": "assets/pokemon/forms/16.gif"
+  },
+  "17": {
+    "static": "assets/pokemon/17.webp",
+    "animated": "assets/pokemon/forms/17.gif"
+  },
+  "18": {
+    "static": "assets/pokemon/18.webp",
+    "animated": "assets/pokemon/forms/18.gif"
+  },
+  "19": {
+    "static": "assets/pokemon/19.webp",
+    "animated": "assets/pokemon/forms/19.gif"
+  },
+  "20": {
+    "static": "assets/pokemon/20.webp",
+    "animated": "assets/pokemon/forms/20.gif"
+  },
+  "21": {
+    "static": "assets/pokemon/21.webp",
+    "animated": "assets/pokemon/forms/21.gif"
+  },
+  "22": {
+    "static": "assets/pokemon/22.webp",
+    "animated": "assets/pokemon/forms/22.gif"
+  },
+  "23": {
+    "static": "assets/pokemon/23.webp",
+    "animated": "assets/pokemon/forms/23.gif"
+  },
+  "24": {
+    "static": "assets/pokemon/24.webp",
+    "animated": "assets/pokemon/forms/24.gif"
+  },
+  "25": {
+    "static": "assets/pokemon/25.webp",
+    "animated": "assets/pokemon/forms/25.gif"
+  },
+  "26": {
+    "static": "assets/pokemon/26.webp",
+    "animated": "assets/pokemon/forms/26.gif"
+  },
+  "27": {
+    "static": "assets/pokemon/27.webp",
+    "animated": "assets/pokemon/forms/27.gif"
+  },
+  "28": {
+    "static": "assets/pokemon/28.webp",
+    "animated": "assets/pokemon/forms/28.gif"
+  },
+  "29": {
+    "static": "assets/pokemon/29.webp",
+    "animated": "assets/pokemon/forms/29.gif"
+  },
+  "30": {
+    "static": "assets/pokemon/30.webp",
+    "animated": "assets/pokemon/forms/30.gif"
+  },
+  "31": {
+    "static": "assets/pokemon/31.webp",
+    "animated": "assets/pokemon/forms/31.gif"
+  },
+  "32": {
+    "static": "assets/pokemon/32.webp",
+    "animated": "assets/pokemon/forms/32.gif"
+  },
+  "33": {
+    "static": "assets/pokemon/33.webp",
+    "animated": "assets/pokemon/forms/33.gif"
+  },
+  "34": {
+    "static": "assets/pokemon/34.webp",
+    "animated": "assets/pokemon/forms/34.gif"
+  },
+  "35": {
+    "static": "assets/pokemon/35.webp",
+    "animated": "assets/pokemon/forms/35.gif"
+  },
+  "36": {
+    "static": "assets/pokemon/36.webp",
+    "animated": "assets/pokemon/forms/36.gif"
+  },
+  "37": {
+    "static": "assets/pokemon/37.webp",
+    "animated": "assets/pokemon/forms/37.gif"
+  },
+  "38": {
+    "static": "assets/pokemon/38.webp",
+    "animated": "assets/pokemon/forms/38.gif"
+  },
+  "39": {
+    "static": "assets/pokemon/39.webp",
+    "animated": "assets/pokemon/forms/39.gif"
+  },
+  "40": {
+    "static": "assets/pokemon/40.webp",
+    "animated": "assets/pokemon/forms/40.gif"
+  },
+  "41": {
+    "static": "assets/pokemon/41.webp",
+    "animated": "assets/pokemon/forms/41.gif"
+  },
+  "42": {
+    "static": "assets/pokemon/42.webp",
+    "animated": "assets/pokemon/forms/42.gif"
+  },
+  "43": {
+    "static": "assets/pokemon/43.webp",
+    "animated": "assets/pokemon/forms/43.gif"
+  },
+  "44": {
+    "static": "assets/pokemon/44.webp",
+    "animated": "assets/pokemon/forms/44.gif"
+  },
+  "45": {
+    "static": "assets/pokemon/45.webp",
+    "animated": "assets/pokemon/forms/45.gif"
+  },
+  "46": {
+    "static": "assets/pokemon/46.webp",
+    "animated": "assets/pokemon/forms/46.gif"
+  },
+  "47": {
+    "static": "assets/pokemon/47.webp",
+    "animated": "assets/pokemon/forms/47.gif"
+  },
+  "48": {
+    "static": "assets/pokemon/48.webp",
+    "animated": "assets/pokemon/forms/48.gif"
+  },
+  "49": {
+    "static": "assets/pokemon/49.webp",
+    "animated": "assets/pokemon/forms/49.gif"
+  },
+  "50": {
+    "static": "assets/pokemon/50.webp",
+    "animated": "assets/pokemon/forms/50.gif"
+  },
+  "51": {
+    "static": "assets/pokemon/51.webp",
+    "animated": "assets/pokemon/forms/51.gif"
+  },
+  "52": {
+    "static": "assets/pokemon/52.webp",
+    "animated": "assets/pokemon/forms/52.gif"
+  },
+  "53": {
+    "static": "assets/pokemon/53.webp",
+    "animated": "assets/pokemon/forms/53.gif"
+  },
+  "54": {
+    "static": "assets/pokemon/54.webp",
+    "animated": "assets/pokemon/forms/54.gif"
+  },
+  "55": {
+    "static": "assets/pokemon/55.webp",
+    "animated": "assets/pokemon/forms/55.gif"
+  },
+  "56": {
+    "static": "assets/pokemon/56.webp",
+    "animated": "assets/pokemon/forms/56.gif"
+  },
+  "57": {
+    "static": "assets/pokemon/57.webp",
+    "animated": "assets/pokemon/forms/57.gif"
+  },
+  "58": {
+    "static": "assets/pokemon/58.webp",
+    "animated": "assets/pokemon/forms/58.gif"
+  },
+  "59": {
+    "static": "assets/pokemon/59.webp",
+    "animated": "assets/pokemon/forms/59.gif"
+  },
+  "60": {
+    "static": "assets/pokemon/60.webp",
+    "animated": "assets/pokemon/forms/60.gif"
+  },
+  "61": {
+    "static": "assets/pokemon/61.webp",
+    "animated": "assets/pokemon/forms/61.gif"
+  },
+  "62": {
+    "static": "assets/pokemon/62.webp",
+    "animated": "assets/pokemon/forms/62.gif"
+  },
+  "63": {
+    "static": "assets/pokemon/63.webp",
+    "animated": "assets/pokemon/forms/63.gif"
+  },
+  "64": {
+    "static": "assets/pokemon/64.webp",
+    "animated": "assets/pokemon/forms/64.gif"
+  },
+  "65": {
+    "static": "assets/pokemon/65.webp",
+    "animated": "assets/pokemon/forms/65.gif"
+  },
+  "66": {
+    "static": "assets/pokemon/66.webp",
+    "animated": "assets/pokemon/forms/66.gif"
+  },
+  "67": {
+    "static": "assets/pokemon/67.webp",
+    "animated": "assets/pokemon/forms/67.gif"
+  },
+  "68": {
+    "static": "assets/pokemon/68.webp",
+    "animated": "assets/pokemon/forms/68.gif"
+  },
+  "69": {
+    "static": "assets/pokemon/69.webp",
+    "animated": "assets/pokemon/forms/69.gif"
+  },
+  "70": {
+    "static": "assets/pokemon/70.webp",
+    "animated": "assets/pokemon/forms/70.gif"
+  },
+  "71": {
+    "static": "assets/pokemon/71.webp",
+    "animated": "assets/pokemon/forms/71.gif"
+  },
+  "72": {
+    "static": "assets/pokemon/72.webp",
+    "animated": "assets/pokemon/forms/72.gif"
+  },
+  "73": {
+    "static": "assets/pokemon/73.webp",
+    "animated": "assets/pokemon/forms/73.gif"
+  },
+  "74": {
+    "static": "assets/pokemon/74.webp",
+    "animated": "assets/pokemon/forms/74.gif"
+  },
+  "75": {
+    "static": "assets/pokemon/75.webp",
+    "animated": "assets/pokemon/forms/75.gif"
+  },
+  "76": {
+    "static": "assets/pokemon/76.webp",
+    "animated": "assets/pokemon/forms/76.gif"
+  },
+  "77": {
+    "static": "assets/pokemon/77.webp",
+    "animated": "assets/pokemon/forms/77.gif"
+  },
+  "78": {
+    "static": "assets/pokemon/78.webp",
+    "animated": "assets/pokemon/forms/78.gif"
+  },
+  "79": {
+    "static": "assets/pokemon/79.webp",
+    "animated": "assets/pokemon/forms/79.gif"
+  },
+  "80": {
+    "static": "assets/pokemon/80.webp",
+    "animated": "assets/pokemon/forms/80.gif"
+  },
+  "81": {
+    "static": "assets/pokemon/81.webp",
+    "animated": "assets/pokemon/forms/81.gif"
+  },
+  "82": {
+    "static": "assets/pokemon/82.webp",
+    "animated": "assets/pokemon/forms/82.gif"
+  },
+  "83": {
+    "static": "assets/pokemon/83.webp",
+    "animated": "assets/pokemon/forms/83.gif"
+  },
+  "84": {
+    "static": "assets/pokemon/84.webp",
+    "animated": "assets/pokemon/forms/84.gif"
+  },
+  "85": {
+    "static": "assets/pokemon/85.webp",
+    "animated": "assets/pokemon/forms/85.gif"
+  },
+  "86": {
+    "static": "assets/pokemon/86.webp",
+    "animated": "assets/pokemon/forms/86.gif"
+  },
+  "87": {
+    "static": "assets/pokemon/87.webp",
+    "animated": "assets/pokemon/forms/87.gif"
+  },
+  "88": {
+    "static": "assets/pokemon/88.webp",
+    "animated": "assets/pokemon/forms/88.gif"
+  },
+  "89": {
+    "static": "assets/pokemon/89.webp",
+    "animated": "assets/pokemon/forms/89.gif"
+  },
+  "90": {
+    "static": "assets/pokemon/90.webp",
+    "animated": "assets/pokemon/forms/90.gif"
+  },
+  "91": {
+    "static": "assets/pokemon/91.webp",
+    "animated": "assets/pokemon/forms/91.gif"
+  },
+  "92": {
+    "static": "assets/pokemon/92.webp",
+    "animated": "assets/pokemon/forms/92.gif"
+  },
+  "93": {
+    "static": "assets/pokemon/93.webp",
+    "animated": "assets/pokemon/forms/93.gif"
+  },
+  "94": {
+    "static": "assets/pokemon/94.webp",
+    "animated": "assets/pokemon/forms/94.gif"
+  },
+  "95": {
+    "static": "assets/pokemon/95.webp",
+    "animated": "assets/pokemon/forms/95.gif"
+  },
+  "96": {
+    "static": "assets/pokemon/96.webp",
+    "animated": "assets/pokemon/forms/96.gif"
+  },
+  "97": {
+    "static": "assets/pokemon/97.webp",
+    "animated": "assets/pokemon/forms/97.gif"
+  },
+  "98": {
+    "static": "assets/pokemon/98.webp",
+    "animated": "assets/pokemon/forms/98.gif"
+  },
+  "99": {
+    "static": "assets/pokemon/99.webp",
+    "animated": "assets/pokemon/forms/99.gif"
+  },
+  "100": {
+    "static": "assets/pokemon/100.webp",
+    "animated": "assets/pokemon/forms/100.gif"
+  },
+  "101": {
+    "static": "assets/pokemon/101.webp",
+    "animated": "assets/pokemon/forms/101.gif"
+  },
+  "102": {
+    "static": "assets/pokemon/102.webp",
+    "animated": "assets/pokemon/forms/102.gif"
+  },
+  "103": {
+    "static": "assets/pokemon/103.webp",
+    "animated": "assets/pokemon/forms/103.gif"
+  },
+  "104": {
+    "static": "assets/pokemon/104.webp",
+    "animated": "assets/pokemon/forms/104.gif"
+  },
+  "105": {
+    "static": "assets/pokemon/105.webp",
+    "animated": "assets/pokemon/forms/105.gif"
+  },
+  "106": {
+    "static": "assets/pokemon/106.webp",
+    "animated": "assets/pokemon/forms/106.gif"
+  },
+  "107": {
+    "static": "assets/pokemon/107.webp",
+    "animated": "assets/pokemon/forms/107.gif"
+  },
+  "108": {
+    "static": "assets/pokemon/108.webp",
+    "animated": "assets/pokemon/forms/108.gif"
+  },
+  "109": {
+    "static": "assets/pokemon/109.webp",
+    "animated": "assets/pokemon/forms/109.gif"
+  },
+  "110": {
+    "static": "assets/pokemon/110.webp",
+    "animated": "assets/pokemon/forms/110.gif"
+  },
+  "111": {
+    "static": "assets/pokemon/111.webp",
+    "animated": "assets/pokemon/forms/111.gif"
+  },
+  "112": {
+    "static": "assets/pokemon/112.webp",
+    "animated": "assets/pokemon/forms/112.gif"
+  },
+  "113": {
+    "static": "assets/pokemon/113.webp",
+    "animated": "assets/pokemon/forms/113.gif"
+  },
+  "114": {
+    "static": "assets/pokemon/114.webp",
+    "animated": "assets/pokemon/forms/114.gif"
+  },
+  "115": {
+    "static": "assets/pokemon/115.webp",
+    "animated": "assets/pokemon/forms/115.gif"
+  },
+  "116": {
+    "static": "assets/pokemon/116.webp",
+    "animated": "assets/pokemon/forms/116.gif"
+  },
+  "117": {
+    "static": "assets/pokemon/117.webp",
+    "animated": "assets/pokemon/forms/117.gif"
+  },
+  "118": {
+    "static": "assets/pokemon/118.webp",
+    "animated": "assets/pokemon/forms/118.gif"
+  },
+  "119": {
+    "static": "assets/pokemon/119.webp",
+    "animated": "assets/pokemon/forms/119.gif"
+  },
+  "120": {
+    "static": "assets/pokemon/120.webp",
+    "animated": "assets/pokemon/forms/120.gif"
+  },
+  "121": {
+    "static": "assets/pokemon/121.webp",
+    "animated": "assets/pokemon/forms/121.gif"
+  },
+  "122": {
+    "static": "assets/pokemon/122.webp",
+    "animated": "assets/pokemon/forms/122.gif"
+  },
+  "123": {
+    "static": "assets/pokemon/123.webp",
+    "animated": "assets/pokemon/forms/123.gif"
+  },
+  "124": {
+    "static": "assets/pokemon/124.webp",
+    "animated": "assets/pokemon/forms/124.gif"
+  },
+  "125": {
+    "static": "assets/pokemon/125.webp",
+    "animated": "assets/pokemon/forms/125.gif"
+  },
+  "126": {
+    "static": "assets/pokemon/126.webp",
+    "animated": "assets/pokemon/forms/126.gif"
+  },
+  "127": {
+    "static": "assets/pokemon/127.webp",
+    "animated": "assets/pokemon/forms/127.gif"
+  },
+  "128": {
+    "static": "assets/pokemon/128.webp",
+    "animated": "assets/pokemon/forms/128.gif"
+  },
+  "129": {
+    "static": "assets/pokemon/129.webp",
+    "animated": "assets/pokemon/forms/129.gif"
+  },
+  "130": {
+    "static": "assets/pokemon/130.webp",
+    "animated": "assets/pokemon/forms/130.gif"
+  },
+  "131": {
+    "static": "assets/pokemon/131.webp",
+    "animated": "assets/pokemon/forms/131.gif"
+  },
+  "132": {
+    "static": "assets/pokemon/132.webp",
+    "animated": "assets/pokemon/forms/132.gif"
+  },
+  "133": {
+    "static": "assets/pokemon/133.webp",
+    "animated": "assets/pokemon/forms/133.gif"
+  },
+  "134": {
+    "static": "assets/pokemon/134.webp",
+    "animated": "assets/pokemon/forms/134.gif"
+  },
+  "135": {
+    "static": "assets/pokemon/135.webp",
+    "animated": "assets/pokemon/forms/135.gif"
+  },
+  "136": {
+    "static": "assets/pokemon/136.webp",
+    "animated": "assets/pokemon/forms/136.gif"
+  },
+  "137": {
+    "static": "assets/pokemon/137.webp",
+    "animated": "assets/pokemon/forms/137.gif"
+  },
+  "138": {
+    "static": "assets/pokemon/138.webp",
+    "animated": "assets/pokemon/forms/138.gif"
+  },
+  "139": {
+    "static": "assets/pokemon/139.webp",
+    "animated": "assets/pokemon/forms/139.gif"
+  },
+  "140": {
+    "static": "assets/pokemon/140.webp",
+    "animated": "assets/pokemon/forms/140.gif"
+  },
+  "141": {
+    "static": "assets/pokemon/141.webp",
+    "animated": "assets/pokemon/forms/141.gif"
+  },
+  "142": {
+    "static": "assets/pokemon/142.webp",
+    "animated": "assets/pokemon/forms/142.gif"
+  },
+  "143": {
+    "static": "assets/pokemon/143.webp",
+    "animated": "assets/pokemon/forms/143.gif"
+  },
+  "144": {
+    "static": "assets/pokemon/144.webp",
+    "animated": "assets/pokemon/forms/144.gif"
+  },
+  "145": {
+    "static": "assets/pokemon/145.webp",
+    "animated": "assets/pokemon/forms/145.gif"
+  },
+  "146": {
+    "static": "assets/pokemon/146.webp",
+    "animated": "assets/pokemon/forms/146.gif"
+  },
+  "147": {
+    "static": "assets/pokemon/147.webp",
+    "animated": "assets/pokemon/forms/147.gif"
+  },
+  "148": {
+    "static": "assets/pokemon/148.webp",
+    "animated": "assets/pokemon/forms/148.gif"
+  },
+  "149": {
+    "static": "assets/pokemon/149.webp",
+    "animated": "assets/pokemon/forms/149.gif"
+  },
+  "150": {
+    "static": "assets/pokemon/150.webp",
+    "animated": "assets/pokemon/forms/150.gif"
+  },
+  "151": {
+    "static": "assets/pokemon/151.webp",
+    "animated": "assets/pokemon/forms/151.gif"
+  },
+  "152": {
+    "static": "assets/pokemon/152.webp",
+    "animated": "assets/pokemon/forms/152.gif"
+  },
+  "153": {
+    "static": "assets/pokemon/153.webp",
+    "animated": "assets/pokemon/forms/153.gif"
+  },
+  "154": {
+    "static": "assets/pokemon/154.webp",
+    "animated": "assets/pokemon/forms/154.gif"
+  },
+  "155": {
+    "static": "assets/pokemon/155.webp",
+    "animated": "assets/pokemon/forms/155.gif"
+  },
+  "156": {
+    "static": "assets/pokemon/156.webp",
+    "animated": "assets/pokemon/forms/156.gif"
+  },
+  "157": {
+    "static": "assets/pokemon/157.webp",
+    "animated": "assets/pokemon/forms/157.gif"
+  },
+  "158": {
+    "static": "assets/pokemon/158.webp",
+    "animated": "assets/pokemon/forms/158.gif"
+  },
+  "159": {
+    "static": "assets/pokemon/159.webp",
+    "animated": "assets/pokemon/forms/159.gif"
+  },
+  "160": {
+    "static": "assets/pokemon/160.webp",
+    "animated": "assets/pokemon/forms/160.gif"
+  },
+  "161": {
+    "static": "assets/pokemon/161.webp",
+    "animated": "assets/pokemon/forms/161.gif"
+  },
+  "162": {
+    "static": "assets/pokemon/162.webp",
+    "animated": "assets/pokemon/forms/162.gif"
+  },
+  "163": {
+    "static": "assets/pokemon/163.webp",
+    "animated": "assets/pokemon/forms/163.gif"
+  },
+  "164": {
+    "static": "assets/pokemon/164.webp",
+    "animated": "assets/pokemon/forms/164.gif"
+  },
+  "165": {
+    "static": "assets/pokemon/165.webp",
+    "animated": "assets/pokemon/forms/165.gif"
+  },
+  "166": {
+    "static": "assets/pokemon/166.webp",
+    "animated": "assets/pokemon/forms/166.gif"
+  },
+  "167": {
+    "static": "assets/pokemon/167.webp",
+    "animated": "assets/pokemon/forms/167.gif"
+  },
+  "168": {
+    "static": "assets/pokemon/168.webp",
+    "animated": "assets/pokemon/forms/168.gif"
+  },
+  "169": {
+    "static": "assets/pokemon/169.webp",
+    "animated": "assets/pokemon/forms/169.gif"
+  },
+  "170": {
+    "static": "assets/pokemon/170.webp",
+    "animated": "assets/pokemon/forms/170.gif"
+  },
+  "171": {
+    "static": "assets/pokemon/171.webp",
+    "animated": "assets/pokemon/forms/171.gif"
+  },
+  "172": {
+    "static": "assets/pokemon/172.webp",
+    "animated": "assets/pokemon/forms/172.gif"
+  },
+  "173": {
+    "static": "assets/pokemon/173.webp",
+    "animated": "assets/pokemon/forms/173.gif"
+  },
+  "174": {
+    "static": "assets/pokemon/174.webp",
+    "animated": "assets/pokemon/forms/174.gif"
+  },
+  "175": {
+    "static": "assets/pokemon/175.webp",
+    "animated": "assets/pokemon/forms/175.gif"
+  },
+  "176": {
+    "static": "assets/pokemon/176.webp",
+    "animated": "assets/pokemon/forms/176.gif"
+  },
+  "177": {
+    "static": "assets/pokemon/177.webp",
+    "animated": "assets/pokemon/forms/177.gif"
+  },
+  "178": {
+    "static": "assets/pokemon/178.webp",
+    "animated": "assets/pokemon/forms/178.gif"
+  },
+  "179": {
+    "static": "assets/pokemon/179.webp",
+    "animated": "assets/pokemon/forms/179.gif"
+  },
+  "180": {
+    "static": "assets/pokemon/180.webp",
+    "animated": "assets/pokemon/forms/180.gif"
+  },
+  "181": {
+    "static": "assets/pokemon/181.webp",
+    "animated": "assets/pokemon/forms/181.gif"
+  },
+  "182": {
+    "static": "assets/pokemon/182.webp",
+    "animated": "assets/pokemon/forms/182.gif"
+  },
+  "183": {
+    "static": "assets/pokemon/183.webp",
+    "animated": "assets/pokemon/forms/183.gif"
+  },
+  "184": {
+    "static": "assets/pokemon/184.webp",
+    "animated": "assets/pokemon/forms/184.gif"
+  },
+  "185": {
+    "static": "assets/pokemon/185.webp",
+    "animated": "assets/pokemon/forms/185.gif"
+  },
+  "186": {
+    "static": "assets/pokemon/186.webp",
+    "animated": "assets/pokemon/forms/186.gif"
+  },
+  "187": {
+    "static": "assets/pokemon/187.webp",
+    "animated": "assets/pokemon/forms/187.gif"
+  },
+  "188": {
+    "static": "assets/pokemon/188.webp",
+    "animated": "assets/pokemon/forms/188.gif"
+  },
+  "189": {
+    "static": "assets/pokemon/189.webp",
+    "animated": "assets/pokemon/forms/189.gif"
+  },
+  "190": {
+    "static": "assets/pokemon/190.webp",
+    "animated": "assets/pokemon/forms/190.gif"
+  },
+  "191": {
+    "static": "assets/pokemon/191.webp",
+    "animated": "assets/pokemon/forms/191.gif"
+  },
+  "192": {
+    "static": "assets/pokemon/192.webp",
+    "animated": "assets/pokemon/forms/192.gif"
+  },
+  "193": {
+    "static": "assets/pokemon/193.webp",
+    "animated": "assets/pokemon/forms/193.gif"
+  },
+  "194": {
+    "static": "assets/pokemon/194.webp",
+    "animated": "assets/pokemon/forms/194.gif"
+  },
+  "195": {
+    "static": "assets/pokemon/195.webp",
+    "animated": "assets/pokemon/forms/195.gif"
+  },
+  "196": {
+    "static": "assets/pokemon/196.webp",
+    "animated": "assets/pokemon/forms/196.gif"
+  },
+  "197": {
+    "static": "assets/pokemon/197.webp",
+    "animated": "assets/pokemon/forms/197.gif"
+  },
+  "198": {
+    "static": "assets/pokemon/198.webp",
+    "animated": "assets/pokemon/forms/198.gif"
+  },
+  "199": {
+    "static": "assets/pokemon/199.webp",
+    "animated": "assets/pokemon/forms/199.gif"
+  },
+  "200": {
+    "static": "assets/pokemon/200.webp",
+    "animated": "assets/pokemon/forms/200.gif"
+  },
+  "201": {
+    "static": "assets/pokemon/201.webp",
+    "animated": "assets/pokemon/forms/201.gif"
+  },
+  "202": {
+    "static": "assets/pokemon/202.webp",
+    "animated": "assets/pokemon/forms/202.gif"
+  },
+  "203": {
+    "static": "assets/pokemon/203.webp",
+    "animated": "assets/pokemon/forms/203.gif"
+  },
+  "204": {
+    "static": "assets/pokemon/204.webp",
+    "animated": "assets/pokemon/forms/204.gif"
+  },
+  "205": {
+    "static": "assets/pokemon/205.webp",
+    "animated": "assets/pokemon/forms/205.gif"
+  },
+  "206": {
+    "static": "assets/pokemon/206.webp",
+    "animated": "assets/pokemon/forms/206.gif"
+  },
+  "207": {
+    "static": "assets/pokemon/207.webp",
+    "animated": "assets/pokemon/forms/207.gif"
+  },
+  "208": {
+    "static": "assets/pokemon/208.webp",
+    "animated": "assets/pokemon/forms/208.gif"
+  },
+  "209": {
+    "static": "assets/pokemon/209.webp",
+    "animated": "assets/pokemon/forms/209.gif"
+  },
+  "210": {
+    "static": "assets/pokemon/210.webp",
+    "animated": "assets/pokemon/forms/210.gif"
+  },
+  "211": {
+    "static": "assets/pokemon/211.webp",
+    "animated": "assets/pokemon/forms/211.gif"
+  },
+  "212": {
+    "static": "assets/pokemon/212.webp",
+    "animated": "assets/pokemon/forms/212.gif"
+  },
+  "213": {
+    "static": "assets/pokemon/213.webp",
+    "animated": "assets/pokemon/forms/213.gif"
+  },
+  "214": {
+    "static": "assets/pokemon/214.webp",
+    "animated": "assets/pokemon/forms/214.gif"
+  },
+  "215": {
+    "static": "assets/pokemon/215.webp",
+    "animated": "assets/pokemon/forms/215.gif"
+  },
+  "216": {
+    "static": "assets/pokemon/216.webp",
+    "animated": "assets/pokemon/forms/216.gif"
+  },
+  "217": {
+    "static": "assets/pokemon/217.webp",
+    "animated": "assets/pokemon/forms/217.gif"
+  },
+  "218": {
+    "static": "assets/pokemon/218.webp",
+    "animated": "assets/pokemon/forms/218.gif"
+  },
+  "219": {
+    "static": "assets/pokemon/219.webp",
+    "animated": "assets/pokemon/forms/219.gif"
+  },
+  "220": {
+    "static": "assets/pokemon/220.webp",
+    "animated": "assets/pokemon/forms/220.gif"
+  },
+  "221": {
+    "static": "assets/pokemon/221.webp",
+    "animated": "assets/pokemon/forms/221.gif"
+  },
+  "222": {
+    "static": "assets/pokemon/222.webp",
+    "animated": "assets/pokemon/forms/222.gif"
+  },
+  "223": {
+    "static": "assets/pokemon/223.webp",
+    "animated": "assets/pokemon/forms/223.gif"
+  },
+  "224": {
+    "static": "assets/pokemon/224.webp",
+    "animated": "assets/pokemon/forms/224.gif"
+  },
+  "225": {
+    "static": "assets/pokemon/225.webp",
+    "animated": "assets/pokemon/forms/225.gif"
+  },
+  "226": {
+    "static": "assets/pokemon/226.webp",
+    "animated": "assets/pokemon/forms/226.gif"
+  },
+  "227": {
+    "static": "assets/pokemon/227.webp",
+    "animated": "assets/pokemon/forms/227.gif"
+  },
+  "228": {
+    "static": "assets/pokemon/228.webp",
+    "animated": "assets/pokemon/forms/228.gif"
+  },
+  "229": {
+    "static": "assets/pokemon/229.webp",
+    "animated": "assets/pokemon/forms/229.gif"
+  },
+  "230": {
+    "static": "assets/pokemon/230.webp",
+    "animated": "assets/pokemon/forms/230.gif"
+  },
+  "231": {
+    "static": "assets/pokemon/231.webp",
+    "animated": "assets/pokemon/forms/231.gif"
+  },
+  "232": {
+    "static": "assets/pokemon/232.webp",
+    "animated": "assets/pokemon/forms/232.gif"
+  },
+  "233": {
+    "static": "assets/pokemon/233.webp",
+    "animated": "assets/pokemon/forms/233.gif"
+  },
+  "234": {
+    "static": "assets/pokemon/234.webp",
+    "animated": "assets/pokemon/forms/234.gif"
+  },
+  "235": {
+    "static": "assets/pokemon/235.webp",
+    "animated": "assets/pokemon/forms/235.gif"
+  },
+  "236": {
+    "static": "assets/pokemon/236.webp",
+    "animated": "assets/pokemon/forms/236.gif"
+  },
+  "237": {
+    "static": "assets/pokemon/237.webp",
+    "animated": "assets/pokemon/forms/237.gif"
+  },
+  "238": {
+    "static": "assets/pokemon/238.webp",
+    "animated": "assets/pokemon/forms/238.gif"
+  },
+  "239": {
+    "static": "assets/pokemon/239.webp",
+    "animated": "assets/pokemon/forms/239.gif"
+  },
+  "240": {
+    "static": "assets/pokemon/240.webp",
+    "animated": "assets/pokemon/forms/240.gif"
+  },
+  "241": {
+    "static": "assets/pokemon/241.webp",
+    "animated": "assets/pokemon/forms/241.gif"
+  },
+  "242": {
+    "static": "assets/pokemon/242.webp",
+    "animated": "assets/pokemon/forms/242.gif"
+  },
+  "243": {
+    "static": "assets/pokemon/243.webp",
+    "animated": "assets/pokemon/forms/243.gif"
+  },
+  "244": {
+    "static": "assets/pokemon/244.webp",
+    "animated": "assets/pokemon/forms/244.gif"
+  },
+  "245": {
+    "static": "assets/pokemon/245.webp",
+    "animated": "assets/pokemon/forms/245.gif"
+  },
+  "246": {
+    "static": "assets/pokemon/246.webp",
+    "animated": "assets/pokemon/forms/246.gif"
+  },
+  "247": {
+    "static": "assets/pokemon/247.webp",
+    "animated": "assets/pokemon/forms/247.gif"
+  },
+  "248": {
+    "static": "assets/pokemon/248.webp",
+    "animated": "assets/pokemon/forms/248.gif"
+  },
+  "249": {
+    "static": "assets/pokemon/249.webp",
+    "animated": "assets/pokemon/forms/249.gif"
+  },
+  "250": {
+    "static": "assets/pokemon/250.webp",
+    "animated": "assets/pokemon/forms/250.gif"
+  },
+  "251": {
+    "static": "assets/pokemon/251.webp",
+    "animated": "assets/pokemon/forms/251.gif"
+  },
+  "252": {
+    "static": "assets/pokemon/252.webp",
+    "animated": "assets/pokemon/forms/252.gif"
+  },
+  "253": {
+    "static": "assets/pokemon/253.webp",
+    "animated": "assets/pokemon/forms/253.gif"
+  },
+  "254": {
+    "static": "assets/pokemon/254.webp",
+    "animated": "assets/pokemon/forms/254.gif"
+  },
+  "255": {
+    "static": "assets/pokemon/255.webp",
+    "animated": "assets/pokemon/forms/255.gif"
+  },
+  "256": {
+    "static": "assets/pokemon/256.webp",
+    "animated": "assets/pokemon/forms/256.gif"
+  },
+  "257": {
+    "static": "assets/pokemon/257.webp",
+    "animated": "assets/pokemon/forms/257.gif"
+  },
+  "258": {
+    "static": "assets/pokemon/258.webp",
+    "animated": "assets/pokemon/forms/258.gif"
+  },
+  "259": {
+    "static": "assets/pokemon/259.webp",
+    "animated": "assets/pokemon/forms/259.gif"
+  },
+  "260": {
+    "static": "assets/pokemon/260.webp",
+    "animated": "assets/pokemon/forms/260.gif"
+  },
+  "261": {
+    "static": "assets/pokemon/261.webp",
+    "animated": "assets/pokemon/forms/261.gif"
+  },
+  "262": {
+    "static": "assets/pokemon/262.webp",
+    "animated": "assets/pokemon/forms/262.gif"
+  },
+  "263": {
+    "static": "assets/pokemon/263.webp",
+    "animated": "assets/pokemon/forms/263.gif"
+  },
+  "264": {
+    "static": "assets/pokemon/264.webp",
+    "animated": "assets/pokemon/forms/264.gif"
+  },
+  "265": {
+    "static": "assets/pokemon/265.webp",
+    "animated": "assets/pokemon/forms/265.gif"
+  },
+  "266": {
+    "static": "assets/pokemon/266.webp",
+    "animated": "assets/pokemon/forms/266.gif"
+  },
+  "267": {
+    "static": "assets/pokemon/267.webp",
+    "animated": "assets/pokemon/forms/267.gif"
+  },
+  "268": {
+    "static": "assets/pokemon/268.webp",
+    "animated": "assets/pokemon/forms/268.gif"
+  },
+  "269": {
+    "static": "assets/pokemon/269.webp",
+    "animated": "assets/pokemon/forms/269.gif"
+  },
+  "270": {
+    "static": "assets/pokemon/270.webp",
+    "animated": "assets/pokemon/forms/270.gif"
+  },
+  "271": {
+    "static": "assets/pokemon/271.webp",
+    "animated": "assets/pokemon/forms/271.gif"
+  },
+  "272": {
+    "static": "assets/pokemon/272.webp",
+    "animated": "assets/pokemon/forms/272.gif"
+  },
+  "273": {
+    "static": "assets/pokemon/273.webp",
+    "animated": "assets/pokemon/forms/273.gif"
+  },
+  "274": {
+    "static": "assets/pokemon/274.webp",
+    "animated": "assets/pokemon/forms/274.gif"
+  },
+  "275": {
+    "static": "assets/pokemon/275.webp",
+    "animated": "assets/pokemon/forms/275.gif"
+  },
+  "276": {
+    "static": "assets/pokemon/276.webp",
+    "animated": "assets/pokemon/forms/276.gif"
+  },
+  "277": {
+    "static": "assets/pokemon/277.webp",
+    "animated": "assets/pokemon/forms/277.gif"
+  },
+  "278": {
+    "static": "assets/pokemon/278.webp",
+    "animated": "assets/pokemon/forms/278.gif"
+  },
+  "279": {
+    "static": "assets/pokemon/279.webp",
+    "animated": "assets/pokemon/forms/279.gif"
+  },
+  "280": {
+    "static": "assets/pokemon/280.webp",
+    "animated": "assets/pokemon/forms/280.gif"
+  },
+  "281": {
+    "static": "assets/pokemon/281.webp",
+    "animated": "assets/pokemon/forms/281.gif"
+  },
+  "282": {
+    "static": "assets/pokemon/282.webp",
+    "animated": "assets/pokemon/forms/282.gif"
+  },
+  "283": {
+    "static": "assets/pokemon/283.webp",
+    "animated": "assets/pokemon/forms/283.gif"
+  },
+  "284": {
+    "static": "assets/pokemon/284.webp",
+    "animated": "assets/pokemon/forms/284.gif"
+  },
+  "285": {
+    "static": "assets/pokemon/285.webp",
+    "animated": "assets/pokemon/forms/285.gif"
+  },
+  "286": {
+    "static": "assets/pokemon/286.webp",
+    "animated": "assets/pokemon/forms/286.gif"
+  },
+  "287": {
+    "static": "assets/pokemon/287.webp",
+    "animated": "assets/pokemon/forms/287.gif"
+  },
+  "288": {
+    "static": "assets/pokemon/288.webp",
+    "animated": "assets/pokemon/forms/288.gif"
+  },
+  "289": {
+    "static": "assets/pokemon/289.webp",
+    "animated": "assets/pokemon/forms/289.gif"
+  },
+  "290": {
+    "static": "assets/pokemon/290.webp",
+    "animated": "assets/pokemon/forms/290.gif"
+  },
+  "291": {
+    "static": "assets/pokemon/291.webp",
+    "animated": "assets/pokemon/forms/291.gif"
+  },
+  "292": {
+    "static": "assets/pokemon/292.webp",
+    "animated": "assets/pokemon/forms/292.gif"
+  },
+  "293": {
+    "static": "assets/pokemon/293.webp",
+    "animated": "assets/pokemon/forms/293.gif"
+  },
+  "294": {
+    "static": "assets/pokemon/294.webp",
+    "animated": "assets/pokemon/forms/294.gif"
+  },
+  "295": {
+    "static": "assets/pokemon/295.webp",
+    "animated": "assets/pokemon/forms/295.gif"
+  },
+  "296": {
+    "static": "assets/pokemon/296.webp",
+    "animated": "assets/pokemon/forms/296.gif"
+  },
+  "297": {
+    "static": "assets/pokemon/297.webp",
+    "animated": "assets/pokemon/forms/297.gif"
+  },
+  "298": {
+    "static": "assets/pokemon/298.webp",
+    "animated": "assets/pokemon/forms/298.gif"
+  },
+  "299": {
+    "static": "assets/pokemon/299.webp",
+    "animated": "assets/pokemon/forms/299.gif"
+  },
+  "300": {
+    "static": "assets/pokemon/300.webp",
+    "animated": "assets/pokemon/forms/300.gif"
+  },
+  "301": {
+    "static": "assets/pokemon/301.webp",
+    "animated": "assets/pokemon/forms/301.gif"
+  },
+  "302": {
+    "static": "assets/pokemon/302.webp",
+    "animated": "assets/pokemon/forms/302.gif"
+  },
+  "303": {
+    "static": "assets/pokemon/303.webp",
+    "animated": "assets/pokemon/forms/303.gif"
+  },
+  "304": {
+    "static": "assets/pokemon/304.webp",
+    "animated": "assets/pokemon/forms/304.gif"
+  },
+  "305": {
+    "static": "assets/pokemon/305.webp",
+    "animated": "assets/pokemon/forms/305.gif"
+  },
+  "306": {
+    "static": "assets/pokemon/306.webp",
+    "animated": "assets/pokemon/forms/306.gif"
+  },
+  "307": {
+    "static": "assets/pokemon/307.webp",
+    "animated": "assets/pokemon/forms/307.gif"
+  },
+  "308": {
+    "static": "assets/pokemon/308.webp",
+    "animated": "assets/pokemon/forms/308.gif"
+  },
+  "309": {
+    "static": "assets/pokemon/309.webp",
+    "animated": "assets/pokemon/forms/309.gif"
+  },
+  "310": {
+    "static": "assets/pokemon/310.webp",
+    "animated": "assets/pokemon/forms/310.gif"
+  },
+  "311": {
+    "static": "assets/pokemon/311.webp",
+    "animated": "assets/pokemon/forms/311.gif"
+  },
+  "312": {
+    "static": "assets/pokemon/312.webp",
+    "animated": "assets/pokemon/forms/312.gif"
+  },
+  "313": {
+    "static": "assets/pokemon/313.webp",
+    "animated": "assets/pokemon/forms/313.gif"
+  },
+  "314": {
+    "static": "assets/pokemon/314.webp",
+    "animated": "assets/pokemon/forms/314.gif"
+  },
+  "315": {
+    "static": "assets/pokemon/315.webp",
+    "animated": "assets/pokemon/forms/315.gif"
+  },
+  "316": {
+    "static": "assets/pokemon/316.webp",
+    "animated": "assets/pokemon/forms/316.gif"
+  },
+  "317": {
+    "static": "assets/pokemon/317.webp",
+    "animated": "assets/pokemon/forms/317.gif"
+  },
+  "318": {
+    "static": "assets/pokemon/318.webp",
+    "animated": "assets/pokemon/forms/318.gif"
+  },
+  "319": {
+    "static": "assets/pokemon/319.webp",
+    "animated": "assets/pokemon/forms/319.gif"
+  },
+  "320": {
+    "static": "assets/pokemon/320.webp",
+    "animated": "assets/pokemon/forms/320.gif"
+  },
+  "321": {
+    "static": "assets/pokemon/321.webp",
+    "animated": "assets/pokemon/forms/321.gif"
+  },
+  "322": {
+    "static": "assets/pokemon/322.webp",
+    "animated": "assets/pokemon/forms/322.gif"
+  },
+  "323": {
+    "static": "assets/pokemon/323.webp",
+    "animated": "assets/pokemon/forms/323.gif"
+  },
+  "324": {
+    "static": "assets/pokemon/324.webp",
+    "animated": "assets/pokemon/forms/324.gif"
+  },
+  "325": {
+    "static": "assets/pokemon/325.webp",
+    "animated": "assets/pokemon/forms/325.gif"
+  },
+  "326": {
+    "static": "assets/pokemon/326.webp",
+    "animated": "assets/pokemon/forms/326.gif"
+  },
+  "327": {
+    "static": "assets/pokemon/327.webp",
+    "animated": "assets/pokemon/forms/327.gif"
+  },
+  "328": {
+    "static": "assets/pokemon/328.webp",
+    "animated": "assets/pokemon/forms/328.gif"
+  },
+  "329": {
+    "static": "assets/pokemon/329.webp",
+    "animated": "assets/pokemon/forms/329.gif"
+  },
+  "330": {
+    "static": "assets/pokemon/330.webp",
+    "animated": "assets/pokemon/forms/330.gif"
+  },
+  "331": {
+    "static": "assets/pokemon/331.webp",
+    "animated": "assets/pokemon/forms/331.gif"
+  },
+  "332": {
+    "static": "assets/pokemon/332.webp",
+    "animated": "assets/pokemon/forms/332.gif"
+  },
+  "333": {
+    "static": "assets/pokemon/333.webp",
+    "animated": "assets/pokemon/forms/333.gif"
+  },
+  "334": {
+    "static": "assets/pokemon/334.webp",
+    "animated": "assets/pokemon/forms/334.gif"
+  },
+  "335": {
+    "static": "assets/pokemon/335.webp",
+    "animated": "assets/pokemon/forms/335.gif"
+  },
+  "336": {
+    "static": "assets/pokemon/336.webp",
+    "animated": "assets/pokemon/forms/336.gif"
+  },
+  "337": {
+    "static": "assets/pokemon/337.webp",
+    "animated": "assets/pokemon/forms/337.gif"
+  },
+  "338": {
+    "static": "assets/pokemon/338.webp",
+    "animated": "assets/pokemon/forms/338.gif"
+  },
+  "339": {
+    "static": "assets/pokemon/339.webp",
+    "animated": "assets/pokemon/forms/339.gif"
+  },
+  "340": {
+    "static": "assets/pokemon/340.webp",
+    "animated": "assets/pokemon/forms/340.gif"
+  },
+  "341": {
+    "static": "assets/pokemon/341.webp",
+    "animated": "assets/pokemon/forms/341.gif"
+  },
+  "342": {
+    "static": "assets/pokemon/342.webp",
+    "animated": "assets/pokemon/forms/342.gif"
+  },
+  "343": {
+    "static": "assets/pokemon/343.webp",
+    "animated": "assets/pokemon/forms/343.gif"
+  },
+  "344": {
+    "static": "assets/pokemon/344.webp",
+    "animated": "assets/pokemon/forms/344.gif"
+  },
+  "345": {
+    "static": "assets/pokemon/345.webp",
+    "animated": "assets/pokemon/forms/345.gif"
+  },
+  "346": {
+    "static": "assets/pokemon/346.webp",
+    "animated": "assets/pokemon/forms/346.gif"
+  },
+  "347": {
+    "static": "assets/pokemon/347.webp",
+    "animated": "assets/pokemon/forms/347.gif"
+  },
+  "348": {
+    "static": "assets/pokemon/348.webp",
+    "animated": "assets/pokemon/forms/348.gif"
+  },
+  "349": {
+    "static": "assets/pokemon/349.webp",
+    "animated": "assets/pokemon/forms/349.gif"
+  },
+  "350": {
+    "static": "assets/pokemon/350.webp",
+    "animated": "assets/pokemon/forms/350.gif"
+  },
+  "351": {
+    "static": "assets/pokemon/351.webp",
+    "animated": "assets/pokemon/forms/351.gif"
+  },
+  "352": {
+    "static": "assets/pokemon/352.webp",
+    "animated": "assets/pokemon/forms/352.gif"
+  },
+  "353": {
+    "static": "assets/pokemon/353.webp",
+    "animated": "assets/pokemon/forms/353.gif"
+  },
+  "354": {
+    "static": "assets/pokemon/354.webp",
+    "animated": "assets/pokemon/forms/354.gif"
+  },
+  "355": {
+    "static": "assets/pokemon/355.webp",
+    "animated": "assets/pokemon/forms/355.gif"
+  },
+  "356": {
+    "static": "assets/pokemon/356.webp",
+    "animated": "assets/pokemon/forms/356.gif"
+  },
+  "357": {
+    "static": "assets/pokemon/357.webp",
+    "animated": "assets/pokemon/forms/357.gif"
+  },
+  "358": {
+    "static": "assets/pokemon/358.webp",
+    "animated": "assets/pokemon/forms/358.gif"
+  },
+  "359": {
+    "static": "assets/pokemon/359.webp",
+    "animated": "assets/pokemon/forms/359.gif"
+  },
+  "360": {
+    "static": "assets/pokemon/360.webp",
+    "animated": "assets/pokemon/forms/360.gif"
+  },
+  "361": {
+    "static": "assets/pokemon/361.webp",
+    "animated": "assets/pokemon/forms/361.gif"
+  },
+  "362": {
+    "static": "assets/pokemon/362.webp",
+    "animated": "assets/pokemon/forms/362.gif"
+  },
+  "363": {
+    "static": "assets/pokemon/363.webp",
+    "animated": "assets/pokemon/forms/363.gif"
+  },
+  "364": {
+    "static": "assets/pokemon/364.webp",
+    "animated": "assets/pokemon/forms/364.gif"
+  },
+  "365": {
+    "static": "assets/pokemon/365.webp",
+    "animated": "assets/pokemon/forms/365.gif"
+  },
+  "366": {
+    "static": "assets/pokemon/366.webp",
+    "animated": "assets/pokemon/forms/366.gif"
+  },
+  "367": {
+    "static": "assets/pokemon/367.webp",
+    "animated": "assets/pokemon/forms/367.gif"
+  },
+  "368": {
+    "static": "assets/pokemon/368.webp",
+    "animated": "assets/pokemon/forms/368.gif"
+  },
+  "369": {
+    "static": "assets/pokemon/369.webp",
+    "animated": "assets/pokemon/forms/369.gif"
+  },
+  "370": {
+    "static": "assets/pokemon/370.webp",
+    "animated": "assets/pokemon/forms/370.gif"
+  },
+  "371": {
+    "static": "assets/pokemon/371.webp",
+    "animated": "assets/pokemon/forms/371.gif"
+  },
+  "372": {
+    "static": "assets/pokemon/372.webp",
+    "animated": "assets/pokemon/forms/372.gif"
+  },
+  "373": {
+    "static": "assets/pokemon/373.webp",
+    "animated": "assets/pokemon/forms/373.gif"
+  },
+  "374": {
+    "static": "assets/pokemon/374.webp",
+    "animated": "assets/pokemon/forms/374.gif"
+  },
+  "375": {
+    "static": "assets/pokemon/375.webp",
+    "animated": "assets/pokemon/forms/375.gif"
+  },
+  "376": {
+    "static": "assets/pokemon/376.webp",
+    "animated": "assets/pokemon/forms/376.gif"
+  },
+  "377": {
+    "static": "assets/pokemon/377.webp",
+    "animated": "assets/pokemon/forms/377.gif"
+  },
+  "378": {
+    "static": "assets/pokemon/378.webp",
+    "animated": "assets/pokemon/forms/378.gif"
+  },
+  "379": {
+    "static": "assets/pokemon/379.webp",
+    "animated": "assets/pokemon/forms/379.gif"
+  },
+  "380": {
+    "static": "assets/pokemon/380.webp",
+    "animated": "assets/pokemon/forms/380.gif"
+  },
+  "381": {
+    "static": "assets/pokemon/381.webp",
+    "animated": "assets/pokemon/forms/381.gif"
+  },
+  "382": {
+    "static": "assets/pokemon/382.webp",
+    "animated": "assets/pokemon/forms/382.gif"
+  },
+  "383": {
+    "static": "assets/pokemon/383.webp",
+    "animated": "assets/pokemon/forms/383.gif"
+  },
+  "384": {
+    "static": "assets/pokemon/384.webp",
+    "animated": "assets/pokemon/forms/384.gif"
+  },
+  "385": {
+    "static": "assets/pokemon/385.webp",
+    "animated": "assets/pokemon/forms/385.gif"
+  },
+  "386": {
+    "static": "assets/pokemon/386.webp",
+    "animated": "assets/pokemon/forms/386.gif"
+  },
+  "387": {
+    "static": "assets/pokemon/387.webp",
+    "animated": "assets/pokemon/forms/387.gif"
+  },
+  "388": {
+    "static": "assets/pokemon/388.webp",
+    "animated": "assets/pokemon/forms/388.gif"
+  },
+  "389": {
+    "static": "assets/pokemon/389.webp",
+    "animated": "assets/pokemon/forms/389.gif"
+  },
+  "390": {
+    "static": "assets/pokemon/390.webp",
+    "animated": "assets/pokemon/forms/390.gif"
+  },
+  "391": {
+    "static": "assets/pokemon/391.webp",
+    "animated": "assets/pokemon/forms/391.gif"
+  },
+  "392": {
+    "static": "assets/pokemon/392.webp",
+    "animated": "assets/pokemon/forms/392.gif"
+  },
+  "393": {
+    "static": "assets/pokemon/393.webp",
+    "animated": "assets/pokemon/forms/393.gif"
+  },
+  "394": {
+    "static": "assets/pokemon/394.webp",
+    "animated": "assets/pokemon/forms/394.gif"
+  },
+  "395": {
+    "static": "assets/pokemon/395.webp",
+    "animated": "assets/pokemon/forms/395.gif"
+  },
+  "396": {
+    "static": "assets/pokemon/396.webp",
+    "animated": "assets/pokemon/forms/396.gif"
+  },
+  "397": {
+    "static": "assets/pokemon/397.webp",
+    "animated": "assets/pokemon/forms/397.gif"
+  },
+  "398": {
+    "static": "assets/pokemon/398.webp",
+    "animated": "assets/pokemon/forms/398.gif"
+  },
+  "399": {
+    "static": "assets/pokemon/399.webp",
+    "animated": "assets/pokemon/forms/399.gif"
+  },
+  "400": {
+    "static": "assets/pokemon/400.webp",
+    "animated": "assets/pokemon/forms/400.gif"
+  },
+  "401": {
+    "static": "assets/pokemon/401.webp",
+    "animated": "assets/pokemon/forms/401.gif"
+  },
+  "402": {
+    "static": "assets/pokemon/402.webp",
+    "animated": "assets/pokemon/forms/402.gif"
+  },
+  "403": {
+    "static": "assets/pokemon/403.webp",
+    "animated": "assets/pokemon/forms/403.gif"
+  },
+  "404": {
+    "static": "assets/pokemon/404.webp",
+    "animated": "assets/pokemon/forms/404.gif"
+  },
+  "405": {
+    "static": "assets/pokemon/405.webp",
+    "animated": "assets/pokemon/forms/405.gif"
+  },
+  "406": {
+    "static": "assets/pokemon/406.webp",
+    "animated": "assets/pokemon/forms/406.gif"
+  },
+  "407": {
+    "static": "assets/pokemon/407.webp",
+    "animated": "assets/pokemon/forms/407.gif"
+  },
+  "408": {
+    "static": "assets/pokemon/408.webp",
+    "animated": "assets/pokemon/forms/408.gif"
+  },
+  "409": {
+    "static": "assets/pokemon/409.webp",
+    "animated": "assets/pokemon/forms/409.gif"
+  },
+  "410": {
+    "static": "assets/pokemon/410.webp",
+    "animated": "assets/pokemon/forms/410.gif"
+  },
+  "411": {
+    "static": "assets/pokemon/411.webp",
+    "animated": "assets/pokemon/forms/411.gif"
+  },
+  "412": {
+    "static": "assets/pokemon/412.webp",
+    "animated": "assets/pokemon/forms/412.gif"
+  },
+  "413": {
+    "static": "assets/pokemon/413.webp",
+    "animated": "assets/pokemon/forms/413.gif"
+  },
+  "414": {
+    "static": "assets/pokemon/414.webp",
+    "animated": "assets/pokemon/forms/414.gif"
+  },
+  "415": {
+    "static": "assets/pokemon/415.webp",
+    "animated": "assets/pokemon/forms/415.gif"
+  },
+  "416": {
+    "static": "assets/pokemon/416.webp",
+    "animated": "assets/pokemon/forms/416.gif"
+  },
+  "417": {
+    "static": "assets/pokemon/417.webp",
+    "animated": "assets/pokemon/forms/417.gif"
+  },
+  "418": {
+    "static": "assets/pokemon/418.webp",
+    "animated": "assets/pokemon/forms/418.gif"
+  },
+  "419": {
+    "static": "assets/pokemon/419.webp",
+    "animated": "assets/pokemon/forms/419.gif"
+  },
+  "420": {
+    "static": "assets/pokemon/420.webp",
+    "animated": "assets/pokemon/forms/420.gif"
+  },
+  "421": {
+    "static": "assets/pokemon/421.webp",
+    "animated": "assets/pokemon/forms/421.gif"
+  },
+  "422": {
+    "static": "assets/pokemon/422.webp",
+    "animated": "assets/pokemon/forms/422.gif"
+  },
+  "423": {
+    "static": "assets/pokemon/423.webp",
+    "animated": "assets/pokemon/forms/423.gif"
+  },
+  "424": {
+    "static": "assets/pokemon/424.webp",
+    "animated": "assets/pokemon/forms/424.gif"
+  },
+  "425": {
+    "static": "assets/pokemon/425.webp",
+    "animated": "assets/pokemon/forms/425.gif"
+  },
+  "426": {
+    "static": "assets/pokemon/426.webp",
+    "animated": "assets/pokemon/forms/426.gif"
+  },
+  "427": {
+    "static": "assets/pokemon/427.webp",
+    "animated": "assets/pokemon/forms/427.gif"
+  },
+  "428": {
+    "static": "assets/pokemon/428.webp",
+    "animated": "assets/pokemon/forms/428.gif"
+  },
+  "429": {
+    "static": "assets/pokemon/429.webp",
+    "animated": "assets/pokemon/forms/429.gif"
+  },
+  "430": {
+    "static": "assets/pokemon/430.webp",
+    "animated": "assets/pokemon/forms/430.gif"
+  },
+  "431": {
+    "static": "assets/pokemon/431.webp",
+    "animated": "assets/pokemon/forms/431.gif"
+  },
+  "432": {
+    "static": "assets/pokemon/432.webp",
+    "animated": "assets/pokemon/forms/432.gif"
+  },
+  "433": {
+    "static": "assets/pokemon/433.webp",
+    "animated": "assets/pokemon/forms/433.gif"
+  },
+  "434": {
+    "static": "assets/pokemon/434.webp",
+    "animated": "assets/pokemon/forms/434.gif"
+  },
+  "435": {
+    "static": "assets/pokemon/435.webp",
+    "animated": "assets/pokemon/forms/435.gif"
+  },
+  "436": {
+    "static": "assets/pokemon/436.webp",
+    "animated": "assets/pokemon/forms/436.gif"
+  },
+  "437": {
+    "static": "assets/pokemon/437.webp",
+    "animated": "assets/pokemon/forms/437.gif"
+  },
+  "438": {
+    "static": "assets/pokemon/438.webp",
+    "animated": "assets/pokemon/forms/438.gif"
+  },
+  "439": {
+    "static": "assets/pokemon/439.webp",
+    "animated": "assets/pokemon/forms/439.gif"
+  },
+  "440": {
+    "static": "assets/pokemon/440.webp",
+    "animated": "assets/pokemon/forms/440.gif"
+  },
+  "441": {
+    "static": "assets/pokemon/441.webp",
+    "animated": "assets/pokemon/forms/441.gif"
+  },
+  "442": {
+    "static": "assets/pokemon/442.webp",
+    "animated": "assets/pokemon/forms/442.gif"
+  },
+  "443": {
+    "static": "assets/pokemon/443.webp",
+    "animated": "assets/pokemon/forms/443.gif"
+  },
+  "444": {
+    "static": "assets/pokemon/444.webp",
+    "animated": "assets/pokemon/forms/444.gif"
+  },
+  "445": {
+    "static": "assets/pokemon/445.webp",
+    "animated": "assets/pokemon/forms/445.gif"
+  },
+  "446": {
+    "static": "assets/pokemon/446.webp",
+    "animated": "assets/pokemon/forms/446.gif"
+  },
+  "447": {
+    "static": "assets/pokemon/447.webp",
+    "animated": "assets/pokemon/forms/447.gif"
+  },
+  "448": {
+    "static": "assets/pokemon/448.webp",
+    "animated": "assets/pokemon/forms/448.gif"
+  },
+  "449": {
+    "static": "assets/pokemon/449.webp",
+    "animated": "assets/pokemon/forms/449.gif"
+  },
+  "450": {
+    "static": "assets/pokemon/450.webp",
+    "animated": "assets/pokemon/forms/450.gif"
+  },
+  "451": {
+    "static": "assets/pokemon/451.webp",
+    "animated": "assets/pokemon/forms/451.gif"
+  },
+  "452": {
+    "static": "assets/pokemon/452.webp",
+    "animated": "assets/pokemon/forms/452.gif"
+  },
+  "453": {
+    "static": "assets/pokemon/453.webp",
+    "animated": "assets/pokemon/forms/453.gif"
+  },
+  "454": {
+    "static": "assets/pokemon/454.webp",
+    "animated": "assets/pokemon/forms/454.gif"
+  },
+  "455": {
+    "static": "assets/pokemon/455.webp",
+    "animated": "assets/pokemon/forms/455.gif"
+  },
+  "456": {
+    "static": "assets/pokemon/456.webp",
+    "animated": "assets/pokemon/forms/456.gif"
+  },
+  "457": {
+    "static": "assets/pokemon/457.webp",
+    "animated": "assets/pokemon/forms/457.gif"
+  },
+  "458": {
+    "static": "assets/pokemon/458.webp",
+    "animated": "assets/pokemon/forms/458.gif"
+  },
+  "459": {
+    "static": "assets/pokemon/459.webp",
+    "animated": "assets/pokemon/forms/459.gif"
+  },
+  "460": {
+    "static": "assets/pokemon/460.webp",
+    "animated": "assets/pokemon/forms/460.gif"
+  },
+  "461": {
+    "static": "assets/pokemon/461.webp",
+    "animated": "assets/pokemon/forms/461.gif"
+  },
+  "462": {
+    "static": "assets/pokemon/462.webp",
+    "animated": "assets/pokemon/forms/462.gif"
+  },
+  "463": {
+    "static": "assets/pokemon/463.webp",
+    "animated": "assets/pokemon/forms/463.gif"
+  },
+  "464": {
+    "static": "assets/pokemon/464.webp",
+    "animated": "assets/pokemon/forms/464.gif"
+  },
+  "465": {
+    "static": "assets/pokemon/465.webp",
+    "animated": "assets/pokemon/forms/465.gif"
+  },
+  "466": {
+    "static": "assets/pokemon/466.webp",
+    "animated": "assets/pokemon/forms/466.gif"
+  },
+  "467": {
+    "static": "assets/pokemon/467.webp",
+    "animated": "assets/pokemon/forms/467.gif"
+  },
+  "468": {
+    "static": "assets/pokemon/468.webp",
+    "animated": "assets/pokemon/forms/468.gif"
+  },
+  "469": {
+    "static": "assets/pokemon/469.webp",
+    "animated": "assets/pokemon/forms/469.gif"
+  },
+  "470": {
+    "static": "assets/pokemon/470.webp",
+    "animated": "assets/pokemon/forms/470.gif"
+  },
+  "471": {
+    "static": "assets/pokemon/471.webp",
+    "animated": "assets/pokemon/forms/471.gif"
+  },
+  "472": {
+    "static": "assets/pokemon/472.webp",
+    "animated": "assets/pokemon/forms/472.gif"
+  },
+  "473": {
+    "static": "assets/pokemon/473.webp",
+    "animated": "assets/pokemon/forms/473.gif"
+  },
+  "474": {
+    "static": "assets/pokemon/474.webp",
+    "animated": "assets/pokemon/forms/474.gif"
+  },
+  "475": {
+    "static": "assets/pokemon/475.webp",
+    "animated": "assets/pokemon/forms/475.gif"
+  },
+  "476": {
+    "static": "assets/pokemon/476.webp",
+    "animated": "assets/pokemon/forms/476.gif"
+  },
+  "477": {
+    "static": "assets/pokemon/477.webp",
+    "animated": "assets/pokemon/forms/477.gif"
+  },
+  "478": {
+    "static": "assets/pokemon/478.webp",
+    "animated": "assets/pokemon/forms/478.gif"
+  },
+  "479": {
+    "static": "assets/pokemon/479.webp",
+    "animated": "assets/pokemon/forms/479.gif"
+  },
+  "480": {
+    "static": "assets/pokemon/480.webp",
+    "animated": "assets/pokemon/forms/480.gif"
+  },
+  "481": {
+    "static": "assets/pokemon/481.webp",
+    "animated": "assets/pokemon/forms/481.gif"
+  },
+  "482": {
+    "static": "assets/pokemon/482.webp",
+    "animated": "assets/pokemon/forms/482.gif"
+  },
+  "483": {
+    "static": "assets/pokemon/483.webp",
+    "animated": "assets/pokemon/forms/483.gif"
+  },
+  "484": {
+    "static": "assets/pokemon/484.webp",
+    "animated": "assets/pokemon/forms/484.gif"
+  },
+  "485": {
+    "static": "assets/pokemon/485.webp",
+    "animated": "assets/pokemon/forms/485.gif"
+  },
+  "486": {
+    "static": "assets/pokemon/486.webp",
+    "animated": "assets/pokemon/forms/486.gif"
+  },
+  "487": {
+    "static": "assets/pokemon/487.webp",
+    "animated": "assets/pokemon/forms/487.gif"
+  },
+  "488": {
+    "static": "assets/pokemon/488.webp",
+    "animated": "assets/pokemon/forms/488.gif"
+  },
+  "489": {
+    "static": "assets/pokemon/489.webp",
+    "animated": "assets/pokemon/forms/489.gif"
+  },
+  "490": {
+    "static": "assets/pokemon/490.webp",
+    "animated": "assets/pokemon/forms/490.gif"
+  },
+  "491": {
+    "static": "assets/pokemon/491.webp",
+    "animated": "assets/pokemon/forms/491.gif"
+  },
+  "492": {
+    "static": "assets/pokemon/492.webp",
+    "animated": "assets/pokemon/forms/492.gif"
+  },
+  "493": {
+    "static": "assets/pokemon/493.webp",
+    "animated": "assets/pokemon/forms/493.gif"
+  },
+  "494": {
+    "static": "assets/pokemon/494.webp",
+    "animated": "assets/pokemon/forms/494.gif"
+  },
+  "495": {
+    "static": "assets/pokemon/495.webp",
+    "animated": "assets/pokemon/forms/495.gif"
+  },
+  "496": {
+    "static": "assets/pokemon/496.webp",
+    "animated": "assets/pokemon/forms/496.gif"
+  },
+  "497": {
+    "static": "assets/pokemon/497.webp",
+    "animated": "assets/pokemon/forms/497.gif"
+  },
+  "498": {
+    "static": "assets/pokemon/498.webp",
+    "animated": "assets/pokemon/forms/498.gif"
+  },
+  "499": {
+    "static": "assets/pokemon/499.webp",
+    "animated": "assets/pokemon/forms/499.gif"
+  },
+  "500": {
+    "static": "assets/pokemon/500.webp",
+    "animated": "assets/pokemon/forms/500.gif"
+  },
+  "501": {
+    "static": "assets/pokemon/501.webp",
+    "animated": "assets/pokemon/forms/501.gif"
+  },
+  "502": {
+    "static": "assets/pokemon/502.webp",
+    "animated": "assets/pokemon/forms/502.gif"
+  },
+  "503": {
+    "static": "assets/pokemon/503.webp",
+    "animated": "assets/pokemon/forms/503.gif"
+  },
+  "504": {
+    "static": "assets/pokemon/504.webp",
+    "animated": "assets/pokemon/forms/504.gif"
+  },
+  "505": {
+    "static": "assets/pokemon/505.webp",
+    "animated": "assets/pokemon/forms/505.gif"
+  },
+  "506": {
+    "static": "assets/pokemon/506.webp",
+    "animated": "assets/pokemon/forms/506.gif"
+  },
+  "507": {
+    "static": "assets/pokemon/507.webp",
+    "animated": "assets/pokemon/forms/507.gif"
+  },
+  "508": {
+    "static": "assets/pokemon/508.webp",
+    "animated": "assets/pokemon/forms/508.gif"
+  },
+  "509": {
+    "static": "assets/pokemon/509.webp",
+    "animated": "assets/pokemon/forms/509.gif"
+  },
+  "510": {
+    "static": "assets/pokemon/510.webp",
+    "animated": "assets/pokemon/forms/510.gif"
+  },
+  "511": {
+    "static": "assets/pokemon/511.webp",
+    "animated": "assets/pokemon/forms/511.gif"
+  },
+  "512": {
+    "static": "assets/pokemon/512.webp",
+    "animated": "assets/pokemon/forms/512.gif"
+  },
+  "513": {
+    "static": "assets/pokemon/513.webp",
+    "animated": "assets/pokemon/forms/513.gif"
+  },
+  "514": {
+    "static": "assets/pokemon/514.webp",
+    "animated": "assets/pokemon/forms/514.gif"
+  },
+  "515": {
+    "static": "assets/pokemon/515.webp",
+    "animated": "assets/pokemon/forms/515.gif"
+  },
+  "516": {
+    "static": "assets/pokemon/516.webp",
+    "animated": "assets/pokemon/forms/516.gif"
+  },
+  "517": {
+    "static": "assets/pokemon/517.webp",
+    "animated": "assets/pokemon/forms/517.gif"
+  },
+  "518": {
+    "static": "assets/pokemon/518.webp",
+    "animated": "assets/pokemon/forms/518.gif"
+  },
+  "519": {
+    "static": "assets/pokemon/519.webp",
+    "animated": "assets/pokemon/forms/519.gif"
+  },
+  "520": {
+    "static": "assets/pokemon/520.webp",
+    "animated": "assets/pokemon/forms/520.gif"
+  },
+  "521": {
+    "static": "assets/pokemon/521.webp",
+    "animated": "assets/pokemon/forms/521.gif"
+  },
+  "522": {
+    "static": "assets/pokemon/522.webp",
+    "animated": "assets/pokemon/forms/522.gif"
+  },
+  "523": {
+    "static": "assets/pokemon/523.webp",
+    "animated": "assets/pokemon/forms/523.gif"
+  },
+  "524": {
+    "static": "assets/pokemon/524.webp",
+    "animated": "assets/pokemon/forms/524.gif"
+  },
+  "525": {
+    "static": "assets/pokemon/525.webp",
+    "animated": "assets/pokemon/forms/525.gif"
+  },
+  "526": {
+    "static": "assets/pokemon/526.webp",
+    "animated": "assets/pokemon/forms/526.gif"
+  },
+  "527": {
+    "static": "assets/pokemon/527.webp",
+    "animated": "assets/pokemon/forms/527.gif"
+  },
+  "528": {
+    "static": "assets/pokemon/528.webp",
+    "animated": "assets/pokemon/forms/528.gif"
+  },
+  "529": {
+    "static": "assets/pokemon/529.webp",
+    "animated": "assets/pokemon/forms/529.gif"
+  },
+  "530": {
+    "static": "assets/pokemon/530.webp",
+    "animated": "assets/pokemon/forms/530.gif"
+  },
+  "531": {
+    "static": "assets/pokemon/531.webp",
+    "animated": "assets/pokemon/forms/531.gif"
+  },
+  "532": {
+    "static": "assets/pokemon/532.webp",
+    "animated": "assets/pokemon/forms/532.gif"
+  },
+  "533": {
+    "static": "assets/pokemon/533.webp",
+    "animated": "assets/pokemon/forms/533.gif"
+  },
+  "534": {
+    "static": "assets/pokemon/534.webp",
+    "animated": "assets/pokemon/forms/534.gif"
+  },
+  "535": {
+    "static": "assets/pokemon/535.webp",
+    "animated": "assets/pokemon/forms/535.gif"
+  },
+  "536": {
+    "static": "assets/pokemon/536.webp",
+    "animated": "assets/pokemon/forms/536.gif"
+  },
+  "537": {
+    "static": "assets/pokemon/537.webp",
+    "animated": "assets/pokemon/forms/537.gif"
+  },
+  "538": {
+    "static": "assets/pokemon/538.webp",
+    "animated": "assets/pokemon/forms/538.gif"
+  },
+  "539": {
+    "static": "assets/pokemon/539.webp",
+    "animated": "assets/pokemon/forms/539.gif"
+  },
+  "540": {
+    "static": "assets/pokemon/540.webp",
+    "animated": "assets/pokemon/forms/540.gif"
+  },
+  "541": {
+    "static": "assets/pokemon/541.webp",
+    "animated": "assets/pokemon/forms/541.gif"
+  },
+  "542": {
+    "static": "assets/pokemon/542.webp",
+    "animated": "assets/pokemon/forms/542.gif"
+  },
+  "543": {
+    "static": "assets/pokemon/543.webp",
+    "animated": "assets/pokemon/forms/543.gif"
+  },
+  "544": {
+    "static": "assets/pokemon/544.webp",
+    "animated": "assets/pokemon/forms/544.gif"
+  },
+  "545": {
+    "static": "assets/pokemon/545.webp",
+    "animated": "assets/pokemon/forms/545.gif"
+  },
+  "546": {
+    "static": "assets/pokemon/546.webp",
+    "animated": "assets/pokemon/forms/546.gif"
+  },
+  "547": {
+    "static": "assets/pokemon/547.webp",
+    "animated": "assets/pokemon/forms/547.gif"
+  },
+  "548": {
+    "static": "assets/pokemon/548.webp",
+    "animated": "assets/pokemon/forms/548.gif"
+  },
+  "549": {
+    "static": "assets/pokemon/549.webp",
+    "animated": "assets/pokemon/forms/549.gif"
+  },
+  "550": {
+    "static": "assets/pokemon/550.webp",
+    "animated": "assets/pokemon/forms/550.gif"
+  },
+  "551": {
+    "static": "assets/pokemon/551.webp",
+    "animated": "assets/pokemon/forms/551.gif"
+  },
+  "552": {
+    "static": "assets/pokemon/552.webp",
+    "animated": "assets/pokemon/forms/552.gif"
+  },
+  "553": {
+    "static": "assets/pokemon/553.webp",
+    "animated": "assets/pokemon/forms/553.gif"
+  },
+  "554": {
+    "static": "assets/pokemon/554.webp",
+    "animated": "assets/pokemon/forms/554.gif"
+  },
+  "555": {
+    "static": "assets/pokemon/555.webp",
+    "animated": "assets/pokemon/forms/555.gif"
+  },
+  "556": {
+    "static": "assets/pokemon/556.webp",
+    "animated": "assets/pokemon/forms/556.gif"
+  },
+  "557": {
+    "static": "assets/pokemon/557.webp",
+    "animated": "assets/pokemon/forms/557.gif"
+  },
+  "558": {
+    "static": "assets/pokemon/558.webp",
+    "animated": "assets/pokemon/forms/558.gif"
+  },
+  "559": {
+    "static": "assets/pokemon/559.webp",
+    "animated": "assets/pokemon/forms/559.gif"
+  },
+  "560": {
+    "static": "assets/pokemon/560.webp",
+    "animated": "assets/pokemon/forms/560.gif"
+  },
+  "561": {
+    "static": "assets/pokemon/561.webp",
+    "animated": "assets/pokemon/forms/561.gif"
+  },
+  "562": {
+    "static": "assets/pokemon/562.webp",
+    "animated": "assets/pokemon/forms/562.gif"
+  },
+  "563": {
+    "static": "assets/pokemon/563.webp",
+    "animated": "assets/pokemon/forms/563.gif"
+  },
+  "564": {
+    "static": "assets/pokemon/564.webp",
+    "animated": "assets/pokemon/forms/564.gif"
+  },
+  "565": {
+    "static": "assets/pokemon/565.webp",
+    "animated": "assets/pokemon/forms/565.gif"
+  },
+  "566": {
+    "static": "assets/pokemon/566.webp",
+    "animated": "assets/pokemon/forms/566.gif"
+  },
+  "567": {
+    "static": "assets/pokemon/567.webp",
+    "animated": "assets/pokemon/forms/567.gif"
+  },
+  "568": {
+    "static": "assets/pokemon/568.webp",
+    "animated": "assets/pokemon/forms/568.gif"
+  },
+  "569": {
+    "static": "assets/pokemon/569.webp",
+    "animated": "assets/pokemon/forms/569.gif"
+  },
+  "570": {
+    "static": "assets/pokemon/570.webp",
+    "animated": "assets/pokemon/forms/570.gif"
+  },
+  "571": {
+    "static": "assets/pokemon/571.webp",
+    "animated": "assets/pokemon/forms/571.gif"
+  },
+  "572": {
+    "static": "assets/pokemon/572.webp",
+    "animated": "assets/pokemon/forms/572.gif"
+  },
+  "573": {
+    "static": "assets/pokemon/573.webp",
+    "animated": "assets/pokemon/forms/573.gif"
+  },
+  "574": {
+    "static": "assets/pokemon/574.webp",
+    "animated": "assets/pokemon/forms/574.gif"
+  },
+  "575": {
+    "static": "assets/pokemon/575.webp",
+    "animated": "assets/pokemon/forms/575.gif"
+  },
+  "576": {
+    "static": "assets/pokemon/576.webp",
+    "animated": "assets/pokemon/forms/576.gif"
+  },
+  "577": {
+    "static": "assets/pokemon/577.webp",
+    "animated": "assets/pokemon/forms/577.gif"
+  },
+  "578": {
+    "static": "assets/pokemon/578.webp",
+    "animated": "assets/pokemon/forms/578.gif"
+  },
+  "579": {
+    "static": "assets/pokemon/579.webp",
+    "animated": "assets/pokemon/forms/579.gif"
+  },
+  "580": {
+    "static": "assets/pokemon/580.webp",
+    "animated": "assets/pokemon/forms/580.gif"
+  },
+  "581": {
+    "static": "assets/pokemon/581.webp",
+    "animated": "assets/pokemon/forms/581.gif"
+  },
+  "582": {
+    "static": "assets/pokemon/582.webp",
+    "animated": "assets/pokemon/forms/582.gif"
+  },
+  "583": {
+    "static": "assets/pokemon/583.webp",
+    "animated": "assets/pokemon/forms/583.gif"
+  },
+  "584": {
+    "static": "assets/pokemon/584.webp",
+    "animated": "assets/pokemon/forms/584.gif"
+  },
+  "585": {
+    "static": "assets/pokemon/585.webp",
+    "animated": "assets/pokemon/forms/585.gif"
+  },
+  "586": {
+    "static": "assets/pokemon/586.webp",
+    "animated": "assets/pokemon/forms/586.gif"
+  },
+  "587": {
+    "static": "assets/pokemon/587.webp",
+    "animated": "assets/pokemon/forms/587.gif"
+  },
+  "588": {
+    "static": "assets/pokemon/588.webp",
+    "animated": "assets/pokemon/forms/588.gif"
+  },
+  "589": {
+    "static": "assets/pokemon/589.webp",
+    "animated": "assets/pokemon/forms/589.gif"
+  },
+  "590": {
+    "static": "assets/pokemon/590.webp",
+    "animated": "assets/pokemon/forms/590.gif"
+  },
+  "591": {
+    "static": "assets/pokemon/591.webp",
+    "animated": "assets/pokemon/forms/591.gif"
+  },
+  "592": {
+    "static": "assets/pokemon/592.webp",
+    "animated": "assets/pokemon/forms/592.gif"
+  },
+  "593": {
+    "static": "assets/pokemon/593.webp",
+    "animated": "assets/pokemon/forms/593.gif"
+  },
+  "594": {
+    "static": "assets/pokemon/594.webp",
+    "animated": "assets/pokemon/forms/594.gif"
+  },
+  "595": {
+    "static": "assets/pokemon/595.webp",
+    "animated": "assets/pokemon/forms/595.gif"
+  },
+  "596": {
+    "static": "assets/pokemon/596.webp",
+    "animated": "assets/pokemon/forms/596.gif"
+  },
+  "597": {
+    "static": "assets/pokemon/597.webp"
+  },
+  "598": {
+    "static": "assets/pokemon/598.webp",
+    "animated": "assets/pokemon/forms/598.gif"
+  },
+  "599": {
+    "static": "assets/pokemon/599.webp",
+    "animated": "assets/pokemon/forms/599.gif"
+  },
+  "600": {
+    "static": "assets/pokemon/600.webp",
+    "animated": "assets/pokemon/forms/600.gif"
+  },
+  "601": {
+    "static": "assets/pokemon/601.webp",
+    "animated": "assets/pokemon/forms/601.gif"
+  },
+  "602": {
+    "static": "assets/pokemon/602.webp",
+    "animated": "assets/pokemon/forms/602.gif"
+  },
+  "603": {
+    "static": "assets/pokemon/603.webp",
+    "animated": "assets/pokemon/forms/603.gif"
+  },
+  "604": {
+    "static": "assets/pokemon/604.webp",
+    "animated": "assets/pokemon/forms/604.gif"
+  },
+  "605": {
+    "static": "assets/pokemon/605.webp",
+    "animated": "assets/pokemon/forms/605.gif"
+  },
+  "606": {
+    "static": "assets/pokemon/606.webp",
+    "animated": "assets/pokemon/forms/606.gif"
+  },
+  "607": {
+    "static": "assets/pokemon/607.webp",
+    "animated": "assets/pokemon/forms/607.gif"
+  },
+  "608": {
+    "static": "assets/pokemon/608.webp",
+    "animated": "assets/pokemon/forms/608.gif"
+  },
+  "609": {
+    "static": "assets/pokemon/609.webp",
+    "animated": "assets/pokemon/forms/609.gif"
+  },
+  "610": {
+    "static": "assets/pokemon/610.webp",
+    "animated": "assets/pokemon/forms/610.gif"
+  },
+  "611": {
+    "static": "assets/pokemon/611.webp",
+    "animated": "assets/pokemon/forms/611.gif"
+  },
+  "612": {
+    "static": "assets/pokemon/612.webp",
+    "animated": "assets/pokemon/forms/612.gif"
+  },
+  "613": {
+    "static": "assets/pokemon/613.webp",
+    "animated": "assets/pokemon/forms/613.gif"
+  },
+  "614": {
+    "static": "assets/pokemon/614.webp",
+    "animated": "assets/pokemon/forms/614.gif"
+  },
+  "615": {
+    "static": "assets/pokemon/615.webp",
+    "animated": "assets/pokemon/forms/615.gif"
+  },
+  "616": {
+    "static": "assets/pokemon/616.webp",
+    "animated": "assets/pokemon/forms/616.gif"
+  },
+  "617": {
+    "static": "assets/pokemon/617.webp",
+    "animated": "assets/pokemon/forms/617.gif"
+  },
+  "618": {
+    "static": "assets/pokemon/618.webp",
+    "animated": "assets/pokemon/forms/618.gif"
+  },
+  "619": {
+    "static": "assets/pokemon/619.webp",
+    "animated": "assets/pokemon/forms/619.gif"
+  },
+  "620": {
+    "static": "assets/pokemon/620.webp",
+    "animated": "assets/pokemon/forms/620.gif"
+  },
+  "621": {
+    "static": "assets/pokemon/621.webp",
+    "animated": "assets/pokemon/forms/621.gif"
+  },
+  "622": {
+    "static": "assets/pokemon/622.webp",
+    "animated": "assets/pokemon/forms/622.gif"
+  },
+  "623": {
+    "static": "assets/pokemon/623.webp",
+    "animated": "assets/pokemon/forms/623.gif"
+  },
+  "624": {
+    "static": "assets/pokemon/624.webp",
+    "animated": "assets/pokemon/forms/624.gif"
+  },
+  "625": {
+    "static": "assets/pokemon/625.webp",
+    "animated": "assets/pokemon/forms/625.gif"
+  },
+  "626": {
+    "static": "assets/pokemon/626.webp",
+    "animated": "assets/pokemon/forms/626.gif"
+  },
+  "627": {
+    "static": "assets/pokemon/627.webp",
+    "animated": "assets/pokemon/forms/627.gif"
+  },
+  "628": {
+    "static": "assets/pokemon/628.webp",
+    "animated": "assets/pokemon/forms/628.gif"
+  },
+  "629": {
+    "static": "assets/pokemon/629.webp",
+    "animated": "assets/pokemon/forms/629.gif"
+  },
+  "630": {
+    "static": "assets/pokemon/630.webp",
+    "animated": "assets/pokemon/forms/630.gif"
+  },
+  "631": {
+    "static": "assets/pokemon/631.webp",
+    "animated": "assets/pokemon/forms/631.gif"
+  },
+  "632": {
+    "static": "assets/pokemon/632.webp",
+    "animated": "assets/pokemon/forms/632.gif"
+  },
+  "633": {
+    "static": "assets/pokemon/633.webp",
+    "animated": "assets/pokemon/forms/633.gif"
+  },
+  "634": {
+    "static": "assets/pokemon/634.webp",
+    "animated": "assets/pokemon/forms/634.gif"
+  },
+  "635": {
+    "static": "assets/pokemon/635.webp",
+    "animated": "assets/pokemon/forms/635.gif"
+  },
+  "636": {
+    "static": "assets/pokemon/636.webp",
+    "animated": "assets/pokemon/forms/636.gif"
+  },
+  "637": {
+    "static": "assets/pokemon/637.webp",
+    "animated": "assets/pokemon/forms/637.gif"
+  },
+  "638": {
+    "static": "assets/pokemon/638.webp",
+    "animated": "assets/pokemon/forms/638.gif"
+  },
+  "639": {
+    "static": "assets/pokemon/639.webp",
+    "animated": "assets/pokemon/forms/639.gif"
+  },
+  "640": {
+    "static": "assets/pokemon/640.webp",
+    "animated": "assets/pokemon/forms/640.gif"
+  },
+  "641": {
+    "static": "assets/pokemon/641.webp",
+    "animated": "assets/pokemon/forms/641.gif"
+  },
+  "642": {
+    "static": "assets/pokemon/642.webp",
+    "animated": "assets/pokemon/forms/642.gif"
+  },
+  "643": {
+    "static": "assets/pokemon/643.webp",
+    "animated": "assets/pokemon/forms/643.gif"
+  },
+  "644": {
+    "static": "assets/pokemon/644.webp",
+    "animated": "assets/pokemon/forms/644.gif"
+  },
+  "645": {
+    "static": "assets/pokemon/645.webp",
+    "animated": "assets/pokemon/forms/645.gif"
+  },
+  "646": {
+    "static": "assets/pokemon/646.webp",
+    "animated": "assets/pokemon/forms/646.gif"
+  },
+  "647": {
+    "static": "assets/pokemon/647.webp",
+    "animated": "assets/pokemon/forms/647.gif"
+  },
+  "648": {
+    "static": "assets/pokemon/648.webp",
+    "animated": "assets/pokemon/forms/648.gif"
+  },
+  "649": {
+    "static": "assets/pokemon/649.webp",
+    "animated": "assets/pokemon/forms/649.gif"
+  },
+  "650": {
+    "static": "assets/pokemon/650.webp",
+    "animated": "assets/pokemon/forms/650.gif"
+  },
+  "651": {
+    "static": "assets/pokemon/651.webp",
+    "animated": "assets/pokemon/forms/651.gif"
+  },
+  "652": {
+    "static": "assets/pokemon/652.webp",
+    "animated": "assets/pokemon/forms/652.gif"
+  },
+  "653": {
+    "static": "assets/pokemon/653.webp",
+    "animated": "assets/pokemon/forms/653.gif"
+  },
+  "654": {
+    "static": "assets/pokemon/654.webp",
+    "animated": "assets/pokemon/forms/654.gif"
+  },
+  "655": {
+    "static": "assets/pokemon/655.webp",
+    "animated": "assets/pokemon/forms/655.gif"
+  },
+  "656": {
+    "static": "assets/pokemon/656.webp",
+    "animated": "assets/pokemon/forms/656.gif"
+  },
+  "657": {
+    "static": "assets/pokemon/657.webp",
+    "animated": "assets/pokemon/forms/657.gif"
+  },
+  "658": {
+    "static": "assets/pokemon/658.webp",
+    "animated": "assets/pokemon/forms/658.gif"
+  },
+  "659": {
+    "static": "assets/pokemon/659.webp",
+    "animated": "assets/pokemon/forms/659.gif"
+  },
+  "660": {
+    "static": "assets/pokemon/660.webp",
+    "animated": "assets/pokemon/forms/660.gif"
+  },
+  "661": {
+    "static": "assets/pokemon/661.webp",
+    "animated": "assets/pokemon/forms/661.gif"
+  },
+  "662": {
+    "static": "assets/pokemon/662.webp",
+    "animated": "assets/pokemon/forms/662.gif"
+  },
+  "663": {
+    "static": "assets/pokemon/663.webp",
+    "animated": "assets/pokemon/forms/663.gif"
+  },
+  "664": {
+    "static": "assets/pokemon/664.webp",
+    "animated": "assets/pokemon/forms/664.gif"
+  },
+  "665": {
+    "static": "assets/pokemon/665.webp",
+    "animated": "assets/pokemon/forms/665.gif"
+  },
+  "666": {
+    "static": "assets/pokemon/666.webp",
+    "animated": "assets/pokemon/forms/666.gif"
+  },
+  "667": {
+    "static": "assets/pokemon/667.webp",
+    "animated": "assets/pokemon/forms/667.gif"
+  },
+  "668": {
+    "static": "assets/pokemon/668.webp",
+    "animated": "assets/pokemon/forms/668.gif"
+  },
+  "669": {
+    "static": "assets/pokemon/669.webp",
+    "animated": "assets/pokemon/forms/669.gif"
+  },
+  "670": {
+    "static": "assets/pokemon/670.webp",
+    "animated": "assets/pokemon/forms/670.gif"
+  },
+  "671": {
+    "static": "assets/pokemon/671.webp",
+    "animated": "assets/pokemon/forms/671.gif"
+  },
+  "672": {
+    "static": "assets/pokemon/672.webp",
+    "animated": "assets/pokemon/forms/672.gif"
+  },
+  "673": {
+    "static": "assets/pokemon/673.webp",
+    "animated": "assets/pokemon/forms/673.gif"
+  },
+  "674": {
+    "static": "assets/pokemon/674.webp",
+    "animated": "assets/pokemon/forms/674.gif"
+  },
+  "675": {
+    "static": "assets/pokemon/675.webp",
+    "animated": "assets/pokemon/forms/675.gif"
+  },
+  "676": {
+    "static": "assets/pokemon/676.webp",
+    "animated": "assets/pokemon/forms/676.gif"
+  },
+  "677": {
+    "static": "assets/pokemon/677.webp",
+    "animated": "assets/pokemon/forms/677.gif"
+  },
+  "678": {
+    "static": "assets/pokemon/678.webp",
+    "animated": "assets/pokemon/forms/678.gif"
+  },
+  "679": {
+    "static": "assets/pokemon/679.webp",
+    "animated": "assets/pokemon/forms/679.gif"
+  },
+  "680": {
+    "static": "assets/pokemon/680.webp",
+    "animated": "assets/pokemon/forms/680.gif"
+  },
+  "681": {
+    "static": "assets/pokemon/681.webp",
+    "animated": "assets/pokemon/forms/681.gif"
+  },
+  "682": {
+    "static": "assets/pokemon/682.webp",
+    "animated": "assets/pokemon/forms/682.gif"
+  },
+  "683": {
+    "static": "assets/pokemon/683.webp",
+    "animated": "assets/pokemon/forms/683.gif"
+  },
+  "684": {
+    "static": "assets/pokemon/684.webp",
+    "animated": "assets/pokemon/forms/684.gif"
+  },
+  "685": {
+    "static": "assets/pokemon/685.webp",
+    "animated": "assets/pokemon/forms/685.gif"
+  },
+  "686": {
+    "static": "assets/pokemon/686.webp",
+    "animated": "assets/pokemon/forms/686.gif"
+  },
+  "687": {
+    "static": "assets/pokemon/687.webp",
+    "animated": "assets/pokemon/forms/687.gif"
+  },
+  "688": {
+    "static": "assets/pokemon/688.webp",
+    "animated": "assets/pokemon/forms/688.gif"
+  },
+  "689": {
+    "static": "assets/pokemon/689.webp",
+    "animated": "assets/pokemon/forms/689.gif"
+  },
+  "690": {
+    "static": "assets/pokemon/690.webp",
+    "animated": "assets/pokemon/forms/690.gif"
+  },
+  "691": {
+    "static": "assets/pokemon/691.webp",
+    "animated": "assets/pokemon/forms/691.gif"
+  },
+  "692": {
+    "static": "assets/pokemon/692.webp",
+    "animated": "assets/pokemon/forms/692.gif"
+  },
+  "693": {
+    "static": "assets/pokemon/693.webp",
+    "animated": "assets/pokemon/forms/693.gif"
+  },
+  "694": {
+    "static": "assets/pokemon/694.webp",
+    "animated": "assets/pokemon/forms/694.gif"
+  },
+  "695": {
+    "static": "assets/pokemon/695.webp",
+    "animated": "assets/pokemon/forms/695.gif"
+  },
+  "696": {
+    "static": "assets/pokemon/696.webp",
+    "animated": "assets/pokemon/forms/696.gif"
+  },
+  "697": {
+    "static": "assets/pokemon/697.webp",
+    "animated": "assets/pokemon/forms/697.gif"
+  },
+  "698": {
+    "static": "assets/pokemon/698.webp",
+    "animated": "assets/pokemon/forms/698.gif"
+  },
+  "699": {
+    "static": "assets/pokemon/699.webp",
+    "animated": "assets/pokemon/forms/699.gif"
+  },
+  "700": {
+    "static": "assets/pokemon/700.webp",
+    "animated": "assets/pokemon/forms/700.gif"
+  },
+  "701": {
+    "static": "assets/pokemon/701.webp",
+    "animated": "assets/pokemon/forms/701.gif"
+  },
+  "702": {
+    "static": "assets/pokemon/702.webp",
+    "animated": "assets/pokemon/forms/702.gif"
+  },
+  "703": {
+    "static": "assets/pokemon/703.webp",
+    "animated": "assets/pokemon/forms/703.gif"
+  },
+  "704": {
+    "static": "assets/pokemon/704.webp",
+    "animated": "assets/pokemon/forms/704.gif"
+  },
+  "705": {
+    "static": "assets/pokemon/705.webp",
+    "animated": "assets/pokemon/forms/705.gif"
+  },
+  "706": {
+    "static": "assets/pokemon/706.webp",
+    "animated": "assets/pokemon/forms/706.gif"
+  },
+  "707": {
+    "static": "assets/pokemon/707.webp",
+    "animated": "assets/pokemon/forms/707.gif"
+  },
+  "708": {
+    "static": "assets/pokemon/708.webp",
+    "animated": "assets/pokemon/forms/708.gif"
+  },
+  "709": {
+    "static": "assets/pokemon/709.webp",
+    "animated": "assets/pokemon/forms/709.gif"
+  },
+  "710": {
+    "static": "assets/pokemon/710.webp",
+    "animated": "assets/pokemon/forms/710.gif"
+  },
+  "711": {
+    "static": "assets/pokemon/711.webp",
+    "animated": "assets/pokemon/forms/711.gif"
+  },
+  "712": {
+    "static": "assets/pokemon/712.webp",
+    "animated": "assets/pokemon/forms/712.gif"
+  },
+  "713": {
+    "static": "assets/pokemon/713.webp",
+    "animated": "assets/pokemon/forms/713.gif"
+  },
+  "714": {
+    "static": "assets/pokemon/714.webp",
+    "animated": "assets/pokemon/forms/714.gif"
+  },
+  "715": {
+    "static": "assets/pokemon/715.webp",
+    "animated": "assets/pokemon/forms/715.gif"
+  },
+  "716": {
+    "static": "assets/pokemon/716.webp",
+    "animated": "assets/pokemon/forms/716.gif"
+  },
+  "717": {
+    "static": "assets/pokemon/717.webp",
+    "animated": "assets/pokemon/forms/717.gif"
+  },
+  "718": {
+    "static": "assets/pokemon/718.webp",
+    "animated": "assets/pokemon/forms/718.gif"
+  },
+  "719": {
+    "static": "assets/pokemon/719.webp",
+    "animated": "assets/pokemon/forms/719.gif"
+  },
+  "720": {
+    "static": "assets/pokemon/720.webp",
+    "animated": "assets/pokemon/forms/720.gif"
+  },
+  "721": {
+    "static": "assets/pokemon/721.webp",
+    "animated": "assets/pokemon/forms/721.gif"
+  },
+  "722": {
+    "static": "assets/pokemon/722.webp",
+    "animated": "assets/pokemon/forms/722.gif"
+  },
+  "723": {
+    "static": "assets/pokemon/723.webp",
+    "animated": "assets/pokemon/forms/723.gif"
+  },
+  "724": {
+    "static": "assets/pokemon/724.webp",
+    "animated": "assets/pokemon/forms/724.gif"
+  },
+  "725": {
+    "static": "assets/pokemon/725.webp",
+    "animated": "assets/pokemon/forms/725.gif"
+  },
+  "726": {
+    "static": "assets/pokemon/726.webp",
+    "animated": "assets/pokemon/forms/726.gif"
+  },
+  "727": {
+    "static": "assets/pokemon/727.webp",
+    "animated": "assets/pokemon/forms/727.gif"
+  },
+  "728": {
+    "static": "assets/pokemon/728.webp",
+    "animated": "assets/pokemon/forms/728.gif"
+  },
+  "729": {
+    "static": "assets/pokemon/729.webp",
+    "animated": "assets/pokemon/forms/729.gif"
+  },
+  "730": {
+    "static": "assets/pokemon/730.webp",
+    "animated": "assets/pokemon/forms/730.gif"
+  },
+  "731": {
+    "static": "assets/pokemon/731.webp",
+    "animated": "assets/pokemon/forms/731.gif"
+  },
+  "732": {
+    "static": "assets/pokemon/732.webp",
+    "animated": "assets/pokemon/forms/732.gif"
+  },
+  "733": {
+    "static": "assets/pokemon/733.webp",
+    "animated": "assets/pokemon/forms/733.gif"
+  },
+  "734": {
+    "static": "assets/pokemon/734.webp",
+    "animated": "assets/pokemon/forms/734.gif"
+  },
+  "735": {
+    "static": "assets/pokemon/735.webp",
+    "animated": "assets/pokemon/forms/735.gif"
+  },
+  "736": {
+    "static": "assets/pokemon/736.webp",
+    "animated": "assets/pokemon/forms/736.gif"
+  },
+  "737": {
+    "static": "assets/pokemon/737.webp",
+    "animated": "assets/pokemon/forms/737.gif"
+  },
+  "738": {
+    "static": "assets/pokemon/738.webp",
+    "animated": "assets/pokemon/forms/738.gif"
+  },
+  "739": {
+    "static": "assets/pokemon/739.webp",
+    "animated": "assets/pokemon/forms/739.gif"
+  },
+  "740": {
+    "static": "assets/pokemon/740.webp",
+    "animated": "assets/pokemon/forms/740.gif"
+  },
+  "741": {
+    "static": "assets/pokemon/741.webp",
+    "animated": "assets/pokemon/forms/741.gif"
+  },
+  "742": {
+    "static": "assets/pokemon/742.webp",
+    "animated": "assets/pokemon/forms/742.gif"
+  },
+  "743": {
+    "static": "assets/pokemon/743.webp",
+    "animated": "assets/pokemon/forms/743.gif"
+  },
+  "744": {
+    "static": "assets/pokemon/744.webp",
+    "animated": "assets/pokemon/forms/744.gif"
+  },
+  "745": {
+    "static": "assets/pokemon/745.webp",
+    "animated": "assets/pokemon/forms/745.gif"
+  },
+  "746": {
+    "static": "assets/pokemon/746.webp",
+    "animated": "assets/pokemon/forms/746.gif"
+  },
+  "747": {
+    "static": "assets/pokemon/747.webp",
+    "animated": "assets/pokemon/forms/747.gif"
+  },
+  "748": {
+    "static": "assets/pokemon/748.webp",
+    "animated": "assets/pokemon/forms/748.gif"
+  },
+  "749": {
+    "static": "assets/pokemon/749.webp",
+    "animated": "assets/pokemon/forms/749.gif"
+  },
+  "750": {
+    "static": "assets/pokemon/750.webp",
+    "animated": "assets/pokemon/forms/750.gif"
+  },
+  "751": {
+    "static": "assets/pokemon/751.webp",
+    "animated": "assets/pokemon/forms/751.gif"
+  },
+  "752": {
+    "static": "assets/pokemon/752.webp",
+    "animated": "assets/pokemon/forms/752.gif"
+  },
+  "753": {
+    "static": "assets/pokemon/753.webp",
+    "animated": "assets/pokemon/forms/753.gif"
+  },
+  "754": {
+    "static": "assets/pokemon/754.webp",
+    "animated": "assets/pokemon/forms/754.gif"
+  },
+  "755": {
+    "static": "assets/pokemon/755.webp",
+    "animated": "assets/pokemon/forms/755.gif"
+  },
+  "756": {
+    "static": "assets/pokemon/756.webp",
+    "animated": "assets/pokemon/forms/756.gif"
+  },
+  "757": {
+    "static": "assets/pokemon/757.webp",
+    "animated": "assets/pokemon/forms/757.gif"
+  },
+  "758": {
+    "static": "assets/pokemon/758.webp",
+    "animated": "assets/pokemon/forms/758.gif"
+  },
+  "759": {
+    "static": "assets/pokemon/759.webp",
+    "animated": "assets/pokemon/forms/759.gif"
+  },
+  "760": {
+    "static": "assets/pokemon/760.webp",
+    "animated": "assets/pokemon/forms/760.gif"
+  },
+  "761": {
+    "static": "assets/pokemon/761.webp",
+    "animated": "assets/pokemon/forms/761.gif"
+  },
+  "762": {
+    "static": "assets/pokemon/762.webp",
+    "animated": "assets/pokemon/forms/762.gif"
+  },
+  "763": {
+    "static": "assets/pokemon/763.webp",
+    "animated": "assets/pokemon/forms/763.gif"
+  },
+  "764": {
+    "static": "assets/pokemon/764.webp",
+    "animated": "assets/pokemon/forms/764.gif"
+  },
+  "765": {
+    "static": "assets/pokemon/765.webp",
+    "animated": "assets/pokemon/forms/765.gif"
+  },
+  "766": {
+    "static": "assets/pokemon/766.webp",
+    "animated": "assets/pokemon/forms/766.gif"
+  },
+  "767": {
+    "static": "assets/pokemon/767.webp",
+    "animated": "assets/pokemon/forms/767.gif"
+  },
+  "768": {
+    "static": "assets/pokemon/768.webp",
+    "animated": "assets/pokemon/forms/768.gif"
+  },
+  "769": {
+    "static": "assets/pokemon/769.webp",
+    "animated": "assets/pokemon/forms/769.gif"
+  },
+  "770": {
+    "static": "assets/pokemon/770.webp",
+    "animated": "assets/pokemon/forms/770.gif"
+  },
+  "771": {
+    "static": "assets/pokemon/771.webp",
+    "animated": "assets/pokemon/forms/771.gif"
+  },
+  "772": {
+    "static": "assets/pokemon/772.webp",
+    "animated": "assets/pokemon/forms/772.gif"
+  },
+  "773": {
+    "static": "assets/pokemon/773.webp",
+    "animated": "assets/pokemon/forms/773.gif"
+  },
+  "774": {
+    "static": "assets/pokemon/774.webp",
+    "animated": "assets/pokemon/forms/774.gif"
+  },
+  "775": {
+    "static": "assets/pokemon/775.webp",
+    "animated": "assets/pokemon/forms/775.gif"
+  },
+  "776": {
+    "static": "assets/pokemon/776.webp",
+    "animated": "assets/pokemon/forms/776.gif"
+  },
+  "777": {
+    "static": "assets/pokemon/777.webp",
+    "animated": "assets/pokemon/forms/777.gif"
+  },
+  "778": {
+    "static": "assets/pokemon/778.webp",
+    "animated": "assets/pokemon/forms/778.gif"
+  },
+  "779": {
+    "static": "assets/pokemon/779.webp",
+    "animated": "assets/pokemon/forms/779.gif"
+  },
+  "780": {
+    "static": "assets/pokemon/780.webp",
+    "animated": "assets/pokemon/forms/780.gif"
+  },
+  "781": {
+    "static": "assets/pokemon/781.webp",
+    "animated": "assets/pokemon/forms/781.gif"
+  },
+  "782": {
+    "static": "assets/pokemon/782.webp",
+    "animated": "assets/pokemon/forms/782.gif"
+  },
+  "783": {
+    "static": "assets/pokemon/783.webp",
+    "animated": "assets/pokemon/forms/783.gif"
+  },
+  "784": {
+    "static": "assets/pokemon/784.webp",
+    "animated": "assets/pokemon/forms/784.gif"
+  },
+  "785": {
+    "static": "assets/pokemon/785.webp",
+    "animated": "assets/pokemon/forms/785.gif"
+  },
+  "786": {
+    "static": "assets/pokemon/786.webp",
+    "animated": "assets/pokemon/forms/786.gif"
+  },
+  "787": {
+    "static": "assets/pokemon/787.webp",
+    "animated": "assets/pokemon/forms/787.gif"
+  },
+  "788": {
+    "static": "assets/pokemon/788.webp",
+    "animated": "assets/pokemon/forms/788.gif"
+  },
+  "789": {
+    "static": "assets/pokemon/789.webp",
+    "animated": "assets/pokemon/forms/789.gif"
+  },
+  "790": {
+    "static": "assets/pokemon/790.webp",
+    "animated": "assets/pokemon/forms/790.gif"
+  },
+  "791": {
+    "static": "assets/pokemon/791.webp",
+    "animated": "assets/pokemon/forms/791.gif"
+  },
+  "792": {
+    "static": "assets/pokemon/792.webp",
+    "animated": "assets/pokemon/forms/792.gif"
+  },
+  "793": {
+    "static": "assets/pokemon/793.webp",
+    "animated": "assets/pokemon/forms/793.gif"
+  },
+  "794": {
+    "static": "assets/pokemon/794.webp",
+    "animated": "assets/pokemon/forms/794.gif"
+  },
+  "795": {
+    "static": "assets/pokemon/795.webp",
+    "animated": "assets/pokemon/forms/795.gif"
+  },
+  "796": {
+    "static": "assets/pokemon/796.webp",
+    "animated": "assets/pokemon/forms/796.gif"
+  },
+  "797": {
+    "static": "assets/pokemon/797.webp",
+    "animated": "assets/pokemon/forms/797.gif"
+  },
+  "798": {
+    "static": "assets/pokemon/798.webp",
+    "animated": "assets/pokemon/forms/798.gif"
+  },
+  "799": {
+    "static": "assets/pokemon/799.webp",
+    "animated": "assets/pokemon/forms/799.gif"
+  },
+  "800": {
+    "static": "assets/pokemon/800.webp",
+    "animated": "assets/pokemon/forms/800.gif"
+  },
+  "801": {
+    "static": "assets/pokemon/801.webp",
+    "animated": "assets/pokemon/forms/801.gif"
+  },
+  "802": {
+    "static": "assets/pokemon/802.webp",
+    "animated": "assets/pokemon/forms/802.gif"
+  },
+  "803": {
+    "static": "assets/pokemon/803.webp",
+    "animated": "assets/pokemon/forms/803.gif"
+  },
+  "804": {
+    "static": "assets/pokemon/804.webp",
+    "animated": "assets/pokemon/forms/804.gif"
+  },
+  "805": {
+    "static": "assets/pokemon/805.webp",
+    "animated": "assets/pokemon/forms/805.gif"
+  },
+  "806": {
+    "static": "assets/pokemon/806.webp",
+    "animated": "assets/pokemon/forms/806.gif"
+  },
+  "807": {
+    "static": "assets/pokemon/807.webp",
+    "animated": "assets/pokemon/forms/807.gif"
+  },
+  "808": {
+    "static": "assets/pokemon/808.webp",
+    "animated": "assets/pokemon/forms/808.gif"
+  },
+  "809": {
+    "static": "assets/pokemon/809.webp",
+    "animated": "assets/pokemon/forms/809.gif"
+  },
+  "810": {
+    "static": "assets/pokemon/810.webp",
+    "animated": "assets/pokemon/forms/810.gif"
+  },
+  "811": {
+    "static": "assets/pokemon/811.webp",
+    "animated": "assets/pokemon/forms/811.gif"
+  },
+  "812": {
+    "static": "assets/pokemon/812.webp",
+    "animated": "assets/pokemon/forms/812.gif"
+  },
+  "813": {
+    "static": "assets/pokemon/813.webp",
+    "animated": "assets/pokemon/forms/813.gif"
+  },
+  "814": {
+    "static": "assets/pokemon/814.webp",
+    "animated": "assets/pokemon/forms/814.gif"
+  },
+  "815": {
+    "static": "assets/pokemon/815.webp",
+    "animated": "assets/pokemon/forms/815.gif"
+  },
+  "816": {
+    "static": "assets/pokemon/816.webp",
+    "animated": "assets/pokemon/forms/816.gif"
+  },
+  "817": {
+    "static": "assets/pokemon/817.webp",
+    "animated": "assets/pokemon/forms/817.gif"
+  },
+  "818": {
+    "static": "assets/pokemon/818.webp",
+    "animated": "assets/pokemon/forms/818.gif"
+  },
+  "819": {
+    "static": "assets/pokemon/819.webp",
+    "animated": "assets/pokemon/forms/819.gif"
+  },
+  "820": {
+    "static": "assets/pokemon/820.webp",
+    "animated": "assets/pokemon/forms/820.gif"
+  },
+  "821": {
+    "static": "assets/pokemon/821.webp",
+    "animated": "assets/pokemon/forms/821.gif"
+  },
+  "822": {
+    "static": "assets/pokemon/822.webp",
+    "animated": "assets/pokemon/forms/822.gif"
+  },
+  "823": {
+    "static": "assets/pokemon/823.webp",
+    "animated": "assets/pokemon/forms/823.gif"
+  },
+  "824": {
+    "static": "assets/pokemon/824.webp",
+    "animated": "assets/pokemon/forms/824.gif"
+  },
+  "825": {
+    "static": "assets/pokemon/825.webp",
+    "animated": "assets/pokemon/forms/825.gif"
+  },
+  "826": {
+    "static": "assets/pokemon/826.webp",
+    "animated": "assets/pokemon/forms/826.gif"
+  },
+  "827": {
+    "static": "assets/pokemon/827.webp",
+    "animated": "assets/pokemon/forms/827.gif"
+  },
+  "828": {
+    "static": "assets/pokemon/828.webp",
+    "animated": "assets/pokemon/forms/828.gif"
+  },
+  "829": {
+    "static": "assets/pokemon/829.webp",
+    "animated": "assets/pokemon/forms/829.gif"
+  },
+  "830": {
+    "static": "assets/pokemon/830.webp",
+    "animated": "assets/pokemon/forms/830.gif"
+  },
+  "831": {
+    "static": "assets/pokemon/831.webp",
+    "animated": "assets/pokemon/forms/831.gif"
+  },
+  "832": {
+    "static": "assets/pokemon/832.webp",
+    "animated": "assets/pokemon/forms/832.gif"
+  },
+  "833": {
+    "static": "assets/pokemon/833.webp",
+    "animated": "assets/pokemon/forms/833.gif"
+  },
+  "834": {
+    "static": "assets/pokemon/834.webp",
+    "animated": "assets/pokemon/forms/834.gif"
+  },
+  "835": {
+    "static": "assets/pokemon/835.webp",
+    "animated": "assets/pokemon/forms/835.gif"
+  },
+  "836": {
+    "static": "assets/pokemon/836.webp",
+    "animated": "assets/pokemon/forms/836.gif"
+  },
+  "837": {
+    "static": "assets/pokemon/837.webp",
+    "animated": "assets/pokemon/forms/837.gif"
+  },
+  "838": {
+    "static": "assets/pokemon/838.webp",
+    "animated": "assets/pokemon/forms/838.gif"
+  },
+  "839": {
+    "static": "assets/pokemon/839.webp",
+    "animated": "assets/pokemon/forms/839.gif"
+  },
+  "840": {
+    "static": "assets/pokemon/840.webp",
+    "animated": "assets/pokemon/forms/840.gif"
+  },
+  "841": {
+    "static": "assets/pokemon/841.webp",
+    "animated": "assets/pokemon/forms/841.gif"
+  },
+  "842": {
+    "static": "assets/pokemon/842.webp",
+    "animated": "assets/pokemon/forms/842.gif"
+  },
+  "843": {
+    "static": "assets/pokemon/843.webp",
+    "animated": "assets/pokemon/forms/843.gif"
+  },
+  "844": {
+    "static": "assets/pokemon/844.webp",
+    "animated": "assets/pokemon/forms/844.gif"
+  },
+  "845": {
+    "static": "assets/pokemon/845.webp",
+    "animated": "assets/pokemon/forms/845.gif"
+  },
+  "846": {
+    "static": "assets/pokemon/846.webp",
+    "animated": "assets/pokemon/forms/846.gif"
+  },
+  "847": {
+    "static": "assets/pokemon/847.webp",
+    "animated": "assets/pokemon/forms/847.gif"
+  },
+  "848": {
+    "static": "assets/pokemon/848.webp",
+    "animated": "assets/pokemon/forms/848.gif"
+  },
+  "849": {
+    "static": "assets/pokemon/849.webp",
+    "animated": "assets/pokemon/forms/849.gif"
+  },
+  "850": {
+    "static": "assets/pokemon/850.webp",
+    "animated": "assets/pokemon/forms/850.gif"
+  },
+  "851": {
+    "static": "assets/pokemon/851.webp",
+    "animated": "assets/pokemon/forms/851.gif"
+  },
+  "852": {
+    "static": "assets/pokemon/852.webp",
+    "animated": "assets/pokemon/forms/852.gif"
+  },
+  "853": {
+    "static": "assets/pokemon/853.webp",
+    "animated": "assets/pokemon/forms/853.gif"
+  },
+  "854": {
+    "static": "assets/pokemon/854.webp",
+    "animated": "assets/pokemon/forms/854.gif"
+  },
+  "855": {
+    "static": "assets/pokemon/855.webp",
+    "animated": "assets/pokemon/forms/855.gif"
+  },
+  "856": {
+    "static": "assets/pokemon/856.webp",
+    "animated": "assets/pokemon/forms/856.gif"
+  },
+  "857": {
+    "static": "assets/pokemon/857.webp",
+    "animated": "assets/pokemon/forms/857.gif"
+  },
+  "858": {
+    "static": "assets/pokemon/858.webp",
+    "animated": "assets/pokemon/forms/858.gif"
+  },
+  "859": {
+    "static": "assets/pokemon/859.webp",
+    "animated": "assets/pokemon/forms/859.gif"
+  },
+  "860": {
+    "static": "assets/pokemon/860.webp",
+    "animated": "assets/pokemon/forms/860.gif"
+  },
+  "861": {
+    "static": "assets/pokemon/861.webp",
+    "animated": "assets/pokemon/forms/861.gif"
+  },
+  "862": {
+    "static": "assets/pokemon/862.webp",
+    "animated": "assets/pokemon/forms/862.gif"
+  },
+  "863": {
+    "static": "assets/pokemon/863.webp",
+    "animated": "assets/pokemon/forms/863.gif"
+  },
+  "864": {
+    "static": "assets/pokemon/864.webp",
+    "animated": "assets/pokemon/forms/864.gif"
+  },
+  "865": {
+    "static": "assets/pokemon/865.webp",
+    "animated": "assets/pokemon/forms/865.gif"
+  },
+  "866": {
+    "static": "assets/pokemon/866.webp",
+    "animated": "assets/pokemon/forms/866.gif"
+  },
+  "867": {
+    "static": "assets/pokemon/867.webp",
+    "animated": "assets/pokemon/forms/867.gif"
+  },
+  "868": {
+    "static": "assets/pokemon/868.webp",
+    "animated": "assets/pokemon/forms/868.gif"
+  },
+  "869": {
+    "static": "assets/pokemon/869.webp",
+    "animated": "assets/pokemon/forms/869.gif"
+  },
+  "870": {
+    "static": "assets/pokemon/870.webp",
+    "animated": "assets/pokemon/forms/870.gif"
+  },
+  "871": {
+    "static": "assets/pokemon/871.webp",
+    "animated": "assets/pokemon/forms/871.gif"
+  },
+  "872": {
+    "static": "assets/pokemon/872.webp",
+    "animated": "assets/pokemon/forms/872.gif"
+  },
+  "873": {
+    "static": "assets/pokemon/873.webp",
+    "animated": "assets/pokemon/forms/873.gif"
+  },
+  "874": {
+    "static": "assets/pokemon/874.webp",
+    "animated": "assets/pokemon/forms/874.gif"
+  },
+  "875": {
+    "static": "assets/pokemon/875.webp",
+    "animated": "assets/pokemon/forms/875.gif"
+  },
+  "876": {
+    "static": "assets/pokemon/876.webp",
+    "animated": "assets/pokemon/forms/876.gif"
+  },
+  "877": {
+    "static": "assets/pokemon/877.webp",
+    "animated": "assets/pokemon/forms/877.gif"
+  },
+  "878": {
+    "static": "assets/pokemon/878.webp",
+    "animated": "assets/pokemon/forms/878.gif"
+  },
+  "879": {
+    "static": "assets/pokemon/879.webp",
+    "animated": "assets/pokemon/forms/879.gif"
+  },
+  "880": {
+    "static": "assets/pokemon/880.webp",
+    "animated": "assets/pokemon/forms/880.gif"
+  },
+  "881": {
+    "static": "assets/pokemon/881.webp",
+    "animated": "assets/pokemon/forms/881.gif"
+  },
+  "882": {
+    "static": "assets/pokemon/882.webp",
+    "animated": "assets/pokemon/forms/882.gif"
+  },
+  "883": {
+    "static": "assets/pokemon/883.webp",
+    "animated": "assets/pokemon/forms/883.gif"
+  },
+  "884": {
+    "static": "assets/pokemon/884.webp",
+    "animated": "assets/pokemon/forms/884.gif"
+  },
+  "885": {
+    "static": "assets/pokemon/885.webp",
+    "animated": "assets/pokemon/forms/885.gif"
+  },
+  "886": {
+    "static": "assets/pokemon/886.webp",
+    "animated": "assets/pokemon/forms/886.gif"
+  },
+  "887": {
+    "static": "assets/pokemon/887.webp",
+    "animated": "assets/pokemon/forms/887.gif"
+  },
+  "888": {
+    "static": "assets/pokemon/888.webp",
+    "animated": "assets/pokemon/forms/888.gif"
+  },
+  "889": {
+    "static": "assets/pokemon/889.webp",
+    "animated": "assets/pokemon/forms/889.gif"
+  },
+  "890": {
+    "static": "assets/pokemon/890.webp",
+    "animated": "assets/pokemon/forms/890.gif"
+  },
+  "891": {
+    "static": "assets/pokemon/891.webp",
+    "animated": "assets/pokemon/forms/891.gif"
+  },
+  "892": {
+    "static": "assets/pokemon/892.webp",
+    "animated": "assets/pokemon/forms/892.gif"
+  },
+  "893": {
+    "static": "assets/pokemon/893.webp",
+    "animated": "assets/pokemon/forms/893.gif"
+  },
+  "894": {
+    "static": "assets/pokemon/894.webp",
+    "animated": "assets/pokemon/forms/894.gif"
+  },
+  "895": {
+    "static": "assets/pokemon/895.webp",
+    "animated": "assets/pokemon/forms/895.gif"
+  },
+  "896": {
+    "static": "assets/pokemon/896.webp",
+    "animated": "assets/pokemon/forms/896.gif"
+  },
+  "897": {
+    "static": "assets/pokemon/897.webp",
+    "animated": "assets/pokemon/forms/897.gif"
+  },
+  "898": {
+    "static": "assets/pokemon/898.webp",
+    "animated": "assets/pokemon/forms/898.gif"
+  },
+  "899": {
+    "static": "assets/pokemon/899.webp",
+    "animated": "assets/pokemon/forms/899.gif"
+  },
+  "900": {
+    "static": "assets/pokemon/900.webp",
+    "animated": "assets/pokemon/forms/900.gif"
+  },
+  "901": {
+    "static": "assets/pokemon/901.webp",
+    "animated": "assets/pokemon/forms/901.gif"
+  },
+  "902": {
+    "static": "assets/pokemon/902.webp",
+    "animated": "assets/pokemon/forms/902.gif"
+  },
+  "903": {
+    "static": "assets/pokemon/903.webp",
+    "animated": "assets/pokemon/forms/903.gif"
+  },
+  "904": {
+    "static": "assets/pokemon/904.webp",
+    "animated": "assets/pokemon/forms/904.gif"
+  },
+  "905": {
+    "static": "assets/pokemon/905.webp",
+    "animated": "assets/pokemon/forms/905.gif"
+  },
+  "906": {
+    "static": "assets/pokemon/906.webp",
+    "animated": "assets/pokemon/forms/906.gif"
+  },
+  "907": {
+    "static": "assets/pokemon/907.webp",
+    "animated": "assets/pokemon/forms/907.gif"
+  },
+  "908": {
+    "static": "assets/pokemon/908.webp",
+    "animated": "assets/pokemon/forms/908.gif"
+  },
+  "909": {
+    "static": "assets/pokemon/909.webp",
+    "animated": "assets/pokemon/forms/909.gif"
+  },
+  "910": {
+    "static": "assets/pokemon/910.webp",
+    "animated": "assets/pokemon/forms/910.gif"
+  },
+  "911": {
+    "static": "assets/pokemon/911.webp",
+    "animated": "assets/pokemon/forms/911.gif"
+  },
+  "912": {
+    "static": "assets/pokemon/912.webp",
+    "animated": "assets/pokemon/forms/912.gif"
+  },
+  "913": {
+    "static": "assets/pokemon/913.webp",
+    "animated": "assets/pokemon/forms/913.gif"
+  },
+  "914": {
+    "static": "assets/pokemon/914.webp",
+    "animated": "assets/pokemon/forms/914.gif"
+  },
+  "915": {
+    "static": "assets/pokemon/915.webp",
+    "animated": "assets/pokemon/forms/915.gif"
+  },
+  "916": {
+    "static": "assets/pokemon/916.webp",
+    "animated": "assets/pokemon/forms/916.gif"
+  },
+  "917": {
+    "static": "assets/pokemon/917.webp",
+    "animated": "assets/pokemon/forms/917.gif"
+  },
+  "918": {
+    "static": "assets/pokemon/918.webp",
+    "animated": "assets/pokemon/forms/918.gif"
+  },
+  "919": {
+    "static": "assets/pokemon/919.webp",
+    "animated": "assets/pokemon/forms/919.gif"
+  },
+  "920": {
+    "static": "assets/pokemon/920.webp",
+    "animated": "assets/pokemon/forms/920.gif"
+  },
+  "921": {
+    "static": "assets/pokemon/921.webp",
+    "animated": "assets/pokemon/forms/921.gif"
+  },
+  "922": {
+    "static": "assets/pokemon/922.webp",
+    "animated": "assets/pokemon/forms/922.gif"
+  },
+  "923": {
+    "static": "assets/pokemon/923.webp",
+    "animated": "assets/pokemon/forms/923.gif"
+  },
+  "924": {
+    "static": "assets/pokemon/924.webp",
+    "animated": "assets/pokemon/forms/924.gif"
+  },
+  "925": {
+    "static": "assets/pokemon/925.webp",
+    "animated": "assets/pokemon/forms/925.gif"
+  },
+  "926": {
+    "static": "assets/pokemon/926.webp",
+    "animated": "assets/pokemon/forms/926.gif"
+  },
+  "927": {
+    "static": "assets/pokemon/927.webp",
+    "animated": "assets/pokemon/forms/927.gif"
+  },
+  "928": {
+    "static": "assets/pokemon/928.webp",
+    "animated": "assets/pokemon/forms/928.gif"
+  },
+  "929": {
+    "static": "assets/pokemon/929.webp",
+    "animated": "assets/pokemon/forms/929.gif"
+  },
+  "930": {
+    "static": "assets/pokemon/930.webp",
+    "animated": "assets/pokemon/forms/930.gif"
+  },
+  "931": {
+    "static": "assets/pokemon/931.webp",
+    "animated": "assets/pokemon/forms/931.gif"
+  },
+  "932": {
+    "static": "assets/pokemon/932.webp",
+    "animated": "assets/pokemon/forms/932.gif"
+  },
+  "933": {
+    "static": "assets/pokemon/933.webp",
+    "animated": "assets/pokemon/forms/933.gif"
+  },
+  "934": {
+    "static": "assets/pokemon/934.webp",
+    "animated": "assets/pokemon/forms/934.gif"
+  },
+  "935": {
+    "static": "assets/pokemon/935.webp",
+    "animated": "assets/pokemon/forms/935.gif"
+  },
+  "936": {
+    "static": "assets/pokemon/936.webp",
+    "animated": "assets/pokemon/forms/936.gif"
+  },
+  "937": {
+    "static": "assets/pokemon/937.webp",
+    "animated": "assets/pokemon/forms/937.gif"
+  },
+  "938": {
+    "static": "assets/pokemon/938.webp",
+    "animated": "assets/pokemon/forms/938.gif"
+  },
+  "939": {
+    "static": "assets/pokemon/939.webp",
+    "animated": "assets/pokemon/forms/939.gif"
+  },
+  "940": {
+    "static": "assets/pokemon/940.webp",
+    "animated": "assets/pokemon/forms/940.gif"
+  },
+  "941": {
+    "static": "assets/pokemon/941.webp",
+    "animated": "assets/pokemon/forms/941.gif"
+  },
+  "942": {
+    "static": "assets/pokemon/942.webp",
+    "animated": "assets/pokemon/forms/942.gif"
+  },
+  "943": {
+    "static": "assets/pokemon/943.webp",
+    "animated": "assets/pokemon/forms/943.gif"
+  },
+  "944": {
+    "static": "assets/pokemon/944.webp",
+    "animated": "assets/pokemon/forms/944.gif"
+  },
+  "945": {
+    "static": "assets/pokemon/945.webp",
+    "animated": "assets/pokemon/forms/945.gif"
+  },
+  "946": {
+    "static": "assets/pokemon/946.webp",
+    "animated": "assets/pokemon/forms/946.gif"
+  },
+  "947": {
+    "static": "assets/pokemon/947.webp",
+    "animated": "assets/pokemon/forms/947.gif"
+  },
+  "948": {
+    "static": "assets/pokemon/948.webp",
+    "animated": "assets/pokemon/forms/948.gif"
+  },
+  "949": {
+    "static": "assets/pokemon/949.webp",
+    "animated": "assets/pokemon/forms/949.gif"
+  },
+  "950": {
+    "static": "assets/pokemon/950.webp",
+    "animated": "assets/pokemon/forms/950.gif"
+  },
+  "951": {
+    "static": "assets/pokemon/951.webp",
+    "animated": "assets/pokemon/forms/951.gif"
+  },
+  "952": {
+    "static": "assets/pokemon/952.webp",
+    "animated": "assets/pokemon/forms/952.gif"
+  },
+  "953": {
+    "static": "assets/pokemon/953.webp",
+    "animated": "assets/pokemon/forms/953.gif"
+  },
+  "954": {
+    "static": "assets/pokemon/954.webp",
+    "animated": "assets/pokemon/forms/954.gif"
+  },
+  "955": {
+    "static": "assets/pokemon/955.webp",
+    "animated": "assets/pokemon/forms/955.gif"
+  },
+  "956": {
+    "static": "assets/pokemon/956.webp",
+    "animated": "assets/pokemon/forms/956.gif"
+  },
+  "957": {
+    "static": "assets/pokemon/957.webp",
+    "animated": "assets/pokemon/forms/957.gif"
+  },
+  "958": {
+    "static": "assets/pokemon/958.webp",
+    "animated": "assets/pokemon/forms/958.gif"
+  },
+  "959": {
+    "static": "assets/pokemon/959.webp",
+    "animated": "assets/pokemon/forms/959.gif"
+  },
+  "960": {
+    "static": "assets/pokemon/960.webp",
+    "animated": "assets/pokemon/forms/960.gif"
+  },
+  "961": {
+    "static": "assets/pokemon/961.webp",
+    "animated": "assets/pokemon/forms/961.gif"
+  },
+  "962": {
+    "static": "assets/pokemon/962.webp",
+    "animated": "assets/pokemon/forms/962.gif"
+  },
+  "963": {
+    "static": "assets/pokemon/963.webp",
+    "animated": "assets/pokemon/forms/963.gif"
+  },
+  "964": {
+    "static": "assets/pokemon/964.webp",
+    "animated": "assets/pokemon/forms/964.gif"
+  },
+  "965": {
+    "static": "assets/pokemon/965.webp",
+    "animated": "assets/pokemon/forms/965.gif"
+  },
+  "966": {
+    "static": "assets/pokemon/966.webp",
+    "animated": "assets/pokemon/forms/966.gif"
+  },
+  "967": {
+    "static": "assets/pokemon/967.webp",
+    "animated": "assets/pokemon/forms/967.gif"
+  },
+  "968": {
+    "static": "assets/pokemon/968.webp",
+    "animated": "assets/pokemon/forms/968.gif"
+  },
+  "969": {
+    "static": "assets/pokemon/969.webp",
+    "animated": "assets/pokemon/forms/969.gif"
+  },
+  "970": {
+    "static": "assets/pokemon/970.webp",
+    "animated": "assets/pokemon/forms/970.gif"
+  },
+  "971": {
+    "static": "assets/pokemon/971.webp",
+    "animated": "assets/pokemon/forms/971.gif"
+  },
+  "972": {
+    "static": "assets/pokemon/972.webp",
+    "animated": "assets/pokemon/forms/972.gif"
+  },
+  "973": {
+    "static": "assets/pokemon/973.webp",
+    "animated": "assets/pokemon/forms/973.gif"
+  },
+  "974": {
+    "static": "assets/pokemon/974.webp",
+    "animated": "assets/pokemon/forms/974.gif"
+  },
+  "975": {
+    "static": "assets/pokemon/975.webp",
+    "animated": "assets/pokemon/forms/975.gif"
+  },
+  "976": {
+    "static": "assets/pokemon/976.webp",
+    "animated": "assets/pokemon/forms/976.gif"
+  },
+  "977": {
+    "static": "assets/pokemon/977.webp",
+    "animated": "assets/pokemon/forms/977.gif"
+  },
+  "978": {
+    "static": "assets/pokemon/978.webp",
+    "animated": "assets/pokemon/forms/978.gif"
+  },
+  "979": {
+    "static": "assets/pokemon/979.webp",
+    "animated": "assets/pokemon/forms/979.gif"
+  },
+  "980": {
+    "static": "assets/pokemon/980.webp",
+    "animated": "assets/pokemon/forms/980.gif"
+  },
+  "981": {
+    "static": "assets/pokemon/981.webp",
+    "animated": "assets/pokemon/forms/981.gif"
+  },
+  "982": {
+    "static": "assets/pokemon/982.webp",
+    "animated": "assets/pokemon/forms/982.gif"
+  },
+  "983": {
+    "static": "assets/pokemon/983.webp",
+    "animated": "assets/pokemon/forms/983.gif"
+  },
+  "984": {
+    "static": "assets/pokemon/984.webp",
+    "animated": "assets/pokemon/forms/984.gif"
+  },
+  "985": {
+    "static": "assets/pokemon/985.webp",
+    "animated": "assets/pokemon/forms/985.gif"
+  },
+  "986": {
+    "static": "assets/pokemon/986.webp",
+    "animated": "assets/pokemon/forms/986.gif"
+  },
+  "987": {
+    "static": "assets/pokemon/987.webp",
+    "animated": "assets/pokemon/forms/987.gif"
+  },
+  "988": {
+    "static": "assets/pokemon/988.webp",
+    "animated": "assets/pokemon/forms/988.gif"
+  },
+  "989": {
+    "static": "assets/pokemon/989.webp",
+    "animated": "assets/pokemon/forms/989.gif"
+  },
+  "990": {
+    "static": "assets/pokemon/990.webp"
+  },
+  "991": {
+    "static": "assets/pokemon/991.webp"
+  },
+  "992": {
+    "static": "assets/pokemon/992.webp"
+  },
+  "993": {
+    "static": "assets/pokemon/993.webp"
+  },
+  "994": {
+    "static": "assets/pokemon/994.webp"
+  },
+  "995": {
+    "static": "assets/pokemon/995.webp"
+  },
+  "996": {
+    "static": "assets/pokemon/996.webp",
+    "animated": "assets/pokemon/forms/996.gif"
+  },
+  "997": {
+    "static": "assets/pokemon/997.webp",
+    "animated": "assets/pokemon/forms/997.gif"
+  },
+  "998": {
+    "static": "assets/pokemon/998.webp",
+    "animated": "assets/pokemon/forms/998.gif"
+  },
+  "999": {
+    "static": "assets/pokemon/999.webp",
+    "animated": "assets/pokemon/forms/999.gif"
+  },
+  "1000": {
+    "static": "assets/pokemon/1000.webp",
+    "animated": "assets/pokemon/forms/1000.gif"
+  },
+  "1001": {
+    "static": "assets/pokemon/1001.webp",
+    "animated": "assets/pokemon/forms/1001.gif"
+  },
+  "1002": {
+    "static": "assets/pokemon/1002.webp",
+    "animated": "assets/pokemon/forms/1002.gif"
+  },
+  "1003": {
+    "static": "assets/pokemon/1003.webp",
+    "animated": "assets/pokemon/forms/1003.gif"
+  },
+  "1004": {
+    "static": "assets/pokemon/1004.webp",
+    "animated": "assets/pokemon/forms/1004.gif"
+  },
+  "1005": {
+    "static": "assets/pokemon/1005.webp",
+    "animated": "assets/pokemon/forms/1005.gif"
+  },
+  "1006": {
+    "static": "assets/pokemon/1006.webp"
+  },
+  "1007": {
+    "static": "assets/pokemon/1007.webp",
+    "animated": "assets/pokemon/forms/1007.gif"
+  },
+  "1008": {
+    "static": "assets/pokemon/1008.webp"
+  },
+  "1009": {
+    "static": "assets/pokemon/1009.webp",
+    "animated": "assets/pokemon/forms/1009.gif"
+  },
+  "1010": {
+    "static": "assets/pokemon/1010.webp"
+  },
+  "1011": {
+    "static": "assets/pokemon/1011.webp",
+    "animated": "assets/pokemon/forms/1011.gif"
+  },
+  "1012": {
+    "static": "assets/pokemon/1012.webp",
+    "animated": "assets/pokemon/forms/1012.gif"
+  },
+  "1013": {
+    "static": "assets/pokemon/1013.webp",
+    "animated": "assets/pokemon/forms/1013.gif"
+  },
+  "1014": {
+    "static": "assets/pokemon/1014.webp",
+    "animated": "assets/pokemon/forms/1014.gif"
+  },
+  "1015": {
+    "static": "assets/pokemon/1015.webp",
+    "animated": "assets/pokemon/forms/1015.gif"
+  },
+  "1016": {
+    "static": "assets/pokemon/1016.webp",
+    "animated": "assets/pokemon/forms/1016.gif"
+  },
+  "1017": {
+    "static": "assets/pokemon/1017.webp"
+  },
+  "1018": {
+    "static": "assets/pokemon/1018.webp",
+    "animated": "assets/pokemon/forms/1018.gif"
+  },
+  "1019": {
+    "static": "assets/pokemon/1019.webp",
+    "animated": "assets/pokemon/forms/1019.gif"
+  },
+  "1020": {
+    "static": "assets/pokemon/1020.webp",
+    "animated": "assets/pokemon/forms/1020.gif"
+  },
+  "1021": {
+    "static": "assets/pokemon/1021.webp",
+    "animated": "assets/pokemon/forms/1021.gif"
+  },
+  "1022": {
+    "static": "assets/pokemon/1022.webp"
+  },
+  "1023": {
+    "static": "assets/pokemon/1023.webp"
+  },
+  "1024": {
+    "static": "assets/pokemon/1024.webp"
+  },
+  "1025": {
+    "static": "assets/pokemon/1025.webp"
+  },
+  "3:Gmax": {
+    "static": "assets/pokemon/forms/3-gmax.webp"
+  },
+  "3:Mega": {
+    "static": "assets/pokemon/forms/3-mega.webp",
+    "animated": "assets/pokemon/forms/3-mega.gif"
+  },
+  "6:Gmax": {
+    "static": "assets/pokemon/forms/6-gmax.webp",
+    "animated": "assets/pokemon/forms/6-gmax.gif"
+  },
+  "6:Mega-X": {
+    "static": "assets/pokemon/forms/6-megax.webp",
+    "animated": "assets/pokemon/forms/6-megax.gif"
+  },
+  "6:Mega-Y": {
+    "static": "assets/pokemon/forms/6-megay.webp",
+    "animated": "assets/pokemon/forms/6-megay.gif"
+  },
+  "9:Gmax": {
+    "static": "assets/pokemon/forms/9-gmax.webp"
+  },
+  "9:Mega": {
+    "static": "assets/pokemon/forms/9-mega.webp",
+    "animated": "assets/pokemon/forms/9-mega.gif"
+  },
+  "12:Gmax": {
+    "static": "assets/pokemon/forms/12-gmax.webp",
+    "animated": "assets/pokemon/forms/12-gmax.gif"
+  },
+  "15:Mega": {
+    "static": "assets/pokemon/forms/15-mega.webp",
+    "animated": "assets/pokemon/forms/15-mega.gif"
+  },
+  "18:Mega": {
+    "static": "assets/pokemon/forms/18-mega.webp",
+    "animated": "assets/pokemon/forms/18-mega.gif"
+  },
+  "19:Alola": {
+    "static": "assets/pokemon/forms/19-alola.webp",
+    "animated": "assets/pokemon/forms/19-alola.gif"
+  },
+  "20:Alola": {
+    "static": "assets/pokemon/forms/20-alola.webp",
+    "animated": "assets/pokemon/forms/20-alola.gif"
+  },
+  "25:Alola": {
+    "static": "assets/pokemon/forms/25-alola.webp"
+  },
+  "25:Alola-Bias": {
+    "static": "assets/pokemon/25.webp",
+    "animated": "assets/pokemon/forms/25.gif",
+    "sharedAppearance": true
+  },
+  "25:Belle": {
+    "static": "assets/pokemon/forms/25-belle.webp",
+    "animated": "assets/pokemon/forms/25-belle.gif"
+  },
+  "25:Cosplay": {
+    "static": "assets/pokemon/forms/25-cosplay.webp",
+    "animated": "assets/pokemon/forms/25-cosplay.gif"
+  },
+  "25:Gmax": {
+    "static": "assets/pokemon/forms/25-gmax.webp",
+    "animated": "assets/pokemon/forms/25-gmax.gif"
+  },
+  "25:Hoenn": {
+    "static": "assets/pokemon/forms/25-hoenn.webp"
+  },
+  "25:Kalos": {
+    "static": "assets/pokemon/forms/25-kalos.webp"
+  },
+  "25:Libre": {
+    "static": "assets/pokemon/forms/25-libre.webp",
+    "animated": "assets/pokemon/forms/25-libre.gif"
+  },
+  "25:Original": {
+    "static": "assets/pokemon/forms/25-original.webp"
+  },
+  "25:Partner": {
+    "static": "assets/pokemon/forms/25-partner.webp"
+  },
+  "25:PhD": {
+    "static": "assets/pokemon/forms/25-phd.webp",
+    "animated": "assets/pokemon/forms/25-phd.gif"
+  },
+  "25:Pop-Star": {
+    "static": "assets/pokemon/forms/25-popstar.webp",
+    "animated": "assets/pokemon/forms/25-popstar.gif"
+  },
+  "25:Rock-Star": {
+    "static": "assets/pokemon/forms/25-rockstar.webp",
+    "animated": "assets/pokemon/forms/25-rockstar.gif"
+  },
+  "25:Sinnoh": {
+    "static": "assets/pokemon/forms/25-sinnoh.webp"
+  },
+  "25:Unova": {
+    "static": "assets/pokemon/forms/25-unova.webp"
+  },
+  "25:World": {
+    "static": "assets/pokemon/forms/25-world.webp"
+  },
+  "26:Alola": {
+    "static": "assets/pokemon/forms/26-alola.webp",
+    "animated": "assets/pokemon/forms/26-alola.gif"
+  },
+  "26:Mega-X": {
+    "static": "assets/pokemon/forms/26-megax.webp"
+  },
+  "26:Mega-Y": {
+    "static": "assets/pokemon/forms/26-megay.webp"
+  },
+  "27:Alola": {
+    "static": "assets/pokemon/forms/27-alola.webp",
+    "animated": "assets/pokemon/forms/27-alola.gif"
+  },
+  "28:Alola": {
+    "static": "assets/pokemon/forms/28-alola.webp",
+    "animated": "assets/pokemon/forms/28-alola.gif"
+  },
+  "36:Mega": {
+    "static": "assets/pokemon/forms/36-mega.webp",
+    "animated": "assets/pokemon/forms/36-mega.gif"
+  },
+  "37:Alola": {
+    "static": "assets/pokemon/forms/37-alola.webp",
+    "animated": "assets/pokemon/forms/37-alola.gif"
+  },
+  "38:Alola": {
+    "static": "assets/pokemon/forms/38-alola.webp",
+    "animated": "assets/pokemon/forms/38-alola.gif"
+  },
+  "50:Alola": {
+    "static": "assets/pokemon/forms/50-alola.webp",
+    "animated": "assets/pokemon/forms/50-alola.gif"
+  },
+  "51:Alola": {
+    "static": "assets/pokemon/forms/51-alola.webp",
+    "animated": "assets/pokemon/forms/51-alola.gif"
+  },
+  "52:Alola": {
+    "static": "assets/pokemon/forms/52-alola.webp",
+    "animated": "assets/pokemon/forms/52-alola.gif"
+  },
+  "52:Galar": {
+    "static": "assets/pokemon/forms/52-galar.webp",
+    "animated": "assets/pokemon/forms/52-galar.gif"
+  },
+  "52:Gmax": {
+    "static": "assets/pokemon/forms/52-gmax.webp",
+    "animated": "assets/pokemon/forms/52-gmax.gif"
+  },
+  "53:Alola": {
+    "static": "assets/pokemon/forms/53-alola.webp",
+    "animated": "assets/pokemon/forms/53-alola.gif"
+  },
+  "58:Hisui": {
+    "static": "assets/pokemon/forms/58-hisui.webp",
+    "animated": "assets/pokemon/forms/58-hisui.gif"
+  },
+  "59:Hisui": {
+    "static": "assets/pokemon/forms/59-hisui.webp",
+    "animated": "assets/pokemon/forms/59-hisui.gif"
+  },
+  "65:Mega": {
+    "static": "assets/pokemon/forms/65-mega.webp",
+    "animated": "assets/pokemon/forms/65-mega.gif"
+  },
+  "68:Gmax": {
+    "static": "assets/pokemon/forms/68-gmax.webp",
+    "animated": "assets/pokemon/forms/68-gmax.gif"
+  },
+  "71:Mega": {
+    "static": "assets/pokemon/forms/71-mega.webp",
+    "animated": "assets/pokemon/forms/71-mega.gif"
+  },
+  "74:Alola": {
+    "static": "assets/pokemon/forms/74-alola.webp",
+    "animated": "assets/pokemon/forms/74-alola.gif"
+  },
+  "75:Alola": {
+    "static": "assets/pokemon/forms/75-alola.webp",
+    "animated": "assets/pokemon/forms/75-alola.gif"
+  },
+  "76:Alola": {
+    "static": "assets/pokemon/forms/76-alola.webp",
+    "animated": "assets/pokemon/forms/76-alola.gif"
+  },
+  "77:Galar": {
+    "static": "assets/pokemon/forms/77-galar.webp",
+    "animated": "assets/pokemon/forms/77-galar.gif"
+  },
+  "78:Galar": {
+    "static": "assets/pokemon/forms/78-galar.webp",
+    "animated": "assets/pokemon/forms/78-galar.gif"
+  },
+  "79:Galar": {
+    "static": "assets/pokemon/forms/79-galar.webp",
+    "animated": "assets/pokemon/forms/79-galar.gif"
+  },
+  "80:Galar": {
+    "static": "assets/pokemon/forms/80-galar.webp",
+    "animated": "assets/pokemon/forms/80-galar.gif"
+  },
+  "80:Mega": {
+    "static": "assets/pokemon/forms/80-mega.webp",
+    "animated": "assets/pokemon/forms/80-mega.gif"
+  },
+  "83:Galar": {
+    "static": "assets/pokemon/forms/83-galar.webp",
+    "animated": "assets/pokemon/forms/83-galar.gif"
+  },
+  "88:Alola": {
+    "static": "assets/pokemon/forms/88-alola.webp",
+    "animated": "assets/pokemon/forms/88-alola.gif"
+  },
+  "89:Alola": {
+    "static": "assets/pokemon/forms/89-alola.webp",
+    "animated": "assets/pokemon/forms/89-alola.gif"
+  },
+  "94:Gmax": {
+    "static": "assets/pokemon/forms/94-gmax.webp",
+    "animated": "assets/pokemon/forms/94-gmax.gif"
+  },
+  "94:Mega": {
+    "static": "assets/pokemon/forms/94-mega.webp",
+    "animated": "assets/pokemon/forms/94-mega.gif"
+  },
+  "99:Gmax": {
+    "static": "assets/pokemon/forms/99-gmax.webp",
+    "animated": "assets/pokemon/forms/99-gmax.gif"
+  },
+  "100:Hisui": {
+    "static": "assets/pokemon/forms/100-hisui.webp",
+    "animated": "assets/pokemon/forms/100-hisui.gif"
+  },
+  "101:Hisui": {
+    "static": "assets/pokemon/forms/101-hisui.webp",
+    "animated": "assets/pokemon/forms/101-hisui.gif"
+  },
+  "102:Alola-Bias": {
+    "static": "assets/pokemon/102.webp",
+    "animated": "assets/pokemon/forms/102.gif",
+    "sharedAppearance": true
+  },
+  "103:Alola": {
+    "static": "assets/pokemon/forms/103-alola.webp",
+    "animated": "assets/pokemon/forms/103-alola.gif"
+  },
+  "104:Alola-Bias": {
+    "static": "assets/pokemon/104.webp",
+    "animated": "assets/pokemon/forms/104.gif",
+    "sharedAppearance": true
+  },
+  "105:Alola": {
+    "static": "assets/pokemon/forms/105-alola.webp",
+    "animated": "assets/pokemon/forms/105-alola.gif"
+  },
+  "109:Galar-Bias": {
+    "static": "assets/pokemon/109.webp",
+    "animated": "assets/pokemon/forms/109.gif",
+    "sharedAppearance": true
+  },
+  "110:Galar": {
+    "static": "assets/pokemon/forms/110-galar.webp",
+    "animated": "assets/pokemon/forms/110-galar.gif"
+  },
+  "115:Mega": {
+    "static": "assets/pokemon/forms/115-mega.webp",
+    "animated": "assets/pokemon/forms/115-mega.gif"
+  },
+  "121:Mega": {
+    "static": "assets/pokemon/forms/121-mega.webp",
+    "animated": "assets/pokemon/forms/121-mega.gif"
+  },
+  "122:Galar": {
+    "static": "assets/pokemon/forms/122-galar.webp",
+    "animated": "assets/pokemon/forms/122-galar.gif"
+  },
+  "127:Mega": {
+    "static": "assets/pokemon/forms/127-mega.webp",
+    "animated": "assets/pokemon/forms/127-mega.gif"
+  },
+  "128:Paldea-Aqua": {
+    "static": "assets/pokemon/forms/128-paldeaaqua.webp",
+    "animated": "assets/pokemon/forms/128-paldeaaqua.gif"
+  },
+  "128:Paldea-Blaze": {
+    "static": "assets/pokemon/forms/128-paldeablaze.webp",
+    "animated": "assets/pokemon/forms/128-paldeablaze.gif"
+  },
+  "128:Paldea-Combat": {
+    "static": "assets/pokemon/forms/128-paldeacombat.webp",
+    "animated": "assets/pokemon/forms/128-paldeacombat.gif"
+  },
+  "130:Mega": {
+    "static": "assets/pokemon/forms/130-mega.webp",
+    "animated": "assets/pokemon/forms/130-mega.gif"
+  },
+  "131:Gmax": {
+    "static": "assets/pokemon/forms/131-gmax.webp",
+    "animated": "assets/pokemon/forms/131-gmax.gif"
+  },
+  "133:Gmax": {
+    "static": "assets/pokemon/forms/133-gmax.webp",
+    "animated": "assets/pokemon/forms/133-gmax.gif"
+  },
+  "142:Mega": {
+    "static": "assets/pokemon/forms/142-mega.webp",
+    "animated": "assets/pokemon/forms/142-mega.gif"
+  },
+  "143:Gmax": {
+    "static": "assets/pokemon/forms/143-gmax.webp",
+    "animated": "assets/pokemon/forms/143-gmax.gif"
+  },
+  "144:Galar": {
+    "static": "assets/pokemon/forms/144-galar.webp",
+    "animated": "assets/pokemon/forms/144-galar.gif"
+  },
+  "145:Galar": {
+    "static": "assets/pokemon/forms/145-galar.webp",
+    "animated": "assets/pokemon/forms/145-galar.gif"
+  },
+  "146:Galar": {
+    "static": "assets/pokemon/forms/146-galar.webp",
+    "animated": "assets/pokemon/forms/146-galar.gif"
+  },
+  "149:Mega": {
+    "static": "assets/pokemon/forms/149-mega.webp",
+    "animated": "assets/pokemon/forms/149-mega.gif"
+  },
+  "150:Mega-X": {
+    "static": "assets/pokemon/forms/150-megax.webp",
+    "animated": "assets/pokemon/forms/150-megax.gif"
+  },
+  "150:Mega-Y": {
+    "static": "assets/pokemon/forms/150-megay.webp",
+    "animated": "assets/pokemon/forms/150-megay.gif"
+  },
+  "154:Mega": {
+    "static": "assets/pokemon/forms/154-mega.webp",
+    "animated": "assets/pokemon/forms/154-mega.gif"
+  },
+  "155:Hisui-Bias": {
+    "static": "assets/pokemon/155.webp",
+    "animated": "assets/pokemon/forms/155.gif",
+    "sharedAppearance": true
+  },
+  "156:Hisui-Bias": {
+    "static": "assets/pokemon/156.webp",
+    "animated": "assets/pokemon/forms/156.gif",
+    "sharedAppearance": true
+  },
+  "157:Hisui": {
+    "static": "assets/pokemon/forms/157-hisui.webp",
+    "animated": "assets/pokemon/forms/157-hisui.gif"
+  },
+  "160:Mega": {
+    "static": "assets/pokemon/forms/160-mega.webp",
+    "animated": "assets/pokemon/forms/160-mega.gif"
+  },
+  "172:Alola-Bias": {
+    "static": "assets/pokemon/172.webp",
+    "animated": "assets/pokemon/forms/172.gif",
+    "sharedAppearance": true
+  },
+  "181:Mega": {
+    "static": "assets/pokemon/forms/181-mega.webp",
+    "animated": "assets/pokemon/forms/181-mega.gif"
+  },
+  "194:Paldea": {
+    "static": "assets/pokemon/forms/194-paldea.webp",
+    "animated": "assets/pokemon/forms/194-paldea.gif"
+  },
+  "199:Galar": {
+    "static": "assets/pokemon/forms/199-galar.webp",
+    "animated": "assets/pokemon/forms/199-galar.gif"
+  },
+  "201:!": {
+    "static": "assets/pokemon/forms/201-exclamation.webp",
+    "animated": "assets/pokemon/forms/201-exclamation.gif"
+  },
+  "201:?": {
+    "static": "assets/pokemon/forms/201-question.webp",
+    "animated": "assets/pokemon/forms/201-question.gif"
+  },
+  "201:B": {
+    "static": "assets/pokemon/forms/201-b.webp",
+    "animated": "assets/pokemon/forms/201-b.gif"
+  },
+  "201:C": {
+    "static": "assets/pokemon/forms/201-c.webp",
+    "animated": "assets/pokemon/forms/201-c.gif"
+  },
+  "201:D": {
+    "static": "assets/pokemon/forms/201-d.webp",
+    "animated": "assets/pokemon/forms/201-d.gif"
+  },
+  "201:E": {
+    "static": "assets/pokemon/forms/201-e.webp",
+    "animated": "assets/pokemon/forms/201-e.gif"
+  },
+  "201:F": {
+    "static": "assets/pokemon/forms/201-f.webp",
+    "animated": "assets/pokemon/forms/201-f.gif"
+  },
+  "201:G": {
+    "static": "assets/pokemon/forms/201-g.webp",
+    "animated": "assets/pokemon/forms/201-g.gif"
+  },
+  "201:H": {
+    "static": "assets/pokemon/forms/201-h.webp",
+    "animated": "assets/pokemon/forms/201-h.gif"
+  },
+  "201:I": {
+    "static": "assets/pokemon/forms/201-i.webp",
+    "animated": "assets/pokemon/forms/201-i.gif"
+  },
+  "201:J": {
+    "static": "assets/pokemon/forms/201-j.webp",
+    "animated": "assets/pokemon/forms/201-j.gif"
+  },
+  "201:K": {
+    "static": "assets/pokemon/forms/201-k.webp",
+    "animated": "assets/pokemon/forms/201-k.gif"
+  },
+  "201:L": {
+    "static": "assets/pokemon/forms/201-l.webp",
+    "animated": "assets/pokemon/forms/201-l.gif"
+  },
+  "201:M": {
+    "static": "assets/pokemon/forms/201-m.webp",
+    "animated": "assets/pokemon/forms/201-m.gif"
+  },
+  "201:N": {
+    "static": "assets/pokemon/forms/201-n.webp",
+    "animated": "assets/pokemon/forms/201-n.gif"
+  },
+  "201:O": {
+    "static": "assets/pokemon/forms/201-o.webp",
+    "animated": "assets/pokemon/forms/201-o.gif"
+  },
+  "201:P": {
+    "static": "assets/pokemon/forms/201-p.webp",
+    "animated": "assets/pokemon/forms/201-p.gif"
+  },
+  "201:Q": {
+    "static": "assets/pokemon/forms/201-q.webp",
+    "animated": "assets/pokemon/forms/201-q.gif"
+  },
+  "201:R": {
+    "static": "assets/pokemon/forms/201-r.webp",
+    "animated": "assets/pokemon/forms/201-r.gif"
+  },
+  "201:S": {
+    "static": "assets/pokemon/forms/201-s.webp",
+    "animated": "assets/pokemon/forms/201-s.gif"
+  },
+  "201:T": {
+    "static": "assets/pokemon/forms/201-t.webp",
+    "animated": "assets/pokemon/forms/201-t.gif"
+  },
+  "201:U": {
+    "static": "assets/pokemon/forms/201-u.webp",
+    "animated": "assets/pokemon/forms/201-u.gif"
+  },
+  "201:V": {
+    "static": "assets/pokemon/forms/201-v.webp",
+    "animated": "assets/pokemon/forms/201-v.gif"
+  },
+  "201:W": {
+    "static": "assets/pokemon/forms/201-w.webp",
+    "animated": "assets/pokemon/forms/201-w.gif"
+  },
+  "201:X": {
+    "static": "assets/pokemon/forms/201-x.webp",
+    "animated": "assets/pokemon/forms/201-x.gif"
+  },
+  "201:Y": {
+    "static": "assets/pokemon/forms/201-y.webp",
+    "animated": "assets/pokemon/forms/201-y.gif"
+  },
+  "201:Z": {
+    "static": "assets/pokemon/forms/201-z.webp",
+    "animated": "assets/pokemon/forms/201-z.gif"
+  },
+  "208:Mega": {
+    "static": "assets/pokemon/forms/208-mega.webp",
+    "animated": "assets/pokemon/forms/208-mega.gif"
+  },
+  "211:Hisui": {
+    "static": "assets/pokemon/forms/211-hisui.webp",
+    "animated": "assets/pokemon/forms/211-hisui.gif"
+  },
+  "212:Mega": {
+    "static": "assets/pokemon/forms/212-mega.webp",
+    "animated": "assets/pokemon/forms/212-mega.gif"
+  },
+  "214:Mega": {
+    "static": "assets/pokemon/forms/214-mega.webp",
+    "animated": "assets/pokemon/forms/214-mega.gif"
+  },
+  "215:Hisui": {
+    "static": "assets/pokemon/forms/215-hisui.webp",
+    "animated": "assets/pokemon/forms/215-hisui.gif"
+  },
+  "222:Galar": {
+    "static": "assets/pokemon/forms/222-galar.webp",
+    "animated": "assets/pokemon/forms/222-galar.gif"
+  },
+  "227:Mega": {
+    "static": "assets/pokemon/forms/227-mega.webp",
+    "animated": "assets/pokemon/forms/227-mega.gif"
+  },
+  "229:Mega": {
+    "static": "assets/pokemon/forms/229-mega.webp",
+    "animated": "assets/pokemon/forms/229-mega.gif"
+  },
+  "248:Mega": {
+    "static": "assets/pokemon/forms/248-mega.webp",
+    "animated": "assets/pokemon/forms/248-mega.gif"
+  },
+  "254:Mega": {
+    "static": "assets/pokemon/forms/254-mega.webp",
+    "animated": "assets/pokemon/forms/254-mega.gif"
+  },
+  "257:Mega": {
+    "static": "assets/pokemon/forms/257-mega.webp",
+    "animated": "assets/pokemon/forms/257-mega.gif"
+  },
+  "260:Mega": {
+    "static": "assets/pokemon/forms/260-mega.webp",
+    "animated": "assets/pokemon/forms/260-mega.gif"
+  },
+  "263:Galar": {
+    "static": "assets/pokemon/forms/263-galar.webp",
+    "animated": "assets/pokemon/forms/263-galar.gif"
+  },
+  "264:Galar": {
+    "static": "assets/pokemon/forms/264-galar.webp",
+    "animated": "assets/pokemon/forms/264-galar.gif"
+  },
+  "282:Mega": {
+    "static": "assets/pokemon/forms/282-mega.webp",
+    "animated": "assets/pokemon/forms/282-mega.gif"
+  },
+  "302:Mega": {
+    "static": "assets/pokemon/forms/302-mega.webp",
+    "animated": "assets/pokemon/forms/302-mega.gif"
+  },
+  "303:Mega": {
+    "static": "assets/pokemon/forms/303-mega.webp",
+    "animated": "assets/pokemon/forms/303-mega.gif"
+  },
+  "306:Mega": {
+    "static": "assets/pokemon/forms/306-mega.webp",
+    "animated": "assets/pokemon/forms/306-mega.gif"
+  },
+  "308:Mega": {
+    "static": "assets/pokemon/forms/308-mega.webp",
+    "animated": "assets/pokemon/forms/308-mega.gif"
+  },
+  "310:Mega": {
+    "static": "assets/pokemon/forms/310-mega.webp",
+    "animated": "assets/pokemon/forms/310-mega.gif"
+  },
+  "319:Mega": {
+    "static": "assets/pokemon/forms/319-mega.webp",
+    "animated": "assets/pokemon/forms/319-mega.gif"
+  },
+  "323:Mega": {
+    "static": "assets/pokemon/forms/323-mega.webp",
+    "animated": "assets/pokemon/forms/323-mega.gif"
+  },
+  "334:Mega": {
+    "static": "assets/pokemon/forms/334-mega.webp",
+    "animated": "assets/pokemon/forms/334-mega.gif"
+  },
+  "351:Rainy": {
+    "static": "assets/pokemon/forms/351-rainy.webp",
+    "animated": "assets/pokemon/forms/351-rainy.gif"
+  },
+  "351:Snowy": {
+    "static": "assets/pokemon/forms/351-snowy.webp",
+    "animated": "assets/pokemon/forms/351-snowy.gif"
+  },
+  "351:Sunny": {
+    "static": "assets/pokemon/forms/351-sunny.webp",
+    "animated": "assets/pokemon/forms/351-sunny.gif"
+  },
+  "354:Mega": {
+    "static": "assets/pokemon/forms/354-mega.webp",
+    "animated": "assets/pokemon/forms/354-mega.gif"
+  },
+  "358:Mega": {
+    "static": "assets/pokemon/forms/358-mega.webp"
+  },
+  "359:Mega": {
+    "static": "assets/pokemon/forms/359-mega.webp",
+    "animated": "assets/pokemon/forms/359-mega.gif"
+  },
+  "359:Mega-Z": {
+    "static": "assets/pokemon/forms/359-megaz.webp"
+  },
+  "362:Mega": {
+    "static": "assets/pokemon/forms/362-mega.webp",
+    "animated": "assets/pokemon/forms/362-mega.gif"
+  },
+  "373:Mega": {
+    "static": "assets/pokemon/forms/373-mega.webp",
+    "animated": "assets/pokemon/forms/373-mega.gif"
+  },
+  "376:Mega": {
+    "static": "assets/pokemon/forms/376-mega.webp",
+    "animated": "assets/pokemon/forms/376-mega.gif"
+  },
+  "380:Mega": {
+    "static": "assets/pokemon/forms/380-mega.webp",
+    "animated": "assets/pokemon/forms/380-mega.gif"
+  },
+  "381:Mega": {
+    "static": "assets/pokemon/forms/381-mega.webp",
+    "animated": "assets/pokemon/forms/381-mega.gif"
+  },
+  "382:Primal": {
+    "static": "assets/pokemon/forms/382-primal.webp",
+    "animated": "assets/pokemon/forms/382-primal.gif"
+  },
+  "383:Primal": {
+    "static": "assets/pokemon/forms/383-primal.webp",
+    "animated": "assets/pokemon/forms/383-primal.gif"
+  },
+  "384:Mega": {
+    "static": "assets/pokemon/forms/384-mega.webp",
+    "animated": "assets/pokemon/forms/384-mega.gif"
+  },
+  "386:Attack": {
+    "static": "assets/pokemon/forms/386-attack.webp",
+    "animated": "assets/pokemon/forms/386-attack.gif"
+  },
+  "386:Defense": {
+    "static": "assets/pokemon/forms/386-defense.webp",
+    "animated": "assets/pokemon/forms/386-defense.gif"
+  },
+  "386:Speed": {
+    "static": "assets/pokemon/forms/386-speed.webp",
+    "animated": "assets/pokemon/forms/386-speed.gif"
+  },
+  "398:Mega": {
+    "static": "assets/pokemon/forms/398-mega.webp"
+  },
+  "412:Sandy": {
+    "static": "assets/pokemon/forms/412-sandy.webp",
+    "animated": "assets/pokemon/forms/412-sandy.gif"
+  },
+  "412:Trash": {
+    "static": "assets/pokemon/forms/412-trash.webp",
+    "animated": "assets/pokemon/forms/412-trash.gif"
+  },
+  "413:Sandy": {
+    "static": "assets/pokemon/forms/413-sandy.webp",
+    "animated": "assets/pokemon/forms/413-sandy.gif"
+  },
+  "413:Trash": {
+    "static": "assets/pokemon/forms/413-trash.webp",
+    "animated": "assets/pokemon/forms/413-trash.gif"
+  },
+  "421:Sunshine": {
+    "static": "assets/pokemon/forms/421-sunshine.webp",
+    "animated": "assets/pokemon/forms/421-sunshine.gif"
+  },
+  "422:East": {
+    "static": "assets/pokemon/forms/422-east.webp",
+    "animated": "assets/pokemon/forms/422-east.gif"
+  },
+  "423:East": {
+    "static": "assets/pokemon/forms/423-east.webp",
+    "animated": "assets/pokemon/forms/423-east.gif"
+  },
+  "428:Mega": {
+    "static": "assets/pokemon/forms/428-mega.webp",
+    "animated": "assets/pokemon/forms/428-mega.gif"
+  },
+  "439:Galar-Bias": {
+    "static": "assets/pokemon/439.webp",
+    "animated": "assets/pokemon/forms/439.gif",
+    "sharedAppearance": true
+  },
+  "445:Mega": {
+    "static": "assets/pokemon/forms/445-mega.webp",
+    "animated": "assets/pokemon/forms/445-mega.gif"
+  },
+  "445:Mega-Z": {
+    "static": "assets/pokemon/forms/445-megaz.webp"
+  },
+  "448:Mega": {
+    "static": "assets/pokemon/forms/448-mega.webp",
+    "animated": "assets/pokemon/forms/448-mega.gif"
+  },
+  "448:Mega-Z": {
+    "static": "assets/pokemon/forms/448-megaz.webp"
+  },
+  "460:Mega": {
+    "static": "assets/pokemon/forms/460-mega.webp",
+    "animated": "assets/pokemon/forms/460-mega.gif"
+  },
+  "475:Mega": {
+    "static": "assets/pokemon/forms/475-mega.webp",
+    "animated": "assets/pokemon/forms/475-mega.gif"
+  },
+  "478:Mega": {
+    "static": "assets/pokemon/forms/478-mega.webp",
+    "animated": "assets/pokemon/forms/478-mega.gif"
+  },
+  "479:Fan": {
+    "static": "assets/pokemon/forms/479-fan.webp",
+    "animated": "assets/pokemon/forms/479-fan.gif"
+  },
+  "479:Frost": {
+    "static": "assets/pokemon/forms/479-frost.webp",
+    "animated": "assets/pokemon/forms/479-frost.gif"
+  },
+  "479:Heat": {
+    "static": "assets/pokemon/forms/479-heat.webp",
+    "animated": "assets/pokemon/forms/479-heat.gif"
+  },
+  "479:Mow": {
+    "static": "assets/pokemon/forms/479-mow.webp",
+    "animated": "assets/pokemon/forms/479-mow.gif"
+  },
+  "479:Wash": {
+    "static": "assets/pokemon/forms/479-wash.webp",
+    "animated": "assets/pokemon/forms/479-wash.gif"
+  },
+  "483:Origin": {
+    "static": "assets/pokemon/forms/483-origin.webp"
+  },
+  "484:Origin": {
+    "static": "assets/pokemon/forms/484-origin.webp"
+  },
+  "485:Mega": {
+    "static": "assets/pokemon/forms/485-mega.webp"
+  },
+  "487:Origin": {
+    "static": "assets/pokemon/forms/487-origin.webp",
+    "animated": "assets/pokemon/forms/487-origin.gif"
+  },
+  "491:Mega": {
+    "static": "assets/pokemon/forms/491-mega.webp"
+  },
+  "492:Sky": {
+    "static": "assets/pokemon/forms/492-sky.webp",
+    "animated": "assets/pokemon/forms/492-sky.gif"
+  },
+  "493:Bug": {
+    "static": "assets/pokemon/forms/493-bug.webp",
+    "animated": "assets/pokemon/forms/493-bug.gif"
+  },
+  "493:Dark": {
+    "static": "assets/pokemon/forms/493-dark.webp",
+    "animated": "assets/pokemon/forms/493-dark.gif"
+  },
+  "493:Dragon": {
+    "static": "assets/pokemon/forms/493-dragon.webp",
+    "animated": "assets/pokemon/forms/493-dragon.gif"
+  },
+  "493:Electric": {
+    "static": "assets/pokemon/forms/493-electric.webp",
+    "animated": "assets/pokemon/forms/493-electric.gif"
+  },
+  "493:Fairy": {
+    "static": "assets/pokemon/forms/493-fairy.webp",
+    "animated": "assets/pokemon/forms/493-fairy.gif"
+  },
+  "493:Fighting": {
+    "static": "assets/pokemon/forms/493-fighting.webp",
+    "animated": "assets/pokemon/forms/493-fighting.gif"
+  },
+  "493:Fire": {
+    "static": "assets/pokemon/forms/493-fire.webp",
+    "animated": "assets/pokemon/forms/493-fire.gif"
+  },
+  "493:Flying": {
+    "static": "assets/pokemon/forms/493-flying.webp",
+    "animated": "assets/pokemon/forms/493-flying.gif"
+  },
+  "493:Ghost": {
+    "static": "assets/pokemon/forms/493-ghost.webp",
+    "animated": "assets/pokemon/forms/493-ghost.gif"
+  },
+  "493:Grass": {
+    "static": "assets/pokemon/forms/493-grass.webp",
+    "animated": "assets/pokemon/forms/493-grass.gif"
+  },
+  "493:Ground": {
+    "static": "assets/pokemon/forms/493-ground.webp",
+    "animated": "assets/pokemon/forms/493-ground.gif"
+  },
+  "493:Ice": {
+    "static": "assets/pokemon/forms/493-ice.webp",
+    "animated": "assets/pokemon/forms/493-ice.gif"
+  },
+  "493:Poison": {
+    "static": "assets/pokemon/forms/493-poison.webp",
+    "animated": "assets/pokemon/forms/493-poison.gif"
+  },
+  "493:Psychic": {
+    "static": "assets/pokemon/forms/493-psychic.webp",
+    "animated": "assets/pokemon/forms/493-psychic.gif"
+  },
+  "493:Rock": {
+    "static": "assets/pokemon/forms/493-rock.webp",
+    "animated": "assets/pokemon/forms/493-rock.gif"
+  },
+  "493:Steel": {
+    "static": "assets/pokemon/forms/493-steel.webp",
+    "animated": "assets/pokemon/forms/493-steel.gif"
+  },
+  "493:Water": {
+    "static": "assets/pokemon/forms/493-water.webp",
+    "animated": "assets/pokemon/forms/493-water.gif"
+  },
+  "500:Mega": {
+    "static": "assets/pokemon/forms/500-mega.webp",
+    "animated": "assets/pokemon/forms/500-mega.gif"
+  },
+  "501:Hisui-Bias": {
+    "static": "assets/pokemon/501.webp",
+    "animated": "assets/pokemon/forms/501.gif",
+    "sharedAppearance": true
+  },
+  "502:Hisui-Bias": {
+    "static": "assets/pokemon/502.webp",
+    "animated": "assets/pokemon/forms/502.gif",
+    "sharedAppearance": true
+  },
+  "503:Hisui": {
+    "static": "assets/pokemon/forms/503-hisui.webp",
+    "animated": "assets/pokemon/forms/503-hisui.gif"
+  },
+  "530:Mega": {
+    "static": "assets/pokemon/forms/530-mega.webp"
+  },
+  "531:Mega": {
+    "static": "assets/pokemon/forms/531-mega.webp",
+    "animated": "assets/pokemon/forms/531-mega.gif"
+  },
+  "545:Mega": {
+    "static": "assets/pokemon/forms/545-mega.webp"
+  },
+  "548:Hisui-Bias": {
+    "static": "assets/pokemon/548.webp",
+    "animated": "assets/pokemon/forms/548.gif",
+    "sharedAppearance": true
+  },
+  "549:Hisui": {
+    "static": "assets/pokemon/forms/549-hisui.webp",
+    "animated": "assets/pokemon/forms/549-hisui.gif"
+  },
+  "550:Blue-Striped": {
+    "static": "assets/pokemon/forms/550-bluestriped.webp",
+    "animated": "assets/pokemon/forms/550-bluestriped.gif"
+  },
+  "550:White-Striped": {
+    "static": "assets/pokemon/forms/550-whitestriped.webp",
+    "animated": "assets/pokemon/forms/550-whitestriped.gif"
+  },
+  "554:Galar": {
+    "static": "assets/pokemon/forms/554-galar.webp",
+    "animated": "assets/pokemon/forms/554-galar.gif"
+  },
+  "555:Galar": {
+    "static": "assets/pokemon/forms/555-galar.webp",
+    "animated": "assets/pokemon/forms/555-galar.gif"
+  },
+  "555:Galar-Zen": {
+    "static": "assets/pokemon/forms/555-galarzen.webp",
+    "animated": "assets/pokemon/forms/555-galarzen.gif"
+  },
+  "555:Zen": {
+    "static": "assets/pokemon/forms/555-zen.webp"
+  },
+  "560:Mega": {
+    "static": "assets/pokemon/forms/560-mega.webp"
+  },
+  "562:Galar": {
+    "static": "assets/pokemon/forms/562-galar.webp",
+    "animated": "assets/pokemon/forms/562-galar.gif"
+  },
+  "569:Gmax": {
+    "static": "assets/pokemon/forms/569-gmax.webp",
+    "animated": "assets/pokemon/forms/569-gmax.gif"
+  },
+  "570:Hisui": {
+    "static": "assets/pokemon/forms/570-hisui.webp",
+    "animated": "assets/pokemon/forms/570-hisui.gif"
+  },
+  "571:Hisui": {
+    "static": "assets/pokemon/forms/571-hisui.webp",
+    "animated": "assets/pokemon/forms/571-hisui.gif"
+  },
+  "585:Autumn": {
+    "static": "assets/pokemon/forms/585-autumn.webp",
+    "animated": "assets/pokemon/forms/585-autumn.gif"
+  },
+  "585:Summer": {
+    "static": "assets/pokemon/forms/585-summer.webp",
+    "animated": "assets/pokemon/forms/585-summer.gif"
+  },
+  "585:Winter": {
+    "static": "assets/pokemon/forms/585-winter.webp",
+    "animated": "assets/pokemon/forms/585-winter.gif"
+  },
+  "586:Autumn": {
+    "static": "assets/pokemon/forms/586-autumn.webp",
+    "animated": "assets/pokemon/forms/586-autumn.gif"
+  },
+  "586:Summer": {
+    "static": "assets/pokemon/forms/586-summer.webp",
+    "animated": "assets/pokemon/forms/586-summer.gif"
+  },
+  "586:Winter": {
+    "static": "assets/pokemon/forms/586-winter.webp",
+    "animated": "assets/pokemon/forms/586-winter.gif"
+  },
+  "604:Mega": {
+    "static": "assets/pokemon/forms/604-mega.webp"
+  },
+  "609:Mega": {
+    "static": "assets/pokemon/forms/609-mega.webp"
+  },
+  "618:Galar": {
+    "static": "assets/pokemon/forms/618-galar.webp",
+    "animated": "assets/pokemon/forms/618-galar.gif"
+  },
+  "623:Mega": {
+    "static": "assets/pokemon/forms/623-mega.webp"
+  },
+  "627:Hisui-Bias": {
+    "static": "assets/pokemon/627.webp",
+    "animated": "assets/pokemon/forms/627.gif",
+    "sharedAppearance": true
+  },
+  "628:Hisui": {
+    "static": "assets/pokemon/forms/628-hisui.webp",
+    "animated": "assets/pokemon/forms/628-hisui.gif"
+  },
+  "641:Therian": {
+    "static": "assets/pokemon/forms/641-therian.webp",
+    "animated": "assets/pokemon/forms/641-therian.gif"
+  },
+  "642:Therian": {
+    "static": "assets/pokemon/forms/642-therian.webp",
+    "animated": "assets/pokemon/forms/642-therian.gif"
+  },
+  "645:Therian": {
+    "static": "assets/pokemon/forms/645-therian.webp",
+    "animated": "assets/pokemon/forms/645-therian.gif"
+  },
+  "646:Black": {
+    "static": "assets/pokemon/forms/646-black.webp",
+    "animated": "assets/pokemon/forms/646-black.gif"
+  },
+  "646:White": {
+    "static": "assets/pokemon/forms/646-white.webp",
+    "animated": "assets/pokemon/forms/646-white.gif"
+  },
+  "647:Resolute": {
+    "static": "assets/pokemon/forms/647-resolute.webp",
+    "animated": "assets/pokemon/forms/647-resolute.gif"
+  },
+  "648:Pirouette": {
+    "static": "assets/pokemon/forms/648-pirouette.webp",
+    "animated": "assets/pokemon/forms/648-pirouette.gif"
+  },
+  "649:Burn": {
+    "static": "assets/pokemon/forms/649-burn.webp",
+    "animated": "assets/pokemon/forms/649-burn.gif"
+  },
+  "649:Chill": {
+    "static": "assets/pokemon/forms/649-chill.webp",
+    "animated": "assets/pokemon/forms/649-chill.gif"
+  },
+  "649:Douse": {
+    "static": "assets/pokemon/forms/649-douse.webp",
+    "animated": "assets/pokemon/forms/649-douse.gif"
+  },
+  "649:Shock": {
+    "static": "assets/pokemon/forms/649-shock.webp",
+    "animated": "assets/pokemon/forms/649-shock.gif"
+  },
+  "652:Mega": {
+    "static": "assets/pokemon/forms/652-mega.webp"
+  },
+  "655:Mega": {
+    "static": "assets/pokemon/forms/655-mega.webp"
+  },
+  "658:Ash": {
+    "static": "assets/pokemon/forms/658-ash.webp",
+    "animated": "assets/pokemon/forms/658-ash.gif"
+  },
+  "658:Bond": {
+    "static": "assets/pokemon/forms/658-bond.webp"
+  },
+  "658:Mega": {
+    "static": "assets/pokemon/forms/658-mega.webp"
+  },
+  "666:Pokeball": {
+    "static": "assets/pokemon/forms/666-pokeball.webp",
+    "animated": "assets/pokemon/forms/666-pokeball.gif"
+  },
+  "668:Mega": {
+    "static": "assets/pokemon/forms/668-mega.webp"
+  },
+  "669:Blue": {
+    "static": "assets/pokemon/forms/669-blue.webp",
+    "animated": "assets/pokemon/forms/669-blue.gif"
+  },
+  "669:Orange": {
+    "static": "assets/pokemon/forms/669-orange.webp",
+    "animated": "assets/pokemon/forms/669-orange.gif"
+  },
+  "669:White": {
+    "static": "assets/pokemon/forms/669-white.webp",
+    "animated": "assets/pokemon/forms/669-white.gif"
+  },
+  "669:Yellow": {
+    "static": "assets/pokemon/forms/669-yellow.webp",
+    "animated": "assets/pokemon/forms/669-yellow.gif"
+  },
+  "670:Blue": {
+    "static": "assets/pokemon/forms/670-blue.webp",
+    "animated": "assets/pokemon/forms/670-blue.gif"
+  },
+  "670:Eternal": {
+    "static": "assets/pokemon/forms/670-eternal.webp",
+    "animated": "assets/pokemon/forms/670-eternal.gif"
+  },
+  "670:Orange": {
+    "static": "assets/pokemon/forms/670-orange.webp",
+    "animated": "assets/pokemon/forms/670-orange.gif"
+  },
+  "670:White": {
+    "static": "assets/pokemon/forms/670-white.webp",
+    "animated": "assets/pokemon/forms/670-white.gif"
+  },
+  "670:Yellow": {
+    "static": "assets/pokemon/forms/670-yellow.webp",
+    "animated": "assets/pokemon/forms/670-yellow.gif"
+  },
+  "671:Blue": {
+    "static": "assets/pokemon/forms/671-blue.webp",
+    "animated": "assets/pokemon/forms/671-blue.gif"
+  },
+  "671:Orange": {
+    "static": "assets/pokemon/forms/671-orange.webp",
+    "animated": "assets/pokemon/forms/671-orange.gif"
+  },
+  "671:White": {
+    "static": "assets/pokemon/forms/671-white.webp",
+    "animated": "assets/pokemon/forms/671-white.gif"
+  },
+  "671:Yellow": {
+    "static": "assets/pokemon/forms/671-yellow.webp",
+    "animated": "assets/pokemon/forms/671-yellow.gif"
+  },
+  "676:Dandy": {
+    "static": "assets/pokemon/forms/676-dandy.webp",
+    "animated": "assets/pokemon/forms/676-dandy.gif"
+  },
+  "676:Debutante": {
+    "static": "assets/pokemon/forms/676-debutante.webp",
+    "animated": "assets/pokemon/forms/676-debutante.gif"
+  },
+  "676:Diamond": {
+    "static": "assets/pokemon/forms/676-diamond.webp",
+    "animated": "assets/pokemon/forms/676-diamond.gif"
+  },
+  "676:Heart": {
+    "static": "assets/pokemon/forms/676-heart.webp",
+    "animated": "assets/pokemon/forms/676-heart.gif"
+  },
+  "676:Kabuki": {
+    "static": "assets/pokemon/forms/676-kabuki.webp",
+    "animated": "assets/pokemon/forms/676-kabuki.gif"
+  },
+  "676:La-Reine": {
+    "static": "assets/pokemon/forms/676-lareine.webp",
+    "animated": "assets/pokemon/forms/676-lareine.gif"
+  },
+  "676:Matron": {
+    "static": "assets/pokemon/forms/676-matron.webp",
+    "animated": "assets/pokemon/forms/676-matron.gif"
+  },
+  "676:Pharaoh": {
+    "static": "assets/pokemon/forms/676-pharaoh.webp",
+    "animated": "assets/pokemon/forms/676-pharaoh.gif"
+  },
+  "676:Star": {
+    "static": "assets/pokemon/forms/676-star.webp",
+    "animated": "assets/pokemon/forms/676-star.gif"
+  },
+  "678:F": {
+    "static": "assets/pokemon/forms/678-f.webp",
+    "animated": "assets/pokemon/forms/678-f.gif"
+  },
+  "678:Mega": {
+    "static": "assets/pokemon/forms/678-mega.webp"
+  },
+  "681:Blade": {
+    "static": "assets/pokemon/forms/681-blade.webp",
+    "animated": "assets/pokemon/forms/681-blade.gif"
+  },
+  "687:Mega": {
+    "static": "assets/pokemon/forms/687-mega.webp"
+  },
+  "689:Mega": {
+    "static": "assets/pokemon/forms/689-mega.webp"
+  },
+  "691:Mega": {
+    "static": "assets/pokemon/forms/691-mega.webp"
+  },
+  "701:Mega": {
+    "static": "assets/pokemon/forms/701-mega.webp"
+  },
+  "704:Hisui-Bias": {
+    "static": "assets/pokemon/704.webp",
+    "animated": "assets/pokemon/forms/704.gif",
+    "sharedAppearance": true
+  },
+  "705:Hisui": {
+    "static": "assets/pokemon/forms/705-hisui.webp",
+    "animated": "assets/pokemon/forms/705-hisui.gif"
+  },
+  "706:Hisui": {
+    "static": "assets/pokemon/forms/706-hisui.webp",
+    "animated": "assets/pokemon/forms/706-hisui.gif"
+  },
+  "710:Large": {
+    "static": "assets/pokemon/forms/710-large.webp",
+    "animated": "assets/pokemon/forms/710-large.gif"
+  },
+  "710:Small": {
+    "static": "assets/pokemon/forms/710-small.webp",
+    "animated": "assets/pokemon/forms/710-small.gif"
+  },
+  "710:Super": {
+    "static": "assets/pokemon/forms/710-super.webp",
+    "animated": "assets/pokemon/forms/710-super.gif"
+  },
+  "711:Large": {
+    "static": "assets/pokemon/forms/711-large.webp",
+    "animated": "assets/pokemon/forms/711-large.gif"
+  },
+  "711:Small": {
+    "static": "assets/pokemon/forms/711-small.webp",
+    "animated": "assets/pokemon/forms/711-small.gif"
+  },
+  "711:Super": {
+    "static": "assets/pokemon/forms/711-super.webp",
+    "animated": "assets/pokemon/forms/711-super.gif"
+  },
+  "713:Hisui": {
+    "static": "assets/pokemon/forms/713-hisui.webp",
+    "animated": "assets/pokemon/forms/713-hisui.gif"
+  },
+  "716:Active": {
+    "static": "assets/pokemon/forms/716-active.webp"
+  },
+  "718:10%": {
+    "static": "assets/pokemon/forms/718-10.webp",
+    "animated": "assets/pokemon/forms/718-10.gif"
+  },
+  "718:10%-C": {
+    "static": "assets/pokemon/forms/718-10c.webp",
+    "animated": "assets/pokemon/forms/718-10c.gif"
+  },
+  "718:50%-C": {
+    "static": "assets/pokemon/718.webp",
+    "animated": "assets/pokemon/forms/718.gif",
+    "sharedAppearance": true
+  },
+  "718:Complete": {
+    "static": "assets/pokemon/forms/718-complete.webp",
+    "animated": "assets/pokemon/forms/718-complete.gif"
+  },
+  "718:Mega": {
+    "static": "assets/pokemon/forms/718-mega.webp"
+  },
+  "719:Mega": {
+    "static": "assets/pokemon/forms/719-mega.webp",
+    "animated": "assets/pokemon/forms/719-mega.gif"
+  },
+  "720:Unbound": {
+    "static": "assets/pokemon/forms/720-unbound.webp",
+    "animated": "assets/pokemon/forms/720-unbound.gif"
+  },
+  "722:Hisui-Bias": {
+    "static": "assets/pokemon/722.webp",
+    "animated": "assets/pokemon/forms/722.gif",
+    "sharedAppearance": true
+  },
+  "723:Hisui-Bias": {
+    "static": "assets/pokemon/723.webp",
+    "animated": "assets/pokemon/forms/723.gif",
+    "sharedAppearance": true
+  },
+  "724:Hisui": {
+    "static": "assets/pokemon/forms/724-hisui.webp",
+    "animated": "assets/pokemon/forms/724-hisui.gif"
+  },
+  "740:Mega": {
+    "static": "assets/pokemon/forms/740-mega.webp"
+  },
+  "741:Pa’u": {
+    "static": "assets/pokemon/forms/741-pau.webp",
+    "animated": "assets/pokemon/forms/741-pau.gif"
+  },
+  "741:Pom-Pom": {
+    "static": "assets/pokemon/forms/741-pompom.webp",
+    "animated": "assets/pokemon/forms/741-pompom.gif"
+  },
+  "741:Sensu": {
+    "static": "assets/pokemon/forms/741-sensu.webp",
+    "animated": "assets/pokemon/forms/741-sensu.gif"
+  },
+  "744:Dusk": {
+    "static": "assets/pokemon/744.webp",
+    "animated": "assets/pokemon/forms/744.gif",
+    "sharedAppearance": true
+  },
+  "745:Dusk": {
+    "static": "assets/pokemon/forms/745-dusk.webp",
+    "animated": "assets/pokemon/forms/745-dusk.gif"
+  },
+  "745:Midnight": {
+    "static": "assets/pokemon/forms/745-midnight.webp",
+    "animated": "assets/pokemon/forms/745-midnight.gif"
+  },
+  "746:School": {
+    "static": "assets/pokemon/forms/746-school.webp",
+    "animated": "assets/pokemon/forms/746-school.gif"
+  },
+  "768:Mega": {
+    "static": "assets/pokemon/forms/768-mega.webp"
+  },
+  "773:Bug": {
+    "static": "assets/pokemon/forms/773-bug.webp",
+    "animated": "assets/pokemon/forms/773-bug.gif"
+  },
+  "773:Dark": {
+    "static": "assets/pokemon/forms/773-dark.webp",
+    "animated": "assets/pokemon/forms/773-dark.gif"
+  },
+  "773:Dragon": {
+    "static": "assets/pokemon/forms/773-dragon.webp",
+    "animated": "assets/pokemon/forms/773-dragon.gif"
+  },
+  "773:Electric": {
+    "static": "assets/pokemon/forms/773-electric.webp",
+    "animated": "assets/pokemon/forms/773-electric.gif"
+  },
+  "773:Fairy": {
+    "static": "assets/pokemon/forms/773-fairy.webp",
+    "animated": "assets/pokemon/forms/773-fairy.gif"
+  },
+  "773:Fighting": {
+    "static": "assets/pokemon/forms/773-fighting.webp",
+    "animated": "assets/pokemon/forms/773-fighting.gif"
+  },
+  "773:Fire": {
+    "static": "assets/pokemon/forms/773-fire.webp",
+    "animated": "assets/pokemon/forms/773-fire.gif"
+  },
+  "773:Flying": {
+    "static": "assets/pokemon/forms/773-flying.webp",
+    "animated": "assets/pokemon/forms/773-flying.gif"
+  },
+  "773:Ghost": {
+    "static": "assets/pokemon/forms/773-ghost.webp",
+    "animated": "assets/pokemon/forms/773-ghost.gif"
+  },
+  "773:Grass": {
+    "static": "assets/pokemon/forms/773-grass.webp",
+    "animated": "assets/pokemon/forms/773-grass.gif"
+  },
+  "773:Ground": {
+    "static": "assets/pokemon/forms/773-ground.webp",
+    "animated": "assets/pokemon/forms/773-ground.gif"
+  },
+  "773:Ice": {
+    "static": "assets/pokemon/forms/773-ice.webp",
+    "animated": "assets/pokemon/forms/773-ice.gif"
+  },
+  "773:Poison": {
+    "static": "assets/pokemon/forms/773-poison.webp",
+    "animated": "assets/pokemon/forms/773-poison.gif"
+  },
+  "773:Psychic": {
+    "static": "assets/pokemon/forms/773-psychic.webp",
+    "animated": "assets/pokemon/forms/773-psychic.gif"
+  },
+  "773:Rock": {
+    "static": "assets/pokemon/forms/773-rock.webp",
+    "animated": "assets/pokemon/forms/773-rock.gif"
+  },
+  "773:Steel": {
+    "static": "assets/pokemon/forms/773-steel.webp",
+    "animated": "assets/pokemon/forms/773-steel.gif"
+  },
+  "773:Water": {
+    "static": "assets/pokemon/forms/773-water.webp",
+    "animated": "assets/pokemon/forms/773-water.gif"
+  },
+  "774:Meteor": {
+    "static": "assets/pokemon/forms/774-meteor.webp",
+    "animated": "assets/pokemon/forms/774-meteor.gif"
+  },
+  "778:Busted": {
+    "static": "assets/pokemon/forms/778-busted.webp",
+    "animated": "assets/pokemon/forms/778-busted.gif"
+  },
+  "780:Mega": {
+    "static": "assets/pokemon/forms/780-mega.webp"
+  },
+  "800:Dawn-Wings": {
+    "static": "assets/pokemon/forms/800-dawnwings.webp",
+    "animated": "assets/pokemon/forms/800-dawnwings.gif"
+  },
+  "800:Dusk-Mane": {
+    "static": "assets/pokemon/forms/800-duskmane.webp",
+    "animated": "assets/pokemon/forms/800-duskmane.gif"
+  },
+  "800:Ultra": {
+    "static": "assets/pokemon/forms/800-ultra.webp",
+    "animated": "assets/pokemon/forms/800-ultra.gif"
+  },
+  "801:Mega": {
+    "static": "assets/pokemon/forms/801-mega.webp"
+  },
+  "801:MegaO": {
+    "static": "assets/pokemon/forms/801-megao.webp"
+  },
+  "801:Original": {
+    "static": "assets/pokemon/forms/801-original.webp",
+    "animated": "assets/pokemon/forms/801-original.gif"
+  },
+  "807:Mega": {
+    "static": "assets/pokemon/forms/807-mega.webp"
+  },
+  "809:Gmax": {
+    "static": "assets/pokemon/forms/809-gmax.webp",
+    "animated": "assets/pokemon/forms/809-gmax.gif"
+  },
+  "812:Gmax": {
+    "static": "assets/pokemon/forms/812-gmax.webp"
+  },
+  "815:Gmax": {
+    "static": "assets/pokemon/forms/815-gmax.webp"
+  },
+  "818:Gmax": {
+    "static": "assets/pokemon/forms/818-gmax.webp",
+    "animated": "assets/pokemon/forms/818-gmax.gif"
+  },
+  "823:Gmax": {
+    "static": "assets/pokemon/forms/823-gmax.webp",
+    "animated": "assets/pokemon/forms/823-gmax.gif"
+  },
+  "826:Gmax": {
+    "static": "assets/pokemon/forms/826-gmax.webp",
+    "animated": "assets/pokemon/forms/826-gmax.gif"
+  },
+  "834:Gmax": {
+    "static": "assets/pokemon/forms/834-gmax.webp",
+    "animated": "assets/pokemon/forms/834-gmax.gif"
+  },
+  "839:Gmax": {
+    "static": "assets/pokemon/forms/839-gmax.webp",
+    "animated": "assets/pokemon/forms/839-gmax.gif"
+  },
+  "841:Gmax": {
+    "static": "assets/pokemon/forms/841-gmax.webp",
+    "animated": "assets/pokemon/forms/841-gmax.gif"
+  },
+  "842:Gmax": {
+    "static": "assets/pokemon/forms/842-gmax.webp",
+    "animated": "assets/pokemon/forms/842-gmax.gif"
+  },
+  "844:Gmax": {
+    "static": "assets/pokemon/forms/844-gmax.webp",
+    "animated": "assets/pokemon/forms/844-gmax.gif"
+  },
+  "845:Gorging": {
+    "static": "assets/pokemon/forms/845-gorging.webp",
+    "animated": "assets/pokemon/forms/845-gorging.gif"
+  },
+  "845:Gulping": {
+    "static": "assets/pokemon/forms/845-gulping.webp",
+    "animated": "assets/pokemon/forms/845-gulping.gif"
+  },
+  "849:Gmax": {
+    "static": "assets/pokemon/forms/849-gmax.webp",
+    "animated": "assets/pokemon/forms/849-gmax.gif"
+  },
+  "849:Low-Key": {
+    "static": "assets/pokemon/forms/849-lowkey.webp",
+    "animated": "assets/pokemon/forms/849-lowkey.gif"
+  },
+  "849:Low-Key-Gmax": {
+    "static": "assets/pokemon/forms/849-lowkeygmax.webp",
+    "animated": "assets/pokemon/forms/849-lowkeygmax.gif"
+  },
+  "851:Gmax": {
+    "static": "assets/pokemon/forms/851-gmax.webp",
+    "animated": "assets/pokemon/forms/851-gmax.gif"
+  },
+  "854:Antique": {
+    "static": "assets/pokemon/forms/854-antique.webp",
+    "animated": "assets/pokemon/forms/854-antique.gif"
+  },
+  "855:Antique": {
+    "static": "assets/pokemon/forms/855-antique.webp",
+    "animated": "assets/pokemon/forms/855-antique.gif"
+  },
+  "858:Gmax": {
+    "static": "assets/pokemon/forms/858-gmax.webp",
+    "animated": "assets/pokemon/forms/858-gmax.gif"
+  },
+  "861:Gmax": {
+    "static": "assets/pokemon/forms/861-gmax.webp",
+    "animated": "assets/pokemon/forms/861-gmax.gif"
+  },
+  "869:Caramel-Swirl": {
+    "static": "assets/pokemon/forms/869-caramelswirl.webp",
+    "animated": "assets/pokemon/forms/869-caramelswirl.gif"
+  },
+  "869:Gmax": {
+    "static": "assets/pokemon/forms/869-gmax.webp",
+    "animated": "assets/pokemon/forms/869-gmax.gif"
+  },
+  "869:Lemon-Cream": {
+    "static": "assets/pokemon/forms/869-lemoncream.webp",
+    "animated": "assets/pokemon/forms/869-lemoncream.gif"
+  },
+  "869:Matcha-Cream": {
+    "static": "assets/pokemon/forms/869-matchacream.webp",
+    "animated": "assets/pokemon/forms/869-matchacream.gif"
+  },
+  "869:Mint-Cream": {
+    "static": "assets/pokemon/forms/869-mintcream.webp",
+    "animated": "assets/pokemon/forms/869-mintcream.gif"
+  },
+  "869:Rainbow-Swirl": {
+    "static": "assets/pokemon/forms/869-rainbowswirl.webp",
+    "animated": "assets/pokemon/forms/869-rainbowswirl.gif"
+  },
+  "869:Ruby-Cream": {
+    "static": "assets/pokemon/forms/869-rubycream.webp",
+    "animated": "assets/pokemon/forms/869-rubycream.gif"
+  },
+  "869:Ruby-Swirl": {
+    "static": "assets/pokemon/forms/869-rubyswirl.webp",
+    "animated": "assets/pokemon/forms/869-rubyswirl.gif"
+  },
+  "869:Salted-Cream": {
+    "static": "assets/pokemon/forms/869-saltedcream.webp",
+    "animated": "assets/pokemon/forms/869-saltedcream.gif"
+  },
+  "870:Mega": {
+    "static": "assets/pokemon/forms/870-mega.webp"
+  },
+  "875:Noice-Face": {
+    "static": "assets/pokemon/forms/875-noiceface.webp",
+    "animated": "assets/pokemon/forms/875-noiceface.gif"
+  },
+  "876:F": {
+    "static": "assets/pokemon/forms/876-f.webp",
+    "animated": "assets/pokemon/forms/876-f.gif"
+  },
+  "877:Hangry": {
+    "static": "assets/pokemon/forms/877-hangry.webp",
+    "animated": "assets/pokemon/forms/877-hangry.gif"
+  },
+  "879:Gmax": {
+    "static": "assets/pokemon/forms/879-gmax.webp",
+    "animated": "assets/pokemon/forms/879-gmax.gif"
+  },
+  "884:Gmax": {
+    "static": "assets/pokemon/forms/884-gmax.webp",
+    "animated": "assets/pokemon/forms/884-gmax.gif"
+  },
+  "888:Crowned": {
+    "static": "assets/pokemon/forms/888-crowned.webp",
+    "animated": "assets/pokemon/forms/888-crowned.gif"
+  },
+  "889:Crowned": {
+    "static": "assets/pokemon/forms/889-crowned.webp",
+    "animated": "assets/pokemon/forms/889-crowned.gif"
+  },
+  "890:Eternamax": {
+    "static": "assets/pokemon/forms/890-eternamax.webp",
+    "animated": "assets/pokemon/forms/890-eternamax.gif"
+  },
+  "892:Gmax": {
+    "static": "assets/pokemon/forms/892-gmax.webp"
+  },
+  "892:Rapid-Strike": {
+    "static": "assets/pokemon/forms/892-rapidstrike.webp",
+    "animated": "assets/pokemon/forms/892-rapidstrike.gif"
+  },
+  "892:Rapid-Strike-Gmax": {
+    "static": "assets/pokemon/forms/892-rapidstrikegmax.webp"
+  },
+  "893:Dada": {
+    "static": "assets/pokemon/forms/893-dada.webp",
+    "animated": "assets/pokemon/forms/893-dada.gif"
+  },
+  "898:Ice": {
+    "static": "assets/pokemon/forms/898-ice.webp",
+    "animated": "assets/pokemon/forms/898-ice.gif"
+  },
+  "898:Shadow": {
+    "static": "assets/pokemon/forms/898-shadow.webp",
+    "animated": "assets/pokemon/forms/898-shadow.gif"
+  },
+  "901:Bloodmoon": {
+    "static": "assets/pokemon/forms/901-bloodmoon.webp",
+    "animated": "assets/pokemon/forms/901-bloodmoon.gif"
+  },
+  "902:F": {
+    "static": "assets/pokemon/forms/902-f.webp",
+    "animated": "assets/pokemon/forms/902-f.gif"
+  },
+  "905:Therian": {
+    "static": "assets/pokemon/forms/905-therian.webp",
+    "animated": "assets/pokemon/forms/905-therian.gif"
+  },
+  "916:F": {
+    "static": "assets/pokemon/forms/916-f.webp",
+    "animated": "assets/pokemon/forms/916-f.gif"
+  },
+  "925:Four": {
+    "static": "assets/pokemon/forms/925-four.webp",
+    "animated": "assets/pokemon/forms/925-four.gif"
+  },
+  "931:Blue": {
+    "static": "assets/pokemon/forms/931-blue.webp",
+    "animated": "assets/pokemon/forms/931-blue.gif"
+  },
+  "931:White": {
+    "static": "assets/pokemon/forms/931-white.webp",
+    "animated": "assets/pokemon/forms/931-white.gif"
+  },
+  "931:Yellow": {
+    "static": "assets/pokemon/forms/931-yellow.webp",
+    "animated": "assets/pokemon/forms/931-yellow.gif"
+  },
+  "952:Mega": {
+    "static": "assets/pokemon/forms/952-mega.webp"
+  },
+  "964:Hero": {
+    "static": "assets/pokemon/forms/964-hero.webp",
+    "animated": "assets/pokemon/forms/964-hero.gif"
+  },
+  "970:Mega": {
+    "static": "assets/pokemon/forms/970-mega.webp"
+  },
+  "978:Droopy": {
+    "static": "assets/pokemon/forms/978-droopy.webp",
+    "animated": "assets/pokemon/forms/978-droopy.gif"
+  },
+  "978:Mega": {
+    "static": "assets/pokemon/forms/978-mega.webp"
+  },
+  "978:MegaD": {
+    "static": "assets/pokemon/forms/978-megad.webp"
+  },
+  "978:MegaS": {
+    "static": "assets/pokemon/forms/978-megas.webp"
+  },
+  "978:Stretchy": {
+    "static": "assets/pokemon/forms/978-stretchy.webp",
+    "animated": "assets/pokemon/forms/978-stretchy.gif"
+  },
+  "982:Three-Segment": {
+    "static": "assets/pokemon/forms/982-threesegment.webp",
+    "animated": "assets/pokemon/forms/982-threesegment.gif"
+  },
+  "998:Mega": {
+    "static": "assets/pokemon/forms/998-mega.webp"
+  },
+  "999:Roaming": {
+    "static": "assets/pokemon/forms/999-roaming.webp",
+    "animated": "assets/pokemon/forms/999-roaming.gif"
+  },
+  "1012:Artisan": {
+    "static": "assets/pokemon/forms/1012-artisan.webp",
+    "animated": "assets/pokemon/forms/1012-artisan.gif"
+  },
+  "1013:Masterpiece": {
+    "static": "assets/pokemon/forms/1013-masterpiece.webp",
+    "animated": "assets/pokemon/forms/1013-masterpiece.gif"
+  },
+  "1017:Cornerstone": {
+    "static": "assets/pokemon/forms/1017-cornerstone.webp"
+  },
+  "1017:Cornerstone-Tera": {
+    "static": "assets/pokemon/forms/1017-cornerstonetera.webp"
+  },
+  "1017:Hearthflame": {
+    "static": "assets/pokemon/forms/1017-hearthflame.webp"
+  },
+  "1017:Hearthflame-Tera": {
+    "static": "assets/pokemon/forms/1017-hearthflametera.webp"
+  },
+  "1017:Teal-Tera": {
+    "static": "assets/pokemon/forms/1017-tealtera.webp"
+  },
+  "1017:Wellspring": {
+    "static": "assets/pokemon/forms/1017-wellspring.webp"
+  },
+  "1017:Wellspring-Tera": {
+    "static": "assets/pokemon/forms/1017-wellspringtera.webp"
+  },
+  "1024:Stellar": {
+    "static": "assets/pokemon/forms/1024-stellar.webp"
+  },
+  "1024:Terastal": {
+    "static": "assets/pokemon/forms/1024-terastal.webp"
+  }
+}
