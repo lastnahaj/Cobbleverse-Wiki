@@ -46,7 +46,7 @@ const { kind, source, placeholder } = Astro.props;
     Show more
   </button>
   <p class="quiet-note">
-    Reference snapshot: <a href="https://www.cobbleverseguides.com/"
+    Reference snapshot: <a href={withBase("/sources/#cobbleverse-guides")}
       >Cobbleverse Guides</a
     >. Confirm server-specific availability in game.
   </p>
@@ -247,11 +247,38 @@ const { kind, source, placeholder } = Astro.props;
       typeof metadata.price === "number"
         ? `$${metadata.price.toLocaleString()}`
         : "";
+    const playerRoutes = {
+      "/guides/economy": "/economy/making-money/",
+      "/guides/progression": "/progression/regions/",
+      "/guides/troubleshooting": "/getting-started/troubleshooting/",
+      "/guides/structures-and-radars": "/worlds/structures/",
+      "/guides/version-changes": "/changelog/",
+      "/guides/getting-started": "/getting-started/first-session/",
+      "/guides/legendary-spawning": "/progression/legendary-mythical/",
+      "/guides/team-building": "/team-building/",
+    };
+    const localRoute =
+      record.type === "trainer"
+        ? metadata.guideFamily === "Progression Guide"
+          ? `/gyms/#${String(metadata.region ?? "")
+              .split(" ")[0]
+              .toLowerCase()}`
+          : "/worlds/location-walkthroughs/"
+        : (playerRoutes[record.href] ??
+          (metadata.guideFamily === "Legendary Guide"
+            ? "/progression/legendary-mythical/"
+            : metadata.guideFamily === "Location Guide"
+              ? "/worlds/location-walkthroughs/"
+              : "/progression/regions/"));
+    const localLink = ["trainer", "guide"].includes(record.type)
+      ? `<a href="${import.meta.env.BASE_URL}${localRoute.slice(1)}">Open the related wiki guide →</a>`
+      : "";
     return `<details class="reference-card">
       <summary><span><strong>${escapeHtml(record.title)}</strong><small>${escapeHtml(record.subtitle ?? label(record.type))}</small></span>${price ? `<span class="reference-price">${price}</span>` : pills(metadata.category ?? metadata.role ?? record.type)}</summary>
       <div class="reference-card__body">
         ${description ? `<p>${escapeHtml(sentence(description))}</p>` : ""}
         ${metaRows ? `<dl class="reference-facts">${metaRows}</dl>` : ""}
+        ${localLink}
         ${jsonRecord(record)}
       </div>
     </details>`;

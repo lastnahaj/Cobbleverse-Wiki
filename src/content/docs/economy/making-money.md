@@ -41,4 +41,4 @@ At the documented 2026-07-30 snapshot, the Master of Stones listed type gems at 
 
 The Infinite Gaming Servers world also has Bazaar for fixed-price Pokémon listings and an Auction House for item bidding. Fees, limits, channels, and menu aliases are server configuration, so check the live interface before committing a valuable listing.
 
-Sources: [Lumy Hub money guide](https://www.lumyverse.com/cobbleverse/making-money-in-cobbleverse/), [Cobbleverse economy guide](https://www.cobbleverseguides.com/guides/economy), [Bazaar documentation](https://docs.matchamodd.ing/bazaar/getting-started/introduction/)
+Guide origins: [Lumy Hub](/Cobbleverse-Wiki/sources/#lumy-hub) · [Cobbleverse Guides](/Cobbleverse-Wiki/sources/#cobbleverse-guides) · [Matcha documentation](/Cobbleverse-Wiki/sources/#matcha)

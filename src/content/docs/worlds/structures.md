@@ -98,4 +98,4 @@ Ho-Oh is one verified example: its radar recipe uses one Flying Gem, two Wind Ch
 
 In a test world or with operator approval, exact `/locate structure` commands can verify a named target. They are diagnostic tools, not the survival route, and an unsafe returned Y coordinate should never be used blindly.
 
-Sources: [exclusive structures](https://www.lumyverse.com/cobbleverse/exclusive-structures-in-cobbleverse/), [other structures](https://www.lumyverse.com/cobbleverse/other-structures/), [finding legendary structures](https://www.lumyverse.com/cobbleverse/how-to-find-legendary-pokemon-structures/), [structures and radars guide](https://www.cobbleverseguides.com/guides/structures-and-radars)
+Guide origins: [Lumy Hub](/Cobbleverse-Wiki/sources/#lumy-hub) · [Cobbleverse Guides](/Cobbleverse-Wiki/sources/#cobbleverse-guides)

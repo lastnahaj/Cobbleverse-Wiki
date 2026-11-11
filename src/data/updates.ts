@@ -11,6 +11,14 @@ const schema = z.array(
 );
 export const updates = schema.parse([
   {
+    id: "regional-checklists-and-guide-origins",
+    date: "2026-11-10",
+    kind: "wiki",
+    title: "Regional checklists and guide origins",
+    description:
+      "Search 52 league checkpoints, save a personal checklist, follow numbered regional routes, and find guide origins through local topic links. Riding records are available in the Pokédex.",
+  },
+  {
     id: "player-catalogues",
     date: "2026-11-10",
     kind: "wiki",

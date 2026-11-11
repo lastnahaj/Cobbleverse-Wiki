@@ -89,6 +89,7 @@ function initialize(root: HTMLElement) {
     "[data-dex-generation]",
   )!;
   const sort = root.querySelector<HTMLSelectElement>("[data-dex-sort]")!;
+  const mount = root.querySelector<HTMLInputElement>("[data-dex-mount]")!;
   const grid = root.querySelector<HTMLElement>("[data-dex-grid]")!;
   const status = root.querySelector<HTMLElement>("[data-dex-status]")!;
   const more = root.querySelector<HTMLButtonElement>("[data-dex-more]")!;
@@ -161,6 +162,12 @@ function initialize(root: HTMLElement) {
   type.value = initial.get("type") ?? "";
   generation.value = initial.get("gen") ?? "";
   sort.value = initial.get("sort") ?? "number";
+  mount.checked = initial.get("mount") === "1";
+  mount.addEventListener("change", () => {
+    visible = 48;
+    saveFilters();
+    renderGrid();
+  });
 
   function saveFilters() {
     const url = new URL(location.href);
@@ -169,6 +176,7 @@ function initialize(root: HTMLElement) {
       ["type", type.value],
       ["gen", generation.value],
       ["sort", sort.value === "number" ? "" : sort.value],
+      ["mount", mount.checked ? "1" : ""],
     ]) {
       if (value) url.searchParams.set(key, value);
       else url.searchParams.delete(key);
@@ -190,6 +198,7 @@ function initialize(root: HTMLElement) {
         ).includes(query);
       return (
         matchesQuery &&
+        (!mount.checked || !!p.riding) &&
         (!type.value || types(p).includes(type.value)) &&
         (!generation.value ||
           generationNumber(p.nationalPokedexNumber) ===
@@ -218,6 +227,7 @@ function initialize(root: HTMLElement) {
     more.textContent = `Show more Pokémon · ${Math.max(0, filtered.length - shown.length)} remaining`;
   }
   function reset() {
+    mount.checked = false;
     search.value = "";
     type.value = "";
     generation.value = "";
@@ -339,6 +349,29 @@ function initialize(root: HTMLElement) {
     return `<button type="button" class="dex-evolution-species${selected?.nationalPokedexNumber === p.nationalPokedexNumber ? " is-current" : ""}" data-entry="${p.nationalPokedexNumber}"><img src="${artwork(p)}" width="100" height="100" alt="" loading="lazy" /><small>${number(p)}</small><strong>${esc(p.name)}</strong></button>`;
   }
 
+  function ridingPanel(p: Pokemon, record: Pokemon | Form) {
+    const riding = record.riding ?? p.riding;
+    if (!riding) return "";
+    const modes = riding.behaviours as
+      Record<string, { stats?: Record<string, DataValue> }> | undefined;
+    return (
+      '<section><h3>Riding</h3><p class="dex-muted">Snapshot stat ranges for each travel mode. These values are not measured blocks per second; server settings and Aprijuice can affect your mount.</p>' +
+      Object.entries(modes ?? {})
+        .map(
+          ([mode, config]) =>
+            `<h4>${esc(title(mode.toLowerCase()))}</h4><dl class="dex-facts">${Object.entries(
+              config.stats ?? {},
+            )
+              .map(
+                ([name, range]) =>
+                  `<div><dt>${esc(title(name.toLowerCase()))}</dt><dd>${esc(String(range).replace(/(\d)-(\d)/g, "$1–$2"))}</dd></div>`,
+              )
+              .join("")}</dl>`,
+        )
+        .join("") +
+      "</section>"
+    );
+  }
   function overview(p: Pokemon, record: Pokemon | Form) {
     const stats = record.baseStats ?? p.baseStats;
     const abilityHtml = (record.abilities ?? p.abilities ?? [])
@@ -372,7 +405,7 @@ function initialize(root: HTMLElement) {
       ["Implemented in snapshot", p.implemented ? "Yes" : "No"],
     ]
       .map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`)
-      .join("")}</dl></section>`;
+      .join("")}</dl></section>${ridingPanel(p, record)}`;
   }
   function movePanel(p: Pokemon, record: Pokemon | Form) {
     const learned = record.moves ?? p.moves ?? [];

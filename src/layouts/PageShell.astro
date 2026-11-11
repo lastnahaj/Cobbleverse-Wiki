@@ -6,6 +6,8 @@ import LastVerified from "../components/LastVerified.astro";
 import RelatedArticles from "../components/RelatedArticles.astro";
 import WikiSidebar from "../components/WikiSidebar.astro";
 import BaseLayout from "./BaseLayout.astro";
+import { withBase } from "../lib/basePath";
+import { sourceCreditPath } from "../lib/sourceCredits";
 
 interface Heading {
   depth: number;
@@ -119,7 +121,9 @@ const breadcrumbs = [
             <p class="quiet-note">
               Sources:{" "}
               {sources.map((source, index) => (
-                <a href={source}>Reference {index + 1} </a>
+                <a href={withBase(sourceCreditPath(source))}>
+                  Reference {index + 1}{" "}
+                </a>
               ))}
             </p>
           )

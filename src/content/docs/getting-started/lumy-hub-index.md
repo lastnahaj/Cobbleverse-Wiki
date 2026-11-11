@@ -13,7 +13,7 @@ related:
 hero: /assets/brand/cobbleverse-wordmark.webp
 ---
 
-The [Lumy Hub](https://www.lumyverse.com/cobbleverse/) documents the public Cobbleverse modpack. This server wiki folds that information into task-focused guides while keeping three scopes distinct:
+The [Lumy Hub](/Cobbleverse-Wiki/sources/#lumy-hub) documents the public Cobbleverse modpack. This server wiki folds that information into task-focused guides while keeping three scopes distinct:
 
 - **Server confirmed:** installed systems, connection details, and behavior supplied for Infinite Gaming Servers.
 - **Base pack:** Lumy Hub progression, structures, settings, and troubleshooting.
@@ -42,10 +42,10 @@ Missing models, mob drops, maps, a missing Modrinth update, and the level-25 cap
 
 ## Gym records
 
-Signature items and Kanto, Johto, Hoenn, and Sinnoh leaders are in [Gyms](../../gyms/). Lumy Hub currently labels its Unova leader page as work in progress, so no Unova names are invented here.
+Signature items and Kanto, Johto, Hoenn, and Sinnoh leaders are in [Gyms](../../gyms/). Unova is not included in the current regional reference.
 
 ## Credits and releases
 
-The original [credits and licences](https://www.lumyverse.com/cobbleverse/credits/) remain the canonical attribution list for bundled datapacks and resource packs. Pack releases are summarized in [Changelog](../../changelog/) with direct links to Lumy Hub release notes.
+Guide origins and artwork contributors are credited in [Sources & Credits](/Cobbleverse-Wiki/sources/). Our [Changelog](../../changelog/) records wiki updates.
 
 This index summarizes coverage; it does not duplicate Lumy Hub's artwork or republish its articles verbatim.

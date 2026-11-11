@@ -1,146 +1,202 @@
 ---
-import InfoCallout from "../../components/InfoCallout.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
 import { regionalGyms } from "../../data";
-import PageShell from "../../layouts/PageShell.astro";
-
-const regions = ["Kanto", "Johto", "Hoenn", "Sinnoh"] as const;
-const headings = [
-  { depth: 2, slug: "finding-gyms", text: "Finding Gyms" },
-  ...regions.map((region) => ({
-    depth: 2,
-    slug: region.toLowerCase(),
-    text: region,
-  })),
-  { depth: 2, slug: "unova", text: "Unova" },
-];
+import { withBase } from "../../lib/basePath";
+import "../../styles/catalogue.css";
+import "../../styles/leagues.css";
+const regions = ["Kanto", "Johto", "Hoenn", "Sinnoh"];
+const slug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, "-");
 ---
 
-<PageShell
+<BaseLayout
   title="Gyms and Regional Leagues"
-  description="Find the published Kanto, Johto, Hoenn, and Sinnoh Gym Leaders, signature items, locations, Elite Four, and Champions."
-  category="Gyms"
-  hero="/assets/sections/art-gym-arena.webp"
-  {headings}
-  verified
-  lastUpdated="2026-08-24"
-  related={[
-    { href: "/progression/regions/", title: "Region Progression" },
-    { href: "/worlds/structures/", title: "Structures and Exploration" },
-    { href: "/battle-tower/", title: "Battle Tower" },
-  ]}
+  description="Plan all 52 regional checkpoints with leader locations, badges, signature items, league rewards, and a personal checklist."
 >
-  <p>
-    The public base pack advances through regional series. Each Gym Leader has a
-    signature item used in the regional Cartography Table or Trainer Spawner.
-    Several names use the pack's localized versions.
-  </p>
-
-  <h2 id="finding-gyms">Finding Gyms</h2>
-  <ol>
-    <li>Craft the Cartography Table for the active region.</li>
-    <li>Place it beside an unemployed villager to create a Map Guide.</li>
-    <li>
-      Trade for a map or combine an empty map with the target Leader's signature
-      item.
-    </li>
-    <li>
-      Use a Battle Seeker when the nearest mapped structure has already been
-      explored.
-    </li>
-  </ol>
-  <InfoCallout title="Regional unlocks">
-    <p>
-      Johto follows Champion Blue, Hoenn follows Champion Lance, and Sinnoh
-      follows Champion Rocco. The public pack asks world or server owners to
-      restart once after each champion so later-region structures generate in
-      new chunks.
-    </p>
-  </InfoCallout>
-
-  {
-    regions.map((region) => {
-      const leaders = regionalGyms.filter(
-        (entry) => entry.region === region && entry.role === "Gym Leader",
-      );
-      const league = regionalGyms.filter(
-        (entry) => entry.region === region && entry.role !== "Gym Leader",
-      );
-      return (
-        <section class="regional-gym-section">
-          <h2 id={region.toLowerCase()}>{region}</h2>
-          <div class="table-scroll">
-            <table>
-              <thead>
-                <tr>
-                  <th>Leader</th>
-                  <th>Type</th>
-                  <th>Badge</th>
-                  <th>Location</th>
-                  <th>Signature item</th>
-                </tr>
-              </thead>
-              <tbody>
-                {leaders.map((entry) => (
-                  <tr>
-                    <td>
-                      <strong>{entry.name}</strong>
-                    </td>
-                    <td>{entry.type}</td>
-                    <td>{entry.badge}</td>
-                    <td>{entry.location}</td>
-                    <td>{entry.item}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <h3>{region} League</h3>
-          <div class="table-scroll">
-            <table>
-              <thead>
-                <tr>
-                  <th>Role</th>
-                  <th>Trainer</th>
-                  <th>Type</th>
-                  <th>Location</th>
-                  <th>Signature item</th>
-                  <th>Unique reward</th>
-                </tr>
-              </thead>
-              <tbody>
-                {league.map((entry) => (
-                  <tr>
-                    <td>{entry.role}</td>
-                    <td>
-                      <strong>{entry.name}</strong>
-                    </td>
-                    <td>{entry.type}</td>
-                    <td>{entry.location}</td>
-                    <td>{entry.item}</td>
-                    <td>{entry.reward ?? "—"}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+  <div class="catalogue" data-leagues>
+    <nav class="catalogue-breadcrumb" aria-label="Breadcrumb">
+      <a href={withBase("/")}>Wiki</a><span>/</span><span>Gyms & Leagues</span>
+    </nav>
+    <header class="catalogue-heading">
+      <span class="eyebrow">Cobbleverse · Regional journey</span><h1>
+        Gyms & Leagues
+      </h1><p>
+        Find your next Leader, check the signature item, and plan the journey
+        from Kanto through Sinnoh.
+      </p>
+    </header>
+    <nav class="league-regions" aria-label="Choose region">
+      <button data-region="all" aria-pressed="true">All regions</button>{
+        regions.map((r) => (
+          <button data-region={r.toLowerCase()} aria-pressed="false">
+            {r}
+          </button>
+        ))
+      }
+    </nav>
+    <div class="catalogue-controls">
+      <label class="catalogue-query"
+        ><span>Trainer, type, biome, or item</span><input
+          data-league-query
+          type="search"
+          placeholder="Brock, Water, Onyx Stone…"
+        /></label
+      ><label
+        ><span>Role</span><select data-league-role
+          ><option value="">All checkpoints</option><option>Gym Leader</option
+          ><option>Elite Four</option><option>Champion</option></select
+        ></label
+      ><label
+        ><span>Checklist</span><select data-league-state
+          ><option value="">All</option><option value="remaining"
+            >Remaining</option
+          ><option value="complete">Completed</option></select
+        ></label
+      >
+    </div>
+    <div class="league-progress">
+      <div>
+        <strong data-progress-label>0 / 52 complete</strong><p
+          data-storage-note
+        >
+          Personal checklist · saved on this browser, separate from in-game
+          progress.
+        </p>
+      </div><progress
+        data-progress
+        value="0"
+        max="52"
+        aria-label="Personal league progress"></progress><button data-clear
+        >Clear checklist</button
+      >
+    </div>
+    <p data-league-status role="status" aria-live="polite"></p>
+    {
+      regions.map((region, i) => (
+        <section
+          id={region.toLowerCase()}
+          data-section={region.toLowerCase()}
+          class="league-section"
+        >
+          <>
+            <header class="league-region-heading">
+              <>
+                <img
+                  src={withBase(`/assets/regions/${region.toLowerCase()}.webp`)}
+                  width="800"
+                  height="450"
+                  alt={`${region} landscape illustration`}
+                  loading="lazy"
+                />
+                <div>
+                  <>
+                    <span>
+                      Region {i + 1} · 8 Gyms · 4 Elite Four · 1 Champion
+                    </span>
+                    <h2>{region}</h2>
+                    <a href={withBase("/progression/regions/")}>
+                      Regional progression →
+                    </a>
+                  </>
+                </div>
+              </>
+            </header>
+            <div class="league-grid">
+              {regionalGyms
+                .filter((t) => t.region === region)
+                .map((t, i) => {
+                  const id = slug(region + "-" + t.name);
+                  return (
+                    <article
+                      class="league-trainer"
+                      data-trainer={id}
+                      data-region-name={region.toLowerCase()}
+                      data-role={t.role}
+                      data-search={[
+                        t.name,
+                        t.type,
+                        t.badge,
+                        t.location,
+                        t.item,
+                        t.role,
+                      ]
+                        .join(" ")
+                        .toLowerCase()}
+                    >
+                      <div class="league-trainer-top">
+                        <span>{String(i + 1).padStart(2, "0")}</span>
+                        <span
+                          class="catalogue-badge"
+                          data-type={t.type.toLowerCase()}
+                        >
+                          {t.type}
+                        </span>
+                      </div>
+                      <small>{t.role}</small>
+                      <h3>{t.name}</h3>
+                      {t.badge && <p class="league-badge">{t.badge}</p>}
+                      <dl>
+                        <div>
+                          <dt>Location / biome</dt>
+                          <dd>{t.location}</dd>
+                        </div>
+                        <div>
+                          <dt>Signature item</dt>
+                          <dd>{t.item}</dd>
+                        </div>
+                        {t.reward && (
+                          <div>
+                            <dt>Unique reward</dt>
+                            <dd>{t.reward}</dd>
+                          </div>
+                        )}
+                      </dl>
+                      <label class="league-check">
+                        <input
+                          type="checkbox"
+                          data-check={id}
+                          aria-label={`Mark ${t.name} in ${region} complete`}
+                        />
+                        <span>Mark complete</span>
+                      </label>
+                    </article>
+                  );
+                })}
+            </div>
+          </>
         </section>
-      );
-    })
-  }
-
-  <h2 id="unova">Unova</h2>
-  <p>
-    Lumy Hub currently marks its Unova Gym page as <strong
-      >work in progress</strong
-    >. This guide will add the region when names, locations, signature items,
-    and progression rules are published.
-  </p>
-
-  <p>
-    Sources: <a href="https://www.lumyverse.com/cobbleverse/how-to-find-gyms/"
-      >finding Gyms</a
-    >, <a href="https://www.lumyverse.com/cobbleverse/signature-items/"
-      >signature items</a
-    >, and the regional Lumy Hub leader tables.
-  </p>
-</PageShell>
+      ))
+    }
+    <p data-league-empty class="catalogue-empty" hidden>
+      No checkpoints match these filters.
+    </p>
+    <section class="league-help" id="finding-gyms">
+      <h2>Finding your next Gym</h2><ol>
+        <li>Craft the Cartography Table for your active region.</li><li>
+          Place it beside an unemployed villager to create a Map Guide.
+        </li><li>
+          Trade for a map, or combine an empty map with the Leader’s signature
+          item.
+        </li><li>
+          Use a Battle Seeker when the nearest mapped structure has already been
+          explored.
+        </li>
+      </ol><p>
+        The Trainer Card is the authority for your checkpoint and level cap. In
+        the public pack, Johto follows Champion Blue, Hoenn follows Lance, and
+        Sinnoh follows Rocco. A world or server owner may need to restart before
+        later-region structures generate in new chunks; players should follow
+        staff instructions.
+      </p>
+    </section>
+    <section class="league-help" id="unova">
+      <h2>Beyond Sinnoh</h2><p>
+        Unova is not included in this reference. Additional regions will be
+        added when their leaders, locations, items, and progression rules are
+        documented. Pack-localized names are retained here; checkpoint numbers
+        show sequence, not battle levels.
+      </p><a href={withBase("/sources/#lumy-hub")}>Guide origins & credits →</a>
+    </section>
+  </div><script>
+    import "../../scripts/leagues";
+  </script>
+</BaseLayout>

@@ -69,6 +69,6 @@ First reproduce the problem on an unmodified profile.
 
 Logs can contain usernames, server addresses, and system paths. Review the upload before posting it publicly.
 
-Sources: [Lumy Hub common issues](https://www.lumyverse.com/wiki/common-issues/), [log-sharing guide](https://www.lumyverse.com/cobbleverse/how-to-share-your-minecraft-logs/), [level-cap guide](https://www.lumyverse.com/cobbleverse/my-pokemon-is-stuck-at-level-25/)
+Guide origins: [Lumy Hub](/Cobbleverse-Wiki/sources/#lumy-hub)
 
-Additional source: [Cobbleverse progression troubleshooting](https://www.cobbleverseguides.com/guides/troubleshooting)
+Guide origins: [Cobbleverse Guides](/Cobbleverse-Wiki/sources/#cobbleverse-guides)

@@ -54,6 +54,14 @@ for (const file of (await files(root)).filter((file) =>
   count++;
   if (html.includes("wiki.infinitegamingservers.com"))
     failures.push(`${relative(root, file)}: stale public URL`);
+  if (
+    /href="https?:\/\/(?:www\.)?(?:lumyverse\.com|cobbleverseguides\.com|cobbleverse\.wiki|docs\.matchamodd\.ing|docs\.accieo\.com|docs\.skiesdev\.com)(?:\/|")/i.test(
+      html,
+    )
+  )
+    failures.push(
+      `${relative(root, file)}: external guide link bypasses local coverage`,
+    );
   for (const match of html.matchAll(/(?:href|src)="([^"<>]+)"/g)) {
     const value = match[1];
     if (/^(?:https?:|mailto:|data:|javascript:)/.test(value)) continue;

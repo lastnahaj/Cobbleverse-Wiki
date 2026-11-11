@@ -49,4 +49,4 @@ Three useful roles to test are:
 
 Set actual levels and learned moves, leave held-item slots empty until the item is obtained, and re-check the plan after every move, form, or ability change.
 
-Source: [Cobbleverse Guides team-building method](https://www.cobbleverseguides.com/guides/team-building)
+Guide origins: [Cobbleverse Guides](/Cobbleverse-Wiki/sources/#cobbleverse-guides)

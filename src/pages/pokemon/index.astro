@@ -81,7 +81,9 @@ import "../../styles/pokedex.css";
     <div class="dex-result-bar">
       <p role="status" aria-live="polite" data-dex-status>
         Loading the Pokédex…
-      </p><span>Choose a Pokémon to open its entry</span>
+      </p><label class="dex-mount-filter"
+        ><input type="checkbox" data-dex-mount /> Rideable Pokémon only</label
+      >
     </div>
     <div class="dex-grid" data-dex-grid aria-label="Pokémon species"></div>
     <button type="button" class="dex-load" data-dex-more hidden
@@ -99,9 +101,9 @@ import "../../styles/pokedex.css";
         Species data: Cobbleverse 1.7.42 reference snapshot. In-game
         availability can differ with server configuration.
       </p><p>
-        Artwork: <a href="https://github.com/PokeAPI/sprites"
+        Artwork: <a href={withBase("/sources/#artwork")}
           >PokéAPI sprite repository</a
-        > and <a href="https://play.pokemonshowdown.com/">Pokémon Showdown</a>.
+        > and <a href={withBase("/sources/#artwork")}>Pokémon Showdown</a>.
         Pokémon artwork belongs to its respective owners. Form entries use
         matching artwork where available; custom forms without an image are
         labeled.

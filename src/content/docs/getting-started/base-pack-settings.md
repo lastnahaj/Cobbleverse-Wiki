@@ -38,4 +38,4 @@ The base pack disables hunger and hostile mobs by default. Private-world owners 
 
 The base pack also prevents players from damaging wild Pokémon. Private-world owners can change `PlayerDamagePokemon` in the Cobblemon configuration. Ender Dragon and Rayquaza spawning is controlled by dedicated pack files; back up the world before editing them.
 
-Sources: [LumyMon configuration](https://www.lumyverse.com/cobbleverse/how-to-change-lumymon-config/), [camera roll](https://www.lumyverse.com/cobbleverse/how-to-disable-camera-roll/), [hunger and mobs](https://www.lumyverse.com/cobbleverse/how-to-enable-hunger-and-mobs/), [Pokémon damage](https://www.lumyverse.com/cobbleverse/how-to-hit-pokemon/), [End settings](https://www.lumyverse.com/cobbleverse/how-to-disable-rayquaza-in-the-end/)
+Guide origins: [Lumy Hub](/Cobbleverse-Wiki/sources/#lumy-hub)

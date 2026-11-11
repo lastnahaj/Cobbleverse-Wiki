@@ -29,4 +29,4 @@ Cobbleverse runs on **Minecraft 1.21.1** with **Fabric**. Install the complete p
 - Disable extra texture packs and repeat the test.
 - If the issue remains, share the latest log through the support channel.
 
-The canonical third-party attribution list is maintained on the [Lumy Hub credits page](https://www.lumyverse.com/cobbleverse/credits/).
+Guide origins and artwork credits are recorded in [Sources & Credits](/Cobbleverse-Wiki/sources/).

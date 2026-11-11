@@ -57,4 +57,4 @@ Before looking for Brock:
 - train within the active cap; and
 - prepare actual Water, Grass, or Fighting coverage instead of relying on type labels alone.
 
-Source: [Cobbleverse Guides first-session verification](https://www.cobbleverseguides.com/guides/getting-started)
+Guide origins: [Cobbleverse Guides](/Cobbleverse-Wiki/sources/#cobbleverse-guides)

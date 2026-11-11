@@ -36,6 +36,6 @@ hero: /assets/sections/art-server-systems.webp
 - **Legendary locators:** Locator Chip, regional Poké Radars, proofs, keycards, journals, and cards point Cartography Tables toward quest structures.
 - **Regi materials:** Dragon, Electron, Ice, Rock, and Steel ores contribute to the relics used at Regi structures.
 
-Use REI to confirm current recipes. The exact special-item table is maintained at the [Lumy Hub item reference](https://www.lumyverse.com/cobbleverse/special-items-where-find-them/); this guide groups the items by the route they serve.
+Use REI to confirm current recipes. The [item catalogue](/Cobbleverse-Wiki/items/) covers indexed materials and held items; the quest-item families above connect the special components to their [encounter routes](/Cobbleverse-Wiki/progression/legendary-mythical/).
 
-Source: [special form guide](https://www.lumyverse.com/cobbleverse/how-to-gets-special-pokemon-forms/)
+Guide origins: [Lumy Hub](/Cobbleverse-Wiki/sources/#lumy-hub)

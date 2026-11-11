@@ -1,7 +1,9 @@
 ---
+import { withBase } from "../../lib/basePath";
+import "../../styles/leagues.css";
 import InfoCallout from "../../components/InfoCallout.astro";
 import RegionProgression from "../../components/RegionProgression.astro";
-import { regions } from "../../data";
+import { regions, regionalGyms } from "../../data";
 import PageShell from "../../layouts/PageShell.astro";
 
 const headings = [
@@ -16,26 +18,18 @@ const checkpointChains = [
   {
     region: "Kanto",
     band: "16–100",
-    route:
-      "Brock → Misty → Lt. Surge → Erika → Koga → Sabrina → Blaine → Giovanni → Lorelei → Bruno → Agatha → Lance → Blue",
   },
   {
     region: "Johto",
     band: "19–100",
-    route:
-      "Valerio → Raffaello → Chiara → Angelo → Furio → Jasmine → Alfredo → Sandra → Pino → Koga → Bruno → Karen → Lance",
   },
   {
     region: "Hoenn",
     band: "20–100",
-    route:
-      "Petra → Rudi → Walter → Fiammetta → Norman → Alice → Pat and Tell → Adriano → Fosco → Ester → Frida → Drake → Rocco",
   },
   {
     region: "Sinnoh",
     band: "28–100",
-    route:
-      "Pedro → Gardenia → Marzia → Omar → Fannie → Ferruccio → Bianca → Corrado → Aaron → Terrie → Vulcano → Luciano → Camilla",
   },
 ];
 ---
@@ -60,16 +54,49 @@ const checkpointChains = [
     then one Champion. The broad level band is a source-data range, not a
     recommended level for every fight.
   </p>
-  <div class="record-list">
+  <div class="region-route-plans">
     {
-      checkpointChains.map((chain) => (
-        <div>
-          <dt>
-            {chain.region}
-            <span>{chain.band}</span>
-          </dt>
-          <dd>{chain.route}</dd>
-        </div>
+      checkpointChains.map((chain, i) => (
+        <details
+          class="region-route-plan"
+          name="regional-routes"
+          open={i === 0}
+        >
+          <>
+            <summary>
+              <>
+                <img
+                  src={withBase(
+                    "/assets/regions/" + chain.region.toLowerCase() + ".webp",
+                  )}
+                  width="800"
+                  height="450"
+                  alt=""
+                  loading="lazy"
+                />
+                <span>
+                  <>
+                    <strong>{chain.region}</strong>
+                    <small>
+                      13 checkpoints · source level range {chain.band}
+                    </small>
+                  </>
+                </span>
+              </>
+            </summary>
+            <ol>
+              {regionalGyms
+                .filter((t) => t.region === chain.region)
+                .map((t) => t.name)
+                .map((trainer) => (
+                  <li>{trainer}</li>
+                ))}
+            </ol>
+            <a href={withBase("/gyms/#" + chain.region.toLowerCase())}>
+              Open {chain.region} locations & checklist →
+            </a>
+          </>
+        </details>
       ))
     }
   </div>

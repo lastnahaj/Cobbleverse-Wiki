@@ -1,0 +1,264 @@
+.league-regions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 24px 0;
+}
+.league-regions button,
+.league-progress button {
+  min-height: 44px;
+  padding: 8px 16px;
+  background: #1b3040;
+  border: 1px solid #5c7283;
+  border-radius: 7px;
+  color: #d7e2e8;
+  font: inherit;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.league-regions button[aria-pressed="true"] {
+  background: #40505a;
+  border-color: #dec58a;
+  color: #f1d392;
+}
+.league-progress {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  padding: 24px 0;
+  border-bottom: 1px solid #405563;
+}
+.league-progress p {
+  font-size: 0.75rem;
+  color: #afc2ce;
+  margin: 4px 0;
+}
+.league-progress progress {
+  flex: 1;
+  min-width: 80px;
+  height: 10px;
+  accent-color: #a8c5a0;
+}
+[data-league-status] {
+  font-size: 0.8rem;
+  color: #b8cbd7;
+}
+.league-region-heading {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  background: #1c3040;
+  border: 1px solid #4a6578;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 24px 0 18px;
+}
+.league-region-heading img {
+  width: 200px;
+  height: 140px;
+  object-fit: cover;
+}
+.league-region-heading h2 {
+  font:
+    700 2rem Georgia,
+    serif;
+  color: #f1dcb0;
+  margin: 6px 0;
+}
+.league-region-heading span,
+.league-region-heading a {
+  font-size: 0.75rem;
+}
+.league-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+.league-trainer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: #192d3c;
+  border: 1px solid #405d70;
+  border-radius: 10px;
+}
+.league-trainer.is-complete {
+  border-color: #88a383;
+  background: #203639;
+}
+.league-trainer-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+.league-trainer-top > span:first-child {
+  font: bold 1.1rem monospace;
+  color: #d8bc7a;
+}
+.league-trainer > small {
+  font-size: 0.65rem;
+  color: #b1c5d1;
+  margin-top: 10px;
+}
+.league-trainer h3 {
+  font-size: 1.2rem;
+  margin: 8px 0;
+  color: #f1e0b7;
+}
+.league-badge {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #d9ca9e;
+}
+.league-trainer dl {
+  display: grid;
+  gap: 12px;
+  margin: 18px 0;
+}
+.league-trainer dt {
+  font-size: 0.65rem;
+  color: #9fb9c9;
+}
+.league-trainer dd {
+  margin: 3px 0 0;
+  font-size: 0.85rem;
+  color: #e1e8ec;
+}
+.league-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px solid #405b6b;
+  font-size: 0.78rem;
+  cursor: pointer;
+}
+.league-check input {
+  width: 19px;
+  height: 19px;
+  accent-color: #abc8a4;
+}
+.league-help {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid #405563;
+  max-width: 1000px;
+}
+.league-help h2 {
+  font:
+    700 1.6rem Georgia,
+    serif;
+  color: #edd6a9;
+}
+.league-help p,
+.league-help li {
+  font-size: 0.9rem;
+  color: #bdcdd6;
+}
+.league-help li {
+  margin: 10px 0;
+}
+@media (max-width: 1100px) {
+  .league-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (max-width: 760px) {
+  .league-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .league-progress {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .league-progress > div {
+    width: 100%;
+  }
+  .league-region-heading img {
+    width: 120px;
+  }
+  .league-region-heading {
+    gap: 16px;
+  }
+  .league-region-heading > div {
+    padding: 10px 10px 10px 0;
+  }
+}
+@media (max-width: 460px) {
+  .league-grid {
+    grid-template-columns: 1fr;
+  }
+  .league-region-heading img {
+    width: 95px;
+  }
+  .league-region-heading span {
+    font-size: 0.65rem;
+  }
+  .league-regions button {
+    padding: 8px 12px;
+  }
+}
+.region-route-plan {
+  border: 1px solid #486373;
+  background: #1b2f3d;
+  border-radius: 10px;
+  margin: 14px 0;
+  overflow: hidden;
+}
+.region-route-plan summary {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  list-style: none;
+}
+.region-route-plan summary::-webkit-details-marker {
+  display: none;
+}
+.region-route-plan summary img {
+  width: 120px;
+  height: 95px;
+  object-fit: cover;
+}
+.region-route-plan summary strong {
+  display: block;
+  font-size: 1.3rem;
+  color: #eed6a3;
+}
+.region-route-plan summary small {
+  font-size: 0.75rem;
+  color: #b2c6d2;
+}
+.region-route-plan ol {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px 30px;
+  margin: 24px;
+  padding-left: 25px;
+}
+.region-route-plan li {
+  font-size: 0.85rem;
+  color: #d5e2e9;
+}
+.region-route-plan > a {
+  display: block;
+  padding: 0 24px 22px;
+  font-size: 0.85rem;
+}
+@media (max-width: 620px) {
+  .region-route-plan ol {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .region-route-plan summary img {
+    width: 90px;
+  }
+  .region-route-plan summary {
+    gap: 14px;
+  }
+  .region-route-plan summary small {
+    font-size: 0.65rem;
+  }
+}

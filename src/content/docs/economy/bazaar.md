@@ -36,4 +36,4 @@ Open the live server menu for the exact entry point. Menu aliases, listing fees,
 - Collect completed sales and returned entries from the collection box.
 - Use only the official interface; direct trades do not inherit Bazaar protections.
 
-Source: [Matcha Bazaar documentation](https://docs.matchamodd.ing/bazaar/getting-started/introduction/)
+Guide origins: [Matcha documentation](/Cobbleverse-Wiki/sources/#matcha)

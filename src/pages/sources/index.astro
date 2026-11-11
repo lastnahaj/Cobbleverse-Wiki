@@ -1,0 +1,194 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { withBase } from "../../lib/basePath";
+import "../../styles/catalogue.css";
+const groups = [
+  {
+    id: "lumy-hub",
+    name: "Lumy Hub",
+    description:
+      "Base-pack installation, troubleshooting, regional Leaders, signature items, structures, special forms, legendary routes, economy, and LumyMon.",
+    links: [
+      ["Installation & setup", "/getting-started/install/"],
+      ["Troubleshooting", "/getting-started/troubleshooting/"],
+      ["Gyms & Leagues", "/gyms/"],
+      ["Special forms & quest items", "/progression/forms-items/"],
+      ["Legendary & Mythical routes", "/progression/legendary-mythical/"],
+      ["Structures", "/worlds/structures/"],
+      ["Full topic map", "/getting-started/lumy-hub-index/"],
+    ],
+  },
+  {
+    id: "cobbleverse-guides",
+    name: "Cobbleverse Guides",
+    description:
+      "Species, moves, abilities, item summaries, merchant offers, encounter references, location guides, and team-building guidance. The bundled species reference identifies version 1.7.42.",
+    links: [
+      ["Pokédex", "/pokemon/"],
+      ["Moves", "/battle/moves/"],
+      ["Abilities", "/battle/abilities/"],
+      ["Items", "/items/"],
+      ["Shops", "/battle/shops/"],
+      ["Locations", "/worlds/location-walkthroughs/"],
+      ["Team building", "/team-building/"],
+    ],
+  },
+  {
+    id: "base-wiki",
+    name: "Cobbleverse Wiki — base modpack reference",
+    description:
+      "General pack context and species-level spawn and riding references. Our species entries present the bundled spawn rules and riding data alongside the regional player guides.",
+    links: [
+      ["Spawns & riding", "/worlds/spawns-mounts/"],
+      ["Species reference", "/pokemon/"],
+      ["Client setup", "/getting-started/install/"],
+    ],
+  },
+  {
+    id: "matcha",
+    name: "Matcha documentation",
+    description:
+      "Upstream capabilities for Journey, Wonder, Bazaar, Colosseum, Bloom, and Smart Trainers. Our guides distinguish those capabilities from the facilities, rates, rewards, and aliases actually configured by a server.",
+    links: [
+      ["Journey", "/features/journey/"],
+      ["Wonder Trade", "/features/wonder/"],
+      ["Bazaar", "/features/bazaar/"],
+      ["Colosseum", "/features/colosseum/"],
+      ["Bloom", "/features/bloom/"],
+      ["Smart Trainers", "/features/smart-trainers/"],
+    ],
+  },
+  {
+    id: "cobbleworkers",
+    name: "CobbleWorkers documentation — Accieo",
+    description:
+      "Pasture-based job categories, worker assignment, harvesting, resource production, and utility jobs.",
+    links: [["Pokémon workers", "/features/cobbleworkers/"]],
+  },
+  {
+    id: "mods",
+    name: "Mod authors and project documentation",
+    description:
+      "EEssentials, Cobblemon Extras, Cobblemon Flan Integration, SkiesGUIs, and Universal Daily Rewards supply the command and system capabilities described in our player guides. Modrinth project listings and author documentation establish upstream behavior; permissions and server configuration determine access.",
+    links: [
+      ["Commands", "/commands/"],
+      ["EEssentials", "/features/eessentials/"],
+      ["Cobblemon Extras", "/features/cobblemon-extras/"],
+      ["Land protection", "/getting-started/claims/"],
+      ["SkiesGUIs", "/features/skiesguis/"],
+      ["Daily rewards", "/features/daily-rewards/"],
+    ],
+  },
+  {
+    id: "artwork",
+    name: "Artwork and sprite credits",
+    description:
+      "Pokémon species illustrations and item icons are distributed through the PokéAPI sprite repository. Battle animations and additional form images come from Pokémon Showdown and its sprite contributors. Pokémon characters and artwork belong to their respective owners. Cobbleverse wiki branding and regional landscape illustrations are site assets.",
+    links: [
+      ["Species & form artwork", "/pokemon/"],
+      ["Item catalogue", "/items/"],
+    ],
+  },
+];
+---
+
+<BaseLayout
+  title="Sources & Credits"
+  description="Where the Cobbleverse player guides, reference data, and artwork come from, with links to their coverage inside this wiki."
+>
+  <div class="catalogue">
+    <nav class="catalogue-breadcrumb" aria-label="Breadcrumb">
+      <a href={withBase("/")}>Wiki</a><span>/</span><span
+        >Sources & Credits</span
+      >
+    </nav><header class="catalogue-heading">
+      <span class="eyebrow">Guide origins · Reference coverage</span><h1>
+        Sources & Credits
+      </h1><p>
+        The projects and authors behind this reference. Follow the topic links
+        below to read the corresponding guides here in the wiki.
+      </p>
+    </header>
+    <nav class="catalogue-tabs" aria-label="Source sections">
+      {groups.map((g) => <a href={`#${g.id}`}>{g.name.split(" — ")[0]}</a>)}
+    </nav>
+    <div class="source-groups">
+      {
+        groups.map((g) => (
+          <section id={g.id} class="source-group">
+            <>
+              <h2>{g.name}</h2>
+              <p>{g.description}</p>
+              <ul>
+                {g.links.map(([label, path]) => (
+                  <li>
+                    <a href={withBase(path)}>{label} →</a>
+                  </li>
+                ))}
+              </ul>
+            </>
+          </section>
+        ))
+      }
+    </div>
+    <aside class="catalogue-provenance">
+      <h2>How to read these guides</h2><p>
+        Base-pack rules, upstream mod features, and live server settings are
+        different scopes. Versioned catalogues describe their bundled snapshot;
+        your Trainer Card, merchant screen, item tooltip, and staff
+        announcements establish current server behavior.
+      </p><p>
+        Guide coverage is credited by topic. It is not a claim that every
+        upstream article, administrative option, recipe revision, or pack
+        dependency has been reproduced here. Acquisition and configuration
+        details are documented where verified; missing server values are left
+        unspecified.
+      </p>
+    </aside>
+  </div>
+</BaseLayout>
+<style>
+  .source-groups {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+  .source-group {
+    scroll-margin-top: 100px;
+    padding: 26px;
+    border: 1px solid #476071;
+    background: #192d3b;
+    border-radius: 10px;
+  }
+  .source-group h2 {
+    font:
+      700 1.4rem Georgia,
+      serif;
+    color: #ebd29c;
+    margin: 0 0 15px;
+  }
+  .source-group p {
+    font-size: 0.9rem;
+    color: #bfcdd6;
+  }
+  .source-group ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .source-group li a {
+    display: block;
+    padding: 8px 12px;
+    border: 1px solid #536d7e;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    min-height: 44px;
+  }
+  @media (max-width: 760px) {
+    .source-groups {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

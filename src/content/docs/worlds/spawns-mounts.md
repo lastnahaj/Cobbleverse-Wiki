@@ -18,7 +18,7 @@ Spawn records combine a biome or location with rarity, time, weather, nearby blo
 
 The base pack warns that `/checkspawn` may not return reliable results. Legendary and Mythical encounters may also require champion progression even when the biome is correct.
 
-The detailed species matrix is maintained by the [Lumy Hub spawn guide](https://www.lumyverse.com/cobbleverse/all-pokemon-spawn-in-cobbleverse/) and the searchable [Cobbleverse spawn database](https://www.cobbleverse.wiki/spawns/guide). Those references should be used for a species-by-species lookup rather than a copied snapshot that can drift after an update.
+Use the [Pokédex](/Cobbleverse-Wiki/pokemon/) for species-by-species spawn rules. Open a Pokémon, then choose **Spawns & drops** to see eligible biomes, conditions, and exclusions. The reference uses the bundled pack snapshot; PokéNav remains the live-world check.
 
 ## Riding
 
@@ -31,4 +31,4 @@ Mount records use four main values:
 - **Skill:** handling or maneuverability behavior.
 - **Jump:** launch or jump capability where supported.
 
-Aprijuice can improve riding statistics. Use the [Cobbleverse mount database](https://www.cobbleverse.wiki/mounts/guide) for species-level comparisons. Camera roll and dismount keys can be changed in client settings.
+Aprijuice can improve riding statistics. Use the [rideable Pokémon filter](/Cobbleverse-Wiki/pokemon/?mount=1) and open an entry to see its travel modes and riding stat ranges. Camera roll and dismount keys can be changed in client settings.

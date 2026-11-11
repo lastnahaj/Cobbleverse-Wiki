@@ -43,4 +43,4 @@ The Lumy Hub installation articles cover the public base pack. The hosted Cobble
 
 The base pack has one-click or guided hosting routes for Apex and Nitrado. The published guidance requires at least 4 GB of RAM, recommends a backup before every update, and warns operators to preserve worlds and custom files when replacing pack folders. These hosting steps are for private server operators, not players connecting to `cv.infinitegamingservers.com`.
 
-Sources: [Lumy Hub installation index](https://www.lumyverse.com/cobbleverse/), [Modrinth installation](https://www.lumyverse.com/cobbleverse/how-to-install-cobbleverse-on-modrinth/), [Nitrado setup](https://www.lumyverse.com/cobbleverse/how-set-up-a-server-for-nitrado-cobbleverse/), [base Cobbleverse download page](https://www.cobbleverse.wiki/download)
+Guide origins: [Lumy Hub](/Cobbleverse-Wiki/sources/#lumy-hub) · [Base Cobbleverse Wiki](/Cobbleverse-Wiki/sources/#base-wiki)

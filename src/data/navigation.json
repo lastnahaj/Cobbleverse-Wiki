@@ -58,5 +58,10 @@
     "label": "Changelog",
     "href": "/changelog/",
     "group": "Reference"
+  },
+  {
+    "label": "Sources & Credits",
+    "href": "/sources/",
+    "group": "Reference"
   }
 ]

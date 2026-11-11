@@ -46,4 +46,4 @@ Upstream defaults are not treated as Cobbleverse policy. Claim-owner bypasses an
 - Keep the exact location handy when asking staff for help.
 - Use the official Discord for current support guidance.
 
-Source: [Cobblemon Eclipse Flan](https://modrinth.com/mod/cobblemon-eclipse-flan)
+Guide origins: [Mod authors](/Cobbleverse-Wiki/sources/#mods)

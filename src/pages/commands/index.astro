@@ -1,4 +1,5 @@
 ---
+import { withBase } from "../../lib/basePath";
 import CommandReferenceTable from "../../components/CommandReferenceTable.astro";
 import InfoCallout from "../../components/InfoCallout.astro";
 import { commands } from "../../data";
@@ -38,11 +39,8 @@ const headings = [
     </p></InfoCallout
   >
   <p>
-    Sources: <a href="https://github.com/FLalejandro/EEssentials/wiki/Commands"
-      >EEssentials commands</a
-    >, <a href="https://modrinth.com/mod/cobblemonextras">Cobblemon Extras</a>,
-    and <a href="https://modrinth.com/mod/universal-daily-rewards"
-      >Universal Daily Rewards</a
-    >.
+    Sources: <a href={withBase("/sources/#mods")}>EEssentials commands</a>, <a
+      href={withBase("/sources/#mods")}>Cobblemon Extras</a
+    >, and <a href={withBase("/sources/#mods")}>Universal Daily Rewards</a>.
   </p>
 </PageShell>

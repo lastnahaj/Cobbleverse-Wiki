@@ -37,4 +37,4 @@ LumyMon also supplies custom Arceus- and Darkrai-related dimensions and their tr
 
 Remote PC is normally bound to **P** and the default quick dismount key is **N**. Riding Fire-types can protect against heat and lava, while riding Water-types can provide underwater breathing. Exact keybinds can be changed in Controls.
 
-Source: [LumyMon overview](https://www.lumyverse.com/cobbleverse/lumymon/)
+Guide origins: [Lumy Hub](/Cobbleverse-Wiki/sources/#lumy-hub)

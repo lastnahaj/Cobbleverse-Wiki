@@ -36,4 +36,4 @@ hero: /assets/sections/art-structures.webp
 
 If a trainer is missing or refuses battle, confirm the previous visible checkpoint and the active Trainer Card series. If a chest is empty on multiplayer, record the location privately and ask server staff about shared-loot or regeneration rules before resetting anything.
 
-Source: [Cobbleverse Guides location directory](https://www.cobbleverseguides.com/location-guides)
+Guide origins: [Cobbleverse Guides](/Cobbleverse-Wiki/sources/#cobbleverse-guides)

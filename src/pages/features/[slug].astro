@@ -1,4 +1,6 @@
 ---
+import { withBase } from "../../lib/basePath";
+import { sourceCreditPath } from "../../lib/sourceCredits";
 import FeatureStatusBadge from "../../components/FeatureStatusBadge.astro";
 import InfoCallout from "../../components/InfoCallout.astro";
 import { features, type Feature } from "../../data";
@@ -146,7 +148,7 @@ const headings = [
     : []),
   { depth: 2, slug: "server-settings", text: "Server settings" },
   ...(feature.externalUrl
-    ? [{ depth: 2, slug: "source", text: "Source documentation" }]
+    ? [{ depth: 2, slug: "source", text: "Guide origins" }]
     : []),
 ];
 ---
@@ -180,9 +182,8 @@ const headings = [
       </ul>
     ) : (
       <p>
-        Server-specific setup and usage details have not been confirmed. Follow
-        the linked project reference where available and ask staff about
-        availability.
+        Server-specific setup and usage details have not been confirmed. Ask
+        staff about availability.
       </p>
     )
   }
@@ -207,12 +208,14 @@ const headings = [
   {
     feature.externalUrl && (
       <>
-        <h2 id="source">Source documentation</h2>
+        <h2 id="source">Guide origins</h2>
         <p>
-          See the{" "}
-          <a href={feature.externalUrl}>upstream project documentation</a> for
-          the complete capability reference. Cobbleverse may expose only part of
-          it.
+          Guide origins are listed in{" "}
+          <a href={withBase(sourceCreditPath(feature.externalUrl))}>
+            Sources &amp; Credits
+          </a>
+          . Player-facing guidance is included above; available aliases,
+          rewards, and permissions follow the server configuration.
         </p>
       </>
     )

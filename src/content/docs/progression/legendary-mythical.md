@@ -97,6 +97,6 @@ The base pack also includes the four Treasures of Ruin, each released after remo
 
 Craft a target-specific Poké Radar with a Locator Chip, combine it with an empty map in the correct regional or dimensional Cartography Table, then follow the map or its tooltip coordinates. Locator Chips can appear in Ominous Vaults, End Cities, and Nether Bastions. Use REI for the current recipes.
 
-Sources: [legendary and mythical guide](https://www.lumyverse.com/cobbleverse/how-to-catch-all-legendary-mythical-pokemon/), [legendary structure maps](https://www.lumyverse.com/cobbleverse/how-to-find-legendary-pokemon-structures/), [special items](https://www.lumyverse.com/cobbleverse/special-items-where-find-them/)
+Guide origins: [Lumy Hub](/Cobbleverse-Wiki/sources/#lumy-hub)
 
-Additional source: [Cobbleverse Guides encounter inventory](https://www.cobbleverseguides.com/guides/legendary-spawning)
+Guide origins: [Cobbleverse Guides](/Cobbleverse-Wiki/sources/#cobbleverse-guides)

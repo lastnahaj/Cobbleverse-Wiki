@@ -1137,3 +1137,17 @@
     transform: none;
   }
 }
+.dex-mount-filter {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: #c0d0db;
+  min-height: 44px;
+}
+.dex-mount-filter input {
+  width: 18px;
+  height: 18px;
+  accent-color: #b9cda7;
+}

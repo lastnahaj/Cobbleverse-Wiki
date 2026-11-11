@@ -22,6 +22,7 @@ npm run dev
 - `public/data/cobbleverse-guides/` contains versioned external reference snapshots. Search summaries are distinguished from complete data feeds.
 - The Pokédex uses a dedicated TypeScript browser with species filters, shareable entries, form statistics, evolution links, learnsets, and spawn conditions. Species artwork is served locally from `public/assets/pokemon/`.
 - Moves, abilities, items, and shops use dedicated catalogues with persistent filters, price sorting, item imagery, and species/form links. Battle references resolve learnsets and ability ownership from the same species snapshot as the Pokédex.
+- The regional Gym directory retains the published 52-checkpoint sequence and supports a personal checklist saved in browser storage. It does not read or change server progress. Sources & Credits maps guide origins to local topic coverage; guide-source links remain inside the wiki.
 
 ## Verification
 
