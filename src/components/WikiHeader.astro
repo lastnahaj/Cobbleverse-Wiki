@@ -31,7 +31,7 @@ import MobileNav from "./MobileNav.astro";
         <li><a href={withBase("/getting-started/")}>Start playing</a></li>{
           ["Gameplay", "Server", "Reference"].map((group) => (
             <li class="nav-more">
-              <details>
+              <details name="primary-navigation">
                 <>
                   <summary>{group}</summary>
                   <div class="nav-more__menu">
@@ -56,3 +56,44 @@ import MobileNav from "./MobileNav.astro";
     >
   </div>
 </header><MobileNav />
+
+<script>
+  const desktopNav = document.querySelector<HTMLElement>(".desktop-nav");
+  if (desktopNav) {
+    const menus = Array.from(
+      desktopNav.querySelectorAll<HTMLDetailsElement>("details"),
+    );
+    const closeMenus = (except?: HTMLDetailsElement) => {
+      menus.forEach((menu) => {
+        if (menu !== except) menu.open = false;
+      });
+    };
+    // Close siblings synchronously, including in browsers without grouped details.
+    desktopNav.addEventListener("click", (event) => {
+      const target = event.target as Element;
+      const summary = target.closest("summary");
+      if (summary) closeMenus(summary.closest("details")!);
+      else if (target.closest("a")) closeMenus();
+    });
+    document.addEventListener("pointerdown", (event) => {
+      if (!desktopNav.contains(event.target as Node)) closeMenus();
+    });
+    document.addEventListener("focusin", (event) => {
+      const menu = (event.target as Element).closest<HTMLDetailsElement>(
+        ".desktop-nav details",
+      );
+      closeMenus(menu ?? undefined);
+    });
+    document.addEventListener("keydown", (event) => {
+      if (event.key !== "Escape") return;
+      const openMenu = menus.find((menu) => menu.open);
+      if (!openMenu) return;
+      event.preventDefault();
+      closeMenus();
+      openMenu.querySelector("summary")?.focus();
+    });
+    window
+      .matchMedia("(max-width: 1180px)")
+      .addEventListener("change", () => closeMenus());
+  }
+</script>
