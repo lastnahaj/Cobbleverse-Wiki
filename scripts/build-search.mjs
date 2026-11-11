@@ -103,7 +103,12 @@ for (const [file, route, category] of sources) {
     });
   }
 }
-await writeFile(join(root, "search-index.json"), JSON.stringify(index));
+await writeFile(
+  join(root, "search-index.json"),
+  JSON.stringify(
+    index.map((entry) => ({ ...entry, url: `/Cobbleverse-Wiki${entry.url}` })),
+  ),
+);
 console.log(
   `Search: ${index.length} entries derived from published pages and player commands.`,
 );

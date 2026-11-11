@@ -1,6 +1,6 @@
 # Cobbleverse Wiki
 
-Official player documentation for Infinite Gaming Servers. Published at https://wiki.infinitegamingservers.com/ through GitHub Pages.
+Official player documentation for Infinite Gaming Servers. Published at https://lastnahaj.github.io/Cobbleverse-Wiki/ through GitHub Pages.
 
 ## Development
 
@@ -37,7 +37,7 @@ The link audit checks all generated pages, local images, anchors, and domain pat
 
 Pushes to `main` run the Pages workflow: install from the lockfile, formatting and type checks, static build, link audit, artifact upload, then deploy. A failed build cannot deploy.
 
-Astro's `site` is `https://wiki.infinitegamingservers.com`; the site uses root paths. `public/CNAME` records the custom domain. Configure repository Pages to use GitHub Actions and set the custom domain to `wiki.infinitegamingservers.com`. DNS must have a CNAME for host `wiki` targeting `lastnahaj.github.io` with no path. Enable HTTPS after GitHub validates DNS and issues the certificate.
+Astro's `site` is `https://lastnahaj.github.io` with base `/Cobbleverse-Wiki`. Configure repository Pages to use GitHub Actions. No custom domain or DNS record is required. Internal links, search results, assets, and metadata retain the project-site prefix.
 
 ## Assets and sources
 

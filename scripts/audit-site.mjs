@@ -19,15 +19,13 @@ for (const file of (await files(root)).filter((file) =>
 )) {
   const html = await readFile(file, "utf8");
   count++;
-  if (
-    /(?:href|src)="\/Cobbleverse-Wiki\//.test(html) ||
-    html.includes('rel="canonical" href="https://lastnahaj.github.io')
-  )
+  if (html.includes("wiki.infinitegamingservers.com"))
     failures.push(`${relative(root, file)}: stale public URL`);
   for (const match of html.matchAll(/(?:href|src)="([^"<>]+)"/g)) {
     const value = match[1];
     if (/^(?:https?:|mailto:|data:|javascript:)/.test(value)) continue;
-    const [path, fragment] = value.split("#");
+    const [publicPath, fragment] = value.split("#");
+    const path = publicPath.replace(/^\/Cobbleverse-Wiki(?=\/|$)/, "");
     const resolved = path.startsWith("/")
       ? join(root, decodeURI(path.split("?")[0]))
       : path

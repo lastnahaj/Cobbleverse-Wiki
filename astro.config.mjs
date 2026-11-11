@@ -2,7 +2,8 @@ import sitemap from "@astrojs/sitemap";
 import { defineConfig } from "astro/config";
 
 export default defineConfig({
-  site: "https://wiki.infinitegamingservers.com",
+  site: "https://lastnahaj.github.io",
+  base: "/Cobbleverse-Wiki",
   output: "static",
   trailingSlash: "always",
   integrations: [sitemap()],
