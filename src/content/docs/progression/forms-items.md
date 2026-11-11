@@ -9,7 +9,7 @@ status: published
 lastUpdated: 2026-08-24
 verified: true
 related: [progression/legendary-mythical, worlds/structures]
-hero: /assets/art-server-systems.webp
+hero: /assets/sections/art-server-systems.webp
 ---
 
 ## Featured forms

@@ -1,10 +1,7 @@
 ---
 import { navigation } from "../data";
-import { withBase, withoutBase } from "../lib/basePath";
+import { withBase } from "../lib/basePath";
 import MobileNav from "./MobileNav.astro";
-import ServerStatus from "./ServerStatus.astro";
-
-const currentPath = withoutBase(Astro.url.pathname);
 ---
 
 <header class="site-header">
@@ -15,61 +12,47 @@ const currentPath = withoutBase(Astro.url.pathname);
       data-mobile-nav-toggle
       aria-label="Open navigation"
       aria-expanded="false"
-      aria-controls="mobile-nav"
+      aria-controls="mobile-nav"><span></span><span></span><span></span></button
     >
-      <span></span><span></span><span></span>
-    </button>
-    <a class="brand" href={withBase("/")} aria-label="Cobbleverse Wiki home">
-      <img
-        src={withBase("/assets/cobbleverse-crest.webp")}
+    <a class="brand" href={withBase("/")}
+      ><img
+        src={withBase("/assets/brand/cobbleverse-crest.webp")}
         width="1254"
         height="1254"
         alt=""
-      />
-      <span><strong>Cobbleverse</strong><small>Trainer field guide</small></span
-      >
-    </a>
-    <nav class="desktop-nav" aria-label="Primary navigation">
+      /><span
+        ><strong>Cobbleverse</strong><small
+          >Infinite Gaming Servers · Wiki</small
+        ></span
+      ></a
+    >
+    <nav class="desktop-nav" aria-label="Primary">
       <ul>
-        {
-          navigation.slice(1, 7).map((item) => (
-            <li>
-              <a
-                class:list={{ active: currentPath.startsWith(item.href) }}
-                href={withBase(item.href)}
-              >
-                {item.label}
-              </a>
+        <li><a href={withBase("/getting-started/")}>Start playing</a></li>{
+          ["Gameplay", "Server", "Reference"].map((group) => (
+            <li class="nav-more">
+              <details>
+                <>
+                  <summary>{group}</summary>
+                  <div class="nav-more__menu">
+                    {navigation
+                      .filter((item) => item.group === group)
+                      .map((item) => (
+                        <a href={withBase(item.href)}>{item.label}</a>
+                      ))}
+                  </div>
+                </>
+              </details>
             </li>
           ))
         }
-        <li class="nav-more">
-          <details>
-            <summary>Reference</summary>
-            <div class="nav-more__menu">
-              {
-                navigation
-                  .slice(7)
-                  .map((item) => <a href={withBase(item.href)}>{item.label}</a>)
-              }
-            </div>
-          </details>
-        </li>
       </ul>
     </nav>
-    <ServerStatus compact />
     <button
       class="search-button"
       type="button"
       data-search-open
-      aria-label="Search wiki"
+      aria-label="Search wiki"><span>Search</span><kbd>/</kbd></button
     >
-      <svg aria-hidden="true" viewBox="0 0 24 24"
-        ><path d="m21 21-4.5-4.5m2.5-5A7.5 7.5 0 1 1 4 11.5a7.5 7.5 0 0 1 15 0Z"
-        ></path></svg
-      >
-      <span>Search</span><kbd>/</kbd>
-    </button>
   </div>
-</header>
-<MobileNav />
+</header><MobileNav />

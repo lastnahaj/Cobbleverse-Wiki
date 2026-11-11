@@ -14,6 +14,11 @@ const docs = defineCollection({
     status: z.enum(["published", "draft", "archived"]),
     lastUpdated: z.coerce.date(),
     verified: z.boolean(),
+    serverVersion: z.string().optional(),
+    source: z.array(z.url()).default([]),
+    verificationScope: z
+      .enum(["server", "base-pack", "upstream", "unconfirmed"])
+      .default("base-pack"),
     related: z.array(z.string()).default([]),
     hero: z.string().optional(),
   }),

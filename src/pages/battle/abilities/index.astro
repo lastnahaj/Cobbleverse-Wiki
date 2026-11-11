@@ -1,0 +1,31 @@
+---
+import ReferenceBrowser from "../../../components/ReferenceBrowser.astro";
+import PageShell from "../../../layouts/PageShell.astro";
+
+const headings = [{ depth: 2, slug: "catalogue", text: "Ability catalogue" }];
+---
+
+<PageShell
+  title="Abilities"
+  description="Search 328 ability records, including descriptions, ratings, flags, and nonstandard status."
+  category="Battle & Shops"
+  {headings}
+  verified
+  lastUpdated="2026-11-01"
+  related={[
+    { href: "/battle/moves/", title: "Moves" },
+    { href: "/battle/shops/", title: "Shops" },
+    { href: "/pokemon/", title: "Pokédex" },
+  ]}
+>
+  <h2 id="catalogue">Ability catalogue</h2>
+  <p>
+    Search by ability name or effect. Form-specific availability still needs to
+    be checked against the selected Pokémon record.
+  </p>
+  <ReferenceBrowser
+    kind="ability"
+    source="/data/cobbleverse-guides/abilities.json"
+    placeholder="Levitate, weather, contact…"
+  />
+</PageShell>

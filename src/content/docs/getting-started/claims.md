@@ -9,7 +9,7 @@ status: published
 lastUpdated: 2026-08-24
 verified: true
 related: [/getting-started/, /worlds/overworld/]
-hero: /assets/art-structures.webp
+hero: /assets/sections/art-structures.webp
 ---
 
 Cobbleverse uses **Flan** for land protection and adds Cobblemon Flan Integration so Pokémon activity can respect claim permissions. Use the in-game claim interface for exact limits and controls.

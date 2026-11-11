@@ -9,7 +9,7 @@ status: published
 lastUpdated: 2026-08-24
 verified: true
 related: [/worlds/, /getting-started/claims/]
-hero: /assets/art-regional-route.webp
+hero: /assets/sections/art-regional-route.webp
 ---
 
 The Overworld contains regional Gyms, villages, legendary structures, custom merchants, and most player builds. Claim important land before investing in a base.

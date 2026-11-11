@@ -1,95 +1,56 @@
-# Cobbleverse Wiki Content Guide
+# Staff content guide
 
-This guide covers the updates server staff are most likely to make.
+## Add or update a page
 
-## Edit or add a guide
+Articles live in `src/content/docs/`. The path becomes its URL: `getting-started/claims.md` is `/getting-started/claims/`.
 
-Guides are Markdown files in `src/content/docs/`. Edit the prose below the frontmatter block. To add a page, copy a nearby article, change every frontmatter field, and begin with `status: draft` and `verified: false`.
-
-The file path becomes the public route. For example:
-
-```text
-src/content/docs/getting-started/claims.md
-→ /getting-started/claims/
+```yaml
+title: Guide title
+description: A short explanation of what this guide helps players do.
+category: Getting Started
+order: 50
+tags: [travel]
+aliases: []
+status: draft
+lastUpdated: 2026-11-10
+verified: false
+verificationScope: unconfirmed
+source: []
+related: []
 ```
 
-Change `status` to `published` only after review. Published content is automatically added to local search.
+Use the actual edit date when making a meaningful documentation update. Do not change dates just to appear in Recently Updated. Publish only after review. Optional `serverVersion` identifies the tested release; `hero` is reserved for purposeful category artwork. Ordinary articles use a compact reading layout.
 
-## Add a command
+Verification scopes are `server`, `base-pack`, `upstream`, and `unconfirmed`. Link the evidence in `source`; explain local differences in the article. A mod's documentation establishes capabilities, not this server's prices or settings.
 
-Add a record to `src/data/commands.json` with a unique machine ID:
+## Commands
 
-```json
-{
-  "id": "example",
-  "command": "/example",
-  "syntax": "/example <value>",
-  "aliases": [],
-  "description": "Verified player-facing description.",
-  "category": "utility",
-  "audience": "player",
-  "examples": [],
-  "notes": [],
-  "related": "/getting-started/",
-  "verified": true,
-  "lastVerified": "2026-08-23"
-}
-```
+Edit `src/data/commands.json`. Keep `id` unique and stable. Include `command`, `syntax`, `aliases`, `description`, `category`, `audience`, `examples`, `notes`, `sourceMod`, `related`, `verified`, and `lastVerified` where known. Public commands require player audience, verification, and a review date. Staff and admin records never appear in the player table or command search.
 
-Unverified records are hidden from the normal public command table.
+## Systems
 
-## Change a rank
+Edit `features.json`. Existing `id` is the URL slug. Fields include category, status, environment (`server`, `client`, `both`, or `infrastructure`), `playerFacing`, `requiredClient`, `optionalClient`, `serverBehavior`, `externalUrl`, `article`, `verified`, and `lastVerified`. Unknown candidates remain internal with `playerFacing: false`. Add player instructions to the matching guide definition or a dedicated Markdown article.
 
-Edit `src/data/ranks.json`. Keep `id` stable, change the display `name` separately, and use the correct `track`: `playtime`, `staff`, or `gym`. Playtime thresholds use `hours`.
+## Gyms and progression
 
-## Update a feature status
+Edit `regionalGyms.json` for leaders, badges, locations, signature items, and rewards supported by evidence. Optional team, battle format, level range, and verification fields remain null until checked. Regional order and unlock text live in `regions.json`; the homepage builds from that data. Do not invent Pokédex thresholds.
 
-Edit the matching record in `src/data/features.json`. Allowed statuses are:
+Edit `ranks.json` for independent `playtime`, `staff`, and `gym` tracks. Preserve IDs separately from display names. Hours are cumulative thresholds.
 
-- `active`
-- `planned`
-- `optional-client`
-- `deprecated`
-- `unknown`
+## Currencies
 
-Use `unknown` when the current state has not been confirmed. Never use `active` as a placeholder.
+Edit `currencies.json`. Keep ID, name, category, description, and status together. Status is `active`, `event`, `retired`, or `unknown`; the compatibility `active` field is retained for existing components. Unknown is a valid publication state. Do not assign prices to fill an empty table.
 
-## Update a Gym entry
+## Notices and updates
 
-Edit `src/data/gyms.json`. The directory already contains every standard type. Keep any unavailable value as `null`:
+Add dated records to `src/data/updates.ts`, with a unique ID, date, title, description, and kind: `wiki`, `server`, `event`, `maintenance`, or `breaking`. Mark ended temporary notices explicitly. Permanent guides should describe normal behavior and link current announcements rather than retaining expired events.
 
-```json
-{
-  "id": "fire",
-  "type": "Fire",
-  "leaderName": null,
-  "badgeName": null,
-  "reward": null,
-  "status": "unknown"
-}
-```
+## Images
 
-Do not create a leader, team, badge, reward, schedule, or rule to fill an empty design state.
+Use `public/assets/brand`, `sections`, `screenshots`, `items`, or `collectibles`. Keep accurate alt text, dimensions, source/credit records, and lazy loading below the first screen. Do not stretch a small crop into a banner. Historical assets belong outside `public/`.
 
-## Add a notice
+## Search and publication
 
-Permanent wiki changes and dated notices are rendered from `src/pages/changelog/index.astro`. Every temporary server notice should state its date, affected system or world, and whether it has ended. Keep temporary changes out of permanent world guides.
+Production search derives titles, descriptions, headings, and text from generated HTML, with player command aliases from structured data. Edit the page instead of a duplicate search registry. Build before previewing production search.
 
-## Replace a banner
-
-Production images live in `public/assets/`. Replace the existing filename so page code remains stable. Keep the same intended role and compatible dimensions, then update:
-
-- `artwork/asset-manifest.json`
-- `artwork/IMAGE_VALIDATION.json`
-
-Check the banner at desktop and mobile widths. Its baked typography should not be covered by duplicate text.
-
-## Verify before publishing
-
-```bash
-npm ci
-npm run check
-npm run build
-```
-
-Review links, images, local search, tables, navigation, metadata, and the `/Cobbleverse-Wiki/` base path before merging.
+Run all commands in README, inspect the result in a browser, and check the custom-domain canonical URL. DNS and Pages setup are documented in README. Never include credentials, private addresses, host details, or unverified configuration in public guides.

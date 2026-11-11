@@ -14,7 +14,7 @@ related:
     worlds/structures,
     getting-started/base-pack-settings,
   ]
-hero: /assets/art-structures.webp
+hero: /assets/sections/art-structures.webp
 ---
 
 LumyMon is the public base pack's navigation and encounter layer. It connects regional progression to custom workstations, maps, altars, ores, and quality-of-life controls.

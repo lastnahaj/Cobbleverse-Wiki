@@ -1,19 +1,24 @@
 ---
 interface Props {
-  date: Date | string;
+  date?: Date | string;
   verified: boolean;
 }
 const { date, verified } = Astro.props;
 const formatted = new Intl.DateTimeFormat("en-US", {
   dateStyle: "long",
   timeZone: "UTC",
-}).format(new Date(date));
+}).format(new Date(date ?? 0));
 ---
 
 <div class="last-verified">
   <span class:list={["verification-dot", { verified }]} aria-hidden="true"
   ></span><div>
-    <strong>{verified ? "Source checked" : "Server details pending"}</strong
-    ><span>Last updated {formatted}</span>
+    <strong
+      >{
+        verified
+          ? "Reference reviewed · check in-game values where noted"
+          : "Server configuration not yet verified"
+      }</strong
+    >{date && <span>Last updated {formatted}</span>}
   </div>
 </div>

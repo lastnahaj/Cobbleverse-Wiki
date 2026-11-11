@@ -4,6 +4,7 @@ import SearchDialog from "../components/SearchDialog.astro";
 import WikiFooter from "../components/WikiFooter.astro";
 import WikiHeader from "../components/WikiHeader.astro";
 import "../styles/global.css";
+import "../styles/atlas.css";
 
 interface Props {
   title: string;
@@ -26,18 +27,18 @@ const { title, description, image, noindex } = Astro.props;
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href={`${import.meta.env.BASE_URL}assets/favicon-16x16.png`}
+      href={`${import.meta.env.BASE_URL}assets/brand/favicon-16x16.png`}
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href={`${import.meta.env.BASE_URL}assets/favicon-32x32.png`}
+      href={`${import.meta.env.BASE_URL}assets/brand/favicon-32x32.png`}
     />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href={`${import.meta.env.BASE_URL}assets/apple-touch-icon.png`}
+      href={`${import.meta.env.BASE_URL}assets/brand/apple-touch-icon.png`}
     />
     <link
       rel="manifest"

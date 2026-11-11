@@ -1,42 +1,62 @@
 [
   {
     "label": "Home",
-    "href": "/"
+    "href": "/",
+    "group": "Start"
   },
   {
     "label": "Getting Started",
-    "href": "/getting-started/"
+    "href": "/getting-started/",
+    "group": "Start"
+  },
+  {
+    "label": "Pokémon & Training",
+    "href": "/training/",
+    "group": "Gameplay"
   },
   {
     "label": "Progression",
-    "href": "/progression/"
+    "href": "/progression/",
+    "group": "Gameplay"
   },
   {
-    "label": "Gyms",
-    "href": "/gyms/"
+    "label": "Gyms & Battles",
+    "href": "/gyms/",
+    "group": "Gameplay"
   },
   {
-    "label": "Worlds",
-    "href": "/worlds/"
+    "label": "World & Travel",
+    "href": "/worlds/",
+    "group": "Gameplay"
   },
   {
-    "label": "Economy",
-    "href": "/economy/"
+    "label": "Economy & Trading",
+    "href": "/economy/",
+    "group": "Server"
   },
   {
-    "label": "Features",
-    "href": "/features/"
+    "label": "Server Systems",
+    "href": "/features/",
+    "group": "Server"
+  },
+  {
+    "label": "Collectibles",
+    "href": "/collectibles/",
+    "group": "Server"
   },
   {
     "label": "Commands",
-    "href": "/commands/"
+    "href": "/commands/",
+    "group": "Reference"
   },
   {
     "label": "Rules",
-    "href": "/rules/"
+    "href": "/rules/",
+    "group": "Reference"
   },
   {
     "label": "Changelog",
-    "href": "/changelog/"
+    "href": "/changelog/",
+    "group": "Reference"
   }
 ]

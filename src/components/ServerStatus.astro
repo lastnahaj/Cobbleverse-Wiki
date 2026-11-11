@@ -22,6 +22,27 @@ const { compact = false } = Astro.props;
       <span data-status-players>— players</span>
       <span class="live-status__address"> · {server.address}</span>
     </small>
+    {
+      !compact && (
+        <>
+          <>
+            <span class="status-updated" data-status-updated>
+              Waiting for a response
+            </span>
+            <span class="status-actions">
+              <>
+                <button type="button" data-status-copy>
+                  Copy address
+                </button>
+                <button type="button" data-status-refresh>
+                  Refresh
+                </button>
+              </>
+            </span>
+          </>
+        </>
+      )
+    }
   </span>
 </div>
 
@@ -46,11 +67,18 @@ const { compact = false } = Astro.props;
         throw new Error(`Status request failed: ${response.status}`);
 
       const data = await response.json();
+      if (typeof data.online !== "boolean")
+        throw new Error("Invalid status response");
       const online = Boolean(data.online);
       const current = Number(data.players?.online ?? 0);
       const maximum = Number(data.players?.max ?? 0);
 
       widgets.forEach((widget) => {
+        const updated = widget.querySelector<HTMLElement>(
+          "[data-status-updated]",
+        );
+        if (updated)
+          updated.textContent = `Last refreshed ${new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })} · public status may be cached`;
         widget.dataset.state = online ? "online" : "offline";
         const label = widget.querySelector<HTMLElement>("[data-status-label]");
         const players = widget.querySelector<HTMLElement>(
@@ -80,6 +108,21 @@ const { compact = false } = Astro.props;
   }
 
   refreshServerStatus();
+  document
+    .querySelectorAll<HTMLButtonElement>("[data-status-refresh]")
+    .forEach((button) => button.addEventListener("click", refreshServerStatus));
+  document
+    .querySelectorAll<HTMLButtonElement>("[data-status-copy]")
+    .forEach((button) =>
+      button.addEventListener("click", async () => {
+        try {
+          await navigator.clipboard.writeText("cv.infinitegamingservers.com");
+          button.textContent = "Address copied";
+        } catch {
+          button.textContent = "cv.infinitegamingservers.com";
+        }
+      }),
+    );
   window.setInterval(refreshServerStatus, 60_000);
   document.addEventListener("visibilitychange", () => {
     if (document.visibilityState === "visible") refreshServerStatus();

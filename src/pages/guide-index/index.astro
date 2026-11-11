@@ -1,0 +1,31 @@
+---
+import ReferenceBrowser from "../../components/ReferenceBrowser.astro";
+import PageShell from "../../layouts/PageShell.astro";
+
+const headings = [{ depth: 2, slug: "index", text: "Guide index" }];
+---
+
+<PageShell
+  title="Guide Index"
+  description="Search the integrated encounter, location, progression, and player-guide inventory."
+  category="Reference"
+  {headings}
+  verified
+  lastUpdated="2026-11-01"
+  related={[
+    { href: "/progression/legendary-mythical/", title: "Legendary Routes" },
+    { href: "/worlds/location-walkthroughs/", title: "Location Walkthroughs" },
+    { href: "/getting-started/first-session/", title: "First Session" },
+  ]}
+>
+  <h2 id="index">Guide index</h2>
+  <p>
+    Browse summaries of 57 source guides. These entries help identify the right
+    encounter or route; they are not complete step-by-step walkthroughs.
+  </p>
+  <ReferenceBrowser
+    kind="guide"
+    source="/data/cobbleverse-guides/reference-index.json"
+    placeholder="Arceus, Radio Tower, progression…"
+  />
+</PageShell>

@@ -1,0 +1,393 @@
+---
+import { withBase } from "../lib/basePath";
+
+interface Props {
+  kind: "pokemon" | "move" | "ability" | "shop" | "item" | "trainer" | "guide";
+  source: string;
+  placeholder: string;
+}
+
+const { kind, source, placeholder } = Astro.props;
+---
+
+<section
+  class="reference-browser"
+  data-reference-browser
+  data-kind={kind}
+  data-source={withBase(source)}
+>
+  <div class="reference-browser__toolbar">
+    <label>
+      <span>Search</span>
+      <input
+        type="search"
+        placeholder={placeholder}
+        autocomplete="off"
+        data-reference-search
+      />
+    </label>
+    <label>
+      <span>Filter</span>
+      <select data-reference-filter>
+        <option value="">All records</option>
+      </select>
+    </label>
+  </div>
+  <p class="reference-browser__status" role="status" data-reference-status>
+    Loading reference data…
+  </p>
+  <div class="reference-browser__results" data-reference-results></div>
+  <button
+    class="button button--ghost reference-browser__more"
+    type="button"
+    data-reference-more
+    hidden
+  >
+    Show more
+  </button>
+  <p class="quiet-note">
+    Reference snapshot: <a href="https://www.cobbleverseguides.com/"
+      >Cobbleverse Guides</a
+    >. Confirm server-specific availability in game.
+  </p>
+</section>
+
+<script>
+  // @ts-nocheck -- records intentionally preserve heterogeneous upstream fields.
+  const PAGE_SIZE = 24;
+
+  function escapeHtml(value) {
+    return String(value ?? "")
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#039;");
+  }
+
+  function label(value) {
+    return String(value ?? "")
+      .replaceAll("_", " ")
+      .replaceAll("-", " ")
+      .replace(/\b\w/g, (letter) => letter.toUpperCase());
+  }
+
+  function sentence(value) {
+    const text = String(value ?? "")
+      .replace(/\bpok mon\b/gi, "Pokémon")
+      .trim();
+    if (!text) return "";
+    const capitalized = text.charAt(0).toUpperCase() + text.slice(1);
+    return /[.!?]$/.test(capitalized) ? capitalized : `${capitalized}.`;
+  }
+
+  function list(values) {
+    return (Array.isArray(values) ? values : [])
+      .map((value) => label(String(value).replace(/^h:/, "Hidden: ")))
+      .join(", ");
+  }
+
+  function pills(values) {
+    return (Array.isArray(values) ? values : [values])
+      .filter(Boolean)
+      .map(
+        (value) =>
+          `<span class="reference-pill">${escapeHtml(label(value))}</span>`,
+      )
+      .join("");
+  }
+
+  function jsonRecord(record) {
+    return "";
+  }
+
+  function pokemonSearchText(record) {
+    const spawnTerms = (record.spawns ?? []).flatMap((spawn) => [
+      ...(spawn.presets ?? []),
+      ...(spawn.condition?.biomes ?? []),
+      spawn.bucket,
+      spawn.level,
+    ]);
+    return [
+      record.nationalPokedexNumber,
+      record.name,
+      record.primaryType,
+      record.secondaryType,
+      ...(record.labels ?? []),
+      ...(record.abilities ?? []),
+      ...(record.eggGroups ?? []),
+      ...spawnTerms,
+    ]
+      .join(" ")
+      .toLowerCase();
+  }
+
+  function pokemonCard(record) {
+    const types = [record.primaryType, record.secondaryType].filter(Boolean);
+    const stats = record.baseStats ?? {};
+    const statTotal = Object.values(stats).reduce(
+      (total, value) => total + (Number(value) || 0),
+      0,
+    );
+    const statRows = Object.entries(stats)
+      .map(
+        ([name, value]) =>
+          `<div><span>${escapeHtml(label(name))}</span><strong>${escapeHtml(value)}</strong></div>`,
+      )
+      .join("");
+    const evolutionRows = (record.evolutions ?? [])
+      .map((evolution) => {
+        const requirements = (evolution.requirements ?? [])
+          .map((requirement) =>
+            Object.entries(requirement)
+              .filter(([key]) => key !== "variant")
+              .map(
+                ([key, value]) =>
+                  `${label(key)} ${Array.isArray(value) ? value.join(", ") : value}`,
+              )
+              .join(" · "),
+          )
+          .filter(Boolean)
+          .join("; ");
+        return `<li><strong>${escapeHtml(label(evolution.result))}</strong>${requirements ? ` — ${escapeHtml(requirements)}` : ""}</li>`;
+      })
+      .join("");
+    const spawnRows = (record.spawns ?? [])
+      .map((spawn) => {
+        const biomes =
+          spawn.condition?.biomes ?? spawn.anticondition?.biomes ?? [];
+        return `<li><strong>${escapeHtml(label(spawn.bucket ?? "spawn"))}</strong> · level ${escapeHtml(spawn.level ?? "varies")} · ${escapeHtml(list(biomes) || "biome not listed")}</li>`;
+      })
+      .join("");
+    const dropRows = (record.drops?.entries ?? [])
+      .map((drop) => {
+        const chance = drop.percentage ? ` · ${drop.percentage}%` : "";
+        const quantity = drop.quantityRange ? ` · ${drop.quantityRange}` : "";
+        return `<li>${escapeHtml(label(drop.item ?? drop.tag ?? "drop"))}${escapeHtml(quantity)}${escapeHtml(chance)}</li>`;
+      })
+      .join("");
+    const moves = (record.moves ?? []).reduce((groups, move) => {
+      const [method, moveName] = String(move).split(":", 2);
+      const group = /^\d+$/.test(method) ? "Level up" : label(method);
+      groups[group] ??= [];
+      groups[group].push(
+        /^\d+$/.test(method) ? `${moveName} (${method})` : moveName,
+      );
+      return groups;
+    }, {});
+    const moveGroups = Object.entries(moves)
+      .map(
+        ([method, entries]) =>
+          `<details><summary>${escapeHtml(method)} (${entries.length})</summary><p>${escapeHtml(entries.map(label).join(", "))}</p></details>`,
+      )
+      .join("");
+
+    return `<details class="reference-card reference-card--pokemon">
+      <summary>
+        <span class="reference-card__number">#${String(record.nationalPokedexNumber).padStart(4, "0")}</span>
+        <span><strong>${escapeHtml(record.name)}</strong><small>${escapeHtml(list(record.labels) || "Pokémon record")}</small></span>
+        <span class="reference-card__pills">${pills(types)}</span>
+      </summary>
+      <div class="reference-card__body">
+        <div class="reference-stat-grid">${statRows}<div><span>Total</span><strong>${statTotal}</strong></div></div>
+        <dl class="reference-facts">
+          <div><dt>Abilities</dt><dd>${escapeHtml(list(record.abilities) || "Not listed")}</dd></div>
+          <div><dt>Egg groups</dt><dd>${escapeHtml(list(record.eggGroups) || "Not listed")}</dd></div>
+          <div><dt>Catch rate</dt><dd>${escapeHtml(record.catchRate ?? "Not listed")}</dd></div>
+          <div><dt>Height / weight</dt><dd>${escapeHtml(record.height ?? "—")} / ${escapeHtml(record.weight ?? "—")}</dd></div>
+          <div><dt>Experience group</dt><dd>${escapeHtml(label(record.experienceGroup ?? "Not listed"))}</dd></div>
+          <div><dt>Implemented</dt><dd>${record.implemented ? "Yes" : "No"}</dd></div>
+        </dl>
+        ${evolutionRows ? `<h3>Evolutions</h3><ul>${evolutionRows}</ul>` : ""}
+        ${spawnRows ? `<h3>Spawns</h3><ul>${spawnRows}</ul>` : ""}
+        ${dropRows ? `<h3>Drops</h3><ul>${dropRows}</ul>` : ""}
+        ${moveGroups ? `<h3>Learnset</h3><div class="reference-move-groups">${moveGroups}</div>` : ""}
+        ${jsonRecord(record)}
+      </div>
+    </details>`;
+  }
+
+  function moveCard(record) {
+    return `<details class="reference-card">
+      <summary><span><strong>${escapeHtml(record.name)}</strong><small>${escapeHtml(record.category ?? "Move")} · ${escapeHtml(record.type ?? "Unknown type")}</small></span>${pills([record.type, record.category])}</summary>
+      <div class="reference-card__body">
+        <dl class="reference-facts">
+          <div><dt>Power</dt><dd>${escapeHtml(record.basePower || "—")}</dd></div>
+          <div><dt>Accuracy</dt><dd>${escapeHtml(record.accuracy === true ? "Always" : (record.accuracy ?? "—"))}</dd></div>
+          <div><dt>PP</dt><dd>${escapeHtml(record.pp ?? "—")}</dd></div>
+          <div><dt>Priority</dt><dd>${escapeHtml(record.priority ?? 0)}</dd></div>
+          <div><dt>Target</dt><dd>${escapeHtml(label(record.target ?? "Not listed"))}</dd></div>
+          <div><dt>Number</dt><dd>${escapeHtml(record.num ?? "—")}</dd></div>
+        </dl>
+        <p>${escapeHtml(record.description ?? record.shortDescription ?? "No description supplied.")}</p>
+        ${jsonRecord(record)}
+      </div>
+    </details>`;
+  }
+
+  function abilityCard(record) {
+    return `<details class="reference-card">
+      <summary><span><strong>${escapeHtml(record.name)}</strong><small>Ability · rating ${escapeHtml(record.rating ?? "—")}</small></span>${record.isNonstandard ? pills(record.isNonstandard) : ""}</summary>
+      <div class="reference-card__body"><p>${escapeHtml(record.description ?? record.shortDescription ?? "No description supplied.")}</p>${jsonRecord(record)}</div>
+    </details>`;
+  }
+
+  function indexCard(record) {
+    const metadata = record.metadata ?? {};
+    const description = (record.keywords ?? []).find(
+      (term) => String(term).length > String(record.title ?? "").length + 10,
+    );
+    const metaRows = Object.entries(metadata)
+      .map(
+        ([name, value]) =>
+          `<div><dt>${escapeHtml(label(name))}</dt><dd>${escapeHtml(value)}</dd></div>`,
+      )
+      .join("");
+    const price =
+      typeof metadata.price === "number"
+        ? `$${metadata.price.toLocaleString()}`
+        : "";
+    return `<details class="reference-card">
+      <summary><span><strong>${escapeHtml(record.title)}</strong><small>${escapeHtml(record.subtitle ?? label(record.type))}</small></span>${price ? `<span class="reference-price">${price}</span>` : pills(metadata.category ?? metadata.role ?? record.type)}</summary>
+      <div class="reference-card__body">
+        ${description ? `<p>${escapeHtml(sentence(description))}</p>` : ""}
+        ${metaRows ? `<dl class="reference-facts">${metaRows}</dl>` : ""}
+        ${jsonRecord(record)}
+      </div>
+    </details>`;
+  }
+
+  function getFilterValue(kind, record) {
+    if (kind === "pokemon") return record.primaryType;
+    if (kind === "move") return record.type;
+    if (kind === "ability") return record.isNonstandard ?? "Standard";
+    if (kind === "shop") return record.metadata?.merchantName;
+    if (kind === "item") return record.metadata?.category;
+    if (kind === "trainer") return record.metadata?.region;
+    return record.subtitle;
+  }
+
+  function getSearchText(kind, record) {
+    if (kind === "pokemon") return pokemonSearchText(record);
+    if (kind === "move" || kind === "ability") {
+      return JSON.stringify(record).toLowerCase();
+    }
+    return [
+      record.title,
+      record.subtitle,
+      ...(record.keywords ?? []),
+      JSON.stringify(record.metadata ?? {}),
+    ]
+      .join(" ")
+      .toLowerCase();
+  }
+
+  function initializeBrowser(browser) {
+    const kind = browser.dataset.kind;
+    const source = browser.dataset.source;
+    const input = browser.querySelector("[data-reference-search]");
+    const filter = browser.querySelector("[data-reference-filter]");
+    const status = browser.querySelector("[data-reference-status]");
+    const results = browser.querySelector("[data-reference-results]");
+    const more = browser.querySelector("[data-reference-more]");
+    let records = [];
+    let visible = PAGE_SIZE;
+    input.value = new URLSearchParams(location.search).get("q") ?? "";
+
+    function update() {
+      const query = input.value.trim().toLowerCase();
+      const selected = filter.value;
+      const matches = records.filter((record) => {
+        const filterValue = String(getFilterValue(kind, record) ?? "");
+        return (
+          (!query || getSearchText(kind, record).includes(query)) &&
+          (!selected || filterValue === selected)
+        );
+      });
+      const shown = matches.slice(0, visible);
+      const renderer =
+        kind === "pokemon"
+          ? pokemonCard
+          : kind === "move"
+            ? moveCard
+            : kind === "ability"
+              ? abilityCard
+              : indexCard;
+      results.innerHTML = shown
+        .map((record) =>
+          renderer(record).replace(
+            "<summary>",
+            `<summary aria-label="${escapeHtml(record.name ?? record.title ?? "Reference entry")}">`,
+          ),
+        )
+        .join("");
+      status.textContent = `${matches.length.toLocaleString()} ${label(kind)} record${matches.length === 1 ? "" : "s"}`;
+      more.hidden = shown.length >= matches.length;
+      more.textContent = `Show more (${(matches.length - shown.length).toLocaleString()} remaining)`;
+    }
+
+    fetch(source)
+      .then((response) => {
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return response.json();
+      })
+      .then((data) => {
+        records = Array.isArray(data) ? data : [];
+        if (!["pokemon", "move", "ability"].includes(kind)) {
+          records = records.filter((record) => record.type === kind);
+        }
+        records.sort((a, b) => {
+          if (kind === "pokemon") {
+            return (
+              (a.nationalPokedexNumber ?? 0) - (b.nationalPokedexNumber ?? 0)
+            );
+          }
+          return String(a.name ?? a.title).localeCompare(
+            String(b.name ?? b.title),
+          );
+        });
+        const values = [
+          ...new Set(
+            records
+              .map((record) => getFilterValue(kind, record))
+              .filter(Boolean),
+          ),
+        ].sort();
+        filter.insertAdjacentHTML(
+          "beforeend",
+          values
+            .map(
+              (value) =>
+                `<option value="${escapeHtml(value)}">${escapeHtml(label(value))}</option>`,
+            )
+            .join(""),
+        );
+        update();
+      })
+      .catch((error) => {
+        status.textContent = `Reference data could not be loaded: ${error.message}`;
+        status.classList.add("reference-browser__status--error");
+      });
+
+    input.addEventListener("input", () => {
+      const url = new URL(location.href);
+      if (input.value) url.searchParams.set("q", input.value);
+      else url.searchParams.delete("q");
+      history.replaceState(null, "", url);
+      visible = PAGE_SIZE;
+      update();
+    });
+    filter.addEventListener("change", () => {
+      visible = PAGE_SIZE;
+      update();
+    });
+    more.addEventListener("click", () => {
+      visible += PAGE_SIZE;
+      update();
+    });
+  }
+
+  document
+    .querySelectorAll("[data-reference-browser]")
+    .forEach(initializeBrowser);
+</script>

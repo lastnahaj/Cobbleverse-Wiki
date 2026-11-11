@@ -1,0 +1,52 @@
+---
+import InfoCallout from "../../components/InfoCallout.astro";
+import ReferenceBrowser from "../../components/ReferenceBrowser.astro";
+import PageShell from "../../layouts/PageShell.astro";
+
+const headings = [
+  { depth: 2, slug: "search", text: "Search the Pokédex" },
+  { depth: 2, slug: "record-scope", text: "What each record contains" },
+];
+---
+
+<PageShell
+  title="Pokédex"
+  description="Search all 1,025 bundled Pokémon records, including types, stats, abilities, evolutions, spawns, drops, forms, riding data, and learnsets."
+  category="Pokédex"
+  hero="/assets/sections/art-regional-route.webp"
+  {headings}
+  verified
+  lastUpdated="2026-11-01"
+  related={[
+    { href: "/team-building/", title: "Team Building" },
+    { href: "/battle/moves/", title: "Move Catalogue" },
+    { href: "/battle/abilities/", title: "Ability Catalogue" },
+  ]}
+>
+  <InfoCallout title="Versioned pack data">
+    <p>
+      These records reflect the data published for the documented Cobbleverse
+      1.7.42 profile. Server configuration and later pack releases can change
+      availability even when a species or move remains in the catalogue.
+    </p>
+  </InfoCallout>
+  <h2 id="search">Search the Pokédex</h2>
+  <p>
+    Search by name, National Pokédex number, type, ability, label, egg group,
+    biome tag, spawn tier, or level range. Open a result for the readable stats,
+    learnset, evolution, spawn, and drop summary.
+  </p>
+  <ReferenceBrowser
+    kind="pokemon"
+    source="/data/cobbleverse-guides/pokemon.json"
+    placeholder="Bulbasaur, water, levitate, jungle…"
+  />
+  <h2 id="record-scope">What each record contains</h2>
+  <p>
+    The imported data preserves base stats, EV yield, experience group, catch
+    rate, friendship, dimensions, behavior, riding configuration, drops,
+    learnsets, evolutions, forms, competitive labels, and spawn conditions. A
+    record's presence does not guarantee that every form or acquisition route is
+    enabled on the hosted server.
+  </p>
+</PageShell>

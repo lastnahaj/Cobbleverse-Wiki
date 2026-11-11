@@ -6,11 +6,24 @@ order: 8
 tags: [troubleshooting, models, maps, logs, crash, level cap]
 aliases: [common issues, support, broken textures]
 status: published
-lastUpdated: 2026-08-24
+lastUpdated: 2026-11-01
 verified: true
 related: [getting-started/install, getting-started/resource-pack]
-hero: /assets/art-server-systems.webp
+hero: /assets/sections/art-server-systems.webp
 ---
+
+## Fast progression diagnostic
+
+Before crafting again or using a command:
+
+1. Confirm the installed Cobbleverse version and the hosted server's rules.
+2. Record the Trainer Card's active region, trainer, and cap.
+3. Match that trainer in the [Trainer Index](/progression/trainers/) and regional route.
+4. Re-check the exact item, quantity, recipe, dimension, biome, and interaction.
+5. Classify the failure as a prerequisite, recipe, locator, trainer, dimension, or permission problem.
+6. Preserve a privacy-safe screenshot before changing world or progression data.
+
+Distinct cap, party-count, wrong-series, missing-prerequisite, battle-loss, and completion messages point to different causes. Fix the state named by the message rather than changing an unrelated locator.
 
 ## Missing or broken Pokémon models
 
@@ -25,6 +38,18 @@ hero: /assets/art-server-systems.webp
 - An apparently empty map can be showing an unloaded area or a region without recognizable water or terrain.
 - If a cartographer cannot find a destination within 10,000 blocks, travel at least 2,000 blocks before generating another map.
 - Hover a legendary-structure map to check the target coordinates. A Battle Seeker can extend the search to a different, potentially unexplored structure.
+
+Confirm the locator tooltip's target, dimension, compatible Cartography Table, and range. A marker is horizontal guidance and may not identify a surface entrance. If no result is found, move to a new area within the correct dimension before spending materials on another copy.
+
+## Trainer or portal state is wrong
+
+- A missing trainer may be inside a shared league, larger story structure, or locked behind the previous visible checkpoint.
+- Compare every party member with the active in-game cap and any party-count requirement.
+- After a win, verify that the Trainer Card advanced before repeating the old route.
+- Giratina, Darkrai, and Arceus use different prerequisites and dimensions; one portal or command cannot substitute for another.
+- Preserve the inventory and coordinates privately if a return portal is missing. Do not teleport to an unverified height.
+
+`/locate`, `/tp`, and repair commands require permission. A denied command does not prove that the structure is absent, and progression-repair commands should be used only in a test world or with operator approval.
 
 ## Modrinth does not show an update
 
@@ -45,3 +70,5 @@ First reproduce the problem on an unmodified profile.
 Logs can contain usernames, server addresses, and system paths. Review the upload before posting it publicly.
 
 Sources: [Lumy Hub common issues](https://www.lumyverse.com/wiki/common-issues/), [log-sharing guide](https://www.lumyverse.com/cobbleverse/how-to-share-your-minecraft-logs/), [level-cap guide](https://www.lumyverse.com/cobbleverse/my-pokemon-is-stuck-at-level-25/)
+
+Additional source: [Cobbleverse progression troubleshooting](https://www.cobbleverseguides.com/guides/troubleshooting)

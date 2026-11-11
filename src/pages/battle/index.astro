@@ -1,0 +1,79 @@
+---
+import PageShell from "../../layouts/PageShell.astro";
+import { withBase } from "../../lib/basePath";
+
+const headings = [
+  { depth: 2, slug: "reference", text: "Battle reference" },
+  { depth: 2, slug: "planning", text: "Build for the next objective" },
+];
+
+const sections = [
+  {
+    title: "Moves",
+    description:
+      "Power, accuracy, PP, priority, targets, flags, and effects for 952 moves.",
+    href: "/battle/moves/",
+  },
+  {
+    title: "Abilities",
+    description:
+      "Descriptions, ratings, flags, and availability notes for 328 abilities.",
+    href: "/battle/abilities/",
+  },
+  {
+    title: "Shops",
+    description:
+      "Search 1,476 indexed offers by merchant, store, item, category, or price.",
+    href: "/battle/shops/",
+  },
+  {
+    title: "Team Building",
+    description:
+      "Balance coverage, damage categories, speed, bulk, support, and actual availability.",
+    href: "/team-building/",
+  },
+  {
+    title: "Trainer Index",
+    description:
+      "Find published Gym, League, story, and structure trainer records.",
+    href: "/progression/trainers/",
+  },
+  {
+    title: "Battle Tower",
+    description: "Review Smart Trainer tiers and battle archetypes.",
+    href: "/battle-tower/",
+  },
+];
+---
+
+<PageShell
+  title="Battle & Shops"
+  description="Search moves, abilities, merchant offers, trainer records, and team-building guidance."
+  category="Battle & Shops"
+  hero="/assets/sections/art-gym-arena.webp"
+  {headings}
+  verified
+  lastUpdated="2026-11-01"
+>
+  <h2 id="reference">Battle reference</h2>
+  <div class="guide-directory">
+    {
+      sections.map((section) => (
+        <a href={withBase(section.href)}>
+          <>
+            <strong>{section.title}</strong>
+            <span>{section.description}</span>
+            <i>→</i>
+          </>
+        </a>
+      ))
+    }
+  </div>
+  <h2 id="planning">Build for the next objective</h2>
+  <p>
+    Start with the active Trainer Card checkpoint and its in-game cap. Reveal
+    the target roster, confirm obtainable moves and items, then revise the
+    smallest part of the team that fails—coverage, speed, bulk, recovery,
+    status, or execution.
+  </p>
+</PageShell>

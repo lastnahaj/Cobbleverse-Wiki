@@ -1,47 +1,19 @@
 ---
-import NoticeBanner from "../../components/NoticeBanner.astro";
-import WarningCallout from "../../components/WarningCallout.astro";
 import { server } from "../../data";
 import PageShell from "../../layouts/PageShell.astro";
-
-const headings = [
-  { depth: 2, slug: "authoritative-rules", text: "Authoritative rules" },
-  { depth: 2, slug: "publication-model", text: "Publication model" },
-];
 ---
 
 <PageShell
-  title="Rules"
-  description="The publication home for authoritative Cobbleverse server rules."
+  title="Server Rules"
+  description="Find the current Cobbleverse rules and contact server staff."
   category="Rules"
-  {headings}
-  related={[
-    { href: "/getting-started/", title: "Getting Started" },
-    { href: "/changelog/", title: "Changelog" },
-  ]}
 >
-  <NoticeBanner label="Pending" tone="warning"
-    ><p>
-      The authoritative Cobbleverse rules have not yet been supplied for wiki
-      publication.
-    </p></NoticeBanner
-  >
-  <h2 id="authoritative-rules">Authoritative rules</h2>
-  <p>
-    Until the official policy is provided, use the <a href={server.discord}
+  <h2>Read the current rules before playing</h2><p>
+    The current rules are maintained in the <a href={server.discord}
       >Infinite Gaming Servers Discord</a
-    > for the current rules and staff guidance.
-  </p>
-  <WarningCallout title="No placeholder policy"
-    ><p>
-      This page intentionally does not create generic conduct, building,
-      trading, chat, or battle rules.
-    </p></WarningCallout
-  >
-  <h2 id="publication-model">Publication model</h2>
-  <p>
-    The rules system is content-driven and ready for numbered sections,
-    definitions, enforcement notes, and revision dates. Future changes can be
-    tracked without hardcoding policy into the interface.
+    >. Check the rules channel before building, trading, or joining battles.
+  </p><p>
+    A dated copy has not been verified for this wiki. Contact server staff
+    through Discord if you need a ruling or want to report a problem.
   </p>
 </PageShell>

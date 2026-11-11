@@ -1,75 +1,17 @@
 {
-  "brand": "Cobbleverse Wiki",
-  "assetSet": "premium-v3-png",
-  "formatPolicy": "Production visual assets are standard PNG files. Earlier WebP and SVG-wrapper derivatives are not used.",
-  "sourceArtBoard": "assets/source/cobbleverse-production-art-board.png",
-  "production": [
-    {
-      "path": "assets/hero-cobbleverse.png",
-      "role": "homepage hero",
-      "dimensions": [1920, 878]
-    },
-    {
-      "path": "assets/banner-getting-started.png",
-      "role": "getting-started",
-      "dimensions": [1600, 398]
-    },
-    {
-      "path": "assets/banner-progression.png",
-      "role": "progression",
-      "dimensions": [1600, 398]
-    },
-    {
-      "path": "assets/banner-gyms.png",
-      "role": "gyms",
-      "dimensions": [1600, 398]
-    },
-    {
-      "path": "assets/banner-economy.png",
-      "role": "economy",
-      "dimensions": [1600, 398]
-    },
-    {
-      "path": "assets/banner-worlds.png",
-      "role": "worlds",
-      "dimensions": [1600, 398]
-    },
-    {
-      "path": "assets/banner-features.png",
-      "role": "features",
-      "dimensions": [1600, 398]
-    },
-    {
-      "path": "assets/og-default.png",
-      "role": "social/OG",
-      "dimensions": [1200, 630]
-    },
-    {
-      "path": "assets/logo-mark.png",
-      "role": "logo mark",
-      "dimensions": [768, 672]
-    },
-    {
-      "path": "assets/logo-horizontal.png",
-      "role": "horizontal logo",
-      "dimensions": [1400, 766]
-    },
-    {
-      "path": "assets/logo-mark-monochrome.png",
-      "role": "monochrome logo",
-      "dimensions": [768, 672]
-    }
+  "productionRoot": "public/assets",
+  "brand": [
+    "brand/cobbleverse-crest.webp",
+    "brand/cobbleverse-wordmark.webp",
+    "brand/og-default.png",
+    "brand/logo-horizontal.png"
   ],
-  "categoryIcons": [
-    "assets/icons/getting-started.png",
-    "assets/icons/progression.png",
-    "assets/icons/gyms.png",
-    "assets/icons/economy.png",
-    "assets/icons/worlds.png",
-    "assets/icons/features.png",
-    "assets/icons/commands.png",
-    "assets/icons/rules.png",
-    "assets/icons/changelog.png"
+  "sections": [
+    "sections/art-structures.webp",
+    "sections/art-regional-route.webp",
+    "sections/art-gym-arena.webp",
+    "sections/art-server-systems.webp"
   ],
-  "validation": "assets/IMAGE_VALIDATION.json"
+  "historicalRoot": "artwork/legacy",
+  "notes": "Historical source artwork and replaced icons are retained outside the published site. Dimensions are declared where images are rendered."
 }

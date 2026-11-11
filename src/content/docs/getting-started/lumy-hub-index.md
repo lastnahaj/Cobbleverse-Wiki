@@ -10,7 +10,7 @@ lastUpdated: 2026-08-24
 verified: true
 related:
   [getting-started/install, getting-started/troubleshooting, worlds/structures]
-hero: /assets/cobbleverse-wordmark.webp
+hero: /assets/brand/cobbleverse-wordmark.webp
 ---
 
 The [Lumy Hub](https://www.lumyverse.com/cobbleverse/) documents the public Cobbleverse modpack. This server wiki folds that information into task-focused guides while keeping three scopes distinct:

@@ -38,7 +38,7 @@ const indexUrl = withBase("/search-index.json");
     <div
       class="search-results"
       data-search-results
-      role="listbox"
+      role="region"
       aria-label="Search results"
     >
     </div>
@@ -74,6 +74,13 @@ const indexUrl = withBase("/search-index.json");
   const closeButton = dialog?.querySelector<HTMLElement>("[data-search-close]");
   let fusePromise: Promise<Fuse<SearchEntry>> | undefined;
   let activeIndex = -1;
+  function escapeHtml(value: string) {
+    return value
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;");
+  }
 
   function loadIndex() {
     if (!fusePromise && panel?.dataset.indexUrl) {
@@ -94,7 +101,7 @@ const indexUrl = withBase("/search-index.json");
                 { name: "description", weight: 0.1 },
                 { name: "excerpt", weight: 0.07 },
               ],
-              threshold: 0.36,
+              threshold: 0.28,
               ignoreLocation: true,
             }),
         );
@@ -141,10 +148,10 @@ const indexUrl = withBase("/search-index.json");
     status.textContent = `${entries.length} result${entries.length === 1 ? "" : "s"}`;
     results.innerHTML = entries
       .map(
-        (entry) => `<a class="search-result" role="option" href="${entry.url}">
-          <span class="search-result__category">${entry.category}</span>
-          <strong>${entry.title}</strong>
-          <span>${entry.description || entry.excerpt}</span>
+        (entry) => `<a class="search-result" href="${escapeHtml(entry.url)}">
+          <span class="search-result__category">${escapeHtml(entry.category)}</span>
+          <strong>${escapeHtml(entry.title)}</strong>
+          <span>${escapeHtml(entry.description || entry.excerpt)}</span>
         </a>`,
       )
       .join("");

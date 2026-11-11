@@ -5,10 +5,12 @@ import { features, type Feature } from "../../data";
 import PageShell from "../../layouts/PageShell.astro";
 
 export function getStaticPaths() {
-  return features.map((feature) => ({
-    params: { slug: feature.id },
-    props: { feature },
-  }));
+  return features
+    .filter((feature) => feature.playerFacing)
+    .map((feature) => ({
+      params: { slug: feature.id },
+      props: { feature },
+    }));
 }
 
 interface FeatureGuide {
@@ -153,10 +155,9 @@ const headings = [
   title={feature.name}
   {description}
   category="Features"
-  hero="/assets/art-server-systems.webp"
+  hero="/assets/sections/art-server-systems.webp"
   {headings}
-  verified={feature.status !== "unknown"}
-  lastUpdated="2026-08-24"
+  verified={feature.verified}
   related={[
     { href: "/features/", title: "All Features" },
     ...(feature.id === "smart-trainers"
@@ -179,8 +180,9 @@ const headings = [
       </ul>
     ) : (
       <p>
-        This optional client feature can be used without changing server
-        gameplay.
+        Server-specific setup and usage details have not been confirmed. Follow
+        the linked project reference where available and ask staff about
+        availability.
       </p>
     )
   }
@@ -199,10 +201,7 @@ const headings = [
   <h2 id="server-settings">Server settings</h2>
   <InfoCallout title="Configuration matters">
     <p>
-      {
-        guide?.note ??
-          "Install and configure this optional client feature to your own preference."
-      }
+      {guide?.note ?? "Server-specific settings have not been confirmed."}
     </p>
   </InfoCallout>
   {

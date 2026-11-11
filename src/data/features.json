@@ -5,7 +5,11 @@
     "category": "progression",
     "status": "active",
     "description": "Quest and story framework with tasks, zones, timelines, flags, parties, bounties, markers, NPC paths, cutscenes, and player backpacks.",
-    "externalUrl": "https://docs.matchamodd.ing/journey/getting-started/introduction/"
+    "externalUrl": "https://docs.matchamodd.ing/journey/getting-started/introduction/",
+    "environment": "server",
+    "optionalClient": false,
+    "verified": false,
+    "lastVerified": null
   },
   {
     "id": "wonder",
@@ -13,7 +17,11 @@
     "category": "trading",
     "status": "active",
     "description": "Queued Wonder Trade channels that match submitted party or PC Pokémon with another player or a configured pool.",
-    "externalUrl": "https://docs.matchamodd.ing/wonder/getting-started/introduction/"
+    "externalUrl": "https://docs.matchamodd.ing/wonder/getting-started/introduction/",
+    "environment": "server",
+    "optionalClient": false,
+    "verified": false,
+    "lastVerified": null
   },
   {
     "id": "bazaar",
@@ -21,7 +29,11 @@
     "category": "economy",
     "status": "active",
     "description": "Pokémon fixed-price listings plus an item Auction House with bidding, anti-snipe handling, collection storage, and market history.",
-    "externalUrl": "https://docs.matchamodd.ing/bazaar/getting-started/introduction/"
+    "externalUrl": "https://docs.matchamodd.ing/bazaar/getting-started/introduction/",
+    "environment": "server",
+    "optionalClient": false,
+    "verified": false,
+    "lastVerified": null
   },
   {
     "id": "smart-trainers",
@@ -29,7 +41,11 @@
     "category": "battles",
     "status": "active",
     "description": "Configurable trainer AI that evaluates moves, switches, items, priorities, prediction, personalities, battle bags, and optional battle gimmicks.",
-    "externalUrl": "https://docs.matchamodd.ing/smart-trainers/getting-started/introduction/"
+    "externalUrl": "https://docs.matchamodd.ing/smart-trainers/getting-started/introduction/",
+    "environment": "server",
+    "optionalClient": false,
+    "verified": false,
+    "lastVerified": null
   },
   {
     "id": "bloom",
@@ -37,7 +53,11 @@
     "category": "cobblemon",
     "status": "active",
     "description": "Physical and personal lure system with type, species, form, rarity, spawn-rate, shiny, and hidden-ability targeting.",
-    "externalUrl": "https://docs.matchamodd.ing/bloom/introduction/"
+    "externalUrl": "https://docs.matchamodd.ing/bloom/introduction/",
+    "environment": "server",
+    "optionalClient": false,
+    "verified": false,
+    "lastVerified": null
   },
   {
     "id": "colosseum",
@@ -45,7 +65,11 @@
     "category": "battles",
     "status": "active",
     "description": "Single-player facilities for staged Tower, Factory, and Arcade runs with party validation, checkpoints, streaks, and configured rewards.",
-    "externalUrl": "https://docs.matchamodd.ing/colosseum/getting-started/overview/"
+    "externalUrl": "https://docs.matchamodd.ing/colosseum/getting-started/overview/",
+    "environment": "server",
+    "optionalClient": false,
+    "verified": false,
+    "lastVerified": null
   },
   {
     "id": "eessentials",
@@ -53,7 +77,11 @@
     "category": "commands",
     "status": "active",
     "description": "Modular server commands for messaging, homes, teleports, warps, random teleport, playtime, and virtual workstations.",
-    "externalUrl": "https://github.com/FLalejandro/EEssentials/wiki/Commands"
+    "externalUrl": "https://github.com/FLalejandro/EEssentials/wiki/Commands",
+    "environment": "server",
+    "optionalClient": false,
+    "verified": false,
+    "lastVerified": null
   },
   {
     "id": "cobbleworkers",
@@ -61,7 +89,11 @@
     "category": "automation",
     "status": "active",
     "description": "Pasture Block jobs let assigned Pokémon gather, harvest, irrigate, fish, heal, generate resources, and perform other utility work.",
-    "externalUrl": "https://docs.accieo.com/cobbleworkers/"
+    "externalUrl": "https://docs.accieo.com/cobbleworkers/",
+    "environment": "server",
+    "optionalClient": false,
+    "verified": false,
+    "lastVerified": null
   },
   {
     "id": "cobblemon-extras",
@@ -69,7 +101,11 @@
     "category": "cobblemon",
     "status": "active",
     "description": "Server-side Pokémon inspection, sharing, trading, battling, showcase, PC, IV, and utility commands.",
-    "externalUrl": "https://modrinth.com/mod/cobblemonextras"
+    "externalUrl": "https://modrinth.com/mod/cobblemonextras",
+    "environment": "server",
+    "optionalClient": false,
+    "verified": false,
+    "lastVerified": null
   },
   {
     "id": "cobblemon-flan",
@@ -77,7 +113,11 @@
     "category": "claims",
     "status": "active",
     "description": "Connects Pokémon actions to Flan claims so owners and staff can control spawning, catching, battling, sending out, riding, and display-case interaction.",
-    "externalUrl": "https://modrinth.com/mod/cobblemon-eclipse-flan"
+    "externalUrl": "https://modrinth.com/mod/cobblemon-eclipse-flan",
+    "environment": "server",
+    "optionalClient": false,
+    "verified": false,
+    "lastVerified": null
   },
   {
     "id": "skiesguis",
@@ -85,7 +125,11 @@
     "category": "interface",
     "status": "active",
     "description": "Server-driven inventory menus with aliases, item actions, requirements, placeholders, and economy integrations.",
-    "externalUrl": "https://docs.skiesdev.com/skiesguis/getting_started/introduction/"
+    "externalUrl": "https://docs.skiesdev.com/skiesguis/getting_started/introduction/",
+    "environment": "server",
+    "optionalClient": false,
+    "verified": false,
+    "lastVerified": null
   },
   {
     "id": "daily-rewards",
@@ -93,27 +137,197 @@
     "category": "rewards",
     "status": "active",
     "description": "Daily and playtime reward calendars with cooldowns, streaks, multiple pages, and configured reward screens.",
-    "externalUrl": "https://modrinth.com/mod/universal-daily-rewards"
+    "externalUrl": "https://modrinth.com/mod/universal-daily-rewards",
+    "environment": "server",
+    "optionalClient": false,
+    "verified": false,
+    "lastVerified": null
   },
   {
     "id": "neoplushies",
     "name": "NeoPlushies",
     "category": "collectibles",
     "status": "active",
-    "description": "Collectible plushie and reward-voucher system documented by the server's existing field-guide data."
+    "description": "Collectible plushie and reward-voucher system documented by the server's existing field-guide data.",
+    "environment": "server",
+    "optionalClient": false,
+    "verified": false,
+    "lastVerified": null
   },
   {
     "id": "simple-voice-chat",
     "name": "Simple Voice Chat",
     "category": "client",
     "status": "optional-client",
-    "description": "Optional proximity voice client support."
+    "description": "Optional proximity voice client support.",
+    "environment": "client",
+    "optionalClient": true,
+    "verified": false,
+    "lastVerified": null
   },
   {
     "id": "distant-horizons",
     "name": "Distant Horizons",
     "category": "client",
     "status": "optional-client",
-    "description": "Optional client-side distant terrain rendering."
+    "description": "Optional client-side distant terrain rendering.",
+    "environment": "client",
+    "optionalClient": true,
+    "verified": false,
+    "lastVerified": null
+  },
+  {
+    "id": "luckperms",
+    "name": "LuckPerms",
+    "category": "configuration",
+    "status": "unknown",
+    "environment": "infrastructure",
+    "playerFacing": false,
+    "description": "Installation and Cobbleverse configuration have not been confirmed.",
+    "verified": false,
+    "lastVerified": null
+  },
+  {
+    "id": "tab",
+    "name": "TAB",
+    "category": "configuration",
+    "status": "unknown",
+    "environment": "infrastructure",
+    "playerFacing": false,
+    "description": "Installation and Cobbleverse configuration have not been confirmed.",
+    "verified": false,
+    "lastVerified": null
+  },
+  {
+    "id": "styledchat",
+    "name": "StyledChat",
+    "category": "configuration",
+    "status": "unknown",
+    "environment": "infrastructure",
+    "playerFacing": false,
+    "description": "Installation and Cobbleverse configuration have not been confirmed.",
+    "verified": false,
+    "lastVerified": null
+  },
+  {
+    "id": "holodisplays",
+    "name": "HoloDisplays",
+    "category": "configuration",
+    "status": "unknown",
+    "environment": "server",
+    "playerFacing": false,
+    "description": "Installation and Cobbleverse configuration have not been confirmed.",
+    "verified": false,
+    "lastVerified": null
+  },
+  {
+    "id": "blanketrtp",
+    "name": "BlanketRTP",
+    "category": "configuration",
+    "status": "unknown",
+    "environment": "server",
+    "playerFacing": false,
+    "description": "Installation and Cobbleverse configuration have not been confirmed.",
+    "verified": false,
+    "lastVerified": null
+  },
+  {
+    "id": "customareas-rtp",
+    "name": "CustomAreas RTP",
+    "category": "configuration",
+    "status": "unknown",
+    "environment": "server",
+    "playerFacing": false,
+    "description": "Installation and Cobbleverse configuration have not been confirmed.",
+    "verified": false,
+    "lastVerified": null
+  },
+  {
+    "id": "world-manager",
+    "name": "World Manager",
+    "category": "configuration",
+    "status": "unknown",
+    "environment": "server",
+    "playerFacing": false,
+    "description": "Installation and Cobbleverse configuration have not been confirmed.",
+    "verified": false,
+    "lastVerified": null
+  },
+  {
+    "id": "cobblemon-marks-plus",
+    "name": "Cobblemon Marks+",
+    "category": "configuration",
+    "status": "unknown",
+    "environment": "server",
+    "playerFacing": false,
+    "description": "Installation and Cobbleverse configuration have not been confirmed.",
+    "verified": false,
+    "lastVerified": null
+  },
+  {
+    "id": "cobblemon-battle-music",
+    "name": "Cobblemon Battle Music",
+    "category": "configuration",
+    "status": "unknown",
+    "environment": "server",
+    "playerFacing": false,
+    "description": "Installation and Cobbleverse configuration have not been confirmed.",
+    "verified": false,
+    "lastVerified": null
+  },
+  {
+    "id": "cobblemon-boosters",
+    "name": "Cobblemon Boosters",
+    "category": "configuration",
+    "status": "unknown",
+    "environment": "server",
+    "playerFacing": false,
+    "description": "Installation and Cobbleverse configuration have not been confirmed.",
+    "verified": false,
+    "lastVerified": null
+  },
+  {
+    "id": "veinminer",
+    "name": "Veinminer",
+    "category": "configuration",
+    "status": "unknown",
+    "environment": "server",
+    "playerFacing": false,
+    "description": "Installation and Cobbleverse configuration have not been confirmed.",
+    "verified": false,
+    "lastVerified": null
+  },
+  {
+    "id": "bettermending",
+    "name": "BetterMending",
+    "category": "configuration",
+    "status": "unknown",
+    "environment": "server",
+    "playerFacing": false,
+    "description": "Installation and Cobbleverse configuration have not been confirmed.",
+    "verified": false,
+    "lastVerified": null
+  },
+  {
+    "id": "pasture-limit",
+    "name": "Pasture Limit",
+    "category": "configuration",
+    "status": "unknown",
+    "environment": "server",
+    "playerFacing": false,
+    "description": "Installation and Cobbleverse configuration have not been confirmed.",
+    "verified": false,
+    "lastVerified": null
+  },
+  {
+    "id": "discord-integration",
+    "name": "Discord Integration",
+    "category": "configuration",
+    "status": "unknown",
+    "environment": "infrastructure",
+    "playerFacing": false,
+    "description": "Installation and Cobbleverse configuration have not been confirmed.",
+    "verified": false,
+    "lastVerified": null
   }
 ]

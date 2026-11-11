@@ -1,0 +1,31 @@
+---
+import ReferenceBrowser from "../../../components/ReferenceBrowser.astro";
+import PageShell from "../../../layouts/PageShell.astro";
+
+const headings = [{ depth: 2, slug: "index", text: "Trainer index" }];
+---
+
+<PageShell
+  title="Trainer Index"
+  description="Search 89 published regional, league, story, and structure trainer references."
+  category="Progression"
+  {headings}
+  verified
+  lastUpdated="2026-11-01"
+  related={[
+    { href: "/progression/regions/", title: "Region Progression" },
+    { href: "/gyms/", title: "Gyms" },
+    { href: "/team-building/", title: "Team Building" },
+  ]}
+>
+  <h2 id="index">Trainer index</h2>
+  <p>
+    Search by trainer, region, or role. The Trainer Card remains the authority
+    for the active checkpoint and cap.
+  </p>
+  <ReferenceBrowser
+    kind="trainer"
+    source="/data/cobbleverse-guides/reference-index.json"
+    placeholder="Brock, Sinnoh, Elite Four…"
+  />
+</PageShell>

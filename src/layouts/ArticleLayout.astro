@@ -49,12 +49,18 @@ const related = entry.data.related
   title={entry.data.title}
   description={entry.data.description}
   category={entry.data.category}
-  hero={entry.data.hero}
   {headings}
   verified={entry.data.verified}
   lastUpdated={entry.data.lastUpdated}
+  verificationScope={entry.data.verificationScope}
+  sources={entry.data.source}
+  serverVersion={entry.data.serverVersion}
   {related}
 >
+  <span
+    hidden
+    data-search-tags={entry.data.tags.join(",")}
+    data-search-aliases={entry.data.aliases.join(",")}></span>
   <Content />
   <nav class="article-pagination" slot="after" aria-label="Article pagination">
     {

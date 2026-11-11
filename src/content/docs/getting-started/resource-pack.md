@@ -9,7 +9,7 @@ status: published
 lastUpdated: 2026-08-24
 verified: true
 related: [/getting-started/, /features/]
-hero: /assets/art-server-systems.webp
+hero: /assets/sections/art-server-systems.webp
 ---
 
 Cobbleverse bundles custom datapacks and resource packs for additional Pokémon models, animations, forms, structures, and collectibles. Keep the pack's required resources together and test an unmodified profile before adding third-party textures.

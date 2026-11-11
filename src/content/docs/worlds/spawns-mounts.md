@@ -9,7 +9,7 @@ status: published
 lastUpdated: 2026-08-24
 verified: true
 related: [worlds/structures, progression/legendary-mythical]
-hero: /assets/art-regional-route.webp
+hero: /assets/sections/art-regional-route.webp
 ---
 
 ## Reading spawn information

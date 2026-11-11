@@ -1,0 +1,38 @@
+---
+import InfoCallout from "../../../components/InfoCallout.astro";
+import ReferenceBrowser from "../../../components/ReferenceBrowser.astro";
+import PageShell from "../../../layouts/PageShell.astro";
+
+const headings = [{ depth: 2, slug: "catalogue", text: "Shop catalogue" }];
+---
+
+<PageShell
+  title="Shops"
+  description="Search 1,476 indexed Cobbleverse merchant offers, prices, departments, and item matches."
+  category="Battle & Shops"
+  {headings}
+  verified
+  lastUpdated="2026-11-01"
+  related={[
+    { href: "/items/", title: "Items" },
+    { href: "/economy/", title: "Economy" },
+    { href: "/battle/moves/", title: "Moves" },
+  ]}
+>
+  <InfoCallout title="Server prices can differ"
+    ><p>
+      Use this as a documented catalogue. Confirm the live merchant screen
+      before spending because a server can change prices, stock, or departments.
+    </p></InfoCallout
+  >
+  <h2 id="catalogue">Shop catalogue</h2>
+  <p>
+    Search by offer, merchant, department, or price. Use the filter to isolate
+    one merchant.
+  </p>
+  <ReferenceBrowser
+    kind="shop"
+    source="/data/cobbleverse-guides/reference-index.json"
+    placeholder="Choice Band, TM Archivist, 10000…"
+  />
+</PageShell>

@@ -16,12 +16,12 @@ export const GET: APIRoute = () =>
       theme_color: "#0b171d",
       icons: [
         {
-          src: withBase("/assets/favicon-192x192.png"),
+          src: withBase("/assets/brand/favicon-192x192.png"),
           sizes: "192x192",
           type: "image/png",
         },
         {
-          src: withBase("/assets/favicon-512x512.png"),
+          src: withBase("/assets/brand/favicon-512x512.png"),
           sizes: "512x512",
           type: "image/png",
         },

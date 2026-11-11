@@ -9,7 +9,7 @@ status: published
 lastUpdated: 2026-08-24
 verified: false
 related: [/worlds/, /getting-started/]
-hero: /assets/art-structures.webp
+hero: /assets/sections/art-structures.webp
 ---
 
 Spawn is the return point for the hosted server and the place to look for current menus, NPCs, portals, and announcements.

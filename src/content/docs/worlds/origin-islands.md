@@ -9,7 +9,7 @@ status: published
 lastUpdated: 2026-08-24
 verified: true
 related: [/worlds/, /worlds/spawn/]
-hero: /assets/art-structures.webp
+hero: /assets/sections/art-structures.webp
 ---
 
 The public base pack uses an **Origin Dimension** for the Arceus route. It belongs to the Sinnoh progression chain rather than normal world travel.

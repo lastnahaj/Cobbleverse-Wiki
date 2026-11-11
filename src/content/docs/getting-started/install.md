@@ -9,7 +9,7 @@ status: published
 lastUpdated: 2026-08-24
 verified: true
 related: [getting-started/troubleshooting, getting-started/resource-pack]
-hero: /assets/art-structures.webp
+hero: /assets/sections/art-structures.webp
 ---
 
 Cobbleverse runs on **Minecraft 1.21.1 with Fabric**. Use the pack supplied through the community's official download channel, then add the multiplayer address:

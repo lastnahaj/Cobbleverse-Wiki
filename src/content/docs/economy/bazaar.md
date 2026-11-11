@@ -9,7 +9,7 @@ status: published
 lastUpdated: 2026-08-24
 verified: true
 related: [/economy/, /economy/currencies/]
-hero: /assets/art-server-systems.webp
+hero: /assets/sections/art-server-systems.webp
 ---
 
 **Bazaar** combines a fixed-price Pokémon market with an item Auction House.

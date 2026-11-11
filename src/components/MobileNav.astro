@@ -48,7 +48,27 @@ import { withBase } from "../lib/basePath";
     mobileNav.setAttribute("aria-hidden", String(!open));
     toggle.setAttribute("aria-expanded", String(open));
     document.body.classList.toggle("nav-open", open);
+    mobileNav.inert = !open;
+    if (open) mobileNav.querySelector<HTMLButtonElement>("button")?.focus();
+    else toggle.focus();
   }
+
+  if (mobileNav) mobileNav.inert = true;
+  mobileNav?.addEventListener("keydown", (event) => {
+    if (event.key !== "Tab") return;
+    const items = Array.from(
+      mobileNav.querySelectorAll<HTMLElement>("a[href], button"),
+    );
+    const first = items[0],
+      last = items[items.length - 1];
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault();
+      last?.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first?.focus();
+    }
+  });
 
   toggle?.addEventListener("click", () => setMobileNav(true));
   closeButtons.forEach((button) =>

@@ -6,7 +6,10 @@ interface Props {
   commands: Command[];
 }
 const { commands } = Astro.props;
-const publicCommands = commands.filter((command) => command.verified);
+const publicCommands = commands.filter(
+  (command) =>
+    command.verified && command.audience === "player" && command.lastVerified,
+);
 const categories = [
   ...new Set(publicCommands.map((command) => command.category)),
 ];

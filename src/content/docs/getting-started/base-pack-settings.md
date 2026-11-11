@@ -9,7 +9,7 @@ status: published
 lastUpdated: 2026-08-24
 verified: true
 related: [getting-started/install, getting-started/troubleshooting]
-hero: /assets/art-server-systems.webp
+hero: /assets/sections/art-server-systems.webp
 ---
 
 These controls come from the public Cobbleverse pack. Client preferences can be changed locally; world and gameplay rules on `cv.infinitegamingservers.com` are controlled by the server.

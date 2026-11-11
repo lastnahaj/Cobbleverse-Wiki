@@ -27,6 +27,9 @@ interface Props {
   lastUpdated?: Date | string;
   related?: RelatedLink[];
   noindex?: boolean;
+  verificationScope?: string;
+  sources?: string[];
+  serverVersion?: string;
 }
 
 const {
@@ -36,16 +39,25 @@ const {
   hero,
   headings = [],
   verified = false,
-  lastUpdated = "2026-08-23",
+  lastUpdated,
   related = [],
   noindex = false,
+  verificationScope,
+  sources = [],
+  serverVersion,
 } = Astro.props;
 
 const categoryPaths: Record<string, string> = {
   "Getting Started": "/getting-started/",
   Progression: "/progression/",
+  "Pokémon & Training": "/training/",
+  Collectibles: "/collectibles/",
+  Pokédex: "/pokemon/",
   Gyms: "/gyms/",
   Worlds: "/worlds/",
+  Items: "/items/",
+  "Battle & Shops": "/battle/",
+  Reference: "/guide-index/",
   Economy: "/economy/",
   Features: "/features/",
   Commands: "/commands/",
@@ -65,18 +77,62 @@ const breadcrumbs = [
 <BaseLayout {title} {description} image={hero} {noindex}>
   <div class="page-wrap">
     <Breadcrumbs items={breadcrumbs} />
-    {hero && <HeroBanner src={hero} alt={`${title} section artwork`} eager />}
+    {
+      hero &&
+        ![
+          "Pokédex",
+          "Items",
+          "Battle & Shops",
+          "Commands",
+          "Features",
+        ].includes(category) && (
+          <HeroBanner src={hero} alt={`${title} section artwork`} eager />
+        )
+    }
     <header class="page-intro">
-      <span class="eyebrow">{category} · Field guide</span>
+      <span class="eyebrow"
+        >{category === "Features" ? "Server Systems" : category} · Field guide</span
+      >
       <h1>{title}</h1>
       <p>{description}</p>
     </header>
     <div class="article-grid">
       <WikiSidebar />
       <article class="article-content prose">
+        {
+          verificationScope && (
+            <p class="quiet-note">
+              {verificationScope === "server"
+                ? "Verified on Cobbleverse"
+                : verificationScope === "base-pack"
+                  ? "Base-pack reference"
+                  : verificationScope === "upstream"
+                    ? "Upstream capability reference"
+                    : "Configuration awaiting verification"}
+              {serverVersion && ` · ${serverVersion}`}
+            </p>
+          )
+        }
         <slot />
+        {
+          sources.length > 0 && (
+            <p class="quiet-note">
+              Sources:{" "}
+              {sources.map((source, index) => (
+                <a href={source}>Reference {index + 1} </a>
+              ))}
+            </p>
+          )
+        }
         <LastVerified date={lastUpdated} {verified} />
         <RelatedArticles links={related} />
+        <nav class="article-actions" aria-label="Article tools">
+          <a href="https://github.com/lastnahaj/Cobbleverse-Wiki/tree/main/src"
+            >View source</a
+          ><a href="https://github.com/lastnahaj/Cobbleverse-Wiki/issues/new"
+            >Report a correction</a
+          >
+        </nav>
         <slot name="after" />
       </article>
       <ArticleTOC headings={headings} />

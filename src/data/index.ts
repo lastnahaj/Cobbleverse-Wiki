@@ -24,7 +24,11 @@ const serverSchema = z.object({
 });
 
 const navigationSchema = z.array(
-  z.object({ label: z.string(), href: z.string().startsWith("/") }),
+  z.object({
+    label: z.string(),
+    href: z.string().regex(/^\/(?!\/)[a-z0-9/-]*$/),
+    group: z.enum(["Start", "Gameplay", "Server", "Reference"]),
+  }),
 );
 
 const regionSchema = z.object({
@@ -58,6 +62,15 @@ const featureSchema = z.object({
   description: z.string().optional(),
   article: z.string().optional(),
   externalUrl: z.url().optional(),
+  environment: z
+    .enum(["server", "client", "both", "infrastructure"])
+    .default("server"),
+  playerFacing: z.boolean().default(true),
+  requiredClient: z.boolean().nullable().default(null),
+  optionalClient: z.boolean().default(false),
+  serverBehavior: z.string().nullable().default(null),
+  verified: z.boolean().default(false),
+  lastVerified: z.string().nullable().default(null),
 });
 
 const regionalGymSchema = z.object({
@@ -69,6 +82,12 @@ const regionalGymSchema = z.object({
   location: z.string(),
   item: z.string(),
   reward: z.string().optional(),
+  status: z.enum(["active", "unknown"]).default("unknown"),
+  team: z.array(z.string()).nullable().default(null),
+  battleFormat: z.string().nullable().default(null),
+  levelRange: z.string().nullable().default(null),
+  verified: z.boolean().default(false),
+  lastVerified: z.string().nullable().default(null),
 });
 
 const currencySchema = z.object({
@@ -78,6 +97,7 @@ const currencySchema = z.object({
   description: z.string().optional(),
   active: z.boolean().nullable(),
   icon: z.string().optional(),
+  status: z.enum(["active", "event", "retired", "unknown"]).optional(),
 });
 
 const commandSchema = z.object({
@@ -93,7 +113,18 @@ const commandSchema = z.object({
   related: z.string().optional(),
   verified: z.boolean(),
   lastVerified: z.string().optional(),
+  sourceMod: z.string().nullable().default(null),
 });
+
+function unique<T>(rows: T[], key: (row: T) => string): T[] {
+  const seen = new Set<string>();
+  for (const row of rows) {
+    const id = key(row);
+    if (seen.has(id)) throw new Error(`Duplicate data identifier: ${id}`);
+    seen.add(id);
+  }
+  return rows;
+}
 
 export const server = serverSchema.parse(serverJson);
 export const navigation = navigationSchema.parse(navigationJson);
@@ -101,11 +132,26 @@ export const regions = z
   .array(regionSchema)
   .parse(regionsJson)
   .sort((a, b) => a.order - b.order);
-export const ranks = z.array(rankSchema).parse(ranksJson);
-export const features = z.array(featureSchema).parse(featuresJson);
+export const ranks = unique(
+  z.array(rankSchema).parse(ranksJson),
+  (row) => row.id,
+);
+export const features = unique(
+  z.array(featureSchema).parse(featuresJson),
+  (row) => row.id,
+);
 export const regionalGyms = z.array(regionalGymSchema).parse(regionalGymsJson);
-export const currencies = z.array(currencySchema).parse(currenciesJson);
-export const commands = z.array(commandSchema).parse(commandsJson);
+export const currencies = unique(
+  z.array(currencySchema).parse(currenciesJson),
+  (row) => row.id,
+).map((row) => ({
+  ...row,
+  status: row.status ?? (row.active === true ? "active" : "unknown"),
+}));
+export const commands = unique(
+  z.array(commandSchema).parse(commandsJson),
+  (row) => row.id,
+);
 
 export type Region = z.infer<typeof regionSchema>;
 export type Rank = z.infer<typeof rankSchema>;

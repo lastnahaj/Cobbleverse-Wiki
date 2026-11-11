@@ -1,0 +1,43 @@
+---
+import PageShell from "../../layouts/PageShell.astro";
+import { withBase } from "../../lib/basePath";
+const links = [
+  [
+    "NeoPlushies",
+    "/features/neoplushies/",
+    "Start with the published system reference; acquisition details await confirmation.",
+  ],
+  [
+    "Currency & vouchers",
+    "/economy/currencies/",
+    "Distinguish collectible items from spending currencies.",
+  ],
+  [
+    "Daily rewards",
+    "/features/daily-rewards/",
+    "Check the in-game calendar for current rewards and availability.",
+  ],
+];
+---
+
+<PageShell
+  title="Collectibles"
+  description="Find the collection systems documented for Cobbleverse."
+  category="Collectibles"
+  ><h2>Explore collectibles</h2><div class="guide-directory">
+    {
+      links.map(([name, href, summary]) => (
+        <a href={withBase(href)}>
+          <>
+            <strong>{name}</strong>
+            <span>{summary}</span>
+            <i>→</i>
+          </>
+        </a>
+      ))
+    }
+  </div><h2>What is confirmed?</h2><p>
+    Use the individual guide's source and version notes. Server limits, rewards,
+    rates, and availability are published only when confirmed.
+  </p></PageShell
+>

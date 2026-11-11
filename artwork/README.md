@@ -1,7 +1,7 @@
-# Artwork
+# Artwork inventory
 
-This directory stores the approved source board, contact sheet, production inventory, and PNG decode-validation record.
+Production files live in `public/assets/brand/` and `public/assets/sections/`. The inventory records their current paths. Favicons and the web manifest use the brand directory.
 
-Website-ready artwork lives in `public/assets/`. Filenames are stable integration points for page components and social metadata.
+`legacy/` preserves obsolete banners, logos, and icon versions outside the production output. Nothing in that directory is loaded by the site. The older decode-validation record applies to historical source material, not the current production layout.
 
-The source board is reference material and is not served by the website.
+Add real server screenshots and reference images only with an appropriate source and permission record. Include known dimensions, descriptive alt text, and a clear role in the guide.

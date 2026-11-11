@@ -1,0 +1,58 @@
+---
+import PageShell from "../../layouts/PageShell.astro";
+import { withBase } from "../../lib/basePath";
+const links = [
+  [
+    "Pokédex",
+    "/pokemon/",
+    "Types, stats, forms, evolutions, spawns, drops, and learnsets.",
+  ],
+  [
+    "First catch & starters",
+    "/getting-started/first-session/",
+    "Choose a starter and learn capture, healing, and storage.",
+  ],
+  [
+    "Team building",
+    "/team-building/",
+    "Balance damage, coverage, speed, bulk, and support.",
+  ],
+  [
+    "Forms & special items",
+    "/progression/forms-items/",
+    "Find the documented routes for transformations and special items.",
+  ],
+  [
+    "CobbleWorkers",
+    "/features/cobbleworkers/",
+    "Use compatible Pokémon for work around a Pasture Block.",
+  ],
+  [
+    "Utility commands",
+    "/commands/",
+    "Find verified player commands for Pokémon and storage.",
+  ],
+];
+---
+
+<PageShell
+  title="Pokémon & Training"
+  description="Catch a team, understand its strengths, and put your Pokémon to work."
+  category="Pokémon & Training"
+  ><h2>Explore pokémon & training</h2><div class="guide-directory">
+    {
+      links.map(([name, href, summary]) => (
+        <a href={withBase(href)}>
+          <>
+            <strong>{name}</strong>
+            <span>{summary}</span>
+            <i>→</i>
+          </>
+        </a>
+      ))
+    }
+  </div><h2>What is confirmed?</h2><p>
+    Use the individual guide's source and version notes. Server limits, rewards,
+    rates, and availability are published only when confirmed.
+  </p></PageShell
+>

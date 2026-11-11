@@ -13,12 +13,11 @@ const headings = [
 ---
 
 <PageShell
-  title="Features"
+  title="Server Systems"
   description="Browse active Cobbleverse quests, markets, battles, automation, claims, rewards, menus, and optional client features."
   category="Features"
-  hero="/assets/art-server-systems.webp"
+  hero="/assets/sections/art-server-systems.webp"
   {headings}
-  verified
   related={[
     { href: "/features/neoplushies/", title: "NeoPlushies" },
     { href: "/battle-tower/", title: "Battle Tower" },
@@ -27,20 +26,22 @@ const headings = [
   <h2 id="system-directory">System directory</h2>
   <div class="feature-directory">
     {
-      features.map((feature) => (
-        <a href={withBase(`/features/${feature.id}/`)}>
-          <>
-            <span>
-              <>
-                <strong>{feature.name}</strong>
-                <small>{feature.category}</small>
-              </>
-            </span>
-            <FeatureStatusBadge status={feature.status} />
-            <i>→</i>
-          </>
-        </a>
-      ))
+      features
+        .filter((feature) => feature.playerFacing)
+        .map((feature) => (
+          <a href={withBase(`/features/${feature.id}/`)}>
+            <>
+              <span>
+                <>
+                  <strong>{feature.name}</strong>
+                  <small>{feature.category}</small>
+                </>
+              </span>
+              <FeatureStatusBadge status={feature.status} />
+              <i>→</i>
+            </>
+          </a>
+        ))
     }
   </div>
   <h2 id="status-model">Status labels</h2>
@@ -57,8 +58,8 @@ const headings = [
   >
   <h2 id="client-options">Client options</h2>
   <p>
-    Simple Voice Chat and Distant Horizons are explicitly marked
-    optional-client. Installation files and configuration steps have not been
-    supplied.
+    Simple Voice Chat and Distant Horizons are listed as optional client tools.
+    Confirm compatibility with the required pack before adding either to your
+    profile.
   </p>
 </PageShell>
