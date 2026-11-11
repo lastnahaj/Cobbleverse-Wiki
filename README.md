@@ -20,6 +20,7 @@ npm run dev
 - `src/styles/global.css` supplies existing component styles; `atlas.css` defines the current visual system and responsive refinements.
 - The production search index is generated from rendered public pages and verified player commands by `scripts/build-search.mjs`; there is no parallel title/description registry.
 - `public/data/cobbleverse-guides/` contains versioned external reference snapshots. Search summaries are distinguished from complete data feeds.
+- The Pokédex uses a dedicated TypeScript browser with species filters, shareable entries, form statistics, evolution links, learnsets, and spawn conditions. Species artwork is served locally from `public/assets/pokemon/`.
 
 ## Verification
 
@@ -44,3 +45,5 @@ Astro's `site` is `https://lastnahaj.github.io` with base `/Cobbleverse-Wiki`. C
 Production assets are grouped into `public/assets/brand/` and `public/assets/sections/`. Unused historical artwork is preserved outside production in `artwork/legacy/`. Add screenshots, items, and collectibles to descriptive folders when verified reference imagery is available. Retain dimensions and credits.
 
 Refresh external reference snapshots with `npm run import:guides`, review changes and provenance, then run the full checks. Installation reports and upstream capability descriptions do not establish live server values.
+
+Run `npm run import:pokemon-art` to restore missing species artwork from the PokéAPI sprite repository. Images are optimized to WebP at a maximum of 475 pixels; source attribution and missing-image results are recorded in `public/assets/pokemon/credits.json`. Alternate-form entries identify when the displayed image represents the base species.

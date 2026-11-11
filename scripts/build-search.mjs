@@ -99,7 +99,9 @@ for (const [file, route, category] of sources) {
       aliases: row.nationalPokedexNumber
         ? [String(row.nationalPokedexNumber)]
         : [],
-      url: `${route}?q=${encodeURIComponent(title)}`,
+      url: row.nationalPokedexNumber
+        ? `${route}?pokemon=${row.nationalPokedexNumber}`
+        : `${route}?q=${encodeURIComponent(title)}`,
     });
   }
 }

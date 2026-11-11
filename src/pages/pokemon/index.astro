@@ -1,52 +1,115 @@
 ---
-import InfoCallout from "../../components/InfoCallout.astro";
-import ReferenceBrowser from "../../components/ReferenceBrowser.astro";
-import PageShell from "../../layouts/PageShell.astro";
-
-const headings = [
-  { depth: 2, slug: "search", text: "Search the Pokédex" },
-  { depth: 2, slug: "record-scope", text: "What each record contains" },
-];
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { withBase } from "../../lib/basePath";
+import "../../styles/pokedex.css";
 ---
 
-<PageShell
+<BaseLayout
   title="Pokédex"
-  description="Search all 1,025 bundled Pokémon records, including types, stats, abilities, evolutions, spawns, drops, forms, riding data, and learnsets."
-  category="Pokédex"
-  hero="/assets/sections/art-regional-route.webp"
-  {headings}
-  verified
-  lastUpdated="2026-11-01"
-  related={[
-    { href: "/team-building/", title: "Team Building" },
-    { href: "/battle/moves/", title: "Move Catalogue" },
-    { href: "/battle/abilities/", title: "Ability Catalogue" },
-  ]}
+  description="Explore all 1,025 Pokémon with full artwork, type and generation filters, base stats, abilities, forms, evolution routes, moves, and Cobbleverse spawn data."
 >
-  <InfoCallout title="Versioned pack data">
-    <p>
-      These records reflect the data published for the documented Cobbleverse
-      1.7.42 profile. Server configuration and later pack releases can change
-      availability even when a species or move remains in the catalogue.
-    </p>
-  </InfoCallout>
-  <h2 id="search">Search the Pokédex</h2>
-  <p>
-    Search by name, National Pokédex number, type, ability, label, egg group,
-    biome tag, spawn tier, or level range. Open a result for the readable stats,
-    learnset, evolution, spawn, and drop summary.
-  </p>
-  <ReferenceBrowser
-    kind="pokemon"
-    source="/data/cobbleverse-guides/pokemon.json"
-    placeholder="Bulbasaur, water, levitate, jungle…"
-  />
-  <h2 id="record-scope">What each record contains</h2>
-  <p>
-    The imported data preserves base stats, EV yield, experience group, catch
-    rate, friendship, dimensions, behavior, riding configuration, drops,
-    learnsets, evolutions, forms, competitive labels, and spawn conditions. A
-    record's presence does not guarantee that every form or acquisition route is
-    enabled on the hosted server.
-  </p>
-</PageShell>
+  <div class="dex" data-pokedex data-base={withBase("/")}>
+    <nav class="dex-breadcrumb" aria-label="Breadcrumb">
+      <a href={withBase("/")}>Wiki</a><span>/</span><a
+        href={withBase("/training/")}>Pokémon & Training</a
+      ><span>/</span><span>Pokédex</span>
+    </nav>
+    <header class="dex-header">
+      <div class="dex-device">
+        <span class="dex-lens" aria-hidden="true"></span><div>
+          <span class="dex-eyebrow">Cobbleverse · Species reference</span><h1>
+            National Pokédex
+          </h1><p>Find a Pokémon. Get to know your next teammate.</p>
+        </div>
+      </div><div class="dex-total">
+        <strong>1,025</strong><span>Pokémon to explore</span>
+      </div>
+    </header>
+    <section class="dex-controls" aria-label="Pokédex filters">
+      <label class="dex-search"
+        ><span>Name, number, or ability</span><input
+          type="search"
+          data-dex-search
+          placeholder="Search Pokémon…"
+          autocomplete="off"
+        /></label
+      ><label
+        ><span>Type</span><select data-dex-type
+          ><option value="">All types</option>{
+            [
+              "bug",
+              "dark",
+              "dragon",
+              "electric",
+              "fairy",
+              "fighting",
+              "fire",
+              "flying",
+              "ghost",
+              "grass",
+              "ground",
+              "ice",
+              "normal",
+              "poison",
+              "psychic",
+              "rock",
+              "steel",
+              "water",
+            ].map((type) => (
+              <option value={type}>
+                {type[0].toUpperCase() + type.slice(1)}
+              </option>
+            ))
+          }</select
+        ></label
+      ><label
+        ><span>Generation</span><select data-dex-generation
+          ><option value="">All generations</option>{
+            Array.from({ length: 9 }, (_, i) => (
+              <option value={i + 1}>Generation {i + 1}</option>
+            ))
+          }</select
+        ></label
+      ><label
+        ><span>Sort by</span><select data-dex-sort
+          ><option value="number">Pokédex number</option><option value="name"
+            >Name A–Z</option
+          ><option value="stats">Base stat total</option></select
+        ></label
+      ><button type="button" data-dex-reset>Reset</button>
+    </section>
+    <div class="dex-result-bar">
+      <p role="status" aria-live="polite" data-dex-status>
+        Loading the Pokédex…
+      </p><span>Choose a Pokémon to open its entry</span>
+    </div>
+    <div class="dex-grid" data-dex-grid aria-label="Pokémon species"></div>
+    <button type="button" class="dex-load" data-dex-more hidden
+      >Show more Pokémon</button
+    >
+    <noscript
+      ><p>
+        Enable JavaScript to search the Pokédex and open species entries. The <a
+          href={withBase("/training/")}>training guides</a
+        > are available without it.
+      </p></noscript
+    >
+    <footer class="dex-source">
+      <p>
+        Species data: Cobbleverse 1.7.42 reference snapshot. In-game
+        availability can differ with server configuration.
+      </p><p>
+        Artwork: <a href="https://github.com/PokeAPI/sprites"
+          >PokéAPI sprite repository</a
+        >. Pokémon artwork belongs to its respective owners. Images identify the
+        base species; custom Cobbleverse forms may have a different appearance.
+      </p>
+    </footer>
+    <dialog class="dex-dialog" aria-label="Pokémon entry" data-dex-dialog>
+      <div data-dex-entry></div>
+    </dialog>
+  </div>
+  <script>
+    import "../../scripts/pokedex";
+  </script>
+</BaseLayout>
