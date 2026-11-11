@@ -101,7 +101,7 @@ for (const [file, route, category] of sources) {
         : [],
       url: row.nationalPokedexNumber
         ? `${route}?pokemon=${row.nationalPokedexNumber}`
-        : `${route}?q=${encodeURIComponent(title)}`,
+        : `${route}?${file === "moves.json" ? "move" : "ability"}=${encodeURIComponent(row.id)}`,
     });
   }
 }

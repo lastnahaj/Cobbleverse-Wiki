@@ -11,6 +11,14 @@ const schema = z.array(
 );
 export const updates = schema.parse([
   {
+    id: "player-catalogues",
+    date: "2026-11-10",
+    kind: "wiki",
+    title: "Battle references and merchant comparisons",
+    description:
+      "Compare move properties, find Pokémon by ability or learnset, browse item icons, and sort merchant offers by price and stock type.",
+  },
+  {
     id: "illustrated-design",
     date: "2026-11-10",
     kind: "wiki",

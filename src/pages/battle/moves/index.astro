@@ -1,31 +1,9 @@
 ---
-import ReferenceBrowser from "../../../components/ReferenceBrowser.astro";
-import PageShell from "../../../layouts/PageShell.astro";
-
-const headings = [{ depth: 2, slug: "catalogue", text: "Move catalogue" }];
+import PlayerCatalogue from "../../../components/PlayerCatalogue.astro";
 ---
 
-<PageShell
+<PlayerCatalogue
+  kind="move"
   title="Moves"
-  description="Search 952 move records by name, type, category, effect, power, target, or flag."
-  category="Battle & Shops"
-  {headings}
-  verified
-  lastUpdated="2026-11-01"
-  related={[
-    { href: "/battle/abilities/", title: "Abilities" },
-    { href: "/battle/shops/", title: "Shops" },
-    { href: "/pokemon/", title: "Pokédex" },
-  ]}
->
-  <h2 id="catalogue">Move catalogue</h2>
-  <p>
-    Filter by type, then open any move for battle properties and its complete
-    data record.
-  </p>
-  <ReferenceBrowser
-    kind="move"
-    source="/data/cobbleverse-guides/moves.json"
-    placeholder="Thunderbolt, recovery, priority…"
-  />
-</PageShell>
+  description="Compare move power, accuracy, priority, and effects. Find which Pokémon can learn each move."
+/>

@@ -21,6 +21,7 @@ npm run dev
 - The production search index is generated from rendered public pages and verified player commands by `scripts/build-search.mjs`; there is no parallel title/description registry.
 - `public/data/cobbleverse-guides/` contains versioned external reference snapshots. Search summaries are distinguished from complete data feeds.
 - The Pokédex uses a dedicated TypeScript browser with species filters, shareable entries, form statistics, evolution links, learnsets, and spawn conditions. Species artwork is served locally from `public/assets/pokemon/`.
+- Moves, abilities, items, and shops use dedicated catalogues with persistent filters, price sorting, item imagery, and species/form links. Battle references resolve learnsets and ability ownership from the same species snapshot as the Pokédex.
 
 ## Verification
 
@@ -49,3 +50,5 @@ Refresh external reference snapshots with `npm run import:guides`, review change
 Run `npm run import:pokemon-art` to restore missing species artwork from the PokéAPI sprite repository. Images are optimized to WebP at a maximum of 475 pixels; source attribution and missing-image results are recorded in `public/assets/pokemon/credits.json`.
 
 Run `npm run import:pokemon-forms` to refresh the form artwork catalogue and locally hosted Pokémon Showdown animations. Entries switch images with the selected form, offer playback controls, and default to static artwork when reduced motion is enabled. Custom forms without matching artwork display an availability notice. Provenance and coverage are recorded in `public/assets/pokemon/forms/credits.json`.
+
+Run `npm run import:item-art` to refresh matching item icons from the PokéAPI sprite repository. Custom items without a matching sprite use a category symbol. The site audit checks every image referenced by the artwork catalogues.

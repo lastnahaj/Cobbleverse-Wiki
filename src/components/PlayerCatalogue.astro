@@ -1,0 +1,180 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { withBase } from "../lib/basePath";
+import "../styles/catalogue.css";
+interface Props {
+  kind: "move" | "ability" | "shop" | "item";
+  title: string;
+  description: string;
+}
+const { kind, title, description } = Astro.props;
+const tabs = [
+  ["Pokédex", "/pokemon/"],
+  ["Moves", "/battle/moves/"],
+  ["Abilities", "/battle/abilities/"],
+  ["Items", "/items/"],
+  ["Shops", "/battle/shops/"],
+];
+---
+
+<BaseLayout {title} {description}>
+  <div
+    class="catalogue"
+    data-catalogue
+    data-kind={kind}
+    data-base={withBase("/")}
+  >
+    <nav class="catalogue-breadcrumb" aria-label="Breadcrumb">
+      <a href={withBase("/")}>Wiki</a><span>/</span><span>{title}</span>
+    </nav>
+    <header class="catalogue-heading">
+      <span class="eyebrow">Cobbleverse · Field reference</span><h1>
+        {title}
+      </h1><p>{description}</p>
+    </header>
+    <nav class="catalogue-tabs" aria-label="Player references">
+      {
+        tabs.map(([name, href]) => (
+          <a
+            href={withBase(href)}
+            aria-current={name === title ? "page" : undefined}
+          >
+            {name}
+          </a>
+        ))
+      }
+    </nav>
+    <section class="catalogue-controls" aria-label={`${title} filters`}>
+      <label class="catalogue-query"
+        ><span>{kind === "shop" ? "Item or merchant" : "Name or effect"}</span
+        ><input
+          type="search"
+          data-query
+          placeholder={kind === "shop"
+            ? "Find an item, TM, or merchant…"
+            : kind === "item"
+              ? "Find a fossil, mint, plate, or material…"
+              : "Search names and effects…"}
+          autocomplete="off"
+        /></label
+      >
+      <label
+        ><span
+          >{
+            kind === "move"
+              ? "Type"
+              : kind === "shop"
+                ? "Merchant"
+                : kind === "item"
+                  ? "Category"
+                  : "Availability"
+          }</span
+        ><select data-filter><option value="">All</option></select></label
+      >
+      {
+        kind === "move" && (
+          <label>
+            <>
+              <span>Category</span>
+              <select data-category>
+                <>
+                  <option value="">All categories</option>
+                  <option>Physical</option>
+                  <option>Special</option>
+                  <option>Status</option>
+                </>
+              </select>
+            </>
+          </label>
+        )
+      }
+      {
+        kind === "shop" && (
+          <label>
+            <>
+              <span>Stock</span>
+              <select data-category>
+                <>
+                  <option value="">All stock</option>
+                  <option value="fixed">Fixed stock</option>
+                  <option value="random">Randomized stock</option>
+                </>
+              </select>
+            </>
+          </label>
+        )
+      }
+      <label hidden={kind === "item" || kind === "ability"}
+        ><span>Sort by</span><select data-sort
+          ><option value="name">Name A–Z</option>{
+            kind === "move" && (
+              <>
+                <>
+                  <option value="power">Highest power</option>
+                  <option value="accuracy">Highest accuracy</option>
+                  <option value="pp">Most PP</option>
+                </>
+              </>
+            )
+          }{
+            kind === "shop" && (
+              <>
+                <>
+                  <option value="price">Lowest price</option>
+                  <option value="price-desc">Highest price</option>
+                </>
+              </>
+            )
+          }</select
+        ></label
+      >
+      <button type="button" class="catalogue-reset" data-reset>Reset</button>
+    </section>
+    <div class="catalogue-results-heading">
+      <p role="status" aria-live="polite" data-status>
+        Loading {title.toLowerCase()}…
+      </p><span
+        >{
+          kind === "shop"
+            ? "Compare documented merchant offers"
+            : "Open an entry for more detail"
+        }</span
+      >
+    </div>
+    <div
+      class:list={[
+        "catalogue-results",
+        { "catalogue-results--shops": kind === "shop" },
+      ]}
+      data-results
+    >
+    </div>
+    <button class="catalogue-more" type="button" data-more hidden
+      >Show more</button
+    >
+    <noscript
+      ><p>
+        Enable JavaScript to search this catalogue. <a
+          href={withBase("/training/")}>Pokémon and training guides</a
+        > remain available.
+      </p></noscript
+    >
+    <aside class="catalogue-provenance">
+      <strong>About this reference</strong><p>
+        {
+          kind === "shop"
+            ? "Prices and stock describe the bundled pack catalogue, not a live market feed. Randomized merchants may not offer every listed item at once. Confirm the merchant screen before spending."
+            : "Based on the Cobbleverse 1.7.42 snapshot. A listed move, ability, or form does not establish availability on the current server."
+        }
+      </p><p>
+        Data: <a href="https://www.cobbleverseguides.com/">Cobbleverse Guides</a
+        >. Pokémon artwork: <a href="https://github.com/PokeAPI/sprites"
+          >PokéAPI</a
+        > and <a href="https://play.pokemonshowdown.com/">Pokémon Showdown</a>.
+      </p>
+    </aside>
+  </div>
+  <script>
+    import "../scripts/catalogue";
+  </script>
+</BaseLayout>

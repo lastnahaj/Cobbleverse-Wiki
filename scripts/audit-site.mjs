@@ -33,6 +33,20 @@ for (const [key, artwork] of Object.entries(pokemonArt)) {
   }
 }
 let count = 0;
+const itemArt = JSON.parse(
+  await readFile(join(root, "data/cobbleverse-guides/item-art.json"), "utf8"),
+);
+for (const [name, path] of Object.entries(itemArt)) {
+  if (!path.startsWith("assets/items/") || path.includes("..")) {
+    failures.push(`Item ${name}: invalid artwork path`);
+    continue;
+  }
+  try {
+    await access(join(root, path));
+  } catch {
+    failures.push(`Item ${name}: missing artwork ${path}`);
+  }
+}
 for (const file of (await files(root)).filter((file) =>
   file.endsWith(".html"),
 )) {

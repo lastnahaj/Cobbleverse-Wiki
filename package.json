@@ -12,6 +12,7 @@
     "import:guides": "node scripts/import-guide-data.mjs",
     "import:pokemon-art": "node scripts/import-pokemon-art.mjs",
     "import:pokemon-forms": "node scripts/import-pokemon-forms.mjs",
+    "import:item-art": "node scripts/import-item-art.mjs",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },

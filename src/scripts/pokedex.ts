@@ -346,7 +346,7 @@ function initialize(root: HTMLElement) {
         const hidden = id.startsWith("h:");
         const clean = id.replace(/^h:/, "");
         const a = abilities.find((a) => a.id === clean);
-        return `<div class="dex-ability"><h4>${esc(a?.name ?? title(clean))}${hidden ? " <span>Hidden ability</span>" : ""}</h4><p>${esc(a?.shortDescription ?? a?.description ?? "Ability description is unavailable in this snapshot.")}</p></div>`;
+        return `<div class="dex-ability"><h4><a href="${base}battle/abilities/?ability=${encodeURIComponent(clean)}">${esc(a?.name ?? title(clean))}</a>${hidden ? " <span>Hidden ability</span>" : ""}</h4><p>${esc(a?.shortDescription ?? a?.description ?? "Ability description is unavailable in this snapshot.")}</p></div>`;
       })
       .join("");
     return `<section><h3>Base stats <span>Total ${total({ ...record, baseStats: stats })}</span></h3><div class="dex-stats">${keys.map((key) => `<div><span>${statNames[key]}</span><strong>${stats?.[key] ?? "—"}</strong><span class="dex-stat-track"><span style="width:${Math.min(100, ((stats?.[key] ?? 0) / 255) * 100)}%"></span></span></div>`).join("")}</div></section><section><h3>Abilities</h3>${abilityHtml || "<p>No ability data is listed.</p>"}</section><section><h3>Species details</h3><dl class="dex-facts">${[
@@ -383,7 +383,7 @@ function initialize(root: HTMLElement) {
         const methodLabel = /^\d+$/.test(method)
           ? `Level ${method}`
           : title(method);
-        return `<tr data-move-search="${esc([methodLabel, m?.name ?? id, m?.type, m?.category].join(" ").toLowerCase())}"><td>${esc(methodLabel)}</td><td><strong>${esc(m?.name ?? title(id))}</strong>${m?.shortDescription ? `<small>${esc(m.shortDescription)}</small>` : ""}</td><td>${m?.type ? `<span class="dex-type" data-type="${esc(m.type.toLowerCase())}">${esc(m.type)}</span>` : "—"}</td><td>${esc(m?.category ?? "—")}</td><td>${m?.basePower || "—"}</td><td>${m?.accuracy === true ? "Always" : (m?.accuracy ?? "—")}</td><td>${m?.pp ?? "—"}</td></tr>`;
+        return `<tr data-move-search="${esc([methodLabel, m?.name ?? id, m?.type, m?.category].join(" ").toLowerCase())}"><td>${esc(methodLabel)}</td><td><strong><a href="${base}battle/moves/?move=${encodeURIComponent(id)}">${esc(m?.name ?? title(id))}</a></strong>${m?.shortDescription ? `<small>${esc(m.shortDescription)}</small>` : ""}</td><td>${m?.type ? `<span class="dex-type" data-type="${esc(m.type.toLowerCase())}">${esc(m.type)}</span>` : "—"}</td><td>${esc(m?.category ?? "—")}</td><td>${m?.basePower || "—"}</td><td>${m?.accuracy === true ? "Always" : (m?.accuracy ?? "—")}</td><td>${m?.pp ?? "—"}</td></tr>`;
       })
       .join(
         "",
